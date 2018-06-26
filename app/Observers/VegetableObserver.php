@@ -2,6 +2,8 @@
 
 namespace App\Observers;
 
+use App\Character;
+use App\Genus;
 use App\Vegetable;
 
 /**
@@ -11,17 +13,9 @@ class VegetableObserver
 {
     public function created(Vegetable $vegetable)
     {
-        // Attach the characters to vegetable
-        switch ($vegetable->species_id) {
-            case 2:
-                $characters = range(1, 39);
-                break;
-            
-            default:
-                $characters = [];
-                break;
-        }
-        
+        $fields = Genus::charactersList($vegetable->species->genus->name);
+        $characters = Character::whereIn('name', $fields)->get()->pluck('id');
+
         $vegetable->characters()->attach($characters);
     }
 }
