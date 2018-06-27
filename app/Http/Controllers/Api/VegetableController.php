@@ -42,4 +42,26 @@ class VegetableController extends Controller
 
         return new VegetablesResource($vegetable);
     }
+
+    public function update(Vegetable $vegetable, Request $request)
+    {
+        $data = $request->validate([
+            'cultivar_name' => 'nullable|string',
+            'donor_number' => 'nullable|string',
+            'country' => 'nullable|string',
+            'location' => 'nullable|string',
+            'year' => 'nullable|digits:4',
+            'season' => 'nullable|string',
+            'collecting_institute' => 'nullable|string',
+            'collector' => 'nullable|string',
+            'collecting_number' => 'nullable|string',
+            'latitide' => 'nullable|string',
+            'longitude' => 'nullable|string',
+            'altitude' => 'nullable|string',
+        ]);
+
+        $vegetable->update($data);
+
+        return new VegetablesResource($vegetable);
+    }
 }
