@@ -13,6 +13,13 @@ class Vegetable extends Model
     }
 
     public function characters(){
-        return $this->belongsToMany('App\Character');
+        return $this->belongsToMany('App\Character')->withPivot('value');
+    }
+
+    public function getCharacters()
+    {
+        $categories = \App\Category::getCategoryCharacters();
+
+        return $this->characters()->whereIn('category_id', $categories)->get();
     }
 }

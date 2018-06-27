@@ -19,4 +19,10 @@ class Category extends Model
     public function characters(){
         return $this->hasMany('App\Character');
     }
+
+    /*Custom Methods*/
+    public static function getCategoryCharacters()
+    {
+        return static::where('parent_id', 1)->get()->pluck('id');
+    }
 }
