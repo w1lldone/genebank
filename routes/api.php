@@ -35,9 +35,14 @@ Route::group(['prefix' => 'vegetables'], function(){
 
     Route::group(['middleware' => 'auth:api'], function(){
         Route::post('/', 'VegetableController@store')->name('route.name');
+        Route::put('/{vegetable}/characters', 'VegetableCharactersController@update');
     });
 });
 
 Route::group(['prefix' => 'characters'], function(){
     Route::get('/', 'CharacterController@index');
+
+    Route::group(['middleware' => 'auth:api'], function(){
+        Route::put('/{character}', 'CharacterController@update');
+    });
 });

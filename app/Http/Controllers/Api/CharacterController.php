@@ -20,4 +20,15 @@ class CharacterController extends Controller
 
         return $character->get(['id', 'name']);
     }
+
+    public function update(Character $character, Request $request)
+    {
+        $data = $request->validate([
+            'name' => 'required|string',
+            'category_id' => 'required|exists:categories,id',
+            'description' => 'nullable|string',
+            'type' => 'nullable|string',
+            'unit' => 'nullable|string'
+        ]);
+    }
 }

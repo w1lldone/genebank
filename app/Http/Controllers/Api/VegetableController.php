@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\VegetablesResource;
 use App\Vegetable;
 use Illuminate\Http\Request;
 
@@ -10,12 +11,12 @@ class VegetableController extends Controller
 {
     public function index(Request $request)
     {
-        return Vegetable::all();
+        return VegetablesResource::collection(Vegetable::all());
     }
 
     public function show(Vegetable $vegetable)
     {
-        return $vegetable->load('characters');
+        return new VegetablesResource($vegetable->load('characters'));
     }
 
     public function store(Request $request)
@@ -39,6 +40,6 @@ class VegetableController extends Controller
 
         $vegetable = Vegetable::create($data);
 
-        return $vegetable;
+        return new VegetablesResource($vegetable);
     }
 }
