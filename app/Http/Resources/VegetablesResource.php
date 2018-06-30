@@ -34,6 +34,7 @@ class VegetablesResource extends JsonResource
             'created_at' => $this->created_at->toDateTimeString(),
             'updated_at' => $this->updated_at->toDateTimeString(),
             'characters' => $this->when($this->hasView('characters'), CharactersResource::collection($this->getCharacters())),
+            'passport' => $this->when($this->hasView('passport'), $this->passport),
         ];
     }
 

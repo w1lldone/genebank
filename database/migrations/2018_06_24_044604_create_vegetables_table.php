@@ -16,19 +16,8 @@ class CreateVegetablesTable extends Migration
         Schema::create('vegetables', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('species_id')->unsigned();
-            $table->string('cultivar_name')->nullable();
-            $table->integer('donor_number')->nullable();
-            $table->string('country')->nullable();
-            $table->string('location')->nullable();
-            $table->year('year')->nullable();
-            $table->string('season')->nullable();
             $table->string('plant_introduction_number')->nullable();
-            $table->string('collecting_institute')->nullable();
-            $table->string('collector')->nullable();
-            $table->integer('collecting_number')->nullable();
-            $table->string('latitide')->nullable();
-            $table->string('longitude')->nullable();
-            $table->string('altitude')->nullable();
+            $table->string('cultivar_name')->nullable();
             $table->timestamps();
         });
     }

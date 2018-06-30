@@ -21,7 +21,9 @@ class VegetableObserver
         // ATTACH THE RELATED CHARACTERS
         $fields = Genus::charactersList($vegetable->species->genus->name);
         $characters = Character::whereIn('name', $fields)->get()->pluck('id');
-
         $vegetable->characters()->attach($characters);
+
+        // ADD PASSPORT TO VEGETABLE
+        $vegetable->passport()->create([]);
     }
 }
