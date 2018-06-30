@@ -23,7 +23,6 @@ class VegetableController extends Controller
     {
         $data = $request->validate([
             'species_id' => 'required|exists:species,id',
-            'plant_introduction_number' => 'required|string|unique:vegetables',
             'cultivar_name' => 'nullable|string',
             'donor_number' => 'nullable|integer',
             'country' => 'nullable|string',
