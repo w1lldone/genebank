@@ -12,6 +12,10 @@ class Genus extends Model
         return $this->hasMany('App\Species');
     }
 
+    public function vegetables(){
+        return $this->hasManyThrough('App\Vegetable', 'App\Species');
+    }
+
     public static function charactersList($name = '')
     {
         switch ($name) {
