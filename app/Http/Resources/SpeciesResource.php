@@ -18,8 +18,9 @@ class SpeciesResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'genus' => $this->genus->name,
+            'id' => $this->id,
             'name' => $this->name,
+            'genus' => new GeneraResource($this->genus),
         ];
     }
 }
