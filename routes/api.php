@@ -37,6 +37,7 @@ Route::group(['prefix' => 'vegetables'], function(){
         Route::post('/', 'VegetableController@store');
         Route::put('/{vegetable}', 'VegetableController@update');
         Route::put('/{vegetable}/characters', 'VegetableCharactersController@update');
+        Route::put('/{vegetable}/passport', 'PassportController@update');
     });
 });
 
