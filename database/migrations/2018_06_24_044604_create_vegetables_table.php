@@ -17,7 +17,9 @@ class CreateVegetablesTable extends Migration
             $table->increments('id');
             $table->integer('species_id')->unsigned();
             $table->string('plant_introduction_number')->nullable();
+            $table->string('temporary_number')->nullable();
             $table->string('cultivar_name')->nullable();
+            $table->timestamp('characterizing_date')->nullable();
             $table->timestamps();
         });
     }

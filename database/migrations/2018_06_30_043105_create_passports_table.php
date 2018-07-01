@@ -16,10 +16,10 @@ class CreatePassportsTable extends Migration
         Schema::create('passports', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('vegetable_id')->unsigned();
+            $table->timestamp('collecting_date')->nullable();
             $table->integer('donor_number')->nullable();
             $table->string('country')->nullable();
             $table->string('location')->nullable();
-            $table->year('year')->nullable();
             $table->string('season')->nullable();
             $table->string('collecting_institute')->nullable();
             $table->string('collector')->nullable();
