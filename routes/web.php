@@ -12,9 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    $component = 'home-base';
+    return view('index', compact('component'));
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/{component}', function ($component)
+{
+    $component = $component.'-base';
+    return view('index', compact('component'));
+});
