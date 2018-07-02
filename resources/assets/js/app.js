@@ -9,6 +9,8 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import Routes from './routes';
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -16,6 +18,9 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+
+Vue.component('home-base', require('./components/home/HomeBase.vue'));
+Vue.component('genus-base', require('./components/genus/GenusBase.vue'));
 
 Vue.component(
     'passport-clients',
@@ -33,5 +38,6 @@ Vue.component(
 );
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    router: Routes,
 });
