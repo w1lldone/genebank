@@ -25326,8 +25326,11 @@ try {
  * to our Laravel back-end. This library automatically handles sending the
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
+var instance = __webpack_require__(22);
 
-window.axios = __webpack_require__(22);
+window.axios = instance.create({
+    baseURL: env.baseUrl
+});
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
