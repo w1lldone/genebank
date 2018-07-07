@@ -13,7 +13,7 @@ class VegetableCharactersController extends Controller
     {
         $data = $request->validate([
             '*.id' => 'required|exists:characters',
-            '*.value' => 'required',
+            '*.value' => 'nullable',
         ]);
 
         foreach ($data as $item) {
