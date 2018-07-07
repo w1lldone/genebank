@@ -20,7 +20,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/{component}', function ($component)
+Route::get('/{any}', function ($component)
 {
     return view('index');
-});
+})->where('any', '.*');
