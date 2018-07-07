@@ -1,7 +1,9 @@
 <template>
     <div class="container">
-        <router-link :to="{ name:'home' }" >< back to home</router-link>
         <div class="row">
+            <div class="col-md-3">
+              <sidebar></sidebar>
+            </div>
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">

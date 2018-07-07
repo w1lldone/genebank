@@ -17,10 +17,10 @@ import Routes from './routes';
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
-Vue.component('home-base', require('./components/home/HomeBase.vue'));
-Vue.component('genus-base', require('./components/genus/GenusBase.vue'));
+Vue.component(
+    'sidebar',
+    require('./components/navigation/Sidebar.vue')
+);
 
 Vue.component(
     'passport-clients',

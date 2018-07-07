@@ -4,23 +4,27 @@
             <div class="col-md-3">
                 <sidebar></sidebar>
             </div>
-            <div class="col text-center">
-                <h1>Welcome to genebank</h1>
-                <router-link :to="{ name:'genus' }"> Go to Genus list </router-link>
+            <div class="col">
+                <vegetable-list-base></vegetable-list-base>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import VegetableListBase from './VegetableListBase.vue';
+
 export default {
 
-  name: 'HomeBase',
+  name: 'VegetableBase',
 
   data () {
     return {
 
     }
+  },
+  components: {
+    VegetableListBase
   }
 }
 </script>

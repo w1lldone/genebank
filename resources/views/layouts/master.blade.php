@@ -7,8 +7,15 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="api_token" content="{{ env('API_TOKEN_DEVELOPMENT') }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    <script type="text/javascript">
+        window.env = {
+            apiToken: '{{ env('API_TOKEN_DEVELOPMENT') }}',
+            baseUrl: '{{ env('APP_BASE_URL') }}',
+        }
+    </script>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
