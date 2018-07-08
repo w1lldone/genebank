@@ -2,7 +2,7 @@
     <div class="card">
         <div class="card-header d-flex justify-content-between">
             <h1 class="card-title m-0">Vegetable List</h1>
-            <router-link to="/vegetable/create" class="btn btn-primary">
+            <router-link to="/vegetable/create" class="btn btn-primary btn-lg">
                 Create
             </router-link>
         </div>
@@ -23,7 +23,10 @@
                     >
                         <td>
                             <router-link
-                            :to="{ name: 'character.index', params: { id:vegetable.id }}"
+                            :to="{ name: 'vegetable.details', params: { 
+                                id:vegetable.id, 
+                                category:'details' 
+                            }}"
                             >
                                 {{ vegetable.plant_introduction_number }}
                             </router-link>

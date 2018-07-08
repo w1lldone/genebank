@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 import GenusBase from './components/genus/GenusBase.vue';
 import HomeBase from './components/home/HomeBase.vue';
 import VegetableBase from './components/vegetable/VegetableBase.vue';
+import VegetableDetails from './components/vegetable/VegetableDetails.vue';
 import VegetableFormBase from './components/vegetable/VegetableFormBase.vue';
 import CharacterBase from './components/character/CharacterBase.vue';
 
@@ -28,6 +29,12 @@ const routes = new VueRouter({
             path: '/vegetable',
             name: 'vegetable',
             component: VegetableBase,
+        },
+        {
+            path: '/vegetable/:id/:category',
+            name: 'vegetable.details',
+            component: VegetableDetails,
+            props: true,
         },
         {
             path: '/vegetable/create',

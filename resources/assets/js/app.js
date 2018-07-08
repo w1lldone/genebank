@@ -23,6 +23,11 @@ Vue.component(
 );
 
 Vue.component(
+    'ComponentBase',
+    require('./components/ComponentBase.vue')
+);
+
+Vue.component(
     'passport-clients',
     require('./components/passport/Clients.vue')
 );
