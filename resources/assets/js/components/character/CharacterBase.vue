@@ -14,11 +14,11 @@
                             <h3>Please wait...</h3>
                         </div>
                         <form @submit.prevent="submitForm()" v-else>
-                            <div v-for="{ key, value } in characters" class="mb-3">
+                            <div v-for="category in categories" class="mb-3">
                                 <h3>
-                                    {{ key }}
+                                    {{ category }}
                                 </h3>
-                                <div v-for="item in value" :key="item.id" class="form-group row">
+                                <div v-for="item in getCharacters(category)" :key="item.id" class="form-group row">
                                     <label class="col-6 text-right">
                                         {{ item.name }}
                                     </label>
@@ -49,8 +49,14 @@ export default {
   },
   data () {
     return {
-        vegetable: {},
-        characters: [],
+        vegetable: {
+            characters: [
+                {
+                    category: '',
+                }
+            ],
+        },
+        categories: [],
         inputs: [],
         loading: false,
     }
@@ -67,25 +73,9 @@ export default {
         })
         this.vegetable = response.data.data
     },
-    getCharacters() {
-        var list = this.vegetable.characters
-        var keyGetter = list => list.category
-        const map = new Map();
-        list.forEach((item) => {
-            const key = keyGetter(item);
-            const collection = map.get(key);
-            if (!collection) {
-                map.set(key, [item]);
-            } else {
-                collection.push(item);
-            }
-        });
-        
-        map.forEach((value, key, map) => {
-            this.characters.push({
-                key: key,
-                value: value,
-            })
+    getCharacters(category) {
+        return this.vegetable.characters.filter(item => {
+            return item.category == category
         })
     },
     async submitForm() {
@@ -106,14 +96,14 @@ export default {
             console.log(error.response)
         }
 
-        this.getCharacters()
+        this.vegetable.characters = response.data.data
         this.loading = false
         
     }
   },
   mounted() {
     this.loadVegetableCharacter().then(() => {
-        this.getCharacters()
+        this.categories = [...new Set(this.vegetable.characters.map(item => item.category))]
     })
   }
 }
