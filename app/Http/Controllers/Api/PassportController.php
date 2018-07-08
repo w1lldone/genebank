@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class PassportController extends Controller
 {
+    public function show(Vegetable $vegetable)
+    {
+        return new PassportsResource($vegetable->passport);
+    }
+
     public function update(Vegetable $vegetable, Request $request)
     {   
         $data = $request->validate([

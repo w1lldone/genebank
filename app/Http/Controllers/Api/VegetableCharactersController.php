@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class VegetableCharactersController extends Controller
 {
+    public function show(Vegetable $vegetable, Request $request)
+    {
+        return CharactersResource::collection($vegetable->characters);
+    }
+
     public function update(Vegetable $vegetable, Request $request)
     {
         $data = $request->validate([

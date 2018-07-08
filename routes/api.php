@@ -32,6 +32,8 @@ Route::group(['prefix' => 'species'], function(){
 Route::group(['prefix' => 'vegetables'], function(){
     Route::get('/', 'VegetableController@index');
     Route::get('/{vegetable}', 'VegetableController@show');
+    Route::get('/{vegetable}/characters', 'VegetableCharactersController@show');
+    Route::get('/{vegetable}/passport', 'PassportController@show');
 
     Route::group(['middleware' => 'auth:api'], function(){
         Route::post('/', 'VegetableController@store');
