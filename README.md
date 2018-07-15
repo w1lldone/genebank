@@ -1,5 +1,5 @@
-# UGM Online Proceeding
-Online proceeding of Universitas Gadjah Mada
+# Genebank
+Information system for managing vegetable germplasm in UGM.
 
 ## How to Install
 1. Clone this repository to your local.
