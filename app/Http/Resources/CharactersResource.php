@@ -20,7 +20,9 @@ class CharactersResource extends JsonResource
             'category' => $this->category->name,
             'type' => $this->type,
             'unit' => $this->unit,
-            'value' => $this->pivot->value,
+            'value' => $this->whenPivotLoaded('character_vegetable', function () {
+                return $this->pivot->value;
+            }),
         ];
     }
 }

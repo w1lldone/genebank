@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Character;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\CharactersResource;
 use Illuminate\Http\Request;
 
 class CharacterController extends Controller
@@ -18,7 +19,7 @@ class CharacterController extends Controller
             $character = $character->where('name', 'like', "%$request->name%");
         }
 
-        return $character->get(['id', 'name']);
+        return CharactersResource::collection($character->get());
     }
 
     public function update(Character $character, Request $request)

@@ -25,15 +25,6 @@ class VegetableController extends Controller
             'species_id' => 'required|exists:species,id',
             'cultivar_name' => 'nullable|string',
             'temporary_number' => 'nullable|string|unique:vegetables',
-            // 'donor_number' => 'nullable|integer',
-            // 'country' => 'nullable|string',
-            // 'location' => 'nullable|string',
-            // 'collecting_institute' => 'nullable|string',
-            // 'collector' => 'nullable|string',
-            // 'collecting_number' => 'nullable|string',
-            // 'latitide' => 'nullable|string',
-            // 'longitude' => 'nullable|string',
-            // 'altitude' => 'nullable|string',
         ]);
 
         $vegetable = Vegetable::create($data);

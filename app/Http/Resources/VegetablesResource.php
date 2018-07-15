@@ -23,8 +23,15 @@ class VegetablesResource extends JsonResource
             'plant_introduction_number' => $this->plant_introduction_number,
             'created_at' => $this->created_at->toDateTimeString(),
             'updated_at' => $this->updated_at->toDateTimeString(),
-            'characters' => $this->when($this->hasView('characters'), CharactersResource::collection($this->getCharacters())),
-            'passport' => $this->when($this->hasView('passport'), $this->passport),
+            'characters' => $this->when($this->hasView('characters'), 
+                CharactersResource::collection(
+                    $this->getCharacters(
+                        Category::where('parent_id', 1)->get()->pluck('id')
+                    )
+                )),
+            'passport' => $this->when($this->hasView('passport'), 
+                new PassportsResource($this->passport)
+            ),
         ];
     }
 

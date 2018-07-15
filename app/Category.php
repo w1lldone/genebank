@@ -20,7 +20,10 @@ class Category extends Model
         return $this->hasMany('App\Character');
     }
 
-    /*Custom Methods*/
+    /**
+     * Get category ids array
+     * @return static
+     */
     public static function getCategoryCharacters()
     {
         return static::where('parent_id', 1)->get()->pluck('id');

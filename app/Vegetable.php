@@ -25,10 +25,13 @@ class Vegetable extends Model
         return 'UGM'.str_pad($this->id, 6, '0', STR_PAD_LEFT);
     }
 
-    public function getCharacters()
+    /**
+     * Get characters collection based on category_id
+     * @param  array  $categories array of category id
+     * @return Collection
+     */
+    public function getCharacters($categories = [])
     {
-        $categories = \App\Category::getCategoryCharacters();
-
         return $this->characters()->whereIn('category_id', $categories)->get();
     }
 }
