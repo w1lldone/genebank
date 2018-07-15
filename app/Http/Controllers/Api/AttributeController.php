@@ -2,27 +2,27 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Character;
+use App\Attribute;
 use App\Http\Controllers\Controller;
-use App\Http\Resources\CharactersResource;
+use App\Http\Resources\AttributesResource;
 use Illuminate\Http\Request;
 
-class CharacterController extends Controller
+class AttributeController extends Controller
 {
-    public function index(Request $request, Character $character)
+    public function index(Request $request, Attribute $attribute)
     {
         if ($request->has('category_id')) {
-            $character = $character->where('category_id', $request->category_id);
+            $attribute = $attribute->where('category_id', $request->category_id);
         }
 
         if ($request->has('name')) {
-            $character = $character->where('name', 'like', "%$request->name%");
+            $attribute = $attribute->where('name', 'like', "%$request->name%");
         }
 
-        return CharactersResource::collection($character->get());
+        return AttributesResource::collection($attribute->get());
     }
 
-    public function update(Character $character, Request $request)
+    public function update(Attribute $attribute, Request $request)
     {
         $data = $request->validate([
             'name' => 'required|string',

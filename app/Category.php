@@ -16,8 +16,8 @@ class Category extends Model
         return $this->belongsTo('App\Category', 'parent_id');
     }
 
-    public function characters(){
-        return $this->hasMany('App\Character');
+    public function attributes(){
+        return $this->hasMany('App\Attribute');
     }
 
     /**

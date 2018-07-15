@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCharacterVegetableTable extends Migration
+class CreateAttributesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreateCharacterVegetableTable extends Migration
      */
     public function up()
     {
-        Schema::create('character_vegetable', function (Blueprint $table) {
+        Schema::create('attributes', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('character_id')->unisgned();
-            $table->integer('vegetable_id')->unsigned();
-            $table->string('value')->nullable();
+            $table->string('category_id');
+            $table->string('name');
+            $table->string('type');
+            $table->string('unit')->nullable();
+            $table->string('description')->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ class CreateCharacterVegetableTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('character_vegetable');
+        Schema::dropIfExists('characters');
     }
 }

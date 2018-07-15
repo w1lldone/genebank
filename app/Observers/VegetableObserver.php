@@ -2,7 +2,7 @@
 
 namespace App\Observers;
 
-use App\Character;
+use App\Attribute;
 use App\Genus;
 use App\Vegetable;
 
@@ -18,10 +18,12 @@ class VegetableObserver
             'plant_introduction_number' => $vegetable->generatePIN(),
         ]);
 
-        // ATTACH THE RELATED CHARACTERS
+        // Get array of characters name based related to genus name
         $fields = Genus::charactersList($vegetable->species->genus->name);
-        $characters = Character::whereIn('name', $fields)->get()->pluck('id');
-        $vegetable->characters()->attach($characters);
+        // Get array of characters id
+        $characters = Attribute::whereIn('name', $fields)->get()->pluck('id');
+        // attach the character id to vegetable
+        $vegetable->attributes()->attach($characters);
 
         // ADD PASSPORT TO VEGETABLE
         $vegetable->passport()->create([]);
