@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCharactersTable extends Migration
+class CreateAttributeVegetableTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateCharactersTable extends Migration
      */
     public function up()
     {
-        Schema::create('characters', function (Blueprint $table) {
+        Schema::create('attribute_vegetable', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('category_id');
-            $table->string('name');
-            $table->string('type');
-            $table->string('unit')->nullable();
-            $table->string('description')->nullable();
+            $table->integer('attribute_id')->unisgned();
+            $table->integer('vegetable_id')->unsigned();
+            $table->string('value')->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class CreateCharactersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('characters');
+        Schema::dropIfExists('attribute_vegetable');
     }
 }

@@ -16,6 +16,11 @@ class Genus extends Model
         return $this->hasManyThrough('App\Vegetable', 'App\Species');
     }
 
+    /**
+     * Get array of characters name based on Genus
+     * @param  string $name Genus name
+     * @return array       Array of characters name
+     */
     public static function charactersList($name = '')
     {
         switch ($name) {

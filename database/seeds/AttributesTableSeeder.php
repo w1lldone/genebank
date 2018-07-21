@@ -3,7 +3,7 @@
 use App\Category;
 use Illuminate\Database\Seeder;
 
-class CharactersTableSeeder extends Seeder
+class AttributesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,14 +12,14 @@ class CharactersTableSeeder extends Seeder
      */
     public function run()
     {
-        Category::where('name', 'Seedling')->first()->characters()->createMany([
+        Category::where('name', 'Seedling')->first()->attributes()->createMany([
             ['name' => 'Hypocotil color', 'type' => 'string'],
             ['name' => 'Cotyledon leaf color', 'type' => 'string'],
             ['name' => 'Cotyledon leaf shape', 'type' => 'string'],
             ['name' => 'Anthocyanin Level', 'type' => 'string'],
         ]);
 
-        Category::where('name', 'Vegetative')->first()->characters()->createMany([
+        Category::where('name', 'Vegetative')->first()->attributes()->createMany([
             ['name' => 'Plant Habit', 'type' => 'string'],
             ['name' => 'Stem color', 'type' => 'string'],
             ['name' => 'Stem diameter', 'type' => 'numeric'],
@@ -46,7 +46,7 @@ class CharactersTableSeeder extends Seeder
             ['name' => 'Internode Length', 'type' => 'numeric'],
         ]);
 
-        Category::where('name', 'Inflorescence')->first()->characters()->createMany([
+        Category::where('name', 'Inflorescence')->first()->attributes()->createMany([
             ['name' => 'Days to Flowering', 'type' => 'string'],
             ['name' => 'No. of pedicles per axil', 'type' => 'string'],
             ['name' => 'Flower Shape', 'type' => 'string'],
@@ -61,7 +61,7 @@ class CharactersTableSeeder extends Seeder
             ['name' => 'Sex ratio (F/M)', 'type' => 'string'],
         ]);
 
-        Category::where('name', 'Seed')->first()->characters()->createMany([
+        Category::where('name', 'Seed')->first()->attributes()->createMany([
             ['name' => 'Seed Shape', 'type' => 'string'],
             ['name' => 'Seed color', 'type' => 'string'],
             ['name' => 'Seed Size', 'type' => 'numeric'],
@@ -72,7 +72,7 @@ class CharactersTableSeeder extends Seeder
             ['name' => 'Seed Size (l x w)', 'type' => 'string'],
         ]);
 
-        Category::where('name', 'Fruit')->first()->characters()->createMany([
+        Category::where('name', 'Fruit')->first()->attributes()->createMany([
             ['name' => 'Days to Fruit', 'type' => 'numeric'],
             ['name' => 'No. of Fruits set per axil', 'type' => 'numeric'],
             ['name' => 'Immature Fruit color', 'type' => 'string'],

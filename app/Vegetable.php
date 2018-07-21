@@ -12,8 +12,14 @@ class Vegetable extends Model
         return $this->belongsTo('App\Species');
     }
 
+    public function attributes(){
+        return $this->belongsToMany('App\Attribute')->withPivot('value');
+    }
+
     public function characters(){
-        return $this->belongsToMany('App\Character')->withPivot('value');
+        $categories = \App\Category::getCategoryCharacters();
+
+        return $this->belongsToMany('App\Attribute')->whereIn('category_id', $categories)->withPivot('value');
     }
 
     public function passport(){
