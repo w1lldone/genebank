@@ -32,21 +32,21 @@ Route::group(['prefix' => 'species'], function(){
 Route::group(['prefix' => 'vegetables'], function(){
     Route::get('/', 'VegetableController@index');
     Route::get('/{vegetable}', 'VegetableController@show');
-    Route::get('/{vegetable}/characters', 'VegetableCharactersController@show');
+    Route::get('/{vegetable}/attributes', 'VegetableAttributesController@show');
     Route::get('/{vegetable}/passport', 'PassportController@show');
 
     Route::group(['middleware' => 'auth:api'], function(){
         Route::post('/', 'VegetableController@store');
         Route::put('/{vegetable}', 'VegetableController@update');
-        Route::put('/{vegetable}/characters', 'VegetableCharactersController@update');
+        Route::put('/{vegetable}/attributes', 'VegetableAttributesController@update');
         Route::put('/{vegetable}/passport', 'PassportController@update');
     });
 });
 
-Route::group(['prefix' => 'characters'], function(){
-    Route::get('/', 'CharacterController@index');
+Route::group(['prefix' => 'attributes'], function(){
+    Route::get('/', 'AttributeController@index');
 
     Route::group(['middleware' => 'auth:api'], function(){
-        Route::put('/{character}', 'CharacterController@update');
+        Route::put('/{attribute}', 'AttributeController@update');
     });
 });
