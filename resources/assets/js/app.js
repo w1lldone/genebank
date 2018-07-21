@@ -42,7 +42,10 @@ Vue.component(
     require('./components/passport/PersonalAccessTokens.vue')
 );
 
+import store from './store/index';
+
 const app = new Vue({
     el: '#app',
     router: Routes,
+    store,
 });

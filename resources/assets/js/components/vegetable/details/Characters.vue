@@ -63,7 +63,7 @@ export default {
         })
 
         try {
-            let response = await axios.put(`/api/vegetables/${this.id}/characters`, inputs)
+            let response = await axios.put(`/api/vegetables/${this.id}/attributes`, inputs)
             console.log(response.data.data)
             location.reload(); 
         } catch (error) {
