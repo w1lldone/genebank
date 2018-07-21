@@ -11,7 +11,7 @@
                     </div>
                     <div class="card-body">
                         <div v-if="loading">
-                            <h3>Please wait...</h3>
+                            <h3>Please...</h3>
                         </div>
                         <form @submit.prevent="submitForm()" v-else>
                             <div v-for="category in categories" class="mb-3">
