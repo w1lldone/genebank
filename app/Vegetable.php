@@ -22,6 +22,10 @@ class Vegetable extends Model
         return $this->belongsToMany('App\Attribute')->whereIn('category_id', $categories)->withPivot('value');
     }
 
+    /**
+     * Evaluations relatioship
+     * @return Relationship
+     */
     public function evaluations(){
         $categories = \App\Category::getEvaluationCharacters();
 

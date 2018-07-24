@@ -21,13 +21,11 @@ class VegetableObserver
 
         // Get array of characters name based related to genus name
         $fields = Genus::charactersList($vegetable->species->genus->name);
-
         // Get array of characters id
         $characters = Attribute::whereIn('name', $fields)->get()->pluck('id');
 
         // Get evaluation category ids
         $categories = Category::getEvaluationCharacters();
-
         // Get evaluation attribute id
         $evaluations = Attribute::whereIn('category_id', $categories)->pluck('id');
 
