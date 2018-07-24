@@ -3,9 +3,7 @@
         
               <sidebar></sidebar>
                 <div class="col text-center">
-                
-                <img src="static/img/img1.jpg" alt="">
-                <h1>Welcome to Genebank</h1>
+                <h1>Welcome to genebank</h1>
                 <router-link :to="{ name:'genus' }"> Go to Genus list </router-link>
             </div>
           
@@ -14,7 +12,6 @@
 </template>
 
 <script>
-
 export default {
 
   name: 'HomeBase',
@@ -22,7 +19,6 @@ export default {
   data () {
     return {
 
-    
     }
   }
 }
