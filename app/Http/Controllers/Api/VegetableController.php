@@ -16,7 +16,7 @@ class VegetableController extends Controller
 
     public function show(Vegetable $vegetable, Request $request)
     {
-        return new VegetablesResource($vegetable->load('characters', 'passport'));
+        return new VegetablesResource($vegetable->load('characters', 'passport', 'evaluations'));
     }
 
     public function store(Request $request)
