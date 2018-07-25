@@ -51578,7 +51578,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -51589,6 +51589,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -54009,7 +54010,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -54027,10 +54028,34 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Sidebar'
-});
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 /* 107 */
@@ -54042,21 +54067,64 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      staticClass: "nav flex-column nav-pills",
-      attrs: { "aria-orientation": "vertical" }
-    },
+    { class: { "nav-open": _vm.$sidebar.showSidebar } },
     [
-      _c(
-        "router-link",
-        { staticClass: "nav-link", attrs: { to: { name: "home" } } },
-        [_vm._v("Home")]
-      ),
+      _c("router-view"),
       _vm._v(" "),
       _c(
-        "router-link",
-        { staticClass: "nav-link", attrs: { to: { name: "vegetable" } } },
-        [_vm._v("Vegetable")]
+        "side-bar",
+        {
+          attrs: { type: "navbar", "sidebar-links": _vm.$sidebar.sidebarLinks }
+        },
+        [
+          _c(
+            "ul",
+            { staticClass: "nav navbar-nav" },
+            [
+              _c("li", [
+                _c(
+                  "a",
+                  {
+                    staticClass: "dropdown-toggle",
+                    attrs: { "data-toggle": "dropdown" }
+                  },
+                  [
+                    _c("i", { staticClass: "ti-panel" }),
+                    _vm._v(" "),
+                    _c("p", [_vm._v("Stats")])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "drop-down",
+                { attrs: { title: "5 Notifications", icon: "ti-bell" } },
+                [
+                  _c("li", [_c("a", [_vm._v("Notification 1")])]),
+                  _vm._v(" "),
+                  _c("li", [_c("a", [_vm._v("Notification 2")])]),
+                  _vm._v(" "),
+                  _c("li", [_c("a", [_vm._v("Notification 3")])]),
+                  _vm._v(" "),
+                  _c("li", [_c("a", [_vm._v("Notification 4")])]),
+                  _vm._v(" "),
+                  _c("li", [_c("a", [_vm._v("Another notification")])])
+                ]
+              ),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", [
+                  _c("i", { staticClass: "ti-settings" }),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Settings")])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "divider" })
+            ],
+            1
+          )
+        ]
       )
     ],
     1

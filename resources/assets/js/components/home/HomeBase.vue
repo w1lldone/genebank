@@ -1,15 +1,16 @@
 <template>
-    <div class="container">
+    <div class="container">            
         <div class="row">
             <div class="col-md-3">
-                <sidebar></sidebar>
+              <sidebar></sidebar>
             </div>
             <div class="col text-center">
                 <h1>Welcome to genebank</h1>
                 <router-link :to="{ name:'genus' }"> Go to Genus list </router-link>
             </div>
-        </div>
+         </div>  
     </div>
+
 </template>
 
 <script>

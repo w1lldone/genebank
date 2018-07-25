@@ -11,4 +11,127 @@
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  }
+
+#header .header_menu {
+    min-height: 80px;
+    border-bottom: 1px solid #3D3E3D;
+    z-index: 9999
+}
+#header .header_menu .navbar {
+    border: 0px solid transparent;
+}
+#header .header_menu .custom_navbar-brand {
+    padding-left: 0;
+}
+#header .header_menu .navbar-default {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+}
+#header .header_menu .navbar-default .navbar-nav>.active>a,
+#header .header_menu .navbar-default .navbar-nav>.active>a:focus,
+#header .header_menu .navbar-default .navbar-nav>.active>a:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+#header .header_menu .main_menu {
+    padding-top: 20px;
+}
+#header .header_menu ul.main_menu li a {
+    color: #393939;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    /*font-family: 'Roboto Slab', serif;*/
+}
+#header .header_menu ul.main_menu li a:hover {
+    color: #4DA91C;
+}
+#header .header_menu ul.main_menu li.active a {
+    color: #4DA91C;
+}
+#header .header_menu ul.main_menu li,
+#header .header_menu ul.main_menu li.active a {
+    display: inline-block;
+    position: relative;
+}
+#header .header_menu ul.main_menu li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+    margin-top: 6px;
+}
+#header .header_menu ul.main_menu li:hover:after,
+#header .header_menu ul.main_menu li.active:after {
+    width: 90%;
+    background: #4DA91C;
+}
+
+.menu {
+    float:right;
+    margin:0px auto;
+    display:inline-block;
+    
+ 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.menu li {
+    margin:0px;
+    font-color:#fffff;
+}
+.menu a {
+    transition:all linear 0.15s;
+    /*color:#919191;*/
+}
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+}
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    background:#ffffff;
+}
+.sub-menu li a:hover, .sub-menu .current-item a {
+    /*background:#3e3436;*/
 }
