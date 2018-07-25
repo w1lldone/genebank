@@ -21,10 +21,7 @@ Vue.component(
     'sidebar',
     require('./components/navigation/Sidebar.vue')
 );
-Vue.component(
-    'Slide',
-    require('./components/home/Slide.vue')
-);
+
 Vue.component(
     'ComponentBase',
     require('./components/ComponentBase.vue')

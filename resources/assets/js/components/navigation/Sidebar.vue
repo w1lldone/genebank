@@ -1,31 +1,38 @@
 <template>
-<div class="header_menu text-center">
-<nav class="navbar navbar-default">
-    <div class="menu navbar-collapse">
-    <ul class="nav navbar-nav main_menu clearfix">
-        <li><router-link :to="{ name:'home' }"><i class="ion-android-home"></i>Home</router-link></li>
-        <li><router-link :to="{ name:'vegetable' }">Vegetable</router-link></li>
-        <li><router-link :to="{ name:'search' }">Search</router-link>
-            <ul class="sub-menu">
-                <li><router-link :to="{ name:'search.passport' }">Passport</router-link></li>
-                <li><router-link :to="{ name:'search.char' }">Characterization</router-link></li>
-                <li><router-link :to="{ name:'search.eval' }">Evaluation</router-link></li>
-            </ul>
+<div :class="{'nav-open': $sidebar.showSidebar}">
+    <router-view></router-view>
+    <!--This sidebar appears only for screens smaller than 992px-->
+    <side-bar type="navbar" :sidebar-links="$sidebar.sidebarLinks">
+      <ul class="nav navbar-nav">
+        <li>
+          <a class="dropdown-toggle" data-toggle="dropdown">
+            <i class="ti-panel"></i>
+            <p>Stats</p>
+          </a>
         </li>
-        <li><router-link :to="{ name:'download' }">Download</router-link></li>
-        <li><router-link :to="{ name:'news' }">News</router-link></li>
-        <li><router-link :to="{ name:'gallery' }">Gallery</router-link></li>
-        <li><router-link :to="{ name:'terms' }">Terms of Use</router-link></li>
-        <li><router-link :to="{ name:'about' }">About Us</router-link></li>
-    </ul>
-    </div>
-    </nav>
-    </div>
+        <drop-down title="5 Notifications" icon="ti-bell">
 
+          <li><a>Notification 1</a></li>
+          <li><a>Notification 2</a></li>
+          <li><a>Notification 3</a></li>
+          <li><a>Notification 4</a></li>
+          <li><a>Another notification</a></li>
+
+        </drop-down>
+        <li>
+          <a>
+            <i class="ti-settings"></i>
+            <p>Settings</p>
+          </a>
+        </li>
+        <li class="divider"></li>
+      </ul>
+    </side-bar>
+  </div>
 </template>
 
 <script>
-
+export default {}
 </script>
 
 <style lang="css" scoped>

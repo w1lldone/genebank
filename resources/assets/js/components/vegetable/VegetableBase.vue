@@ -1,11 +1,13 @@
 <template>
     <div class="container">
-       
-            <sidebar></sidebar>
+        <div class="row">
+            <div class="col-md-3">
+                <sidebar></sidebar>
+            </div>
             <div class="col">
                 <vegetable-list-base></vegetable-list-base>
             </div>
-        
+        </div>
     </div>
 </template>
 
