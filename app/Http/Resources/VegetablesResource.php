@@ -24,6 +24,7 @@ class VegetablesResource extends JsonResource
             'created_at' => $this->created_at->toDateTimeString(),
             'updated_at' => $this->updated_at->toDateTimeString(),
             'characters' => AttributesResource::collection($this->whenLoaded('characters')),
+            'evaluations' => AttributesResource::collection($this->whenLoaded('evaluations')),
             'passport' => new PassportsResource($this->whenLoaded('passport')),
         ];
     }

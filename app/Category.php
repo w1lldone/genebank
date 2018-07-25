@@ -28,4 +28,12 @@ class Category extends Model
     {
         return static::where('parent_id', 1)->get()->pluck('id');
     }
+
+    public static function getEvaluationCharacters()
+    {
+        return static::whereHas('parent', function ($q)
+        {
+            $q->where('name', 'Evaluation');
+        })->pluck('id');
+    }
 }
