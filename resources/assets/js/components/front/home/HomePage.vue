@@ -1,5 +1,5 @@
 <template>
-    <home-base>
+    <front-base>
         <!--Start of slider section-->
         <section id="slider">
             <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
@@ -157,11 +157,11 @@
         </section>
         <!--End of footer-->
         
-    </home-base>
+    </front-base>
 </template>
 
 <script>
-import HomeBase from './HomeBase';
+import FrontBase from '../FrontBase';
 
 export default {
 
@@ -173,7 +173,7 @@ export default {
     }
   },
   components: {
-    HomeBase,
+    FrontBase,
   }
 }
 </script>

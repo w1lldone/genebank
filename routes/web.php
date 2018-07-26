@@ -19,3 +19,8 @@ Route::get('/', function ()
 {
     return view('index');
 });
+
+Route::get('/news', function ()
+{
+    return view('news.index');
+})->name('news.index');

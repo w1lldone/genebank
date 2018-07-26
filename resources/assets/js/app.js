@@ -28,6 +28,11 @@ Vue.component(
 );
 
 Vue.component(
+    'NewsList',
+    require('./components/front/news/NewsList.vue')
+);
+
+Vue.component(
     'ComponentBase',
     require('./components/ComponentBase.vue')
 );

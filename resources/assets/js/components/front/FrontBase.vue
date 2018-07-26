@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import Navbar from '../navigations/Navbar';
+import Navbar from './navigations/Navbar';
 
 export default {
 
-  name: 'HomeBase',
+  name: 'FrontBase',
 
   data () {
     return {
