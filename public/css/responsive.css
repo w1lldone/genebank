@@ -27,11 +27,11 @@
     #welcome .welcome_icon i {
         font-size: 45px;
     }
-    #event .event_item {
+    #gallery .gallery_item {
         width: 50%;
         float: left;
     }
-    #event .event_news {
+    #gallery .gallery_news {
         padding-top: 30px;
         width: 50%;
     }
@@ -45,7 +45,7 @@
     .carousel-indicators {
         bottom: 0px;
     }
-    #blog .blog_news {
+    #news .news_news {
         width: 60%;
         margin: 0 auto;
         margin-bottom: 20px;
@@ -304,52 +304,52 @@
         float: left;
         width: 100%;
     }
-    #event {
+    #gallery {
         padding-bottom: 20px;
     }
-    #event .event_header h2 {
+    #gallery .gallery_header h2 {
         font-size: 16px;
     }
-    #event .event_header {
+    #gallery .gallery_header {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    #event .event_header.text-center p {
+    #gallery .gallery_header.text-center p {
         font-size: 11px;
     }
-    #event .event_text h4 {
+    #gallery .gallery_text h4 {
         font-size: 14px;
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    #event .event_text {
+    #gallery .gallery_text {
         padding: 15px 30px 0;
     }
-    #event .event_text h6 {
+    #gallery .gallery_text h6 {
         font-size: 10px;
     }
-    #event .event_text p {
+    #gallery .gallery_text p {
         font-size: 12px;
         padding-bottom: 50px;
         padding-top: 10px;
     }
-    #event a.event_btn {
+    #gallery a.gallery_btn {
         font-size: 10px;
     }
-    #event .event_news {
+    #gallery .gallery_news {
         padding-top: 0px;
     }
-    #event .event_news {
+    #gallery .gallery_news {
         padding-bottom: 5px;
         float: left;
         padding-right: 1px;
     }
-    #event .event_news_text h4 {
+    #gallery .gallery_news_text h4 {
         font-size: 14px;
         padding-bottom: 10px;
         padding-top: 5px;
     }
-    #event .event_news_text p {
+    #gallery .gallery_news_text p {
         padding-top: 5px;
         font-size: 10px;
     }
@@ -388,45 +388,45 @@
         width: 8px;
         height: 8px;
     }
-    #blog .single_blog_item {
+    #news .single_news_item {
         margin: 8px 0;
     }
-    #blog .latest_blog {
+    #news .latest_news {
         padding-top: 20px;
     }
-    #blog .latest_blog h2 {
+    #news .latest_news h2 {
         font-size: 20px;
     }
-    #blog .latest_blog p {
+    #news .latest_news p {
         padding-bottom: 20px;
         font-size: 11px;
     }
-    #blog .blog_content h3 {
+    #news .news_content h3 {
         font-size: 16px;
     }
-    #blog span.clock {
+    #news span.clock {
         font-size: 10px;
     }
-    #blog .expert span.time {
+    #news .expert span.time {
         font-size: 10px;
     }
-    #blog .expert span.admin {
+    #news .expert span.admin {
         font-size: 10px;
     }
-    #blog .expert a {
+    #news .expert a {
         font-size: 10px;
     }
-    #blog .expert p.right_side {
+    #news .expert p.right_side {
         padding-left: 30px;
     }
-    #blog p.blog_news_content {
+    #news p.news_news_content {
         font-size: 12px;
     }
-    #blog .blog_news {
+    #news .news_news {
         width: 50%;
         margin: 0 auto;
     }
-    #blog a.blog_link {
+    #news a.news_link {
         font-size: 11px;
     }
     #purches {
@@ -707,45 +707,45 @@
         float: left;
         width: 100%;
     }
-    #event {
+    #gallery {
         padding-bottom: 20px;
     }
-    #event .event_header h2 {
+    #gallery .gallery_header h2 {
         font-size: 16px;
     }
-    #event .event_header {
+    #gallery .gallery_header {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    #event .event_header.text-center p {
+    #gallery .gallery_header.text-center p {
         font-size: 11px;
     }
-    #event .event_text h4 {
+    #gallery .gallery_text h4 {
         font-size: 14px;
     }
-    #event .event_text {
+    #gallery .gallery_text {
         padding: 15px 30px 0;
     }
-    #event .event_text h6 {
+    #gallery .gallery_text h6 {
         font-size: 10px;
     }
-    #event .event_text p {
+    #gallery .gallery_text p {
         font-size: 10px;
     }
-    #event a.event_btn {
+    #gallery a.gallery_btn {
         font-size: 10px;
     }
-    #event .event_news {
+    #gallery .gallery_news {
         padding-top: 10px;
     }
-    #event .event_news {
+    #gallery .gallery_news {
         padding-bottom: 5px;
         float: left;
     }
-    #event .event_news_text h4 {
+    #gallery .gallery_news_text h4 {
         font-size: 12px;
     }
-    #event .event_news_text p {
+    #gallery .gallery_news_text p {
         padding-top: 5px;
         font-size: 10px;
     }
@@ -798,45 +798,45 @@
         width: 8px;
         height: 8px;
     }
-    #blog .single_blog_item {
+    #news .single_news_item {
         margin: 8px 0;
     }
-    #blog .latest_blog {
+    #news .latest_news {
         padding-top: 20px;
     }
-    #blog .latest_blog h2 {
+    #news .latest_news h2 {
         font-size: 20px;
     }
-    #blog .latest_blog p {
+    #news .latest_news p {
         padding-bottom: 20px;
         font-size: 11px;
     }
-    #blog .blog_content h3 {
+    #news .news_content h3 {
         font-size: 16px;
     }
-    #blog span.clock {
+    #news span.clock {
         font-size: 10px;
     }
-    #blog .expert span.time {
+    #news .expert span.time {
         font-size: 10px;
     }
-    #blog .expert span.admin {
+    #news .expert span.admin {
         font-size: 10px;
     }
-    #blog .expert a {
+    #news .expert a {
         font-size: 10px;
     }
-    #blog .expert p.right_side {
+    #news .expert p.right_side {
         padding-left: 30px;
     }
-    #blog p.blog_news_content {
+    #news p.news_news_content {
         font-size: 12px;
     }
-    #blog .blog_news {
+    #news .news_news {
         width: 50%;
         margin: 0 auto;
     }
-    #blog a.blog_link {
+    #news a.news_link {
         font-size: 11px;
     }
     #purches h2.purches_title {
@@ -1097,7 +1097,7 @@
         float: left;
         width: 100%;
     }
-    #event {
+    #gallery {
         padding-bottom: 20px;
         padding-top: 15px;
     }
@@ -1108,41 +1108,41 @@
     .wel_header p {
         font-size: 13px;
     }
-    #event .event_header h2 {
+    #gallery .gallery_header h2 {
         font-size: 16px;
     }
-    #event .event_header {
+    #gallery .gallery_header {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    #event .event_header.text-center p {
+    #gallery .gallery_header.text-center p {
         font-size: 11px;
     }
-    #event .event_text h4 {
+    #gallery .gallery_text h4 {
         font-size: 14px;
     }
-    #event .event_text {
+    #gallery .gallery_text {
         padding: 15px 30px 0;
     }
-    #event .event_text h6 {
+    #gallery .gallery_text h6 {
         font-size: 10px;
     }
-    #event .event_text p {
+    #gallery .gallery_text p {
         font-size: 10px;
     }
-    #event a.event_btn {
+    #gallery a.gallery_btn {
         font-size: 10px;
     }
 
-    #event .event_news {
+    #gallery .gallery_news {
         width: 100%;
         padding-top: 10px;
         padding-bottom: 5px;
     }
-    #event .event_news_text h4 {
+    #gallery .gallery_news_text h4 {
         font-size: 12px;
     }
-    #event .event_news_text p {
+    #gallery .gallery_news_text p {
         padding-top: 5px;
         font-size: 10px;
     }
@@ -1181,45 +1181,45 @@
         width: 8px;
         height: 8px;
     }
-    #blog .single_blog_item {
+    #news .single_news_item {
         margin: 8px 0;
     }
-    #blog .latest_blog {
+    #news .latest_news {
         padding-top: 20px;
     }
-    #blog .latest_blog h2 {
+    #news .latest_news h2 {
         font-size: 20px;
     }
-    #blog .latest_blog p {
+    #news .latest_news p {
         padding-bottom: 20px;
         font-size: 11px;
     }
-    #blog .blog_content h3 {
+    #news .news_content h3 {
         font-size: 16px;
     }
-    #blog span.clock {
+    #news span.clock {
         font-size: 10px;
     }
-    #blog .expert span.time {
+    #news .expert span.time {
         font-size: 10px;
     }
-    #blog .expert span.admin {
+    #news .expert span.admin {
         font-size: 10px;
     }
-    #blog .expert a {
+    #news .expert a {
         font-size: 10px;
     }
-    #blog .expert p.right_side {
+    #news .expert p.right_side {
         padding-left: 30px;
     }
-    #blog p.blog_news_content {
+    #news p.news_news_content {
         font-size: 12px;
     }
-    #blog .blog_news {
+    #news .news_news {
         width: 100%;
         margin: 0 auto;
     }
-    #blog a.blog_link {
+    #news a.news_link {
         font-size: 11px;
     }
     #purches h2.purches_title {
@@ -1485,51 +1485,51 @@
     #counter .sigle_counter_item {
         padding-top: 15px;
     }
-    #event {
+    #gallery {
         padding: 25px 0px;
     }
-    #event .event_item img {
+    #gallery .gallery_item img {
         height: 370px;
     }
-    #event .event_header h2 {
+    #gallery .gallery_header h2 {
         font-size: 16px;
     }
-    #event .event_header {
+    #gallery .gallery_header {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    #event .event_header.text-center p {
+    #gallery .gallery_header.text-center p {
         font-size: 11px;
     }
-    #event .event_text h4 {
+    #gallery .gallery_text h4 {
         font-size: 10px;
     }
-    #event .event_text {
+    #gallery .gallery_text {
         padding: 15px 30px 0;
         height: 370px;
     }
-    #event .event_text h6 {
+    #gallery .gallery_text h6 {
         font-size: 10px;
     }
-    #event .event_text p {
+    #gallery .gallery_text p {
         font-size: 10px;
     }
-    #event a.event_btn {
+    #gallery a.gallery_btn {
         font-size: 8px;
     }
-    #event a.event_btn {
+    #gallery a.gallery_btn {
         padding: 7px 2px;
     }
-    #event .event_news {
+    #gallery .gallery_news {
         padding-top: 25px;
         width: 100%;
         padding-bottom: 5px;
     }
 
-    #event .event_news_text h4 {
+    #gallery .gallery_news_text h4 {
         font-size: 12px;
     }
-    #event .event_news_text p {
+    #gallery .gallery_news_text p {
         padding-top: 5px;
         font-size: 10px;
     }
@@ -1582,41 +1582,41 @@
         width: 8px;
         height: 8px;
     }
-    #blog .single_blog_item {
+    #news .single_news_item {
         margin: 8px 0;
     }
-    #blog .latest_blog {
+    #news .latest_news {
         padding-top: 20px;
     }
-    #blog .latest_blog h2 {
+    #news .latest_news h2 {
         font-size: 20px;
     }
-    #blog .latest_blog p {
+    #news .latest_news p {
         padding-bottom: 20px;
         font-size: 11px;
     }
-    #blog .blog_content h3 {
+    #news .news_content h3 {
         font-size: 16px;
     }
-    #blog span.clock {
+    #news span.clock {
         font-size: 10px;
     }
-    #blog .expert span.time {
+    #news .expert span.time {
         font-size: 10px;
     }
-    #blog .expert span.admin {
+    #news .expert span.admin {
         font-size: 10px;
     }
-    #blog .expert a {
+    #news .expert a {
         font-size: 10px;
     }
-    #blog .expert p.right_side {
+    #news .expert p.right_side {
         padding-left: 30px;
     }
-    #blog p.blog_news_content {
+    #news p.news_news_content {
         font-size: 12px;
     }
-    #blog a.blog_link {
+    #news a.news_link {
         font-size: 11px;
     }
     #purches h2.purches_title {
