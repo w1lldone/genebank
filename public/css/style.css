@@ -13,7 +13,7 @@ Version: 1.2
 4. Slider,
 5. Welcome,
 6. Volunteer,
-7. Portfolio,
+7. gall,
 8. Achivment,
 9. gallery,
 10. Testimonial,
@@ -475,14 +475,15 @@ input: -webkit-autofill:focus {
     /*font-family: 'Open Sans', sans-serif;*/
 }
 
-/*Portfolio*/
+/*gall*/
 
-#portfolio {
+#gall {
+    background: #eeeeee;
     min-height: 780px;
     padding: 80px 0;
 }
 
-#portfolio .portfolio_title h2 {
+#gall .gall_title h2 {
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
@@ -490,7 +491,7 @@ input: -webkit-autofill:focus {
     /*font-family: 'Roboto Slab', serif;*/
     color: #222222;
 }
-#portfolio .portfolio_title p {
+#gall .gall_title p {
     font-size: 16px;
     color: #393939;
     padding-bottom: 25px;
@@ -498,12 +499,12 @@ input: -webkit-autofill:focus {
     /*font-family: 'Open Sans', sans-serif;*/
 }
 
-/*Customise Portfolio*/
+/*Customise gall*/
 
-#portfolio ul.menu li button {
+#gall ul.menu li button {
     padding: 6px 15px;
 }
-#portfolio ul.portfolio_custom_menu li button {
+#gall ul.gall_custom_menu li button {
     background: #f6f6f6;
     border: 1px solid #e9e9e9;
     color: #726e6e;
@@ -516,19 +517,19 @@ input: -webkit-autofill:focus {
     border-radius: 4px;
     /*font-family: 'Roboto', sans-serif;*/
 }
-#portfolio ul.portfolio_custom_menu li {
+#gall ul.gall_custom_menu li {
     padding: 10px 0px;
 }
-#portfolio ul.portfolio_custom_menu li button:hover {
+#gall ul.gall_custom_menu li button:hover {
     background: #43a906;
     color: #fff;
 }
-#portfolio ul.portfolio_custom_menu li button.btn_active {
+#gall ul.gall_custom_menu li button.btn_active {
     background: #43a906;
     box-shadow: inset 0 1px 10px hsla(0, 0%, 100%, 0);
     color: #fff;
 }
-#portfolio .notes .note .img_overlay {
+#gall .notes .note .img_overlay {
     background: rgba(21, 21, 18, 0.92);
     z-index: 1;
     position: absolute;
@@ -540,7 +541,7 @@ input: -webkit-autofill:focus {
     opacity: 0;
     transition: 0.7s;
 }
-#portfolio .notes .note .img_overlay p {
+#gall .notes .note .img_overlay p {
     position: relative;
     top: 45%;
     opacity: 0;
@@ -549,8 +550,8 @@ input: -webkit-autofill:focus {
     /*font-family: 'Roboto Slab', serif;*/
     font-weight: 400;
 }
-#portfolio .notes .note:hover .img_overlay,
-#portfolio .notes .note:hover .img_overlay p {
+#gall .notes .note:hover .img_overlay,
+#gall .notes .note:hover .img_overlay p {
     opacity: 10;
 }
 
@@ -983,6 +984,111 @@ li.fw-flash-message {
     min-height: 300px;
 }
 
+/*search*/
+
+#search {
+    min-height: 650px;
+    background: #eeeeee;
+    padding: 80px 0;
+}
+
+.msg {
+    padding-top: 50px;
+}
+input#name,
+input#email {
+
+    margin-bottom: 10px !important;
+}
+
+.text_area textarea {
+    resize: none;
+    width: 555px;
+}
+.text_area textarea,
+.form-inline .form-control,
+input#name,
+input#email,
+input#subject{
+    border-radius: 0px;
+    margin-bottom: 20px;
+    border: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #d4d4d4;
+    font-style: italic;
+    color: #696969;
+    /*font-family: 'Open Sans', sans-serif;*/
+}
+li.fw-flash-message {
+    color: red;
+    font-size: 4rem;
+}
+.msg_title h5 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 20px;
+    /*font-family: 'Roboto Slab', serif;*/
+    color: #222222;
+}
+.custom-btn {
+    padding: 13px 82px;
+    background: #43a906;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 2px;
+    letter-spacing: 5px;
+    font-size: 14px;
+    /*font-family: 'Roboto Slab', serif;*/
+    outline: 0 !important;
+}
+.office {
+    padding-top: 50px
+}
+.office .title h5 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    /*font-family: 'Roboto Slab', serif;*/
+    color: #222222;
+}
+.office_location i span {
+    padding-left: 15px;
+    color: #696969;
+    font-size: 14px;
+    /*font-family: 'Open Sans', sans-serif;*/
+}
+.office_location i {
+    padding-bottom: 15px;
+}
+.office_location {
+    color: #696969;
+}
+.search_area h3 {
+    font-size: 36px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    /*font-family: 'Roboto Slab', serif;*/
+}
+.search_area p {
+    font-size: 16px;
+    color: #646464;
+    /*font-family: 'Open Sans', sans-serif;*/
+}
+#map {
+    width: 100%;
+    margin: 0;
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    min-height: 300px;
+}
+
+
 /*Footer*/
 
 #footer {
@@ -1255,3 +1361,4 @@ ul.entry-meta {
 .trans{
      background: rgb(76, 175, 80, 0.1);
 }
+

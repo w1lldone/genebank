@@ -17,10 +17,8 @@
                             <img src="img/img1.jpg" alt="...">
                             <div class="carousel-caption">
                                 <div class="slider_text">
-                                    <h3>Genetic Resources and Seed Unit</h3><br>
-                                    <!-- <h2>nature the environment</h2> -->
+                                    <h3>Genetic Resources & Seed Unit</h3><br>
                                     <p id="trans">Initially, AVRDC’s genebank collection only addressed specific needs of crop breeders. Gradually it grew into a multiple-use collection for research and development at the global level. The large number of vegetable species (438) now included in AVRDC’s genebank collection enables us not only to conserve, explore and utilize vegetable biodiversity, but also to contribute to the diversification of vegetable production systems and consumption patterns in the developing world.</p>
-                                    <!-- <a href="" class="custom_btn">Read  More</a> -->
                                 </div>
                             </div>
                         </div>
@@ -32,9 +30,7 @@
                             <div class="carousel-caption">
                                 <div class="slider_text">
                                     <h3>Keeping the collection safe</h3><br>
-                                    <!-- <h2>nature the environment</h2> -->
                                     <p id="trans">A new seed storage facility was completed in 2010 to provide a safe storage environment for AVRDC’s extensive germplasm collection. The floor of the facility has been substantially raised above ground to protect the collection from flooding and other natural disasters. The Center concluded a black-box arrangement for safety backup of its most valuable germplasm with the Nordic Genetic Resource Center in Norway and the genebank of the National Agrobiodiversity Center of the Rural Development Administration (RDA) in South Korea.</p>
-                                    <!-- <a href="" class="custom_btn">Read  More</a> -->
                                 </div>
                             </div>
                         </div>
@@ -46,9 +42,7 @@
                             <div class="carousel-caption">
                                 <div class="slider_text">
                                     <h3>Germplasm characterization</h3><br>
-                                    <!-- <h2>nature the environment</h2> -->
                                     <p id="trans">Germplasm characterization is the recording of characters or traits that are highly heritable or can be easily seen and are expressed in all environments. Characterization is a common responsibility of genebank curators; AVGRIS makes the easy and quick discrimination between accessions or phenotypes possible.</p>
-                                    <!-- <a href="" class="custom_btn">Read  More</a> -->
                                 </div>
                             </div>
                         </div>
@@ -68,7 +62,6 @@
                     <div class="col-md-12">
                         <div class="wel_header">
                             <h2 class="wow bounce" data-wow-delay="0.2s">welcome to genebank</h2><br>
-                            <!-- <h2>nature the environment</h2> -->
                             <p id="trans" class="wow fadeInUp" data-wow-delay="0.2s">The AVRDC Vegetable Genetic Resources Information System (AVGRIS) is an information system that manages the data of all vegetable germplasm conserved in the AVRDC genebank. The Genetic Resources and Seed Unit uses this system to efficiently manage genebank operations. AVGRIS links all germplasm conservation and management operations, from registration, characterization, evaluation and seed inventory to seed distribution to end-users.
                             AVGRIS provides the user direct access to germplasm data through the internet.
                             Use of the system is FREE but please first read the <span><a>terms of use.</a></span></p>

@@ -26,7 +26,10 @@ Vue.component(
     'HomePage',
     require('./components/front/home/HomePage.vue')
 );
-
+Vue.component(
+    'Char',
+    require('./components/front/search/char.vue')
+);
 Vue.component(
     'NewsList',
     require('./components/front/news/NewsList.vue')

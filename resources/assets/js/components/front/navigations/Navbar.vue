@@ -22,15 +22,15 @@
                                 <li><a href="/">Home</a></li>
                                 <li><a href="#">search</a>
                                     <ul class="sub-menu">
-                                        <li><a href="#">Passport</a></li>
-                                        <li><a href="#">Characterization</a></li>
-                                        <li><a href="#">Evaluation</a></li>
+                                        <li><a href="passport.html">Passport</a></li>
+                                        <li><a href="char.html">Characterization</a></li>
+                                        <li><a href="eval.html">Evaluation</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="/news">news</a></li>
-                                <li><a href="gallery.html">gallery</a></li>
-                                <li><a href="#portfolio">download</a></li>
-                                <li><a href="#event">terms of use</a></li>
+                                <li><a href="/gallery">gallery</a></li>
+                                <li><a href="/download">download</a></li>
+                                <li><a href="/terms">terms of use</a></li>
                                 <li><a href="about.html">about us</a></li>
                             </ul>
                             
