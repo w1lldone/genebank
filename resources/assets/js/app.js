@@ -23,6 +23,11 @@ Vue.component(
 );
 
 Vue.component(
+    'HomePage',
+    require('./components/front/home/HomePage.vue')
+);
+
+Vue.component(
     'ComponentBase',
     require('./components/ComponentBase.vue')
 );
@@ -46,6 +51,6 @@ import store from './store/index';
 
 const app = new Vue({
     el: '#app',
-    router: Routes,
+    // router: Routes,
     store,
 });

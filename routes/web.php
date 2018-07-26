@@ -11,16 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    $component = 'home-base';
-    return view('index', compact('component'));
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/{any}', function ($component)
+Route::get('/', function ()
 {
     return view('index');
-})->where('any', '.*');
+});
