@@ -19,7 +19,7 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse zero_mp menu " id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right main_menu clearfix">
-                                <li><a href="#header">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li><a href="#">search</a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Passport</a></li>
