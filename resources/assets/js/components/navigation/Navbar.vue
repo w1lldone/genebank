@@ -31,7 +31,7 @@
                                 <li><a href="/gallery">gallery</a></li>
                                 <li><a href="/download">download</a></li>
                                 <li><a href="/terms">terms of use</a></li>
-                                <li><a href="about.html">about us</a></li>
+                                <li><a href="/about">about us</a></li>
                             </ul>
                             
                         </div>

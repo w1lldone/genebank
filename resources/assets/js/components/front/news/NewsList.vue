@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="latest_news text-center">
-                            <h2>latest news</h2>
+                            <h2>news</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo cum libero vitae quos eaque commodi.</p>
                         </div>
                     </div>

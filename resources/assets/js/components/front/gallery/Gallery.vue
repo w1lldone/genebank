@@ -87,7 +87,7 @@ import FrontBase from '../FrontBase';
 
 export default {
 
-  name: 'Gallery',
+  name: 'gallery',
   data () {
     return {
     }

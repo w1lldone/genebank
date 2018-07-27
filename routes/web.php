@@ -24,3 +24,13 @@ Route::get('/news', function ()
 {
     return view('news.index');
 })->name('news.index');
+
+Route::get('/gallery', function ()
+{
+    return view('gallery.index');
+})->name('gallery.index');
+
+Route::get('/about', function ()
+{
+    return view('about.index');
+})->name('about.index');

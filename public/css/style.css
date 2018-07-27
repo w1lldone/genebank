@@ -119,7 +119,7 @@ p {
 }
 img {
     max-width: 100%;
-    height: auto;
+    /*height: auto;*/
 }
 html {
     height: 100%
@@ -768,14 +768,14 @@ section#counter {
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    /*font-family: 'Roboto Slab', serif;*/
+    font-family: 'Roboto Slab', serif;
     color: #222222;
 }
 #news .latest_news p {
     padding-bottom: 45px;
     font-size: 16px;
     color: #646464;
-    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
 }
 #news .single_news_item {
     border: 1px solid #d1d3d1;
@@ -789,7 +789,7 @@ section#counter {
     font-weight: 400;
     padding-bottom: 10px;
     color: #454444;
-    /*font-family: 'Roboto Slab', serif;*/
+    font-family: 'Roboto Slab', serif;
 }
 #news .expert {
     padding-bottom: 20px;
@@ -803,17 +803,17 @@ section#counter {
     padding-left: 5px;
     color: #aeadad;
     font-size: 13px;
-    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
 #news .news_gallery .news_img img {
-    height: 230px;
-    width: 100%;
+    height: 240px;
+    width: 300px;
 }
 #news .news_gallery span.right_msg span {
     font-size: 14px;
     color: #aeadad;
-    /*font-family: 'Roboto Slab', serif;*/
+    font-family: 'Roboto Slab', serif;
     font-weight: 400;
 }
 #news .expert a {
@@ -826,7 +826,7 @@ section#counter {
     color: #646464;
     font-size: 14px;
     padding-bottom: 15px;
-    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 #news a.news_link {
     text-transform: uppercase;
@@ -834,7 +834,7 @@ section#counter {
     color: #545353;
     transition: 0.7s;
     font-size: 14px;
-    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
 }
 #news a.news_link:hover {
     color: #43a906;

@@ -30,7 +30,7 @@
                             <div class="carousel-caption">
                                 <div class="slider_text">
                                     <h3>Keeping the collection safe</h3><br>
-                                    <p id="trans">A new seed storage facility was completed in 2010 to provide a safe storage environment for AVRDC’s extensive germplasm collection. The floor of the facility has been substantially raised above ground to protect the collection from flooding and other natural disasters. The Center concluded a black-box arrangement for safety backup of its most valuable germplasm with the Nordic Genetic Resource Center in Norway and the genebank of the National Agrobiodiversity Center of the Rural Development Administration (RDA) in South Korea.</p>
+                                    <p id="trans">A new seed storage facility was completed in 2010 to provide a safe storage environment for AVRDC’s extensive germplasm collection. The floor of the facility has been substantially raised above ground to protect the collection from flooding and other natural disasters. </p>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +133,7 @@
         </section>
         <!--end of welcome section-->
 
-         <!--Start of footer-->
+        <!--Start of footer-->
         <section id="footer">
             <div class="container">
                 <div class="row text-center">

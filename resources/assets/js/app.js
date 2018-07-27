@@ -31,6 +31,14 @@ Vue.component(
     require('./components/front/search/char.vue')
 );
 Vue.component(
+    'about',
+    require('./components/front/about/about.vue')
+);
+Vue.component(
+    'Gallery',
+    require('./components/front/gallery/Gallery.vue')
+);
+Vue.component(
     'NewsList',
     require('./components/front/news/NewsList.vue')
 );
