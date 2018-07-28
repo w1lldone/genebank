@@ -15,6 +15,7 @@ Information system for managing vegetable germplasm in UGM.
 # Credits
 ## Contributors
 - [@w1lldone](https://github.com/w1lldone)
+- [@rarapriska](https://github.com/rarapriska)
 
 ## Development
 - Built with [Laravel 5.6](https://laravel.com) PHP Framework

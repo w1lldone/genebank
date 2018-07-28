@@ -22,6 +22,16 @@ class Vegetable extends Model
         return $this->belongsToMany('App\Attribute')->whereIn('category_id', $categories)->withPivot('value');
     }
 
+    /**
+     * Evaluations relatioship
+     * @return Relationship
+     */
+    public function evaluations(){
+        $categories = \App\Category::getEvaluationCharacters();
+
+        return $this->belongsToMany('App\Attribute')->whereIn('category_id', $categories)->withPivot('value');
+    }
+
     public function passport(){
         return $this->hasOne('App\Passport');
     }
