@@ -112,16 +112,22 @@ h5{
     font-weight: bold;
     text-transform: uppercase;
 }
+h4{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 30px;
+}
 h1,
 h2,
 h3,
-h4,
 h6 {
     margin: 0;
     padding: 0;
     font-weight: normal;
 }
 p {
+    font-size: 15px;
     padding: 0;
     margin: 0;
 }
@@ -420,15 +426,6 @@ input: -webkit-autofill:focus {
     font-size: 50px;
     transition: .7s;
 }
-#welcome .item_list h4 {
-    padding: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
-    color: #393939;
-    transition: 0.7s;
-    /*font-family: 'Roboto Slab', serif;*/
-}
 #welcome .item_list p {
     font-size: 14px;
     color: #646464;
@@ -639,13 +636,7 @@ section#counter {
     padding: 30px 30px 0;
     width: 100%;
 }
-#gallery .gallery_text h4 {
-    font-size: 18px;
-    padding-bottom: 15px;
-    font-weight: 700;
-    color: #454444;
-    /*font-family: 'Roboto Slab', serif;*/
-}
+
 #gallery .gallery_text h6 {
     padding-bottom: 20px;
     font-size: 14px;
@@ -677,18 +668,6 @@ section#counter {
 .gallery_gallery_text {
     display: block;
     overflow: hidden;
-}
-.gallery_gallery_text h4 {
-    color: #454444;
-    font-size: 18px;
-    /*font-family: 'Roboto Slab', serif;*/
-    font-weight: 700;
-}
-#gallery .gallery_gallery_text p {
-    padding-top: 10px;
-    font-size: 14px;
-    color: #646464;
-    /*font-family: 'Open Sans', sans-serif;*/
 }
 #gallery .gallery_gallery_img {
     padding-right: 10px;
@@ -788,12 +767,7 @@ section#counter {
     background: #eeeeee;
     padding: 0px 80px 0px 80px;
 }
-#char h4{
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 30px;
-    font-size: 25px;
-}
+
 #char p{
     font-size:14px;
 }
@@ -894,27 +868,21 @@ li.fw-flash-message {
 /*passport*/
 #passport {
     min-height:1500px;
-    background: #eeeeee;
+    background: #eeee;
     padding: 0px 80px 0px 80px;
-}
-#passport h4{
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 30px;
-    font-size: 25px;
 }
 #passport p{
     font-size:14px;
 }
 table{
   width:100%;
-  table-layout: fixed;
+  /*table-layout: fixed;*/
   border-collapse: collapse;
   font-family: 'Roboto', sans-serif;
 }
 
 .tbl-content{
-  height:300px;
+  /*height:300px;*/
   overflow-x:auto;
   margin-top: 0px;
   border: 1px solid rgba(255,255,255,0.3);
@@ -945,10 +913,37 @@ td{
   background-color: #fff;
   border-bottom: solid 1px rgba(255,255,255,0.1);
 }
+#passportTable{
+    display: none;
+}
 
 tr:nth-child(even) {background-color: #f2f2f2;}
 
+/*eval*/
+#eval {
+    min-height:1500px;
+    background: #eeeeee;
+    padding: 0px 80px 0px 80px;
+}
 
+#eval p{
+    font-size:14px;
+}
+#evalTable{
+    display: none;
+}
+#eval .form-inline .form-control{
+    width:500px;
+    border-radius: 0px;
+    margin-right: 350px;
+    margin-bottom: 20px;
+    border: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #fff;
+    color: #696969;
+    font-family: 'Open Sans', sans-serif;
+}
 /* demo styles */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
@@ -969,12 +964,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     background: #eeeeee;
     padding: 0px 60px 0px 60px;
 }
-#passportDetail h4{
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 30px;
-    font-size: 25px;
-}
 #passportDetail p{
     font-size:14px;
 }
@@ -984,7 +973,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 #passportDetail .form-inline .form-control{
     width:500px;
     border-radius: 0px;
-    margin-right: 240px;
+    margin-right: 350px;
     margin-bottom: 20px;
     border: 0px;
     -webkit-box-shadow: none;
