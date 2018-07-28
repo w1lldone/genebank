@@ -60,6 +60,7 @@ font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
+
 .alignleft {
     float: left;
     margin-right: 15px
@@ -103,6 +104,9 @@ a:visited,
 a:hover {
     text-decoration: none !important;
 }
+input{
+    text-transform: bold;
+}
 h1,
 h2,
 h3,
@@ -126,6 +130,7 @@ html {
 }
 body {
     font-family: 'Raleway', sans-serif;
+
 }
 
 /*Remove chrome Input Field’s Unwanted Yellow Background Color*/
@@ -685,35 +690,6 @@ section#counter {
     padding-right: 10px;
 }
 
-/*Testimonial*/
-
-#testimonial {
-    color: #fff;
-    background: url(../img/img3.jpg) no-repeat scroll top center / cover;
-}
-.testimonial_overlay {
-    padding: 80px 0;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.53);
-}
-#testimonial .testimonial_header {
-}
-#testimonial .testimonial_header h2 {
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    /*font-family: 'Roboto Slab', serif;*/
-    color: #fff;
-}
-#testimonial .testimonial_header p {
-    font-size: 16px;
-    color: #fff;
-    /*font-family: 'Open Sans', sans-serif;*/
-}
-
 /*Latest news*/
 
 #news {
@@ -802,12 +778,20 @@ section#counter {
     color: #43a906;
 }
 
-/*search*/
-
-#search {
+/*char*/
+#char {
     min-height:1500px;
     background: #eeeeee;
     padding: 0px 80px 0px 80px;
+}
+#char h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+}
+#char p{
+    font-size:14px;
 }
 input#name,
 input#variant,
@@ -834,29 +818,174 @@ input#country{
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-#search .item{
-    border: 1px solid #d1d3d1;
-}
-.text_area textarea {
-    resize: none;
-    width: 555px;
-}
-.text_area textarea,
-#button .form-inline .form-control {
-    width:600px;
+#char .form-inline .form-control{
+    width:500px;
     border-radius: 0px;
+    margin-right: 355px;
     margin-bottom: 20px;
-    margin-right: 300px; 
     border: 0px;
     -webkit-box-shadow: none;
     box-shadow: none;
     background: #fff;
     color: #696969;
-    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+}
+#char .item{
+    border: 1px solid #d1d3d1;
+}
+#alphabet{
+    background-color: #abebc6;
+    color:#1d8348;
+    font-size: 14px;
+    padding: 5px 8px;
+    font-weight: bold;
+}
+#items{
+    padding: 5px 8px;
+}
+.card {
+  border: 2px solid #16a085;    
+  border-radius: 10px;           
+  overflow: hidden;             
+  display: flex;                
+  flex-direction: column;       
+  margin-bottom: 20px;
+}
+.card-header {
+  color: #D32F2F;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px solid #abebc6;
+  background-color: #abebc6;
+  padding: 5px 10px;
+}
+.card-main {
+  display: flex;              
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center;        
+  padding: 15px 0;            
+}
+#char img{
+    height: 140px;
+    width:90%;
+}
+
+#char .detail img{
+    height: auto;
+    width:500px;
+}
+#char h5{
+    font-size: 16px;
+    background-color: #abebc6;
+    padding: 5px 10px;
+    margin-bottom: 10px;
 }
 li.fw-flash-message {
     color: red;
     font-size: 4rem;
+}
+/*passport*/
+#passport {
+    min-height:1500px;
+    background: #eeeeee;
+    padding: 0px 80px 0px 80px;
+}
+#passport h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+}
+#passport p{
+    font-size:14px;
+}
+#passport table{
+  width:100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-family: 'Roboto', sans-serif;
+}
+
+#passport .tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+#passport .tbl-content input{
+    background-color: #73c6b6;
+    padding: 5px 30px;
+    font-size: 16px;
+    color:#fff;
+}
+#passport th{
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+}
+#passport td{
+  padding: 15px;
+  text-align: center;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 13px;
+  background-color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+/* demo styles */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+/* for custom scrollbar for webkit browser*/
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+/*Passport Detail*/
+#passportDetail {
+    min-height:1500px;
+    background: #eeeeee;
+    padding: 0px 60px 0px 60px;
+}
+#passportDetail h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+}
+#passportDetail p{
+    font-size:14px;
+}
+#passportDetail form{
+    text-transform: uppercase;
+}
+#passportDetail .form-inline .form-control{
+    width:500px;
+    border-radius: 0px;
+    margin-right: 240px;
+    margin-bottom: 20px;
+    border: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #fff;
+    color: #696969;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*Footer*/
@@ -1053,11 +1182,11 @@ ul.entry-meta {
     padding-left: 10px;
     margin-top: 10px;
 }
-.widget_search .search-form input[type="submit"], .widget_search input[type="submit"] {
+.widget_char .char-form input[type="submit"], .widget_char input[type="submit"] {
     /*font-family: 'Roboto Slab', serif;*/
     font-weight: 700;
 }
-.widget_search .search-form input[type="search"], .widget_search input[type="search"] {
+.widget_char .char-form input[type="char"], .widget_char input[type="char"] {
     padding: 0 40px;
 }
 .main-content.news-w.rap,.main-content.container.news-wrap.single-news {
@@ -1130,52 +1259,4 @@ ul.entry-meta {
 }
 .trans{
      background: rgb(76, 175, 80, 0.1);
-}
-#alphabet{
-    background-color: #abebc6;
-    color:#1d8348;
-    font-size: 14px;
-    padding: 5px 8px;
-    font-weight: bold;
-}
-#items{
-    padding: 5px 8px;
-}
-.card {
-  border: 2px solid #16a085;    
-  border-radius: 10px;           
-  overflow: hidden;             
-  display: flex;                
-  flex-direction: column;       
-  margin-bottom: 20px;
-}
-.card-header {
-  color: #D32F2F;
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  border-bottom: 2px solid #abebc6;
-  background-color: #abebc6;
-  padding: 5px 10px;
-}
-.card-main {
-  display: flex;              
-  flex-direction: column;     
-  justify-content: center;    
-  align-items: center;        
-  padding: 15px 0;            
-}
-#search img{
-    height: 140px;
-    width:90%;
-}
-
-#search .detail img{
-    height: auto;
-    width:500px;
-}
-#search h4{
-    background-color: #abebc6;
-    padding: 5px 10px;
-    margin-bottom: 10px;
 }
