@@ -1,5 +1,5 @@
 <template>
-    <div class="news_news">
+    <div class="news_news" id="news">
         <div class="single_news_item">
             <div class="news_img">
                 <img :src="image" :alt="title">

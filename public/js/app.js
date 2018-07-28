@@ -39828,7 +39828,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "news_news" }, [
+  return _c("div", { staticClass: "news_news", attrs: { id: "news" } }, [
     _c("div", { staticClass: "single_news_item" }, [
       _c("div", { staticClass: "news_img" }, [
         _c("img", { attrs: { src: _vm.image, alt: _vm.title } })

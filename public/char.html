@@ -53,7 +53,7 @@
 
                         <div class="collapse navbar-collapse zero_mp menu " id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right main_menu clearfix">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li><a href="#">search</a>
                                     <ul class="sub-menu">
                                         <li><a href="passport.html">Passport</a></li>
@@ -61,7 +61,7 @@
                                         <li><a href="eval.html">Evaluation</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="news.html">news</a></li>
+                                <li><a href="/news">news</a></li>
                                 <li><a href="gallery.html">gallery</a></li>
                                 <li><a href="download.html">download</a></li>
                                 <li><a href="terms.html">terms of use</a></li>
@@ -75,44 +75,56 @@
     </section><!--End of Hedaer Section-->
 
     <section id="search">
-      <div class="container">                
-        <div class="col-md-6">
+      <div class="container ">                
           <div class="msg">
-            <div class="msg_title">
+            <div class="msg_title col-md-12">
               <h5><b>Characterization</b></h5>
-            </div><br>
-            <div class="form_area">
-              <!-- search FORM -->
-              <div class="search-form wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-                <div id="message"></div>
-                <form action="scripts/search.php" class="form-horizontal search-1" role="form" name="searchform" id="searchform">
-                  <div class="form-group">
-                    <div class="col-sm-6">
-                      <label for="name">Name</label>
-                      <input type="text" class="form-control" name="namee" id="name">
-                    </div>
-                    <div class="col-sm-6">
-                      <label for="name">Genus</label>
-                      <input type="text" class="form-control" name="genus" id="genus">
-                    </div>
+              <br>
+              <p>Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. </p><br><br>
+            </div>            
+            <div class="col-md-19">
+                <div class="card col-md-3">
+                  <div class="card-header"><a href="CharDetail.html">Capsicum</a></div>
+                  <div class="card-main">
+                    <img src="img/char/capsicum.jpg" alt="">
                   </div>
-                  <div class="form-group">
-                    <div class="col-sm-12">
-                      <label for="name">Description</label>
-                 
-                      <div class="text_area">
-                        <textarea name="descc" id="desc" class="form-control" cols="30" rows="8"></textarea>
-                      </div>
-                      <button type="submit" class="btn custom-btn" data-loading-text="Loading...">Send</button>
-                    </div>
+                </div>
+                <div class="card col-md-3">
+                  <div class="card-header">Cucumis</div>
+                  <div class="card-main">
+                    <img src="img/char/cucumis.jpg" alt="">
                   </div>
-                </form>
-              </div>
-            </div>
+                </div>
+                <div class="card col-md-3">
+                  <div class="card-header">Solanum</div>
+                  <div class="card-main">
+                    <img src="img/char/solanum.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="card col-md-3">
+                  <div class="card-header">Vigna</div>
+                  <div class="card-main">
+                    <img src="img/char/vigna.jpg" alt="">
+                  </div>
+                </div>
           </div>
-        </div><!--End of col-md-6-->
+        </div>
       </div><!--End of container-->
     </section><!--End of search-->
+
+     <!--Start of footer-->
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <div class="copyright" style="text-align:center">
+                        <p >@ 2018 - Copyright <span><a href="">Smart System Research Group</a></span>, Universitas Gadjah Mada</p>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </section>
+    <!--End of footer-->
 
     <script src="js/jquery-1.12.3.min.js"></script>
     <!--Counter UP-->

@@ -1,0 +1,209 @@
+<style type="text/css">
+.thumbnail{
+    width: 90%;
+}
+</style>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Genebank</title>
+
+    <!--    Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!--Fontawesom-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!--Animated CSS-->
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Bootstrap Carousel-->
+    <link type="text/css" rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/isotope/style.css">
+
+    <!--Main Stylesheet-->
+    <link href="css/style.css" rel="stylesheet">
+    <!--Responsive Framework-->
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#header">
+    <!--Start Hedaer Section-->
+    <section id="header">
+        <div class="header-area">
+            <div class="header_menu text-center" data-spy="affix" data-offset-top="50" id="nav">
+                <div class="container">
+                    <nav class="navbar navbar-default zero_mp ">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand custom_navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <!--End of navbar-header-->
+
+                        <div class="collapse navbar-collapse zero_mp menu " id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right main_menu clearfix">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="#">search</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="passport.html">Passport</a></li>
+                                        <li class="active"><a href="char.html">Characterization<span class="sr-only">(current)</span></a></li>
+                                        <li><a href="eval.html">Evaluation</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/news">news</a></li>
+                                <li><a href="gallery.html">gallery</a></li>
+                                <li><a href="download.html">download</a></li>
+                                <li><a href="terms.html">terms of use</a></li>
+                                <li><a href="about.html">about us</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav><!--End of nav-->
+                </div><!--End of container-->
+            </div><!--End of header menu-->
+        </div><!--end of header area-->
+    </section><!--End of Hedaer Section-->
+
+    <section id="search">
+      <div class="container col-md-12">                
+          <div class="msg">
+            <div class="msg_title">
+                <h5><b>Characterization</b></h5>
+                <br>
+                <p>Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. </p><br><br>
+            </div>
+            <h4 class="col-md-2"><b>Capsicum</b></h4>
+            <br><br>
+            <div class="detail">
+                <div class="col-md-6">
+                    <img src="img/char/capsicum.jpg">
+                </div>
+                <div id="list">
+                    <form action="" class="form-horizontal" role="form" name="list" id="list">
+                        <div class="form-group form-inline" align="right">
+                            <div class="col-sm-6">
+                                <label>Vegetable introduction number</label>
+                                <input type="text" class="form-control" name="name" id="name"><br>
+                                <label>Variant &emsp;</label>
+                                <input type="text" class="form-control" name="variant" id="variant"><br>
+                                <label>Species &emsp;</label>
+                                <input type="text" class="form-control" name="species" id="species"><br>
+                                <label>Country &emsp;</label>
+                                <input type="text" class="form-control" name="country" id="country">
+                                
+                                <!-- <button type="submit" class="btn custom-btn" data-loading-text="Loading...">Send</button> -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="button">
+                    <button class="col-sm-12" align:"left" onclick="Seedling()">seedling data</button>
+                    <form action="" class="form-horizontal" role="form" name="seedling" id="seedling">
+                        <div class="form-group form-inline" align="right">
+                            <div class="col-sm-12" >
+                                <label>Germination period &emsp;</label>
+                                <input type="text" class="form-control" name="period" id="period"><br>
+                                <label>Hypocotyl color &emsp;</label>
+                                <input type="text" class="form-control" name="hypo_color" id="dypo_color"><br>
+                                <label>Cotyledon color &emsp;</label>
+                                <input type="text" class="form-control" name="cot_color" id="cot_color"><br>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="col-sm-12" align:"left" onclick="Vegetative()">vegetative data</button>
+                    <form action="" class="form-horizontal" role="form" name="vegetative" id="vegetative">
+                        <div class="form-group form-inline" align="right">
+                            <div class="col-sm-12" >
+                                <label>Plant grow habit &emsp;</label>
+                                <input type="text" class="form-control" name="period" id="period"><br>
+                                <label>Plan height &emsp;</label>
+                                <input type="text" class="form-control" name="hypo_color" id="dypo_color"><br>
+                                <label>Number of internodes &emsp;</label>
+                                <input type="text" class="form-control" name="cot_color" id="cot_color"><br>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="col-sm-12" align:"left" onclick="Inflorescence()">inflorescence data</button>
+                    <form action="" class="form-horizontal" role="form" name="inflorescence" id="inflorescence">
+                        <div class="form-group form-inline" align="right">
+                            <div class="col-sm-12" >
+                                <label>Flowering date &emsp;</label>
+                                <input type="text" class="form-control" name="period" id="period"><br>
+                                <label>Number of nodes to first flower &emsp;</label>
+                                <input type="text" class="form-control" name="hypo_color" id="dypo_color"><br>
+                                <label>Corolla color &emsp;</label>
+                                <input type="text" class="form-control" name="cot_color" id="cot_color"><br>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div><!--End of container-->
+    </section><!--End of search-->
+
+    <script>
+        function Seedling() {
+            var x = document.getElementById("seedling");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }}
+        function Vegetative() {
+            var x = document.getElementById("vegetative");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }}
+        function Inflorescence() {
+            var x = document.getElementById("inflorescence");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }}
+    </script>
+     <!--Start of footer-->
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <div class="copyright" style="text-align:center">
+                        <p >@ 2018 - Copyright <span><a href="">Smart System Research Group</a></span>, Universitas Gadjah Mada</p>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </section>
+    <!--End of footer-->
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <!--Counter UP-->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!--JQuery Click to Scroll down with Menu-->
+    <script src="js/jquery.localScroll.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <!--WOW With Animation-->
+    <script src="js/wow.min.js"></script>
+    <!--WOW Activated-->
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript-->
+    <script src="js/main.js"></script>
+</body>
+</html>
