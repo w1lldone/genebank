@@ -11,16 +11,30 @@
 |
 */
 
-Route::get('/', function () {
-    $component = 'home-base';
-    return view('index', compact('component'));
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/{any}', function ($component)
+Route::get('/', function ()
 {
     return view('index');
-})->where('any', '.*');
+});
+
+Route::get('/news', function ()
+{
+    return view('news.index');
+})->name('news.index');
+
+Route::get('/gallery', function ()
+{
+    return view('gallery.index');
+})->name('gallery.index');
+
+Route::get('/about', function ()
+{
+    return view('about.index');
+})->name('about.index');
+
+Route::group(['prefix' => 'search'], function(){
+    Route::get('/passport', 'Front\PassportController@index')->name('passport.index');
+});

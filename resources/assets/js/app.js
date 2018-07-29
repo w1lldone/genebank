@@ -9,6 +9,19 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+Vue.mixin({
+    computed: {
+        env: function () {
+            return window.env
+        }
+    },
+    methods: {
+        url(string) {
+            return this.env.baseUrl + string
+        }
+    }
+});
+
 import Routes from './routes';
 
 /**
@@ -20,6 +33,36 @@ import Routes from './routes';
 Vue.component(
     'sidebar',
     require('./components/navigation/Sidebar.vue')
+);
+
+Vue.component(
+    'HomePage',
+    require('./components/front/home/HomePage.vue')
+);
+
+Vue.component(
+    'Char',
+    require('./components/front/search/char.vue')
+);
+
+Vue.component(
+    'about',
+    require('./components/front/about/about.vue')
+);
+
+Vue.component(
+    'Gallery',
+    require('./components/front/gallery/Gallery.vue')
+);
+
+Vue.component(
+    'NewsList',
+    require('./components/front/news/NewsList.vue')
+);
+
+Vue.component(
+    'PassportList',
+    require('./components/front/passport/PassportList.vue')
 );
 
 Vue.component(
@@ -46,6 +89,6 @@ import store from './store/index';
 
 const app = new Vue({
     el: '#app',
-    router: Routes,
+    // router: Routes,
     store,
 });

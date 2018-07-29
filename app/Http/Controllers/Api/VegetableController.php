@@ -9,9 +9,15 @@ use Illuminate\Http\Request;
 
 class VegetableController extends Controller
 {
-    public function index(Request $request)
+    public function index(Request $request, Vegetable $vegetable)
     {
-        return VegetablesResource::collection(Vegetable::all());
+        if ($request->has('load')) {
+            $vegetable = $vegetable->with($request->load);
+        }
+
+        $vegetables = $vegetable->get();
+
+        return VegetablesResource::collection($vegetables);
     }
 
     public function show(Vegetable $vegetable, Request $request)

@@ -8,71 +8,85 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     {{-- <meta name="api_token" content="{{ env('API_TOKEN_DEVELOPMENT') }}"> --}}
+    <!--Fontawesom-->
+    <link rel="stylesheet" href={{ url("css/font-awesome.min.css") }}>
 
+    <!--Animated CSS-->
+    <link rel="stylesheet" type="text/css" href={{ url("css/animate.min.css") }}>
+
+    <!-- Bootstrap -->
+    <link href={{ url("css/bootstrap.min.css") }} rel="stylesheet">
+    <!--Bootstrap Carousel-->
+    <link type="text/css" rel="stylesheet" href={{ url("css/carousel.css") }} />
+
+    <link rel="stylesheet" href={{ url("css/isotope/style.css") }}>
+
+    <!--Main Stylesheet-->
+    <link href={{ url("css/style.css") }} rel="stylesheet">
+    <!--Responsive Framework-->
+    <link href={{ url("css/responsive.css") }} rel="stylesheet">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <script type="text/javascript">
         window.env = {
             apiToken: '{{ env('API_TOKEN_DEVELOPMENT') }}',
-            baseUrl: '{{ env('APP_BASE_URL') }}',
+            baseUrl: '{{ env('APP_URL') }}',
         }
     </script>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    @yield('script')
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
 </head>
-<body>
+<body data-spy="scroll" data-target="#header">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
+        @yield('navigation')
+        @yield('content')
     </div>
+    <script src={{ url("js/jquery-1.12.3.min.js") }}></script>
+
+    <!--Counter UP Waypoint-->
+    <script src={{ url("js/waypoints.min.js") }}></script>
+    <!--Counter UP-->
+    <script src={{ url("js/jquery.counterup.min.js") }}></script>
+
+    <script>
+        //for counter up
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    </script>
+
+
+    <!--Isotope-->
+    <script src={{ url("js/isotope/min/scripts-min.js") }}></script>
+    <script src={{ url("js/isotope/cells-by-row.js") }}></script>
+    <script src={{ url("js/isotope/isotope.pkgd.min.js") }}></script>
+    <script src={{ url("js/isotope/packery-mode.pkgd.min.js") }}></script>
+    <script src={{ url("js/isotope/scripts.js") }}></script>
+
+
+    <!--Back To Top-->
+    <script src={{ url("js/backtotop.js") }}></script>
+
+
+    <!--JQuery Click to Scroll down with Menu-->
+    <script src={{ url("js/jquery.localScroll.min.js") }}></script>
+    <script src={{ url("js/jquery.scrollTo.min.js") }}></script>
+    <!--WOW With Animation-->
+    <script src={{ url("js/wow.min.js") }}></script>
+    <!--WOW Activated-->
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src={{ url("js/bootstrap.min.js") }}></script>
+    <!-- Custom JavaScript-->
+    <script src={{ url("js/main.js") }}></script>
 </body>
 </html>
