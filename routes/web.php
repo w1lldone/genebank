@@ -34,3 +34,7 @@ Route::get('/about', function ()
 {
     return view('about.index');
 })->name('about.index');
+
+Route::group(['prefix' => 'search'], function(){
+    Route::get('/passport', 'Front\PassportController@index')->name('passport.index');
+});

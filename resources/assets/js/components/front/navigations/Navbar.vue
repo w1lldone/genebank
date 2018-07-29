@@ -12,26 +12,26 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand custom_navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                            <a class="navbar-brand custom_navbar-brand" :href="env.baseUrl"><img :src="url('/img/logo.png')" alt=""></a>
                         </div>
                         <!--End of navbar-header-->
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse zero_mp menu " id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right main_menu clearfix">
-                                <li><a href="/">Home</a></li>
+                                <li><a :href="url('')">Home</a></li>
                                 <li><a href="#">search</a>
                                     <ul class="sub-menu">
-                                        <li><a href="passport.html">Passport</a></li>
-                                        <li><a href="char.html">Characterization</a></li>
-                                        <li><a href="eval.html">Evaluation</a></li>
+                                        <li><a :href="url('/search/passport')">Passport</a></li>
+                                        <li><a :href="url('char.html')">Characterization</a></li>
+                                        <li><a :href="url('eval.html')">Evaluation</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="/news">news</a></li>
-                                <li><a href="/gallery">gallery</a></li>
-                                <li><a href="/download">download</a></li>
-                                <li><a href="/terms">terms of use</a></li>
-                                <li><a href="/about">about us</a></li>
+                                <li><a :href="url('/news')">news</a></li>
+                                <li><a :href="url('/gallery')">gallery</a></li>
+                                <li><a :href="url('/download')">download</a></li>
+                                <li><a :href="url('/terms')">terms of use</a></li>
+                                <li><a :href="url('/about')">about us</a></li>
                             </ul>
                             
                         </div>
