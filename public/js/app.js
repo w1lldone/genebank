@@ -90,6 +90,14 @@ __webpack_require__(21);
 
 window.Vue = __webpack_require__(14);
 
+Vue.mixin({
+    computed: {
+        env: function env() {
+            return window.env;
+        }
+    }
+});
+
 
 
 /**
@@ -37885,140 +37893,127 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("section", { attrs: { id: "header" } }, [
+    _c("div", { staticClass: "header-area" }, [
+      _c(
+        "div",
+        {
+          staticClass: "header_menu text-center",
+          attrs: { "data-spy": "affix", "data-offset-top": "50", id: "nav" }
+        },
+        [
+          _c("div", { staticClass: "container" }, [
+            _c("nav", { staticClass: "navbar navbar-default zero_mp " }, [
+              _c("div", { staticClass: "navbar-header" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "navbar-brand custom_navbar-brand",
+                    attrs: { href: _vm.env.baseUrl }
+                  },
+                  [_c("img", { attrs: { src: "/img/logo.png", alt: "" } })]
+                )
+              ]),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
+          ])
+        ]
+      )
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", { attrs: { id: "header" } }, [
-      _c("div", { staticClass: "header-area" }, [
+    return _c(
+      "button",
+      {
+        staticClass: "navbar-toggle collapsed",
+        attrs: {
+          type: "button",
+          "data-toggle": "collapse",
+          "data-target": "#bs-example-navbar-collapse-1",
+          "aria-expanded": "false"
+        }
+      },
+      [
+        _c("span", { staticClass: "sr-only" }, [_vm._v("Toggle navigation")]),
+        _vm._v(" "),
+        _c("span", { staticClass: "icon-bar" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "icon-bar" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "icon-bar" })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "collapse navbar-collapse zero_mp menu ",
+        attrs: { id: "bs-example-navbar-collapse-1" }
+      },
+      [
         _c(
-          "div",
-          {
-            staticClass: "header_menu text-center",
-            attrs: { "data-spy": "affix", "data-offset-top": "50", id: "nav" }
-          },
+          "ul",
+          { staticClass: "nav navbar-nav navbar-right main_menu clearfix" },
           [
-            _c("div", { staticClass: "container" }, [
-              _c("nav", { staticClass: "navbar navbar-default zero_mp " }, [
-                _c("div", { staticClass: "navbar-header" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "navbar-toggle collapsed",
-                      attrs: {
-                        type: "button",
-                        "data-toggle": "collapse",
-                        "data-target": "#bs-example-navbar-collapse-1",
-                        "aria-expanded": "false"
-                      }
-                    },
-                    [
-                      _c("span", { staticClass: "sr-only" }, [
-                        _vm._v("Toggle navigation")
-                      ]),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "icon-bar" }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "icon-bar" }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "icon-bar" })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "navbar-brand custom_navbar-brand",
-                      attrs: { href: "#" }
-                    },
-                    [_c("img", { attrs: { src: "img/logo.png", alt: "" } })]
-                  )
+            _c("li", [_c("a", { attrs: { href: "/" } }, [_vm._v("Home")])]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "#" } }, [_vm._v("search")]),
+              _vm._v(" "),
+              _c("ul", { staticClass: "sub-menu" }, [
+                _c("li", [
+                  _c("a", { attrs: { href: "/search/passport" } }, [
+                    _vm._v("Passport")
+                  ])
                 ]),
                 _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "collapse navbar-collapse zero_mp menu ",
-                    attrs: { id: "bs-example-navbar-collapse-1" }
-                  },
-                  [
-                    _c(
-                      "ul",
-                      {
-                        staticClass:
-                          "nav navbar-nav navbar-right main_menu clearfix"
-                      },
-                      [
-                        _c("li", [
-                          _c("a", { attrs: { href: "/" } }, [_vm._v("Home")])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c("a", { attrs: { href: "#" } }, [_vm._v("search")]),
-                          _vm._v(" "),
-                          _c("ul", { staticClass: "sub-menu" }, [
-                            _c("li", [
-                              _c("a", { attrs: { href: "/search/passport" } }, [
-                                _vm._v("Passport")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c("a", { attrs: { href: "char.html" } }, [
-                                _vm._v("Characterization")
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c("a", { attrs: { href: "eval.html" } }, [
-                                _vm._v("Evaluation")
-                              ])
-                            ])
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c("a", { attrs: { href: "/news" } }, [
-                            _vm._v("news")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c("a", { attrs: { href: "/gallery" } }, [
-                            _vm._v("gallery")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c("a", { attrs: { href: "/download" } }, [
-                            _vm._v("download")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c("a", { attrs: { href: "/terms" } }, [
-                            _vm._v("terms of use")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("li", [
-                          _c("a", { attrs: { href: "/about" } }, [
-                            _vm._v("about us")
-                          ])
-                        ])
-                      ]
-                    )
-                  ]
-                )
+                _c("li", [
+                  _c("a", { attrs: { href: "char.html" } }, [
+                    _vm._v("Characterization")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "eval.html" } }, [
+                    _vm._v("Evaluation")
+                  ])
+                ])
               ])
+            ]),
+            _vm._v(" "),
+            _c("li", [_c("a", { attrs: { href: "/news" } }, [_vm._v("news")])]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/gallery" } }, [_vm._v("gallery")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/download" } }, [_vm._v("download")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/terms" } }, [_vm._v("terms of use")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/about" } }, [_vm._v("about us")])
             ])
           ]
         )
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true

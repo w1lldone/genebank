@@ -9,6 +9,14 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+Vue.mixin({
+    computed: {
+        env: function () {
+            return window.env
+        }
+    }
+});
+
 import Routes from './routes';
 
 /**
