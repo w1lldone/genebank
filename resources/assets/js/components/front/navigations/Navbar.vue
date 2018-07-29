@@ -12,7 +12,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand custom_navbar-brand" :href="env.baseUrl"><img :src="url('img/logo.png')" alt=""></a>
+                            <a class="navbar-brand custom_navbar-brand" :href="env.baseUrl"><img :src="url('/img/logo.png')" alt=""></a>
                         </div>
                         <!--End of navbar-header-->
 
@@ -22,7 +22,7 @@
                                 <li><a :href="url('')">Home</a></li>
                                 <li><a href="#">search</a>
                                     <ul class="sub-menu">
-                                        <li><a :href="url('search/passport')">Passport</a></li>
+                                        <li><a :href="url('/search/passport')">Passport</a></li>
                                         <li><a href="char.html">Characterization</a></li>
                                         <li><a href="eval.html">Evaluation</a></li>
                                     </ul>

@@ -37920,7 +37920,7 @@ var render = function() {
                   },
                   [
                     _c("img", {
-                      attrs: { src: _vm.url("img/logo.png"), alt: "" }
+                      attrs: { src: _vm.url("/img/logo.png"), alt: "" }
                     })
                   ]
                 )
@@ -37953,7 +37953,7 @@ var render = function() {
                           _c("li", [
                             _c(
                               "a",
-                              { attrs: { href: _vm.url("search/passport") } },
+                              { attrs: { href: _vm.url("/search/passport") } },
                               [_vm._v("Passport")]
                             )
                           ]),

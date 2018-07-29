@@ -29,7 +29,7 @@
     <script type="text/javascript">
         window.env = {
             apiToken: '{{ env('API_TOKEN_DEVELOPMENT') }}',
-            baseUrl: '{{ env('APP_BASE_URL') }}',
+            baseUrl: '{{ env('APP_URL') }}',
         }
     </script>
 
