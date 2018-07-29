@@ -9,23 +9,22 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     {{-- <meta name="api_token" content="{{ env('API_TOKEN_DEVELOPMENT') }}"> --}}
     <!--Fontawesom-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href={{ url("css/font-awesome.min.css") }}>
 
     <!--Animated CSS-->
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href={{ url("css/animate.min.css") }}>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href={{ url("css/bootstrap.min.css") }} rel="stylesheet">
     <!--Bootstrap Carousel-->
-    <link type="text/css" rel="stylesheet" href="css/carousel.css" />
+    <link type="text/css" rel="stylesheet" href={{ url("css/carousel.css") }} />
 
-    <link rel="stylesheet" href="css/isotope/style.css">
+    <link rel="stylesheet" href={{ url("css/isotope/style.css") }}>
 
     <!--Main Stylesheet-->
-    <link href="css/style.css" rel="stylesheet">
+    <link href={{ url("css/style.css") }} rel="stylesheet">
     <!--Responsive Framework-->
-    <link href="css/responsive.css" rel="stylesheet">
-
+    <link href={{ url("css/responsive.css") }} rel="stylesheet">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <script type="text/javascript">
         window.env = {
@@ -46,12 +45,12 @@
         @yield('navigation')
         @yield('content')
     </div>
-    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src={{ url("js/jquery-1.12.3.min.js") }}></script>
 
     <!--Counter UP Waypoint-->
-    <script src="js/waypoints.min.js"></script>
+    <script src={{ url("js/waypoints.min.js") }}></script>
     <!--Counter UP-->
-    <script src="js/jquery.counterup.min.js"></script>
+    <script src={{ url("js/jquery.counterup.min.js") }}></script>
 
     <script>
         //for counter up
@@ -63,22 +62,22 @@
 
 
     <!--Isotope-->
-    <script src="js/isotope/min/scripts-min.js"></script>
-    <script src="js/isotope/cells-by-row.js"></script>
-    <script src="js/isotope/isotope.pkgd.min.js"></script>
-    <script src="js/isotope/packery-mode.pkgd.min.js"></script>
-    <script src="js/isotope/scripts.js"></script>
+    <script src={{ url("js/isotope/min/scripts-min.js") }}></script>
+    <script src={{ url("js/isotope/cells-by-row.js") }}></script>
+    <script src={{ url("js/isotope/isotope.pkgd.min.js") }}></script>
+    <script src={{ url("js/isotope/packery-mode.pkgd.min.js") }}></script>
+    <script src={{ url("js/isotope/scripts.js") }}></script>
 
 
     <!--Back To Top-->
-    <script src="js/backtotop.js"></script>
+    <script src={{ url("js/backtotop.js") }}></script>
 
 
     <!--JQuery Click to Scroll down with Menu-->
-    <script src="js/jquery.localScroll.min.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src={{ url("js/jquery.localScroll.min.js") }}></script>
+    <script src={{ url("js/jquery.scrollTo.min.js") }}></script>
     <!--WOW With Animation-->
-    <script src="js/wow.min.js"></script>
+    <script src={{ url("js/wow.min.js") }}></script>
     <!--WOW Activated-->
     <script>
         new WOW().init();
@@ -86,8 +85,8 @@
 
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src={{ url("js/bootstrap.min.js") }}></script>
     <!-- Custom JavaScript-->
-    <script src="js/main.js"></script>
+    <script src={{ url("js/main.js") }}></script>
 </body>
 </html>

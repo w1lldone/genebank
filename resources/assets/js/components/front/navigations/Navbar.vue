@@ -22,7 +22,7 @@
                                 <li><a href="/">Home</a></li>
                                 <li><a href="#">search</a>
                                     <ul class="sub-menu">
-                                        <li><a href="passport.html">Passport</a></li>
+                                        <li><a href="/search/passport">Passport</a></li>
                                         <li><a href="char.html">Characterization</a></li>
                                         <li><a href="eval.html">Evaluation</a></li>
                                     </ul>
