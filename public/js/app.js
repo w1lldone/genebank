@@ -37958,21 +37958,49 @@ var render = function() {
                             )
                           ]),
                           _vm._v(" "),
-                          _vm._m(1),
+                          _c("li", [
+                            _c("a", { attrs: { href: _vm.url("char.html") } }, [
+                              _vm._v("Characterization")
+                            ])
+                          ]),
                           _vm._v(" "),
-                          _vm._m(2)
+                          _c("li", [
+                            _c("a", { attrs: { href: _vm.url("eval.html") } }, [
+                              _vm._v("Evaluation")
+                            ])
+                          ])
                         ])
                       ]),
                       _vm._v(" "),
-                      _vm._m(3),
+                      _c("li", [
+                        _c("a", { attrs: { href: _vm.url("/news") } }, [
+                          _vm._v("news")
+                        ])
+                      ]),
                       _vm._v(" "),
-                      _vm._m(4),
+                      _c("li", [
+                        _c("a", { attrs: { href: _vm.url("/gallery") } }, [
+                          _vm._v("gallery")
+                        ])
+                      ]),
                       _vm._v(" "),
-                      _vm._m(5),
+                      _c("li", [
+                        _c("a", { attrs: { href: _vm.url("/download") } }, [
+                          _vm._v("download")
+                        ])
+                      ]),
                       _vm._v(" "),
-                      _vm._m(6),
+                      _c("li", [
+                        _c("a", { attrs: { href: _vm.url("/terms") } }, [
+                          _vm._v("terms of use")
+                        ])
+                      ]),
                       _vm._v(" "),
-                      _vm._m(7)
+                      _c("li", [
+                        _c("a", { attrs: { href: _vm.url("/about") } }, [
+                          _vm._v("about us")
+                        ])
+                      ])
                     ]
                   )
                 ]
@@ -38010,60 +38038,6 @@ var staticRenderFns = [
         _c("span", { staticClass: "icon-bar" })
       ]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "char.html" } }, [_vm._v("Characterization")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "eval.html" } }, [_vm._v("Evaluation")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [_c("a", { attrs: { href: "/news" } }, [_vm._v("news")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "/gallery" } }, [_vm._v("gallery")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "/download" } }, [_vm._v("download")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "/terms" } }, [_vm._v("terms of use")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "/about" } }, [_vm._v("about us")])
-    ])
   }
 ]
 render._withStripped = true
