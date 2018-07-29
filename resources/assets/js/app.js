@@ -14,6 +14,11 @@ Vue.mixin({
         env: function () {
             return window.env
         }
+    },
+    methods: {
+        url(string) {
+            return this.env.baseUrl + string
+        }
     }
 });
 

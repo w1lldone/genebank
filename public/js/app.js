@@ -95,6 +95,11 @@ Vue.mixin({
         env: function env() {
             return window.env;
         }
+    },
+    methods: {
+        url: function url(string) {
+            return this.env.baseUrl + string;
+        }
     }
 });
 
@@ -37913,7 +37918,11 @@ var render = function() {
                     staticClass: "navbar-brand custom_navbar-brand",
                     attrs: { href: _vm.env.baseUrl }
                   },
-                  [_c("img", { attrs: { src: "/img/logo.png", alt: "" } })]
+                  [
+                    _c("img", {
+                      attrs: { src: _vm.url("img/logo.png"), alt: "" }
+                    })
+                  ]
                 )
               ]),
               _vm._v(" "),
