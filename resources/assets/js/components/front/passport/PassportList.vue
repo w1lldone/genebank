@@ -32,6 +32,7 @@
                         </div>
                     </div>
                 </div>
+                <p><a href="/search/passport/detail" class="btn btn-success">Details</a></p>
             </div>
             <!--for demo wrap-->
         </section>
@@ -41,6 +42,7 @@
 <script>
 import FrontBase from '../FrontBase';
 import PassportListItem from './PassportListItem';
+import PassportListDetail from './PassportListDetail';
 
 export default {
 
@@ -84,6 +86,7 @@ export default {
   components: {
     FrontBase,
     PassportListItem,
+    PassportListDetail,
   }
 }
 </script>

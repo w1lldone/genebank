@@ -35,6 +35,14 @@ Route::get('/about', function ()
     return view('about.index');
 })->name('about.index');
 
+Route::get('/characterization', function ()
+{
+    return view('characterization.index');
+})->name('characterization.index');
+
 Route::group(['prefix' => 'search'], function(){
     Route::get('/passport', 'Front\PassportController@index')->name('passport.index');
+});
+Route::group(['prefix' => 'search/passport'], function(){
+    Route::get('/detail', 'Front\PassportController@show')->name('passport.show');
 });
