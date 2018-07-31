@@ -10,27 +10,27 @@
                 </div>            
                 <div class="col-md-19">
                     <div class="card col-md-3">
-                      <div class="card-header"><a href="CharTable.html">Capsicum</a></div>
+                      <div class="card-header"><a href="/search/characterization/item">Capsicum</a></div>
                       <div class="card-main">
-                        <img src="img/char/capsicum.jpg" alt="">
+                        <img src="img/char/capsicum.jpg" alt="...">
                       </div>
                     </div>
                     <div class="card col-md-3">
                       <div class="card-header"><a>Cucumis</a></div>
                       <div class="card-main">
-                        <img src="img/char/cucumis.jpg" alt="">
+                        <img src="img/char/cucumis.jpg" alt="...">
                       </div>
                     </div>
                     <div class="card col-md-3">
                       <div class="card-header"><a>Solanum</a></div>
                       <div class="card-main">
-                        <img src="img/char/solanum.jpeg" alt="">
+                        <img src="img/char/solanum.jpeg" alt="...">
                       </div>
                     </div>
                     <div class="card col-md-3">
                       <div class="card-header"><a>Vigna</a></div>
                       <div class="card-main">
-                        <img src="img/char/vigna.jpg" alt="">
+                        <img src="img/char/vigna.jpg" alt="...">
                       </div>
                     </div>
               </div>
@@ -42,10 +42,11 @@
 
 <script>
 import FrontBase from '../FrontBase';
-
+import CharListItem from './CharListItem';
+import CharListDetail from './CharListDetail';
 export default {
 
-  name: 'characterization',
+  name: 'CharList',
 
   data () {
     return {

@@ -1,6 +1,6 @@
 <template>
     <front-base>
-        <section id="about" >
+        <section id="about">
             <div class="container animated fadeIn">
                 <div class="thumbnail col-sm-12" style="padding:20px; bottom:0; margin:0 auto 30px">
                     <h4 style="margin-left:1vmax; text-align:center; margin:4px 0px 16px;">ABOUT US</h4>
