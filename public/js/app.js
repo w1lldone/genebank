@@ -40269,7 +40269,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -40280,6 +40280,22 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -40305,22 +40321,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-function Passport() {
-    var x = document.getElementById("passportTable");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
 
-    name: 'PassportListDetail',
-    data: function data() {
-        return {
-            load: 'passport'
-        };
-    }
+  name: 'PassportListDetail',
+  data: function data() {
+    return {
+      load: 'passport'
+    };
+  },
+
+  components: {
+    FrontBase: __WEBPACK_IMPORTED_MODULE_0__FrontBase___default.a
+  }
 });
 
 /***/ }),
@@ -40331,110 +40345,55 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "detail" }, [
-      _c("div", { attrs: { id: "button" } }, [
-        _vm._v('"left" onclick="Passport()">nutritive value'),
+  return _c("front-base", [
+    _c("section", [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("h4", [_c("b", [_vm._v("Passport Data VI000002")])]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Refers to accession no. and data recorded when the sample was originally collected (i.e. crop accession no., genus, species, altitude, collecting location, etc.). These data were received from the seed donor together with the germplasm. "
+              )
+            ]),
+            _c("br"),
+            _c("br")
+          ])
+        ]),
         _vm._v(" "),
-        _c(
-          "form",
-          {
-            staticClass: "form-horizontal",
-            attrs: {
-              action: "",
-              role: "form",
-              name: "passportTable",
-              id: "passportTable"
-            }
-          },
-          [
-            _c(
-              "div",
-              {
-                staticClass: "form-group form-inline",
-                attrs: { align: "right" }
-              },
-              [
-                _c("div", { staticClass: "col-sm-12" }, [
-                  _c("label", [_vm._v("Vegetable introduction number  ")]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-6 table-responsive" }, [
+            _c("table", { staticClass: "table" }, [
+              _c("tbody", [
+                _c("tr", [
+                  _c("td", [_vm._v("Vegetable introduction number")]),
                   _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: {
-                      type: "text",
-                      name: "number",
-                      id: "number",
-                      placeholder: "VI000306"
-                    }
-                  }),
-                  _c("br"),
+                  _c("td", [_vm._v("VI000002")])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Family")]),
                   _vm._v(" "),
-                  _c("label", [_vm._v("Crop accession number  ")]),
+                  _c("td", [_vm._v("LEGUMINOSAE")])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Species")]),
                   _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: {
-                      type: "text",
-                      name: "crop_number",
-                      id: "crop_number",
-                      placeholder: "V01306"
-                    }
-                  }),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("label", [_vm._v("Family  ")]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: {
-                      type: "text",
-                      name: "family",
-                      id: "family",
-                      placeholder: "LEGUMINOSAE"
-                    }
-                  }),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("label", [_vm._v("Genus  ")]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: {
-                      type: "text",
-                      name: "genus",
-                      id: "genus",
-                      placeholder: "VIGNA"
-                    }
-                  }),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("label", [_vm._v("Species  ")]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: {
-                      type: "text",
-                      name: "species",
-                      id: "species",
-                      placeholder: "MUNGO"
-                    }
-                  }),
-                  _c("br")
+                  _c("td", [_vm._v("LEGUMINOSAE")])
                 ])
-              ]
-            )
-          ]
-        )
+              ])
+            ])
+          ])
+        ])
       ])
     ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
