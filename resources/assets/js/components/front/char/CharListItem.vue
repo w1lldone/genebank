@@ -1,6 +1,6 @@
 <template>
     <front-base>
-        <section id="char">
+        <section id="char" class="list-table">
           <div class="msg_title col-md-12">
             <h4><b>Characterization</b></h4>
             <br>
@@ -12,9 +12,13 @@
               <thead>
                 <tr>
                   <th>VINO</th>
+                  <th>Variant</th>
+                  <th>Accno</th>
                   <th>Tempno</th>
                   <th>Variant</th>
                   <th>Species</th>
+                  <th>Subtaxa</th>
+                  <th>Country</th>
                   <th>Operation</th>
                 </tr>
               </thead>
@@ -25,16 +29,24 @@
               <tbody>
                 <tr>
                   <td>VI000306</td>
+                  <td></td>
+                  <td></td>
                   <td>TOT2209</td>
                   <td>A (green plant)</td>
                   <td>Annulus</td>
+                  <td></td>
+                  <td></td>
                   <td><input type="button" value="Detail" onclick="window.location.href='/search/characterization/item/detail'"></td>
                 </tr>
                 <tr>
                   <td>VI000306</td>
+                  <td></td>
+                  <td></td>
                   <td>TOT2209</td>
                   <td>B (purple plant)</td>
                   <td>Annulus</td>
+                  <td></td>
+                  <td></td>
                   <td><input type="button" value="Detail" onclick="window.location.href='/search/characterization/item/detail'"></td>
                 </tr>
               </tbody>

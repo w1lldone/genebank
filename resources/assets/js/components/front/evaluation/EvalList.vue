@@ -1,6 +1,6 @@
 <template>
     <front-base>
-        <section id="eval">
+        <section id="eval" class="list-table">
       <!--for demo wrap-->
           <div class="msg_title col-md-12">
             <h4><b>Evaluation</b></h4>
@@ -12,10 +12,14 @@
               <thead>
                 <tr>
                   <th>VINO</th>
+                  <th>ACCNO</th>
                   <th>Tempno</th>
                   <th>Family</th>
                   <th>Genus</th>
                   <th>Species</th>
+                  <th>Subtaxa</th>
+                  <th>Pedigree / Cultivar Name</th>
+                  <th>Country</th>
                   <th>Operation</th>
                 </tr>
               </thead>
@@ -26,18 +30,26 @@
               <tbody>
                 <tr>
                   <td>VI000306</td>
+                  <td></td>
                   <td>TOT2209</td>
                   <td>Solanaceae</td>
                   <td>Capsicum</td>
                   <td>Annum</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                   <td><input type="button" value="Detail" onclick="window.location.href='/search/evaluation/detail'"></td>
                 </tr>
                 <tr>
                   <td>VI000306</td>
+                  <td></td>
                   <td>TOT2209</td>
                   <td>Solanaceae</td>
                   <td>Capsicum</td>
                   <td>Chinense</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                   <td><input type="button" value="Detail" onclick="window.location.href='search/evaluation/detail'"></td>
                 </tr>
               </tbody>

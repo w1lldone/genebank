@@ -15,63 +15,142 @@
                     <img src="img/char/capsicum.jpg">
                 </div>
                 <div id="list">
-                    <form action="" class="form-horizontal" role="form" name="list" id="list">
-                        <div class="form-group form-inline" align="right">
-                            <div class="col-sm-6">
-                                <label>Vegetable introduction number</label>
-                                <input type="text" class="form-control" name="name" id="name"><br>
-                                <label>Variant &emsp;</label>
-                                <input type="text" class="form-control" name="variant" id="variant"><br>
-                                <label>Species &emsp;</label>
-                                <input type="text" class="form-control" name="species" id="species"><br>
-                                <label>Country &emsp;</label>
-                                <input type="text" class="form-control" name="country" id="country">
-                                
-                                <!-- <button type="submit" class="btn custom-btn" data-loading-text="Loading...">Send</button> -->
-                            </div>
-                        </div>
-                    </form>
+                    <div class="col-md-6 table-responsive table-detail">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Vegetable introduction number</td>
+                                    <td>VI000002</td>
+                                </tr>
+                                <tr>
+                                    <td>Crop accession number</td>
+                                    <td>V01001</td>
+                                </tr>
+                                <tr>
+                                    <td>Temporary number</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Variant</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Characterized Year and Season</td>
+                                    <td>1986SP</td>
+                                </tr>
+                                <tr>
+                                    <td>Species</td>
+                                    <td>ANNUM</td>
+                                </tr>
+                                <tr>
+                                    <td>Subtaxa</td>
+                                    <td>VAR. RADIATA</td>
+                                </tr>
+                                <tr>
+                                    <td>Pedigree / Cultivar Name</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Country</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div id="button">
-                    <button class="col-sm-12" align:"left" onclick="Seedling()">seedling data</button>
-                    <form action="" class="form-horizontal" role="form" name="seedling" id="seedling">
-                        <div class="form-group form-inline" align="right">
-                            <div class="col-sm-12" >
-                                <label>Germination period &emsp;</label>
-                                <input type="text" class="form-control" name="period" id="period"><br>
-                                <label>Hypocotyl color &emsp;</label>
-                                <input type="text" class="form-control" name="hypo_color" id="dypo_color"><br>
-                                <label>Cotyledon color &emsp;</label>
-                                <input type="text" class="form-control" name="cot_color" id="cot_color"><br>
-                            </div>
-                        </div>
-                    </form>
-                    <button class="col-sm-12" align:"left" onclick="Vegetative()">vegetative data</button>
-                    <form action="" class="form-horizontal" role="form" name="vegetative" id="vegetative">
-                        <div class="form-group form-inline" align="right">
-                            <div class="col-sm-12" >
-                                <label>Plant grow habit &emsp;</label>
-                                <input type="text" class="form-control" name="period" id="period"><br>
-                                <label>Plan height &emsp;</label>
-                                <input type="text" class="form-control" name="hypo_color" id="dypo_color"><br>
-                                <label>Number of internodes &emsp;</label>
-                                <input type="text" class="form-control" name="cot_color" id="cot_color"><br>
-                            </div>
-                        </div>
-                    </form>
-                    <button class="col-sm-12" align:"left" onclick="Inflorescence()">inflorescence data</button>
-                    <form action="" class="form-horizontal" role="form" name="inflorescence" id="inflorescence">
-                        <div class="form-group form-inline" align="right">
-                            <div class="col-sm-12" >
-                                <label>Flowering date &emsp;</label>
-                                <input type="text" class="form-control" name="period" id="period"><br>
-                                <label>Number of nodes to first flower &emsp;</label>
-                                <input type="text" class="form-control" name="hypo_color" id="dypo_color"><br>
-                                <label>Corolla color &emsp;</label>
-                                <input type="text" class="form-control" name="cot_color" id="cot_color"><br>
-                            </div>
-                        </div>
-                    </form>
+                <br><br><br><br>
+                <div class="row">
+                    <div class="col-md-10 table-responsive passport-detail">
+                    <h4>SEEDLING DATA</h4>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Hypocotyl color (terminal bud 1-2 mm)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Hypocotyl color intensity</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Cotyledonous leaf length (mm) (N=10)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Cotyledonous leaf width (mm) (N=10)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Cotyledonous leaf shape</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Cotyledonous leaf color</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Hypocotyl pubescence</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Stem color (before transplanting)</td>
+                                    <td>Green</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br><br>
+                    <div class="col-md-10 table-responsive passport-detail">
+                    <h4>VEGETATIVE DATA</h4>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Hypocotyl color (terminal bud 1-2 mm)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Hypocotyl color intensity</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Cotyledonous leaf length (mm) (N=10)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Cotyledonous leaf width (mm) (N=10)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Cotyledonous leaf shape</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Cotyledonous leaf color</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Hypocotyl pubescence</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Stem color (before transplanting)</td>
+                                    <td>Green</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br><br>
+                    <div class="col-md-10 table-responsive passport-detail">
+                        <h4>INFLORESCENCE DATA</h4>
+                    </div>
+                    <br><br>
+                    <div class="col-md-10 table-responsive passport-detail">
+                        <h4>FRUIT DATA</h4>
+                    </div>
+                    <br><br>
+                    <div class="col-md-10 table-responsive passport-detail">
+                        <h4>SEED DATA</h4>
+                    </div>
                 </div>
             </div>
         </div>

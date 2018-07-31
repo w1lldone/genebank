@@ -1,6 +1,6 @@
 <template>
     <front-base>
-        <section id="passport">
+        <section id="passport" class="list-table">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
