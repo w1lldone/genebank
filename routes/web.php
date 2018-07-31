@@ -42,7 +42,5 @@ Route::get('/characterization', function ()
 
 Route::group(['prefix' => 'search'], function(){
     Route::get('/passport', 'Front\PassportController@index')->name('passport.index');
-});
-Route::group(['prefix' => 'search/passport'], function(){
-    Route::get('/detail', 'Front\PassportController@show')->name('passport.show');
+    Route::get('/passport/detail', 'Front\PassportController@show')->name('passport.show');
 });
