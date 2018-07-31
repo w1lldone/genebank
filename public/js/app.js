@@ -39827,7 +39827,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -39890,12 +39890,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
 
   name: 'CharList',
 
   data: function data() {
     return {};
+  },
+
+  components: {
+    FrontBase: __WEBPACK_IMPORTED_MODULE_0__FrontBase___default.a,
+    CharListItem: __WEBPACK_IMPORTED_MODULE_1__CharListItem___default.a,
+    CharListDetail: __WEBPACK_IMPORTED_MODULE_2__CharListDetail___default.a
   }
 });
 
@@ -40611,7 +40618,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("front-base", [
     _c("section", { attrs: { id: "char" } }, [
-      _c("div", { staticClass: "container " }, [
+      _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "msg" }, [
           _c("div", { staticClass: "msg_title col-md-12" }, [
             _c("h4", [_c("b", [_vm._v("Characterization")])]),
@@ -41237,29 +41244,33 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-6 table-responsive" }, [
-            _c("table", { staticClass: "table" }, [
-              _c("tbody", [
-                _c("tr", [
-                  _c("td", [_vm._v("Vegetable introduction number")]),
+          _c(
+            "div",
+            { staticClass: "col-md-6 table-responsive passport-detail" },
+            [
+              _c("table", { staticClass: "table" }, [
+                _c("tbody", [
+                  _c("tr", [
+                    _c("td", [_vm._v("Vegetable introduction number")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("VI000002")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("VI000002")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Family")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Family")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("LEGUMINOSAE")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("LEGUMINOSAE")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Species")]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v("LEGUMINOSAE")])
+                  _c("tr", [
+                    _c("td", [_vm._v("Species")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("LEGUMINOSAE")])
+                  ])
                 ])
               ])
-            ])
-          ])
+            ]
+          )
         ])
       ])
     ])
@@ -41300,7 +41311,7 @@ var render = function() {
             _c("br"),
             _c("br"),
             _vm._v(" "),
-            _c("div", { staticClass: "table-responsive" }, [
+            _c("div", { staticClass: "table-responsive passport-list" }, [
               _c("table", { staticClass: "table" }, [
                 _c("thead", [
                   _c("tr", [
@@ -41453,7 +41464,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -41468,6 +41479,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__EvalListDetail__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__EvalListDetail___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__EvalListDetail__);
+//
 //
 //
 //
@@ -41889,86 +41901,87 @@ var render = function() {
           )
         ]),
         _c("br"),
-        _c("br")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "tbl-header" }, [
-        _c(
-          "table",
-          { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
-          [
-            _c("thead", [
-              _c("tr", [
-                _c("th", [_vm._v("VINO")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Tempno")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Family")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Genus")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Species")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Operation")])
-              ])
-            ])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "tbl-content" }, [
-        _c(
-          "table",
-          { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
-          [
-            _c("tbody", [
-              _c("tr", [
-                _c("td", [_vm._v("VI000306")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("TOT2209")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Solanaceae")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Capsicum")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Annum")]),
-                _vm._v(" "),
-                _c("td", [
-                  _c("input", {
-                    attrs: {
-                      type: "button",
-                      value: "Detail",
-                      onclick:
-                        "window.location.href='/search/evaluation/detail'"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("VI000306")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("TOT2209")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Solanaceae")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Capsicum")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Chinense")]),
-                _vm._v(" "),
-                _c("td", [
-                  _c("input", {
-                    attrs: {
-                      type: "button",
-                      value: "Detail",
-                      onclick: "window.location.href='search/evaluation/detail'"
-                    }
-                  })
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { staticClass: "tbl-header" }, [
+          _c(
+            "table",
+            { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
+            [
+              _c("thead", [
+                _c("tr", [
+                  _c("th", [_vm._v("VINO")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Tempno")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Family")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Genus")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Species")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Operation")])
                 ])
               ])
-            ])
-          ]
-        )
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "tbl-content" }, [
+          _c(
+            "table",
+            { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
+            [
+              _c("tbody", [
+                _c("tr", [
+                  _c("td", [_vm._v("VI000306")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("TOT2209")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Solanaceae")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Capsicum")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Annum")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("input", {
+                      attrs: {
+                        type: "button",
+                        value: "Detail",
+                        onclick:
+                          "window.location.href='/search/evaluation/detail'"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("VI000306")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("TOT2209")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Solanaceae")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Capsicum")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v("Chinense")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _c("input", {
+                      attrs: {
+                        type: "button",
+                        value: "Detail",
+                        onclick:
+                          "window.location.href='search/evaluation/detail'"
+                      }
+                    })
+                  ])
+                ])
+              ])
+            ]
+          )
+        ])
       ])
     ])
   ])

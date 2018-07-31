@@ -1,6 +1,6 @@
 <template>
     <front-base>
-        <section id="char">
+    <section id="char">
       <div class="container col-md-12">                
           <div class="msg">
             <div class="msg_title">

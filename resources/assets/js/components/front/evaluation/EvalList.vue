@@ -6,7 +6,7 @@
             <h4><b>Evaluation</b></h4>
             <br>
             <p>Refers to the data results of screening accessions for their resistance to different pests (i.e. melon fly, cotton aphid, etc.) and diseases (i.e. Bhendi Yellow Vein Mosaic Virus,Tobacco Mosaic Virus, etc.). It also includes nutritive value (i.e.Vitamin A, Vitamin C, Anti-oxidant Activity, etc). The screening was conducted by scientists in various departments at AVRDC - The World Vegetable Center and other research institutes. </p><br><br>
-          </div>
+         
           <div class="tbl-header">
             <table cellpadding="0" cellspacing="0" border="0">
               <thead>
@@ -43,6 +43,7 @@
               </tbody>
             </table>
           </div>
+        </div>
         </section>
     </front-base>
 </template>

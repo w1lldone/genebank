@@ -7,7 +7,7 @@
                       <h4><b>Passport</b></h4>
                       <br>
                       <p>Refers to accession no. and data recorded when the sample was originally collected (i.e. crop accession no., genus, species, altitude, collecting location, etc.). These data were received from the seed donor together with the germplasm. </p><br><br>
-                        <div class="table-responsive">
+                        <div class="table-responsive passport-list">
                             <table class="table">
                                 <thead>
                                     <tr>

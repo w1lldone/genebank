@@ -1,7 +1,7 @@
 <template>
     <front-base>
         <section id="char">
-          <div class="container ">                
+          <div class="container">                
               <div class="msg">
                 <div class="msg_title col-md-12">
                   <h4><b>Characterization</b></h4>
@@ -33,8 +33,8 @@
                         <img src="img/char/vigna.jpg" alt="...">
                       </div>
                     </div>
+                </div>
               </div>
-            </div>
           </div>
         </section>
     </front-base>
@@ -44,6 +44,7 @@
 import FrontBase from '../FrontBase';
 import CharListItem from './CharListItem';
 import CharListDetail from './CharListDetail';
+
 export default {
 
   name: 'CharList',
@@ -53,6 +54,11 @@ export default {
         
     }
   },
+  components: {
+    FrontBase,
+    CharListItem,
+    CharListDetail,
+  }
 }
 </script>
 

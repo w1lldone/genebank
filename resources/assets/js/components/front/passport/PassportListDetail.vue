@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 table-responsive">
+                    <div class="col-md-6 table-responsive passport-detail">
                         <table class="table">
                             <tbody>
                                 <tr>
