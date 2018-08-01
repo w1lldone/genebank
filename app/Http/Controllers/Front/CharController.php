@@ -11,10 +11,12 @@ class CharController extends Controller
     {
         return view('char.index');
     }
+
     public function show(Request $request)
     {
         return view('char.show');
     }
+    
     public function detail(Request $request)
     {
         return view('char.detail');

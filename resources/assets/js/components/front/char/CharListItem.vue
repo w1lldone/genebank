@@ -7,7 +7,7 @@
             <p>Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. </p><br><br>
           </div>
           <h5 class="col-md-2"><b>Capsicum</b></h5><br><br>
-          <div class="tbl-header">
+          <div class="tbl-header tbl-content">
             <table cellpadding="0" cellspacing="0" border="0">
               <thead>
                 <tr>
@@ -22,10 +22,7 @@
                   <th>Operation</th>
                 </tr>
               </thead>
-            </table>
-          </div>
-          <div class="tbl-content">
-            <table cellpadding="0" cellspacing="0" border="0">
+            
               <tbody>
                 <tr>
                   <td>VI000306</td>
@@ -51,8 +48,8 @@
                 </tr>
               </tbody>
             </table>
-          </div>
-    </section>
+            </div>
+            </section>
     </front-base>
    
 </template>

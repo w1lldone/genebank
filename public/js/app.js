@@ -39827,7 +39827,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -39844,7 +39844,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__CharListItem___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__CharListItem__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CharListDetail__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CharListDetail___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__CharListDetail__);
-//
 //
 //
 //
@@ -39941,7 +39940,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -39954,9 +39953,6 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
-//
-//
-//
 //
 //
 //
@@ -40062,7 +40058,7 @@ var render = function() {
       _c("br"),
       _c("br"),
       _vm._v(" "),
-      _c("div", { staticClass: "tbl-header" }, [
+      _c("div", { staticClass: "tbl-header tbl-content" }, [
         _c(
           "table",
           { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
@@ -40087,16 +40083,8 @@ var render = function() {
                 _vm._v(" "),
                 _c("th", [_vm._v("Operation")])
               ])
-            ])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "tbl-content" }, [
-        _c(
-          "table",
-          { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
-          [
+            ]),
+            _vm._v(" "),
             _c("tbody", [
               _c("tr", [
                 _c("td", [_vm._v("VI000306")]),
@@ -40457,7 +40445,7 @@ var render = function() {
           _c("br"),
           _c("br"),
           _vm._v(" "),
-          _c("div", { staticClass: "detail" }, [
+          _c("div", { staticClass: "row detail" }, [
             _c("div", { staticClass: "col-md-6" }, [
               _c("img", { attrs: { src: "img/char/capsicum.jpg" } })
             ]),
@@ -40536,7 +40524,7 @@ var render = function() {
             _c("div", { staticClass: "row" }, [
               _c(
                 "div",
-                { staticClass: "col-md-10 table-responsive passport-detail" },
+                { staticClass: "col-md-10 table-responsive table-detail" },
                 [
                   _c("h4", [_vm._v("SEEDLING DATA")]),
                   _vm._v(" "),
@@ -40605,7 +40593,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "col-md-10 table-responsive passport-detail" },
+                { staticClass: "col-md-10 table-responsive table-detail" },
                 [
                   _c("h4", [_vm._v("VEGETATIVE DATA")]),
                   _vm._v(" "),
@@ -40674,7 +40662,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "col-md-10 table-responsive passport-detail" },
+                { staticClass: "col-md-10 table-responsive table-detail" },
                 [_c("h4", [_vm._v("INFLORESCENCE DATA")])]
               ),
               _vm._v(" "),
@@ -40683,7 +40671,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "col-md-10 table-responsive passport-detail" },
+                { staticClass: "col-md-10 table-responsive table-detail" },
                 [_c("h4", [_vm._v("FRUIT DATA")])]
               ),
               _vm._v(" "),
@@ -40692,7 +40680,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "col-md-10 table-responsive passport-detail" },
+                { staticClass: "col-md-10 table-responsive table-detail" },
                 [_c("h4", [_vm._v("SEED DATA")])]
               )
             ])
@@ -40723,22 +40711,20 @@ var render = function() {
   return _c("front-base", [
     _c("section", { attrs: { id: "char" } }, [
       _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "msg" }, [
-          _c("div", { staticClass: "msg_title col-md-12" }, [
-            _c("h4", [_c("b", [_vm._v("Characterization")])]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
-              )
-            ]),
-            _c("br"),
-            _c("br")
-          ]),
+        _c("div", { staticClass: "row col-md-12" }, [
+          _c("h4", [_c("b", [_vm._v("Characterization")])]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-md-19" }, [
+          _c("br"),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
+            )
+          ]),
+          _c("br"),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-12" }, [
             _c("div", { staticClass: "card col-md-3" }, [
               _c("div", { staticClass: "card-header" }, [
                 _c("a", { attrs: { href: "/search/characterization/item" } }, [
@@ -40888,7 +40874,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -40911,7 +40897,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
-//
 //
 //
 //
@@ -41121,7 +41106,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -41132,6 +41117,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -41173,7 +41159,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("tr", [
+  return _c("tr", { staticClass: "tbl-content" }, [
     _c("td", [_vm._v(_vm._s(_vm.status))]),
     _vm._v(" "),
     _c("td", [_vm._v(_vm._s(_vm.pin))]),
@@ -41197,14 +41183,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("td", [
-      _c(
-        "a",
-        {
-          staticClass: "btn btn-success",
-          attrs: { href: "/search/passport/detail" }
-        },
-        [_vm._v("Details")]
-      )
+      _c("input", {
+        attrs: {
+          type: "button",
+          value: "Detail",
+          onclick: "window.location.href='/search/passport/detail'"
+        }
+      })
     ])
   }
 ]
@@ -41476,7 +41461,7 @@ var render = function() {
     _c("section", { attrs: { id: "passport" } }, [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-12" }, [
+          _c("div", { staticClass: "col-md-12 mdl-cell--3-col-phone" }, [
             _c("h4", [_c("b", [_vm._v("Passport Data VI000002")])]),
             _vm._v(" "),
             _c("br"),
@@ -41492,241 +41477,252 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-7 table-responsive table-detail" }, [
-            _c("table", { staticClass: "table" }, [
-              _c("tbody", [
-                _c("tr", [
-                  _c("td", [_vm._v("Vegetable introduction number")]),
+          _c(
+            "div",
+            {
+              staticClass:
+                "col-md-7 mdl-cell--4-col-phone table-responsive table-detail"
+            },
+            [
+              _c("table", { staticClass: "table" }, [
+                _c("tbody", [
+                  _c("tr", [
+                    _c("td", [_vm._v("Vegetable introduction number")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("VI000002")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("VI000002")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Crop accession number")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Crop accession number")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("V01001")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("V01001")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Duplicate note")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Duplicate note")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("0")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("0")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Temporary number")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Temporary number")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Variant")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Variant")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Distribution Status")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Distribution Status")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Available")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("Available")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Family")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Family")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("LEGUMINOSAE")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("LEGUMINOSAE")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Genus")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Genus")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("VIGNA")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("VIGNA")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Species")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Species")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("RADIATA")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("RADIATA")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Subtaxa")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Subtaxa")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("VAR. RADIATA")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("VAR. RADIATA")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Sender's Name")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Sender's Name")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Donor identification number")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Donor identification number")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("PI 424927")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("PI 424927")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Other number 1")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Other number 1")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Other number 2")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Other number 2")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("PI number")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("PI number")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("PI 424927")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("PI 424927")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Pedigree / Cultivar name")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Pedigree / Cultivar name")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("BK-1")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("BK-1")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Donor institute")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Donor institute")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Donor's address")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Donor's address")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Acquisition date")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Acquisition date")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("1972-01-01")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("1972-01-01")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Duplicate status")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Duplicate status")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Collector")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Collector")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Collector's number")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Collector's number")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Collecting institute")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Collecting institute")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Collection date of original sample")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Collection date of original sample")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Country of collection")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Country of collection")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Thailand")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("Thailand")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Province / State")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Province / State")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("BANGKOK")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("BANGKOK")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Municipality / Country / District")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Municipality / Country / District")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Location of collection site")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Location of collection site")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Latitude of collection site")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Latitude of collection site")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Longitude of collection site")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Longitude of collection site")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Altitude of collection site (Meters)")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Altitude of collection site (Meters)")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Collecting source")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Collecting source")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Sample source")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Sample source")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Status of sample")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Status of sample")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Unknown")])
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("Unknown")])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Collecting project")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Collecting project")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Core collection")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Core collection")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [_c("td", [_vm._v("Notes")]), _vm._v(" "), _c("td")]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Annotation")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Notes")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Duplicate storage site")]),
+                  _c("tr", [
+                    _c("td", [_vm._v("Annotation")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
                   _vm._v(" "),
-                  _c("td", [_vm._v("NPGRC, SGSV, RDASV")])
+                  _c("tr", [
+                    _c("td", [_vm._v("Duplicate storage site")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("NPGRC, SGSV, RDASV")])
+                  ])
                 ])
               ])
-            ])
-          ])
+            ]
+          )
         ])
       ])
     ])
@@ -41808,17 +41804,6 @@ var render = function() {
               ])
             ])
           ])
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _c(
-            "a",
-            {
-              staticClass: "btn btn-success",
-              attrs: { href: "/search/passport/detail" }
-            },
-            [_vm._v("Details")]
-          )
         ])
       ])
     ])
@@ -41920,7 +41905,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -41935,9 +41920,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__EvalListDetail__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__EvalListDetail___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__EvalListDetail__);
-//
-//
-//
 //
 //
 //
@@ -42050,7 +42032,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -42063,6 +42045,17 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -42274,224 +42267,277 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "detail" }, [
-        _c("div", { staticClass: "col-md-10 table-responsive table-detail" }, [
-          _c("table", { staticClass: "table" }, [
-            _c("tbody", [
-              _c("tr", [
-                _c("td", [_vm._v("Vegetable introduction number")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("VI000002")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Crop accession number")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("V01001")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Temporary number")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [_c("td", [_vm._v("Variant")]), _vm._v(" "), _c("td")]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Characterized Year and Season")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("1986SP")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Species")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("ANNUM")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Subtaxa")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("VAR. RADIATA")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Pedigree / Cultivar Name")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [_c("td", [_vm._v("Country")]), _vm._v(" "), _c("td")]),
-              _vm._v(" "),
-              _c("tr", [_c("td", [_vm._v("Remarks")]), _vm._v(" "), _c("td")])
-            ])
-          ])
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+            },
+            [
+              _c("table", { staticClass: "table" }, [
+                _c("tbody", [
+                  _c("tr", [
+                    _c("td", [_vm._v("Vegetable introduction number")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("VI000002")])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("Crop accession number")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("V01001")])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("Temporary number")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("Variant")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("Characterized Year and Season")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("1986SP")])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("Species")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("ANNUM")])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("Subtaxa")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("VAR. RADIATA")])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("Pedigree / Cultivar Name")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("Country")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("Remarks")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ])
+                ])
+              ])
+            ]
+          )
         ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-10 table-responsive table-detail" }, [
-          _c("h4", [_vm._v("NUTRITIVE DATA")]),
-          _vm._v(" "),
-          _c("table", { staticClass: "table" }, [
-            _c("tbody", [
-              _c("tr", [
-                _c("td", [_vm._v("Dry matter (%)")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Sugar (%)")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v(" Color value (*100)")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v(" Lipid (%)")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Capsacin (mg/g)")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Alkalinity (pH)")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Soluble solids (Brix)")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Acidity (% Citric acid)")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Total solids")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Beta carotene (mg/100g)")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Fiber (%)")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Vitamin A (mg/100g)")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Vitamin C (mg/100g)")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Ascorbic acid (mg/100g)")]),
-                _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [
-                  _vm._v("Total phenolic (mg/100g) (by Folin-Denis Method)")
+        _c(
+          "div",
+          {
+            staticClass:
+              "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+          },
+          [
+            _c("h4", [_vm._v("NUTRITIVE DATA")]),
+            _vm._v(" "),
+            _c("table", { staticClass: "table" }, [
+              _c("tbody", [
+                _c("tr", [
+                  _c("td", [_vm._v("Dry matter (%)")]),
+                  _vm._v(" "),
+                  _c("td")
                 ]),
                 _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [
-                  _vm._v(
-                    "Anti-oxidant activity (%) (by Modified Thiocyanate Method)"
-                  )
+                _c("tr", [
+                  _c("td", [_vm._v("Sugar (%)")]),
+                  _vm._v(" "),
+                  _c("td")
                 ]),
                 _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [
-                  _vm._v("Anti-oxidant activity (%) (by DPPH Method)")
+                _c("tr", [
+                  _c("td", [_vm._v(" Color value (*100)")]),
+                  _vm._v(" "),
+                  _c("td")
                 ]),
                 _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Total oil content (%)")]),
+                _c("tr", [
+                  _c("td", [_vm._v(" Lipid (%)")]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
                 _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Protein content (%)")]),
+                _c("tr", [
+                  _c("td", [_vm._v("Capsacin (mg/g)")]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
                 _vm._v(" "),
-                _c("td")
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Starch content (%)")]),
+                _c("tr", [
+                  _c("td", [_vm._v("Alkalinity (pH)")]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
                 _vm._v(" "),
-                _c("td")
+                _c("tr", [
+                  _c("td", [_vm._v("Soluble solids (Brix)")]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Acidity (% Citric acid)")]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Total solids")]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Beta carotene (mg/100g)")]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Fiber (%)")]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Vitamin A (mg/100g)")]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Vitamin C (mg/100g)")]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Ascorbic acid (mg/100g)")]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [
+                    _vm._v("Total phenolic (mg/100g) (by Folin-Denis Method)")
+                  ]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [
+                    _vm._v(
+                      "Anti-oxidant activity (%) (by Modified Thiocyanate Method)"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [
+                    _vm._v("Anti-oxidant activity (%) (by DPPH Method)")
+                  ]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Total oil content (%)")]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Protein content (%)")]),
+                  _vm._v(" "),
+                  _c("td")
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Starch content (%)")]),
+                  _vm._v(" "),
+                  _c("td")
+                ])
               ])
             ])
-          ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+            },
+            [_c("h4", [_vm._v("ABIOTIC STRESS TOLERANCE")])]
+          )
         ]),
         _vm._v(" "),
         _c("br"),
         _c("br"),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-10 table-responsive table-detail" }, [
-          _c("h4", [_vm._v("ABIOTIC STRESS TOLERANCE")])
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+            },
+            [_c("h4", [_vm._v("INSECT PEST RESISTANCE")])]
+          )
         ]),
         _vm._v(" "),
         _c("br"),
         _c("br"),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-10 table-responsive table-detail" }, [
-          _c("h4", [_vm._v("INSECT PEST RESISTANCE")])
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "col-md-10 mdl-cell--4-col-phonetable-responsive table-detail"
+            },
+            [_c("h4", [_vm._v("BACTERIAL RESISTANCE")])]
+          )
         ]),
         _vm._v(" "),
         _c("br"),
         _c("br"),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-10 table-responsive table-detail" }, [
-          _c("h4", [_vm._v("BACTERIAL RESISTANCE")])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-10 table-responsive table-detail" }, [
-          _c("h4", [_vm._v("FUNGAL RESISTANCE")])
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col-md-10 table-responsive table-detail" },
+            [_c("h4", [_vm._v("FUNGAL RESISTANCE")])]
+          )
         ])
       ])
     ])
@@ -42530,7 +42576,7 @@ var render = function() {
         _c("br"),
         _c("br"),
         _vm._v(" "),
-        _c("div", { staticClass: "tbl-header" }, [
+        _c("div", { staticClass: "tbl-header tbl-content" }, [
           _c(
             "table",
             { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
@@ -42557,16 +42603,8 @@ var render = function() {
                   _vm._v(" "),
                   _c("th", [_vm._v("Operation")])
                 ])
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "tbl-content" }, [
-          _c(
-            "table",
-            { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
-            [
+              ]),
+              _vm._v(" "),
               _c("tbody", [
                 _c("tr", [
                   _c("td", [_vm._v("VI000306")]),

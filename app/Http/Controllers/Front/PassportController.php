@@ -11,6 +11,7 @@ class PassportController extends Controller
     {
         return view('passport.index');
     }
+    
     public function show(Request $request)
     {
         return view('passport.show');

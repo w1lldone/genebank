@@ -3,14 +3,14 @@
         <section id="passport">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 mdl-cell--3-col-phone">
                         <h4><b>Passport Data VI000002</b></h4>
                         <br>
                         <p>Refers to accession no. and data recorded when the sample was originally collected (i.e. crop accession no., genus, species, altitude, collecting location, etc.). These data were received from the seed donor together with the germplasm. </p><br><br>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-7 table-responsive table-detail">
+                    <div class="col-md-7 mdl-cell--4-col-phone table-responsive table-detail">
                         <table class="table">
                             <tbody>
                                 <tr>

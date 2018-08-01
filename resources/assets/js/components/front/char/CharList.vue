@@ -2,13 +2,12 @@
     <front-base>
         <section id="char">
           <div class="container">                
-              <div class="msg">
-                <div class="msg_title col-md-12">
+              <div class="row col-md-12">
                   <h4><b>Characterization</b></h4>
                   <br>
                   <p>Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. </p><br><br>
-                </div>            
-                <div class="col-md-19">
+                
+                <div class="col-md-12">
                     <div class="card col-md-3">
                       <div class="card-header"><a href="/search/characterization/item">Capsicum</a></div>
                       <div class="card-main">

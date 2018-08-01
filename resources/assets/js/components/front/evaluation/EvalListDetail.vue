@@ -7,8 +7,10 @@
             <br>
             <p>Refers to the data results of screening accessions for their resistance to different pests (i.e. melon fly, cotton aphid, etc.) and diseases (i.e. Bhendi Yellow Vein Mosaic Virus,Tobacco Mosaic Virus, etc.). It also includes nutritive value (i.e.Vitamin A, Vitamin C, Anti-oxidant Activity, etc). The screening was conducted by scientists in various departments at AVRDC - The World Vegetable Center and other research institutes. </p><br><br>
           </div>
+
           <div class="detail">
-            <div class="col-md-10 table-responsive table-detail">
+          <div class="row">
+            <div class="col-md-10 mdl-cell--4-col-phone table-responsive table-detail">
               <table class="table">
                 <tbody>
                   <tr>
@@ -55,9 +57,10 @@
               </table>
             </div>  
           </div>
+          </div>
 
           <div class="row">
-                    <div class="col-md-10 table-responsive table-detail">
+                    <div class="col-md-10 mdl-cell--4-col-phone table-responsive table-detail">
                     <h4>NUTRITIVE DATA</h4>
                         <table class="table">
                             <tbody>
@@ -145,20 +148,28 @@
                         </table>
                     </div>
                     <br><br>
-                    <div class="col-md-10 table-responsive table-detail">
-                    <h4>ABIOTIC STRESS TOLERANCE</h4>
+                    <div class="row">
+                      <div class="col-md-10 mdl-cell--4-col-phone table-responsive table-detail">
+                        <h4>ABIOTIC STRESS TOLERANCE</h4>
+                      </div>
                     </div>
                     <br><br>
-                    <div class="col-md-10 table-responsive table-detail">
-                      <h4>INSECT PEST RESISTANCE</h4>
+                    <div class="row">
+                      <div class="col-md-10 mdl-cell--4-col-phone table-responsive table-detail">
+                        <h4>INSECT PEST RESISTANCE</h4>
+                      </div>
                     </div>
                     <br><br>
-                    <div class="col-md-10 table-responsive table-detail">
-                      <h4>BACTERIAL RESISTANCE</h4>
+                    <div class="row">
+                      <div class="col-md-10 mdl-cell--4-col-phonetable-responsive table-detail">
+                        <h4>BACTERIAL RESISTANCE</h4>
+                      </div>
                     </div>
                     <br><br>
-                    <div class="col-md-10 table-responsive table-detail">
-                      <h4>FUNGAL RESISTANCE</h4>
+                    <div class="row">
+                      <div class="col-md-10 table-responsive table-detail">
+                        <h4>FUNGAL RESISTANCE</h4>
+                      </div>
                     </div>
                 </div>
 

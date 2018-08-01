@@ -10,7 +10,7 @@
             </div>
             <h5 class="col-md-2"><b>Capsicum</b></h5>
             <br><br>
-            <div class="detail">
+            <div class="row detail">
                 <div class="col-md-6">
                     <img src="img/char/capsicum.jpg">
                 </div>
@@ -60,7 +60,7 @@
                 </div>
                 <br><br><br><br>
                 <div class="row">
-                    <div class="col-md-10 table-responsive passport-detail">
+                    <div class="col-md-10 table-responsive table-detail">
                     <h4>SEEDLING DATA</h4>
                         <table class="table">
                             <tbody>
@@ -100,7 +100,7 @@
                         </table>
                     </div>
                     <br><br>
-                    <div class="col-md-10 table-responsive passport-detail">
+                    <div class="col-md-10 table-responsive table-detail">
                     <h4>VEGETATIVE DATA</h4>
                         <table class="table">
                             <tbody>
@@ -140,15 +140,15 @@
                         </table>
                     </div>
                     <br><br>
-                    <div class="col-md-10 table-responsive passport-detail">
+                    <div class="col-md-10 table-responsive table-detail">
                         <h4>INFLORESCENCE DATA</h4>
                     </div>
                     <br><br>
-                    <div class="col-md-10 table-responsive passport-detail">
+                    <div class="col-md-10 table-responsive table-detail">
                         <h4>FRUIT DATA</h4>
                     </div>
                     <br><br>
-                    <div class="col-md-10 table-responsive passport-detail">
+                    <div class="col-md-10 table-responsive table-detail">
                         <h4>SEED DATA</h4>
                     </div>
                 </div>

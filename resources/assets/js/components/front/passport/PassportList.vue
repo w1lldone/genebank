@@ -32,7 +32,6 @@
                         </div>
                     </div>
                 </div>
-                <p><a href="/search/passport/detail" class="btn btn-success">Details</a></p>
             </div>
             <!--for demo wrap-->
         </section>
