@@ -8,8 +8,7 @@
         <td>{{ cultivarName }}</td>
         <td>{{ country }}</td>
         <td>
-            <input type="button" value="Detail" onclick="window.location.href='/search/passport/detail'">
-            
+            <a :href="url('/search/passport/'+pin)" class="btn btn-success">Details</a>
         </td>
     </tr>
 </template>
