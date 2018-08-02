@@ -12,14 +12,14 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand custom_navbar-brand" :href="env.baseUrl"><img :src="url('/img/logo.png')" alt=""></a>
+                            <a class="navbar-brand custom_navbar-brand" :href="url('/')"><img :src="url('/img/logo.png')" alt=""></a>
                         </div>
                         <!--End of navbar-header-->
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse zero_mp menu " id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right main_menu clearfix">
-                                <li><a :href="url('')">Home</a></li>
+                                <li><a :href="url('/')">Home</a></li>
                                 <li><a href="#">search</a>
                                     <ul class="sub-menu">
                                         <li><a :href="url('/search/passport')">Passport</a></li>
