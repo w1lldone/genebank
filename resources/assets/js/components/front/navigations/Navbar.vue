@@ -23,8 +23,8 @@
                                 <li><a href="#">search</a>
                                     <ul class="sub-menu">
                                         <li><a :href="url('/search/passport')">Passport</a></li>
-                                        <li><a :href="url('char.html')">Characterization</a></li>
-                                        <li><a :href="url('eval.html')">Evaluation</a></li>
+                                        <li><a :href="url('/search/characterization')">Characterization</a></li>
+                                        <li><a :href="url('/search/evaluation')">Evaluation</a></li>
                                     </ul>
                                 </li>
                                 <li><a :href="url('/news')">news</a></li>

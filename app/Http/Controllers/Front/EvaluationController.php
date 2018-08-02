@@ -5,15 +5,15 @@ namespace App\Http\Controllers\Front;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class PassportController extends Controller
+class EvaluationController extends Controller
 {
     public function index(Request $request)
     {
-        return view('passport.index');
+        return view('evaluation.index');
     }
     
-    public function show(Request $request, $pin)
+    public function show(Request $request)
     {
-        return view('passport.show', compact('pin'));
+        return view('evaluation.show');
     }
 }

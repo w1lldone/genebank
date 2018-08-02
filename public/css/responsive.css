@@ -932,9 +932,6 @@
 }
 @media all and (max-width: 480px) {
 
-
-
-
     #header .header_menu .custom_navbar-brand {
         padding-top: 8px;
     }
@@ -1283,6 +1280,30 @@
         line-height: 23px;
         bottom: 5px;
         right: 5px;
+    }
+    #passport{
+        margin-top: 5px;
+        margin-left: 5px;
+        z-index: 99;
+        transform: scale(.50);
+        transform-origin: left;
+        overflow: scroll;
+    }
+    .navbar-collapse.pull-left {
+        float: none!important;
+    }
+    .navbar-collapse.pull-left + .navbar-custom-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 40px;
+    }
+    front-base {
+        float: none!important;
+        display: block;
+        /*position: absolute;*/
+        top: 0;
+        /*right: 40px;*/
     }
 }
 @media all and (max-width: 320px) {
@@ -1687,5 +1708,61 @@
         bottom: 5px;
         right: 5px;
     }
+    #passport, #char, #eval{
+        z-index: 99;
+        transform: scale(1);
+        transform-origin: left;
+        overflow: scroll;
+        width:130%;
+        margin-left: -60px;
+    }
+    #eval .detail{
+
+    }
+    table{
+        overflow: scroll;
+        display: flex;
+        display: block;
+        font-size: 9px;
+    }
+  /*  .row{
+        margin-left: -60px;
+        width:200%;
+        align-items: left;
+        transform-origin: left;
+        font-size: 10px;
+        overflow: scroll;
+    }*/
+    h4{
+        font-size: 17px;
+    }
+    #char, #passport p{
+        font-size: 10px;
+    }
+    .table-detail tr{
+        font-size: 10px;
+    }
+    /*.navbar-collapse.pull-left {
+        float: none!important;
+    }
+    .navbar-collapse.pull-left + .navbar-custom-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 40px;
+        color:#fff;
+    }
+    front-base {
+        float: none!important;
+        display: block;
+        position: absolute;
+        top: 0;
+        color:#fff;
+        right: 40px;
+    }
+    .mdl-cell--3-col, .mdl-cell--3-col-phone.mdl-cell--3-col-phone{
+        width: calc(100% - 16px);
+    }*/
+}
 }
 
