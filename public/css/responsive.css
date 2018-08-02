@@ -1747,7 +1747,7 @@
     }
     .navbar-collapse.pull-left + .navbar-custom-menu {
         display: block;
-        position: absolute;
+        position: abs}olute;
         top: 0;
         right: 40px;
         color:#fff;
@@ -1762,7 +1762,6 @@
     }
     .mdl-cell--3-col, .mdl-cell--3-col-phone.mdl-cell--3-col-phone{
         width: calc(100% - 16px);
-    }*/
-}
+    }*//
 }
 
