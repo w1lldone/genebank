@@ -1,5 +1,5 @@
 <template>
-    <tr>
+    <tr class="tbl-content">
         <td>{{ status }}</td>  
         <td>{{ pin }}</td>
         <td>{{ tempNumber }}</td>
@@ -8,7 +8,8 @@
         <td>{{ cultivarName }}</td>
         <td>{{ country }}</td>
         <td>
-            <a href="#" class="btn btn-success">Details</a>
+            <input type="button" value="Detail" onclick="window.location.href='/search/passport/detail'">
+            
         </td>
     </tr>
 </template>

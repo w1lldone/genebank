@@ -36,5 +36,16 @@ Route::get('/about', function ()
 })->name('about.index');
 
 Route::group(['prefix' => 'search'], function(){
-    Route::get('/passport', 'Front\PassportController@index')->name('passport.index');
+    Route::get('/characterization', 'Front\CharController@index')->name('characterization.index');
+    Route::get('/characterization/item', 'Front\CharController@show')->name('characterization.show');
+    Route::get('/characterization/item/detail', 'Front\CharController@detail')->name('characterization.detail');
 });
+Route::group(['prefix' => 'search'], function(){
+    Route::get('/evaluation', 'Front\EvaluationController@index')->name('evaluation.index');
+    Route::get('/evaluation/detail', 'Front\EvaluationController@show')->name('evaluation.show');
+});
+Route::group(['prefix' => 'search'], function(){
+    Route::get('/passport', 'Front\PassportController@index')->name('passport.index');
+    Route::get('/passport/detail', 'Front\PassportController@show')->name('passport.show');
+});
+

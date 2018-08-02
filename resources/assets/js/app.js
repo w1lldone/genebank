@@ -41,11 +41,6 @@ Vue.component(
 );
 
 Vue.component(
-    'Char',
-    require('./components/front/search/char.vue')
-);
-
-Vue.component(
     'about',
     require('./components/front/about/about.vue')
 );
@@ -59,12 +54,34 @@ Vue.component(
     'NewsList',
     require('./components/front/news/NewsList.vue')
 );
-
+Vue.component(
+    'CharList',
+    require('./components/front/char/CharList.vue')
+);
+Vue.component(
+    'CharListItem',
+    require('./components/front/char/CharListItem.vue')
+);
+Vue.component(
+    'CharListDetail',
+    require('./components/front/char/CharListDetail.vue')
+);
 Vue.component(
     'PassportList',
     require('./components/front/passport/PassportList.vue')
 );
-
+Vue.component(
+    'PassportListDetail',
+    require('./components/front/passport/PassportListDetail.vue')
+);
+Vue.component(
+    'EvalList',
+    require('./components/front/evaluation/EvalList.vue')
+);
+Vue.component(
+    'EvalListDetail',
+    require('./components/front/evaluation/EvalListDetail.vue')
+);
 Vue.component(
     'ComponentBase',
     require('./components/ComponentBase.vue')
