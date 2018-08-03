@@ -38105,7 +38105,7 @@ var render = function() {
           "div",
           {
             staticClass: "header_menu text-center",
-            attrs: { "data-spy": "affix", "data-offset-top": "50", id: "nav" }
+            attrs: { "data-spy": "affix", id: "nav" }
           },
           [
             _c("div", { staticClass: "container" }, [

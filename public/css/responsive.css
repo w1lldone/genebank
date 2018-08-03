@@ -1368,7 +1368,8 @@
         overflow-y: visible;
     }
     #slider {
-        min-height: 95px;
+        margin-top: 70px;
+        min-height: 120px;
     }
     #slider .carousel-indicators {
         bottom: 25px;
@@ -1406,6 +1407,7 @@
         font-size: 11px;
     }
     #welcome {
+        margin-top: -80px;
         min-height: 185px;
     }
     #welcome .wel_header {

@@ -1,7 +1,7 @@
 <template>
     <section id="header" data-spy="scroll" data-target="#header" >
         <div class="header-area">
-            <div class="header_menu text-center" data-spy="affix" data-offset-top="50" id="nav">
+            <div class="header_menu text-center" data-spy="affix" id="nav">
                 <div class="container">
                     <nav class="navbar navbar-default zero_mp ">
                         <!-- Brand and toggle get grouped for better mobile display -->
