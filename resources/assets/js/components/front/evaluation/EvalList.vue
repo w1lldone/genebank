@@ -2,12 +2,13 @@
     <front-base>
         <section id="eval" class="list-table">
       <!--for demo wrap-->
-          <div class="msg_title col-md-12">
+        <div class="row"
+          <div class="msg_title col-md-13">
             <h4><b>Evaluation</b></h4>
             <br>
             <p>Refers to the data results of screening accessions for their resistance to different pests (i.e. melon fly, cotton aphid, etc.) and diseases (i.e. Bhendi Yellow Vein Mosaic Virus,Tobacco Mosaic Virus, etc.). It also includes nutritive value (i.e.Vitamin A, Vitamin C, Anti-oxidant Activity, etc). The screening was conducted by scientists in various departments at AVRDC - The World Vegetable Center and other research institutes. </p><br><br>
          
-          <div class="tbl-header tbl-content">
+          <div class="tbl-header tbl-content col-md-14">
             <table cellpadding="0" cellspacing="0" border="0">
               <thead>
                 <tr>
@@ -51,6 +52,7 @@
                 </tr>
               </tbody>
             </table>
+        </div>
         </div>
         </div>
         </section>

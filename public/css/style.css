@@ -235,7 +235,7 @@ front-base, .navbar, #header .top_header .social_icon i:hover {
 
 front-base, #header .header_menu {
     min-height: 80px;
-    border-bottom: 1px solid #000d4c;
+    /*border-bottom: 1px solid #000d4c;*/
     z-index: 9999
 }
 front-base, #header .header_menu .navbar {
@@ -258,7 +258,7 @@ front-base, #header .header_menu .main_menu {
     padding-top: 20px;
 }
 front-base, #header .header_menu ul.main_menu li a {
-    background: #000d4c;
+    /*background: #000d4c;*/
     color:#fff;
     font-size: 14px;
     text-transform: uppercase;
@@ -283,7 +283,7 @@ front-base, #header .header_menu ul.main_menu li:after {
     height: 3px;
     width: 0px;
     background: #000d4c;
-    transition: width .5s ease, background-color .5s ease;
+    /*transition: width .5s ease, background-color .5s ease;*/
     margin-top: 6px;
 }
 front-base, #header .header_menu ul.main_menu li:hover:after,
@@ -304,7 +304,7 @@ front-base, #header .header_menu ul.main_menu li.active:after {
     list-style:none;
 }
 .menu a {
-    transition:all linear 0.15s;
+    /*transition:all linear 0.15s;*/
 }
 .menu li:hover > a, .menu .current-item > a {
     z-index:99999;
@@ -520,6 +520,7 @@ front-base, #header .header_menu ul.main_menu li.active:after {
 /*gall*/
 
 #gall {
+    margin-top:80px;
     background: #eeeeee;
     min-height: 780px;
     padding: 80px 0;
@@ -597,17 +598,6 @@ front-base, #header .header_menu ul.main_menu li.active:after {
     opacity: 10;
 }
 
-
-/*#counter {
-    min-height: 440px;
-    background: #bdbebd;
-    border-bottom: 1px solid #8c8e8c;
-}*/
-/*.counter_header {
-    padding-top: 80px;
-    text-align: center;
-    color: #fff;
-}*/
 section#counter {
     background: url(../img/img1.jpg) no-repeat scroll top center / cover;
     color: #fff;
@@ -669,6 +659,7 @@ section#counter {
 /*Latest news*/
 
 #news {
+    margin-top:80px;
     min-height: 500px;
     padding: 80px 0;
 }
@@ -756,11 +747,14 @@ section#counter {
 
 /*char*/
 #char {
+    margin-top:80px;
     min-height:2000px;
     background: #eeeeee;
     padding: 0px 80px 0px 80px;
 }
-
+#char .panel-group{
+    margin-top: 60px;
+}
 #char p{
     font-size:14px;
 }
@@ -862,6 +856,7 @@ li.fw-flash-message {
 }
 /*passport*/
 #passport {
+    margin-top:80px;
     min-height:1500px;
     background: #eeee;
     padding: 0px 80px 0px 80px;
@@ -876,10 +871,12 @@ table{
   font-family: 'Roboto', sans-serif;
 }
 
+#passport .tbl-content{
+  margin-top: 180px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
 .tbl-content{
-  /*height:300px;*/
-  overflow-x:auto;
-  margin-top: 0px;
+  margin-top: 10px;
   border: 1px solid rgba(255,255,255,0.3);
 }
 .tbl-content input{
@@ -940,6 +937,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
 /*eval*/
 #eval {
+    margin-top:80px;
     min-height:1500px;
     background: #eeeeee;
     padding: 0px 80px 0px 80px;
@@ -979,6 +977,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
 /*Passport Detail*/
 #passportDetail {
+    margin-top:80px;
     min-height:1500px;
     background: #eeeeee;
     padding: 0px 60px 0px 60px;
@@ -1067,6 +1066,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     background: #000d4c;
     padding-top:0px;
 }
+
 
 
 

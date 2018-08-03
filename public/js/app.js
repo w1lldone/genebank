@@ -37675,7 +37675,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -37688,7 +37688,6 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
-//
 //
 //
 //
@@ -40064,6 +40063,7 @@ var render = function() {
       _c("h5", { staticClass: "col-md-2" }, [_c("b", [_vm._v("Capsicum")])]),
       _c("br"),
       _c("br"),
+      _c("br"),
       _vm._v(" "),
       _c("div", { staticClass: "tbl-header tbl-content" }, [
         _c(
@@ -40202,7 +40202,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -40215,6 +40215,72 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -40526,171 +40592,431 @@ var render = function() {
             _c("br"),
             _c("br"),
             _c("br"),
-            _c("br"),
             _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-10 table-responsive table-detail" },
-                [
-                  _c("h4", [_vm._v("SEEDLING DATA")]),
-                  _vm._v(" "),
-                  _c("table", { staticClass: "table" }, [
-                    _c("tbody", [
-                      _c("tr", [
-                        _c("td", [
-                          _vm._v("Hypocotyl color (terminal bud 1-2 mm)")
-                        ]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Hypocotyl color intensity")]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [
-                          _vm._v("Cotyledonous leaf length (mm) (N=10)")
-                        ]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [
-                          _vm._v("Cotyledonous leaf width (mm) (N=10)")
-                        ]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Cotyledonous leaf shape")]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Cotyledonous leaf color")]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Hypocotyl pubescence")]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Stem color (before transplanting)")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Green")])
+            _c(
+              "div",
+              {
+                staticClass: "col-md-10 panel-group",
+                attrs: {
+                  id: "accordion",
+                  role: "tablist",
+                  "aria-multiselectable": "true"
+                }
+              },
+              [
+                _c("div", { staticClass: "panel panel-default" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "panel-heading",
+                      attrs: { role: "tab", id: "headingOne" }
+                    },
+                    [
+                      _c("h4", { staticClass: "panel-title" }, [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              role: "button",
+                              "data-toggle": "collapse",
+                              "data-parent": "#accordion",
+                              href: "#collapseOne",
+                              "aria-expanded": "true",
+                              "aria-controls": "collapseOne"
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                        SEEDLING DATA\n                      "
+                            )
+                          ]
+                        )
                       ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "panel-collapse collapse in",
+                      attrs: {
+                        id: "collapseOne",
+                        role: "tabpanel",
+                        "aria-labelledby": "headingOne"
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "panel-body" }, [
+                        _c("div", { staticClass: "row" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "col-md-10 table-responsive table-detail"
+                            },
+                            [
+                              _c("table", { staticClass: "table" }, [
+                                _c("tbody", [
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "Hypocotyl color (terminal bud 1-2 mm)"
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v("Hypocotyl color intensity")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "Cotyledonous leaf length (mm) (N=10)"
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "Cotyledonous leaf width (mm) (N=10)"
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v("Cotyledonous leaf shape")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v("Cotyledonous leaf color")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [_vm._v("Hypocotyl pubescence")]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "Stem color (before transplanting)"
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [_vm._v("Green")])
+                                  ])
+                                ])
+                              ])
+                            ]
+                          )
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "panel panel-default" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-heading",
+                        attrs: { role: "tab", id: "headingTwo" }
+                      },
+                      [
+                        _c("h4", { staticClass: "panel-title" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "collapsed",
+                              attrs: {
+                                role: "button",
+                                "data-toggle": "collapse",
+                                "data-parent": "#accordion",
+                                href: "#collapseTwo",
+                                "aria-expanded": "false",
+                                "aria-controls": "collapseTwo"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                        VEGETATIVE DATA\n                      "
+                              )
+                            ]
+                          )
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-collapse collapse",
+                        attrs: {
+                          id: "collapseTwo",
+                          role: "tabpanel",
+                          "aria-labelledby": "headingTwo"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "panel-body" }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "col-md-10 table-responsive table-detail"
+                            },
+                            [
+                              _c("table", { staticClass: "table" }, [
+                                _c("tbody", [
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "Hypocotyl color (terminal bud 1-2 mm)"
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v("Hypocotyl color intensity")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "Cotyledonous leaf length (mm) (N=10)"
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "Cotyledonous leaf width (mm) (N=10)"
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v("Cotyledonous leaf shape")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v("Cotyledonous leaf color")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [_vm._v("Hypocotyl pubescence")]),
+                                    _vm._v(" "),
+                                    _c("td")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "Stem color (before transplanting)"
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [_vm._v("Green")])
+                                  ])
+                                ])
+                              ])
+                            ]
+                          )
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "panel panel-default" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-heading",
+                        attrs: { role: "tab", id: "headingThree" }
+                      },
+                      [
+                        _c("h4", { staticClass: "panel-title" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "collapsed",
+                              attrs: {
+                                role: "button",
+                                "data-toggle": "collapse",
+                                "data-parent": "#accordion",
+                                href: "#collapseThree",
+                                "aria-expanded": "false",
+                                "aria-controls": "collapseThree"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                        INFLORESCENCE DATA\n                      "
+                              )
+                            ]
+                          )
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-collapse collapse",
+                        attrs: {
+                          id: "collapseThree",
+                          role: "tabpanel",
+                          "aria-labelledby": "headingThree"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "panel-body" }, [
+                          _c("div", {
+                            staticClass:
+                              "col-md-10 table-responsive table-detail"
+                          })
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "panel panel-default" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-heading",
+                        attrs: { role: "tab", id: "headingFor" }
+                      },
+                      [
+                        _c("h4", { staticClass: "panel-title" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "collapsed",
+                              attrs: {
+                                role: "button",
+                                "data-toggle": "collapse",
+                                "data-parent": "#accordion",
+                                href: "#collapseFor",
+                                "aria-expanded": "false",
+                                "aria-controls": "collapseFor"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                        FRUIT DATA\n                      "
+                              )
+                            ]
+                          )
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-collapse collapse",
+                        attrs: {
+                          id: "collapseFor",
+                          role: "tabpanel",
+                          "aria-labelledby": "headingFor"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "panel-body" }, [
+                          _c("div", { staticClass: "row" }, [
+                            _c("div", {
+                              staticClass:
+                                "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                            })
+                          ])
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "panel panel-default" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-heading",
+                        attrs: { role: "tab", id: "headingFive" }
+                      },
+                      [
+                        _c("h4", { staticClass: "panel-title" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "collapsed",
+                              attrs: {
+                                role: "button",
+                                "data-toggle": "collapse",
+                                "data-parent": "#accordion",
+                                href: "#collapseFive",
+                                "aria-expanded": "false",
+                                "aria-controls": "collapseFive"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                        SEED DATA\n                      "
+                              )
+                            ]
+                          )
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _vm._v('">\n                      '),
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", {
+                        staticClass:
+                          "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                      })
                     ])
                   ])
-                ]
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-10 table-responsive table-detail" },
-                [
-                  _c("h4", [_vm._v("VEGETATIVE DATA")]),
-                  _vm._v(" "),
-                  _c("table", { staticClass: "table" }, [
-                    _c("tbody", [
-                      _c("tr", [
-                        _c("td", [
-                          _vm._v("Hypocotyl color (terminal bud 1-2 mm)")
-                        ]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Hypocotyl color intensity")]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [
-                          _vm._v("Cotyledonous leaf length (mm) (N=10)")
-                        ]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [
-                          _vm._v("Cotyledonous leaf width (mm) (N=10)")
-                        ]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Cotyledonous leaf shape")]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Cotyledonous leaf color")]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Hypocotyl pubescence")]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Stem color (before transplanting)")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("Green")])
-                      ])
-                    ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-10 table-responsive table-detail" },
-                [_c("h4", [_vm._v("INFLORESCENCE DATA")])]
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-10 table-responsive table-detail" },
-                [_c("h4", [_vm._v("FRUIT DATA")])]
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-md-10 table-responsive table-detail" },
-                [_c("h4", [_vm._v("SEED DATA")])]
-              )
-            ])
+                ])
+              ]
+            )
           ])
         ])
       ])
@@ -41244,7 +41570,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -41257,6 +41583,21 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -41483,254 +41824,330 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            {
-              staticClass:
-                "col-md-7 mdl-cell--4-col-phone table-responsive table-detail"
-            },
-            [
-              _c("table", { staticClass: "table" }, [
-                _c("tbody", [
-                  _c("tr", [
-                    _c("td", [_vm._v("Vegetable introduction number")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("VI000002")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Crop accession number")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("V01001")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Duplicate note")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("0")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Temporary number")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Variant")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Distribution Status")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Available")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Family")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("LEGUMINOSAE")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Genus")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("VIGNA")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Species")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("RADIATA")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Subtaxa")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("VAR. RADIATA")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Sender's Name")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Donor identification number")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("PI 424927")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Other number 1")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Other number 2")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("PI number")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("PI 424927")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Pedigree / Cultivar name")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("BK-1")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Donor institute")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Donor's address")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Acquisition date")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("1972-01-01")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Duplicate status")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Collector")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Collector's number")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Collecting institute")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Collection date of original sample")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Country of collection")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Thailand")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Province / State")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("BANGKOK")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Municipality / Country / District")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Location of collection site")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Latitude of collection site")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Longitude of collection site")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Altitude of collection site (Meters)")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Collecting source")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Sample source")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Status of sample")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("Unknown")])
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Collecting project")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Core collection")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Notes")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Annotation")]),
-                    _vm._v(" "),
-                    _c("td")
-                  ]),
-                  _vm._v(" "),
-                  _c("tr", [
-                    _c("td", [_vm._v("Duplicate storage site")]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v("NPGRC, SGSV, RDASV")])
+        _c(
+          "div",
+          {
+            staticClass: "panel-group",
+            attrs: {
+              id: "accordion",
+              role: "tablist",
+              "aria-multiselectable": "true"
+            }
+          },
+          [
+            _c("div", { staticClass: "panel panel-default" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "panel-heading",
+                  attrs: { role: "tab", id: "headingOne" }
+                },
+                [
+                  _c("h4", { staticClass: "panel-title" }, [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          role: "button",
+                          "data-toggle": "collapse",
+                          "data-parent": "#accordion",
+                          href: "#collapseOne",
+                          "aria-expanded": "true",
+                          "aria-controls": "collapseOne"
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                        NUTRITIVE DATA\n                      "
+                        )
+                      ]
+                    )
                   ])
-                ])
-              ])
-            ]
-          )
-        ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "panel-collapse collapse in",
+                  attrs: {
+                    id: "collapseOne",
+                    role: "tabpanel",
+                    "aria-labelledby": "headingOne"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "panel-body" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "col-md-7 mdl-cell--4-col-phone table-responsive table-detail"
+                        },
+                        [
+                          _c("table", { staticClass: "table" }, [
+                            _c("tbody", [
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v("Vegetable introduction number")
+                                ]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("VI000002")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Crop accession number")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("V01001")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Duplicate note")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("0")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Temporary number")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Variant")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Distribution Status")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("Available")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Family")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("LEGUMINOSAE")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Genus")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("VIGNA")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Species")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("RADIATA")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Subtaxa")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("VAR. RADIATA")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Sender's Name")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v("Donor identification number")
+                                ]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("PI 424927")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Other number 1")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Other number 2")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("PI number")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("PI 424927")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Pedigree / Cultivar name")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("BK-1")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Donor institute")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Donor's address")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Acquisition date")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("1972-01-01")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Duplicate status")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Collector")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Collector's number")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Collecting institute")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v("Collection date of original sample")
+                                ]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Country of collection")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("Thailand")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Province / State")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("BANGKOK")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v("Municipality / Country / District")
+                                ]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v("Location of collection site")
+                                ]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v("Latitude of collection site")
+                                ]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v("Longitude of collection site")
+                                ]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v("Altitude of collection site (Meters)")
+                                ]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Collecting source")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Sample source")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Status of sample")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("Unknown")])
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Collecting project")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Core collection")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Notes")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Annotation")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Duplicate storage site")]),
+                                _vm._v(" "),
+                                _c("td", [_vm._v("NPGRC, SGSV, RDASV")])
+                              ])
+                            ])
+                          ])
+                        ]
+                      )
+                    ])
+                  ])
+                ]
+              )
+            ])
+          ]
+        )
       ])
     ])
   ])
@@ -41912,7 +42329,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -41927,6 +42344,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__EvalListDetail__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__EvalListDetail___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__EvalListDetail__);
+//
+//
 //
 //
 //
@@ -42039,7 +42458,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -42052,6 +42471,155 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -42350,203 +42918,554 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-          },
-          [
-            _c("h4", [_vm._v("NUTRITIVE DATA")]),
-            _vm._v(" "),
-            _c("table", { staticClass: "table" }, [
-              _c("tbody", [
-                _c("tr", [
-                  _c("td", [_vm._v("Dry matter (%)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Sugar (%)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v(" Color value (*100)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v(" Lipid (%)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Capsacin (mg/g)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Alkalinity (pH)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Soluble solids (Brix)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Acidity (% Citric acid)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Total solids")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Beta carotene (mg/100g)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Fiber (%)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Vitamin A (mg/100g)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Vitamin C (mg/100g)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Ascorbic acid (mg/100g)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [
-                    _vm._v("Total phenolic (mg/100g) (by Folin-Denis Method)")
-                  ]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [
-                    _vm._v(
-                      "Anti-oxidant activity (%) (by Modified Thiocyanate Method)"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [
-                    _vm._v("Anti-oxidant activity (%) (by DPPH Method)")
-                  ]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Total oil content (%)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Protein content (%)")]),
-                  _vm._v(" "),
-                  _c("td")
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("Starch content (%)")]),
-                  _vm._v(" "),
-                  _c("td")
+      _c(
+        "div",
+        {
+          staticClass: "panel-group",
+          attrs: {
+            id: "accordion",
+            role: "tablist",
+            "aria-multiselectable": "true"
+          }
+        },
+        [
+          _c("div", { staticClass: "panel panel-default" }, [
+            _c(
+              "div",
+              {
+                staticClass: "panel-heading",
+                attrs: { role: "tab", id: "headingOne" }
+              },
+              [
+                _c("h4", { staticClass: "panel-title" }, [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        role: "button",
+                        "data-toggle": "collapse",
+                        "data-parent": "#accordion",
+                        href: "#collapseOne",
+                        "aria-expanded": "true",
+                        "aria-controls": "collapseOne"
+                      }
+                    },
+                    [_vm._v("\n                NUTRITIVE DATA\n              ")]
+                  )
                 ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "panel-collapse collapse in",
+                attrs: {
+                  id: "collapseOne",
+                  role: "tabpanel",
+                  "aria-labelledby": "headingOne"
+                }
+              },
+              [
+                _c("div", { staticClass: "panel-body" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                      },
+                      [
+                        _c("table", { staticClass: "table" }, [
+                          _c("tbody", [
+                            _c("tr", [
+                              _c("td", [_vm._v("Dry matter (%)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Sugar (%)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v(" Color value (*100)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v(" Lipid (%)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Capsacin (mg/g)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Alkalinity (pH)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Soluble solids (Brix)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Acidity (% Citric acid)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Total solids")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Beta carotene (mg/100g)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Fiber (%)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Vitamin A (mg/100g)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Vitamin C (mg/100g)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Ascorbic acid (mg/100g)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [
+                                _vm._v(
+                                  "Total phenolic (mg/100g) (by Folin-Denis Method)"
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [
+                                _vm._v(
+                                  "Anti-oxidant activity (%) (by Modified Thiocyanate Method)"
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [
+                                _vm._v(
+                                  "Anti-oxidant activity (%) (by DPPH Method)"
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Total oil content (%)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Protein content (%)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ]),
+                            _vm._v(" "),
+                            _c("tr", [
+                              _c("td", [_vm._v("Starch content (%)")]),
+                              _vm._v(" "),
+                              _c("td")
+                            ])
+                          ])
+                        ])
+                      ]
+                    )
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "panel panel-default" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "panel-heading",
+                  attrs: { role: "tab", id: "headingTwo" }
+                },
+                [
+                  _c("h4", { staticClass: "panel-title" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "collapsed",
+                        attrs: {
+                          role: "button",
+                          "data-toggle": "collapse",
+                          "data-parent": "#accordion",
+                          href: "#collapseTwo",
+                          "aria-expanded": "false",
+                          "aria-controls": "collapseTwo"
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                ABIOTIC STRESS TOLERANCE\n              "
+                        )
+                      ]
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "panel-collapse collapse",
+                  attrs: {
+                    id: "collapseTwo",
+                    role: "tabpanel",
+                    "aria-labelledby": "headingTwo"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "panel-body" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                        },
+                        [
+                          _c("table", { staticClass: "table" }, [
+                            _c("tbody", [
+                              _c("tr", [
+                                _c("td", [_vm._v("Dry matter (%)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Sugar (%)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v(" Color value (*100)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v(" Lipid (%)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Capsacin (mg/g)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Alkalinity (pH)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Soluble solids (Brix)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Acidity (% Citric acid)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Total solids")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Beta carotene (mg/100g)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Fiber (%)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Vitamin A (mg/100g)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Vitamin C (mg/100g)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Ascorbic acid (mg/100g)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v(
+                                    "Total phenolic (mg/100g) (by Folin-Denis Method)"
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v(
+                                    "Anti-oxidant activity (%) (by Modified Thiocyanate Method)"
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [
+                                  _vm._v(
+                                    "Anti-oxidant activity (%) (by DPPH Method)"
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Total oil content (%)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Protein content (%)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ]),
+                              _vm._v(" "),
+                              _c("tr", [
+                                _c("td", [_vm._v("Starch content (%)")]),
+                                _vm._v(" "),
+                                _c("td")
+                              ])
+                            ])
+                          ])
+                        ]
+                      )
+                    ])
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "panel panel-default" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "panel-heading",
+                  attrs: { role: "tab", id: "headingThree" }
+                },
+                [
+                  _c("h4", { staticClass: "panel-title" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "collapsed",
+                        attrs: {
+                          role: "button",
+                          "data-toggle": "collapse",
+                          "data-parent": "#accordion",
+                          href: "#collapseThree",
+                          "aria-expanded": "false",
+                          "aria-controls": "collapseThree"
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                INSECT PEST RESISTANCE\n              "
+                        )
+                      ]
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "panel-collapse collapse",
+                  attrs: {
+                    id: "collapseThree",
+                    role: "tabpanel",
+                    "aria-labelledby": "headingThree"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "panel-body" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", {
+                        staticClass:
+                          "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                      })
+                    ])
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "panel panel-default" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "panel-heading",
+                  attrs: { role: "tab", id: "headingFor" }
+                },
+                [
+                  _c("h4", { staticClass: "panel-title" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "collapsed",
+                        attrs: {
+                          role: "button",
+                          "data-toggle": "collapse",
+                          "data-parent": "#accordion",
+                          href: "#collapseFor",
+                          "aria-expanded": "false",
+                          "aria-controls": "collapseFor"
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                BACTERIAL RESISTANCE\n              "
+                        )
+                      ]
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "panel-collapse collapse",
+                  attrs: {
+                    id: "collapseFor",
+                    role: "tabpanel",
+                    "aria-labelledby": "headingFor"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "panel-body" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", {
+                        staticClass:
+                          "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                      })
+                    ])
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "panel panel-default" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "panel-heading",
+                  attrs: { role: "tab", id: "headingFive" }
+                },
+                [
+                  _c("h4", { staticClass: "panel-title" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "collapsed",
+                        attrs: {
+                          role: "button",
+                          "data-toggle": "collapse",
+                          "data-parent": "#accordion",
+                          href: "#collapseFive",
+                          "aria-expanded": "false",
+                          "aria-controls": "collapseFive"
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                FUNGAL RESISTANCE\n              "
+                        )
+                      ]
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _vm._v('">\n              '),
+              _c("div", { staticClass: "row" }, [
+                _c("div", {
+                  staticClass:
+                    "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                })
               ])
             ])
-          ]
-        ),
-        _vm._v(" "),
-        _c("br"),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            {
-              staticClass:
-                "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-            },
-            [_c("h4", [_vm._v("ABIOTIC STRESS TOLERANCE")])]
-          )
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            {
-              staticClass:
-                "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-            },
-            [_c("h4", [_vm._v("INSECT PEST RESISTANCE")])]
-          )
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            {
-              staticClass:
-                "col-md-10 mdl-cell--4-col-phonetable-responsive table-detail"
-            },
-            [_c("h4", [_vm._v("BACTERIAL RESISTANCE")])]
-          )
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            { staticClass: "col-md-10 table-responsive table-detail" },
-            [_c("h4", [_vm._v("FUNGAL RESISTANCE")])]
-          )
-        ])
-      ])
+          ])
+        ]
+      )
     ])
   ])
 }
@@ -42570,7 +43489,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("front-base", [
     _c("section", { staticClass: "list-table", attrs: { id: "eval" } }, [
-      _c("div", { staticClass: "msg_title col-md-12" }, [
+      _c("div", { staticClass: "msg_title col-md-13" }, [
         _c("h4", [_c("b", [_vm._v("Evaluation")])]),
         _vm._v(" "),
         _c("br"),
@@ -42583,7 +43502,7 @@ var render = function() {
         _c("br"),
         _c("br"),
         _vm._v(" "),
-        _c("div", { staticClass: "tbl-header tbl-content" }, [
+        _c("div", { staticClass: "tbl-header tbl-content col-md-14" }, [
           _c(
             "table",
             { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
