@@ -46,6 +46,6 @@ Route::group(['prefix' => 'search'], function(){
 });
 Route::group(['prefix' => 'search'], function(){
     Route::get('/passport', 'Front\PassportController@index')->name('passport.index');
-    Route::get('/passport/detail', 'Front\PassportController@show')->name('passport.show');
+    Route::get('/passport/{pin}', 'Front\PassportController@show')->name('passport.show');
 });
 

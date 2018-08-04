@@ -19,6 +19,7 @@ class PassportsResource extends JsonResource
     {
         return [
             'donor_number' => $this->donor_number,
+            'distribution_status' => 'available',
             'country' => $this->country,
             'location' => $this->location,
             'collecting_institute' => $this->collecting_institute,
