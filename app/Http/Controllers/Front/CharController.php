@@ -18,8 +18,8 @@ class CharController extends Controller
 
     }
     
-    public function detail(Request $request)
+    public function detail(Request $request, $pin)
     {
-        return view('char.detail', compact('genus'));
+        return view('char.detail', compact('pin'));
     }
 }

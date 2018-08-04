@@ -39974,7 +39974,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -40038,6 +40038,8 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
+//
+//
 
 
 
@@ -40045,13 +40047,19 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
   name: 'CharVegetableList',
   props: {
-    genus: String
-    // pin: String,
+    genus: String,
+    pin: String
   },
   data: function data() {
     return {
       vegetables: [],
-      genera: [],
+      vegetable: {
+        species: {
+          genus: {}
+        },
+        passport: {}
+      },
+      // genera:[],
       load: 'characterization'
     };
   },
@@ -40089,44 +40097,11 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
       }
 
       return loadVegetables;
-    }(),
-    loadGenera: function () {
-      var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee2() {
-        var response;
-        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
-          while (1) {
-            switch (_context2.prev = _context2.next) {
-              case 0:
-                _context2.next = 2;
-                return axios.get('/api/genera/' + this.genus);
-
-              case 2:
-                response = _context2.sent;
-
-                // {
-                //   params: {
-                //     genus_id: this.genus
-                // }})
-                this.genera = response.data.data;
-
-              case 4:
-              case 'end':
-                return _context2.stop();
-            }
-          }
-        }, _callee2, this);
-      }));
-
-      function loadGenera() {
-        return _ref2.apply(this, arguments);
-      }
-
-      return loadGenera;
     }()
   },
   mounted: function mounted() {
     this.loadVegetables();
-    this.loadGenera();
+    // this.loadGenera()
   },
 
 
@@ -40145,98 +40120,98 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("front-base", [
     _c("section", { staticClass: "list-table", attrs: { id: "char" } }, [
-      _c("div", { staticClass: "msg_title col-md-12" }, [
-        _c("h4", [_c("b", [_vm._v("Characterization")])]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
-          )
-        ]),
-        _c("br"),
-        _c("br")
-      ]),
-      _vm._v(" "),
-      _c("h5", { staticClass: "col-md-2" }, [
-        _c("b", [_vm._v(_vm._s(_vm.genera.name))])
-      ]),
-      _c("br"),
-      _c("br"),
-      _c("br"),
-      _vm._v(" "),
-      _c("div", { staticClass: "tbl-header tbl-content" }, [
-        _c(
-          "table",
-          { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
-          [
-            _c("thead", [
-              _c("tr", [
-                _c("th", [_vm._v("VINO")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Variant")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Accno")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Temp. no")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Variant")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Species")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Subtaxa")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Country")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Operation")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c(
-              "tbody",
-              _vm._l(_vm.vegetables, function(vegetable) {
-                return _c("tr", { key: vegetable.id }, [
-                  _c("td", [
-                    _vm._v(_vm._s(vegetable.plant_introduction_number))
-                  ]),
-                  _vm._v(" "),
-                  _c("td"),
-                  _vm._v(" "),
-                  _c("td"),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(vegetable.temporary_number))]),
-                  _vm._v(" "),
-                  _c("td"),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(vegetable.species.name))]),
-                  _vm._v(" "),
-                  _c("td"),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(vegetable.passport.country))]),
-                  _vm._v(" "),
-                  _c("td", [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "btn btn-success",
-                        attrs: {
-                          href: _vm.url(
-                            "/search/characterization/" +
-                              _vm.genus +
-                              "/" +
-                              _vm.pin
-                          )
-                        }
-                      },
-                      [_vm._v("Details")]
-                    )
-                  ])
-                ])
-              })
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "msg_title col-md-12" }, [
+          _c("h4", [_c("b", [_vm._v("Characterization")])]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
             )
-          ]
-        )
+          ]),
+          _c("br"),
+          _c("br")
+        ]),
+        _vm._v(" "),
+        _c("h5", { staticClass: "col-md-2" }, [_c("b", [_vm._v("Capsicum")])]),
+        _c("br"),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { staticClass: "tbl-header tbl-content" }, [
+          _c(
+            "table",
+            { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
+            [
+              _c("thead", [
+                _c("tr", [
+                  _c("th", [_vm._v("VINO")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Variant")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Accno")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Temp. no")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Variant")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Species")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Subtaxa")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Country")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Operation")])
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.vegetables, function(vegetable) {
+                  return _c("tr", { key: vegetable.id }, [
+                    _c("td", [
+                      _vm._v(_vm._s(vegetable.plant_introduction_number))
+                    ]),
+                    _vm._v(" "),
+                    _c("td"),
+                    _vm._v(" "),
+                    _c("td"),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(vegetable.temporary_number))]),
+                    _vm._v(" "),
+                    _c("td"),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(vegetable.species.name))]),
+                    _vm._v(" "),
+                    _c("td"),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(vegetable.passport.country))]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: {
+                            href: _vm.url(
+                              "/search/characterization/" +
+                                _vm.genus +
+                                "/" +
+                                _vm.pin
+                            )
+                          }
+                        },
+                        [_vm._v("Details")]
+                      )
+                    ])
+                  ])
+                })
+              )
+            ]
+          )
+        ])
       ])
     ])
   ])
@@ -40286,7 +40261,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -40538,100 +40513,66 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
-  name: 'CharDetail',
-  props: {
-    genus: String,
-    pin: String
-  },
-  data: function data() {
-    return {
-      genuss: [],
-      vegetables: {
-        species: {
-          genus: {}
-        }
-      },
-      load: 'characterization'
-    };
-  },
+    name: 'CharDetail',
+    props: {
+        genus: String,
+        pin: String
+    },
+    data: function data() {
+        return {
+            vegetables: {
+                species: {
+                    genus: {}
+                }
+            },
+            load: 'characterization'
+        };
+    },
 
-  methods: {
-    loadVegetables: function () {
-      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
-        var response;
-        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return axios.get('/api/vegetables/' + this.pin + '/passport');
+    methods: {
+        loadVegetables: function () {
+            var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+                var response;
+                return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                _context.next = 2;
+                                return axios.get('/api/vegetables/' + this.pin);
 
-              case 2:
-                response = _context.sent;
+                            case 2:
+                                response = _context.sent;
 
-                this.vegetables = response.data.data;
+                                this.vegetables = response.data.data;
 
-              case 4:
-              case 'end':
-                return _context.stop();
+                            case 4:
+                            case 'end':
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this);
+            }));
+
+            function loadVegetables() {
+                return _ref.apply(this, arguments);
             }
-          }
-        }, _callee, this);
-      }));
 
-      function loadVegetables() {
-        return _ref.apply(this, arguments);
-      }
+            return loadVegetables;
+        }()
+    },
+    mounted: function mounted() {
+        this.loadVegetables();
+    },
 
-      return loadVegetables;
-    }(),
-    loadGenus: function () {
-      var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee2() {
-        var response;
-        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
-          while (1) {
-            switch (_context2.prev = _context2.next) {
-              case 0:
-                _context2.next = 2;
-                return axios.get('/api/vegetables?load=passport', {
-                  params: {
-                    genus_id: this.genus
-                  }
-                });
-
-              case 2:
-                response = _context2.sent;
-
-                this.genuss = response.data.data;
-
-              case 4:
-              case 'end':
-                return _context2.stop();
-            }
-          }
-        }, _callee2, this);
-      }));
-
-      function loadGenus() {
-        return _ref2.apply(this, arguments);
-      }
-
-      return loadGenus;
-    }()
-  },
-  mounted: function mounted() {
-    this.loadVegetables();
-    this.loadGenus();
-  },
-
-  components: {
-    FrontBase: __WEBPACK_IMPORTED_MODULE_1__FrontBase___default.a
-  }
+    components: {
+        FrontBase: __WEBPACK_IMPORTED_MODULE_1__FrontBase___default.a
+    }
 });
 
 /***/ }),
@@ -40644,556 +40585,566 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("front-base", [
     _c("section", { attrs: { id: "char" } }, [
-      _c("div", { staticClass: "container col-md-12" }, [
-        _c("div", { staticClass: "msg" }, [
-          _c("div", { staticClass: "msg_title" }, [
-            _c("h4", [_c("b", [_vm._v("Characterization")])]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
-              )
-            ]),
-            _c("br"),
-            _c("br")
-          ]),
-          _vm._v(" "),
-          _c("h5", { staticClass: "col-md-2" }, [
-            _c("b", [_vm._v("Capsicum")])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { staticClass: "row detail" }, [
-            _c("div", { staticClass: "col-md-6" }, [
-              _c("img", { attrs: { src: "img/char/capsicum.jpg" } })
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "container col-md-12" }, [
+          _c("div", { staticClass: "msg" }, [
+            _c("div", { staticClass: "msg_title" }, [
+              _c("h4", [_c("b", [_vm._v("Characterization")])]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
+                )
+              ]),
+              _c("br"),
+              _c("br")
             ]),
             _vm._v(" "),
-            _c("div", { attrs: { id: "list" } }, [
+            _c("h5", { staticClass: "col-md-2" }, [
+              _c("b", [_vm._v(_vm._s(_vm.vegetables.species.genus.name))])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _c("br"),
+            _vm._v(" "),
+            _c("div", { staticClass: "row detail" }, [
+              _c("div", { staticClass: "col-md-6" }, [
+                _c("img", { attrs: { src: "img/char/capsicum.jpg" } })
+              ]),
+              _vm._v(" "),
+              _c("div", { attrs: { id: "list" } }, [
+                _c(
+                  "div",
+                  { staticClass: "col-md-6 table-responsive table-detail" },
+                  [
+                    _c("table", { staticClass: "table" }, [
+                      _c("tbody", [
+                        _c("tr", [
+                          _c("td", [_vm._v("Vegetable introduction number")]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _vm._v(
+                              _vm._s(_vm.vegetables.plant_introduction_number)
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Temporary Number")]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _vm._v(_vm._s(_vm.vegetables.temporary_number))
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Variant")]),
+                          _vm._v(" "),
+                          _c("td")
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Characterized Year and Season")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("1986SP")])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Species")]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _vm._v(_vm._s(_vm.vegetables.species.name))
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Cultivar Name")]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _vm._v(_vm._s(_vm.vegetables.cultivar_name))
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Species")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("ANNUM")])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Subtaxa")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("VAR. RADIATA")])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Genus")]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _vm._v(_vm._s(_vm.vegetables.species.genus.name))
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Country")]),
+                          _vm._v(" "),
+                          _c("td")
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _c("br"),
+              _c("br"),
+              _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "col-md-6 table-responsive table-detail" },
+                {
+                  staticClass: "col-md-10 panel-group",
+                  attrs: {
+                    id: "accordion",
+                    role: "tablist",
+                    "aria-multiselectable": "true"
+                  }
+                },
                 [
-                  _c("table", { staticClass: "table" }, [
-                    _c("tbody", [
-                      _c("tr", [
-                        _c("td", [_vm._v("Vegetable introduction number")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _vm._v(
-                            _vm._s(_vm.vegetables.plant_introduction_number)
+                  _c("div", { staticClass: "panel panel-default" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-heading",
+                        attrs: { role: "tab", id: "headingOne" }
+                      },
+                      [
+                        _c("h4", { staticClass: "panel-title" }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                role: "button",
+                                "data-toggle": "collapse",
+                                "data-parent": "#accordion",
+                                href: "#collapseOne",
+                                "aria-expanded": "true",
+                                "aria-controls": "collapseOne"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                                SEEDLING DATA\n                              "
+                              )
+                            ]
                           )
                         ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Temporary Number")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _vm._v(_vm._s(_vm.vegetables.temporary_number))
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-collapse collapse in",
+                        attrs: {
+                          id: "collapseOne",
+                          role: "tabpanel",
+                          "aria-labelledby": "headingOne"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "panel-body" }, [
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "col-md-10 table-responsive table-detail"
+                              },
+                              [
+                                _c("table", { staticClass: "table" }, [
+                                  _c("tbody", [
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v(
+                                          "Hypocotyl color (terminal bud 1-2 mm)"
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v("Hypocotyl color intensity")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v(
+                                          "Cotyledonous leaf length (mm) (N=10)"
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v(
+                                          "Cotyledonous leaf width (mm) (N=10)"
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v("Cotyledonous leaf shape")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v("Cotyledonous leaf color")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v("Hypocotyl pubescence")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v(
+                                          "Stem color (before transplanting)"
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td", [_vm._v("Green")])
+                                    ])
+                                  ])
+                                ])
+                              ]
+                            )
+                          ])
                         ])
-                      ]),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel panel-default" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          attrs: { role: "tab", id: "headingTwo" }
+                        },
+                        [
+                          _c("h4", { staticClass: "panel-title" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "collapsed",
+                                attrs: {
+                                  role: "button",
+                                  "data-toggle": "collapse",
+                                  "data-parent": "#accordion",
+                                  href: "#collapseTwo",
+                                  "aria-expanded": "false",
+                                  "aria-controls": "collapseTwo"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                VEGETATIVE DATA\n                              "
+                                )
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
                       _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Variant")]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-collapse collapse",
+                          attrs: {
+                            id: "collapseTwo",
+                            role: "tabpanel",
+                            "aria-labelledby": "headingTwo"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "panel-body" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "col-md-10 table-responsive table-detail"
+                              },
+                              [
+                                _c("table", { staticClass: "table" }, [
+                                  _c("tbody", [
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v(
+                                          "Hypocotyl color (terminal bud 1-2 mm)"
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v("Hypocotyl color intensity")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v(
+                                          "Cotyledonous leaf length (mm) (N=10)"
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v(
+                                          "Cotyledonous leaf width (mm) (N=10)"
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v("Cotyledonous leaf shape")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v("Cotyledonous leaf color")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v("Hypocotyl pubescence")
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("tr", [
+                                      _c("td", [
+                                        _vm._v(
+                                          "Stem color (before transplanting)"
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td", [_vm._v("Green")])
+                                    ])
+                                  ])
+                                ])
+                              ]
+                            )
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel panel-default" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          attrs: { role: "tab", id: "headingThree" }
+                        },
+                        [
+                          _c("h4", { staticClass: "panel-title" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "collapsed",
+                                attrs: {
+                                  role: "button",
+                                  "data-toggle": "collapse",
+                                  "data-parent": "#accordion",
+                                  href: "#collapseThree",
+                                  "aria-expanded": "false",
+                                  "aria-controls": "collapseThree"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                INFLORESCENCE DATA\n                              "
+                                )
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
                       _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Characterized Year and Season")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("1986SP")])
-                      ]),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-collapse collapse",
+                          attrs: {
+                            id: "collapseThree",
+                            role: "tabpanel",
+                            "aria-labelledby": "headingThree"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "panel-body" }, [
+                            _c("div", {
+                              staticClass:
+                                "col-md-10 table-responsive table-detail"
+                            })
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel panel-default" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          attrs: { role: "tab", id: "headingFor" }
+                        },
+                        [
+                          _c("h4", { staticClass: "panel-title" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "collapsed",
+                                attrs: {
+                                  role: "button",
+                                  "data-toggle": "collapse",
+                                  "data-parent": "#accordion",
+                                  href: "#collapseFor",
+                                  "aria-expanded": "false",
+                                  "aria-controls": "collapseFor"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                FRUIT DATA\n                              "
+                                )
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
                       _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Species")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(_vm.vegetables.species.name))])
-                      ]),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-collapse collapse",
+                          attrs: {
+                            id: "collapseFor",
+                            role: "tabpanel",
+                            "aria-labelledby": "headingFor"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "panel-body" }, [
+                            _c("div", { staticClass: "row" }, [
+                              _c("div", {
+                                staticClass:
+                                  "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                              })
+                            ])
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel panel-default" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          attrs: { role: "tab", id: "headingFive" }
+                        },
+                        [
+                          _c("h4", { staticClass: "panel-title" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "collapsed",
+                                attrs: {
+                                  role: "button",
+                                  "data-toggle": "collapse",
+                                  "data-parent": "#accordion",
+                                  href: "#collapseFive",
+                                  "aria-expanded": "false",
+                                  "aria-controls": "collapseFive"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                SEED DATA\n                              "
+                                )
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
                       _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Cultivar Name")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(_vm.vegetables.cultivar_name))])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Species")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("ANNUM")])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Subtaxa")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("VAR. RADIATA")])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Genus")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _vm._v(_vm._s(_vm.vegetables.species.genus.name))
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Country")]),
-                        _vm._v(" "),
-                        _c("td")
-                      ])
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-collapse collapse",
+                          attrs: {
+                            id: "collapseFive",
+                            role: "tabpanel",
+                            "aria-labelledby": "headingFive"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "panel-body" }, [
+                            _c("div", { staticClass: "row" }, [
+                              _c("div", {
+                                staticClass:
+                                  "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                              })
+                            ])
+                          ])
+                        ]
+                      )
                     ])
                   ])
                 ]
               )
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _c("br"),
-            _c("br"),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "col-md-10 panel-group",
-                attrs: {
-                  id: "accordion",
-                  role: "tablist",
-                  "aria-multiselectable": "true"
-                }
-              },
-              [
-                _c("div", { staticClass: "panel panel-default" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "panel-heading",
-                      attrs: { role: "tab", id: "headingOne" }
-                    },
-                    [
-                      _c("h4", { staticClass: "panel-title" }, [
-                        _c(
-                          "a",
-                          {
-                            attrs: {
-                              role: "button",
-                              "data-toggle": "collapse",
-                              "data-parent": "#accordion",
-                              href: "#collapseOne",
-                              "aria-expanded": "true",
-                              "aria-controls": "collapseOne"
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n                        SEEDLING DATA\n                      "
-                            )
-                          ]
-                        )
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "panel-collapse collapse in",
-                      attrs: {
-                        id: "collapseOne",
-                        role: "tabpanel",
-                        "aria-labelledby": "headingOne"
-                      }
-                    },
-                    [
-                      _c("div", { staticClass: "panel-body" }, [
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "col-md-10 table-responsive table-detail"
-                            },
-                            [
-                              _c("table", { staticClass: "table" }, [
-                                _c("tbody", [
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Hypocotyl color (terminal bud 1-2 mm)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v("Hypocotyl color intensity")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Cotyledonous leaf length (mm) (N=10)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Cotyledonous leaf width (mm) (N=10)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v("Cotyledonous leaf shape")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v("Cotyledonous leaf color")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [_vm._v("Hypocotyl pubescence")]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Stem color (before transplanting)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td", [_vm._v("Green")])
-                                  ])
-                                ])
-                              ])
-                            ]
-                          )
-                        ])
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "panel panel-default" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-heading",
-                        attrs: { role: "tab", id: "headingTwo" }
-                      },
-                      [
-                        _c("h4", { staticClass: "panel-title" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "collapsed",
-                              attrs: {
-                                role: "button",
-                                "data-toggle": "collapse",
-                                "data-parent": "#accordion",
-                                href: "#collapseTwo",
-                                "aria-expanded": "false",
-                                "aria-controls": "collapseTwo"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                        VEGETATIVE DATA\n                      "
-                              )
-                            ]
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-collapse collapse",
-                        attrs: {
-                          id: "collapseTwo",
-                          role: "tabpanel",
-                          "aria-labelledby": "headingTwo"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "panel-body" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "col-md-10 table-responsive table-detail"
-                            },
-                            [
-                              _c("table", { staticClass: "table" }, [
-                                _c("tbody", [
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Hypocotyl color (terminal bud 1-2 mm)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v("Hypocotyl color intensity")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Cotyledonous leaf length (mm) (N=10)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Cotyledonous leaf width (mm) (N=10)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v("Cotyledonous leaf shape")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v("Cotyledonous leaf color")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [_vm._v("Hypocotyl pubescence")]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Stem color (before transplanting)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td", [_vm._v("Green")])
-                                  ])
-                                ])
-                              ])
-                            ]
-                          )
-                        ])
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "panel panel-default" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-heading",
-                        attrs: { role: "tab", id: "headingThree" }
-                      },
-                      [
-                        _c("h4", { staticClass: "panel-title" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "collapsed",
-                              attrs: {
-                                role: "button",
-                                "data-toggle": "collapse",
-                                "data-parent": "#accordion",
-                                href: "#collapseThree",
-                                "aria-expanded": "false",
-                                "aria-controls": "collapseThree"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                        INFLORESCENCE DATA\n                      "
-                              )
-                            ]
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-collapse collapse",
-                        attrs: {
-                          id: "collapseThree",
-                          role: "tabpanel",
-                          "aria-labelledby": "headingThree"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "panel-body" }, [
-                          _c("div", {
-                            staticClass:
-                              "col-md-10 table-responsive table-detail"
-                          })
-                        ])
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "panel panel-default" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-heading",
-                        attrs: { role: "tab", id: "headingFor" }
-                      },
-                      [
-                        _c("h4", { staticClass: "panel-title" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "collapsed",
-                              attrs: {
-                                role: "button",
-                                "data-toggle": "collapse",
-                                "data-parent": "#accordion",
-                                href: "#collapseFor",
-                                "aria-expanded": "false",
-                                "aria-controls": "collapseFor"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                        FRUIT DATA\n                      "
-                              )
-                            ]
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-collapse collapse",
-                        attrs: {
-                          id: "collapseFor",
-                          role: "tabpanel",
-                          "aria-labelledby": "headingFor"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "panel-body" }, [
-                          _c("div", { staticClass: "row" }, [
-                            _c("div", {
-                              staticClass:
-                                "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-                            })
-                          ])
-                        ])
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "panel panel-default" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-heading",
-                        attrs: { role: "tab", id: "headingFive" }
-                      },
-                      [
-                        _c("h4", { staticClass: "panel-title" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "collapsed",
-                              attrs: {
-                                role: "button",
-                                "data-toggle": "collapse",
-                                "data-parent": "#accordion",
-                                href: "#collapseFive",
-                                "aria-expanded": "false",
-                                "aria-controls": "collapseFive"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                        SEED DATA\n                      "
-                              )
-                            ]
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-collapse collapse",
-                        attrs: {
-                          id: "collapseFive",
-                          role: "tabpanel",
-                          "aria-labelledby": "headingFive"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "panel-body" }, [
-                          _c("div", { staticClass: "row" }, [
-                            _c("div", {
-                              staticClass:
-                                "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-                            })
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ])
-              ]
-            )
+            ])
           ])
         ])
       ])
