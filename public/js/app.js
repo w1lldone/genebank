@@ -39833,7 +39833,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -39844,28 +39844,18 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__CharVegetableList__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__CharVegetableList___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__CharVegetableList__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CharDetail__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CharDetail___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__CharDetail__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__FrontBase__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CharVegetableList__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CharVegetableList___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__CharVegetableList__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__CharDetail__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__CharDetail___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__CharDetail__);
+
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
 //
 //
 //
@@ -39901,14 +39891,52 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   name: 'CharGenusBase',
 
   data: function data() {
-    return {};
+    return {
+      genera: []
+    };
+  },
+
+  methods: {
+    loadGenera: function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+        var response;
+        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return axios.get('/api/genera');
+
+              case 2:
+                response = _context.sent;
+
+                this.genera = response.data.data;
+
+              case 4:
+              case 'end':
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function loadGenera() {
+        return _ref.apply(this, arguments);
+      }
+
+      return loadGenera;
+    }()
+  },
+  mounted: function mounted() {
+    this.loadGenera();
   },
 
   components: {
-    FrontBase: __WEBPACK_IMPORTED_MODULE_0__FrontBase___default.a,
-    CharVegetableList: __WEBPACK_IMPORTED_MODULE_1__CharVegetableList___default.a,
-    CharDetail: __WEBPACK_IMPORTED_MODULE_2__CharDetail___default.a
+    FrontBase: __WEBPACK_IMPORTED_MODULE_1__FrontBase___default.a,
+    CharVegetableList: __WEBPACK_IMPORTED_MODULE_2__CharVegetableList___default.a,
+    CharDetail: __WEBPACK_IMPORTED_MODULE_3__CharDetail___default.a
   }
+
 });
 
 /***/ }),
@@ -39946,7 +39974,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -39957,8 +39985,16 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__FrontBase__);
+
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+//
+//
 //
 //
 //
@@ -40025,14 +40061,58 @@ $(window).on("load resize ", function () {
 /* harmony default export */ __webpack_exports__["default"] = ({
 
   name: 'CharVegetableList',
+  props: {
+    genus: Number
+  },
   data: function data() {
     return {
+      vegetables: [],
       load: 'characterization'
     };
   },
 
+  methods: {
+    loadVegetables: function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+        var response;
+        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return axios.get('/api/vegetables', {
+                  params: {
+                    genus_id: this.genus
+                  }
+                });
+
+              case 2:
+                response = _context.sent;
+
+                this.vegetables = response.data.data;
+
+              case 4:
+              case 'end':
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function loadVegetables() {
+        return _ref.apply(this, arguments);
+      }
+
+      return loadVegetables;
+    }()
+  },
+  mounted: function mounted() {
+    this.loadVegetables();
+  },
+
+
   components: {
-    FrontBase: __WEBPACK_IMPORTED_MODULE_0__FrontBase___default.a
+    FrontBase: __WEBPACK_IMPORTED_MODULE_1__FrontBase___default.a
   }
 });
 
@@ -40111,14 +40191,18 @@ var render = function() {
                 _c("td"),
                 _vm._v(" "),
                 _c("td", [
-                  _c("input", {
-                    attrs: {
-                      type: "button",
-                      value: "Detail",
-                      onclick:
-                        "window.location.href='/search/characterization/item/detail'"
-                    }
-                  })
+                  _c(
+                    "a",
+                    {
+                      staticClass: "btn btn-success",
+                      attrs: {
+                        href: _vm.url(
+                          "/search/characterization/item/detail" + _vm.pin
+                        )
+                      }
+                    },
+                    [_vm._v("Details")]
+                  )
                 ])
               ]),
               _vm._v(" "),
@@ -41034,69 +41118,44 @@ var render = function() {
   return _c("front-base", [
     _c("section", { attrs: { id: "char" } }, [
       _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row col-md-12" }, [
-          _c("h4", [_c("b", [_vm._v("Characterization")])]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
-            )
-          ]),
-          _c("br"),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-12" }, [
-            _c("div", { staticClass: "card col-md-3" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("a", { attrs: { href: "/search/characterization/item" } }, [
-                  _vm._v("Capsicum")
+        _c(
+          "div",
+          { staticClass: "row" },
+          [
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("h4", [_c("b", [_vm._v("Characterization")])]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
+                )
+              ]),
+              _c("br"),
+              _c("br")
+            ]),
+            _vm._v(" "),
+            _vm._l(_vm.genera, function(item) {
+              return _c("div", { staticClass: "card col-md-3" }, [
+                _c("div", { staticClass: "card-header" }, [
+                  _c(
+                    "a",
+                    { attrs: { href: "/search/characterization/" + item.id } },
+                    [_vm._v(_vm._s(item.name))]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-main" }, [
+                  _c("img", {
+                    attrs: { src: "img/char/capsicum.jpg", alt: "..." }
+                  })
                 ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-main" }, [
-                _c("img", {
-                  attrs: { src: "img/char/capsicum.jpg", alt: "..." }
-                })
               ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card col-md-3" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("a", [_vm._v("Cucumis")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-main" }, [
-                _c("img", {
-                  attrs: { src: "img/char/cucumis.jpg", alt: "..." }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card col-md-3" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("a", [_vm._v("Solanum")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-main" }, [
-                _c("img", {
-                  attrs: { src: "img/char/solanum.jpeg", alt: "..." }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card col-md-3" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("a", [_vm._v("Vigna")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-main" }, [
-                _c("img", { attrs: { src: "img/char/vigna.jpg", alt: "..." } })
-              ])
-            ])
-          ])
-        ])
+            })
+          ],
+          2
+        )
       ])
     ])
   ])

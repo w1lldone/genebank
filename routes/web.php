@@ -37,7 +37,7 @@ Route::get('/about', function ()
 
 Route::group(['prefix' => 'search/characterization'], function(){
     Route::get('/', 'Front\CharController@index')->name('characterization.index');
-    Route::get('/item', 'Front\CharController@show')->name('characterization.show');
+    Route::get('/{genus}', 'Front\CharController@show')->name('characterization.show');
     Route::get('/item/detail', 'Front\CharController@detail')->name('characterization.detail');
 });
 Route::group(['prefix' => 'search'], function(){

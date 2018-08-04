@@ -33,7 +33,9 @@
                   <td>Annulus</td>
                   <td></td>
                   <td></td>
-                  <td><input type="button" value="Detail" onclick="window.location.href='/search/characterization/item/detail'"></td>
+                  <td>
+                    <a :href="url('/search/characterization/item/detail'+pin)" class="btn btn-success">Details</a>
+                  </td>
                 </tr>
                 <tr>
                   <td>VI000306</td>
@@ -64,11 +66,29 @@ import FrontBase from '../FrontBase';
 export default {
 
   name: 'CharVegetableList',
+  props: {
+    genus: Number,
+  },
   data () {
     return {
-        load: 'characterization',
+      vegetables: [],
+      load: 'characterization',
     }
   },
+  methods: {
+    async loadVegetables(){
+      let response = await axios.get('/api/vegetables', {
+        params: {
+          genus_id: this.genus
+        }
+      })
+      this.vegetables = response.data.data
+    }
+  },
+  mounted() {
+    this.loadVegetables()
+  },
+
   components: {
     FrontBase,
   }
