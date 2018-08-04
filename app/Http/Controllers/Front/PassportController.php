@@ -12,8 +12,8 @@ class PassportController extends Controller
         return view('passport.index');
     }
     
-    public function show(Request $request)
+    public function show(Request $request, $pin)
     {
-        return view('passport.show');
+        return view('passport.show', compact('pin'));
     }
 }
