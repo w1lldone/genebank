@@ -63,7 +63,7 @@ import FrontBase from '../FrontBase';
 
 export default {
 
-  name: 'CharListItem',
+  name: 'CharVegetableList',
   data () {
     return {
         load: 'characterization',

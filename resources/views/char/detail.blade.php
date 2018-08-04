@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('content')
-    <char-list-detail></char-list-detail>
+    <char-detail></char-detail>
 @endsection

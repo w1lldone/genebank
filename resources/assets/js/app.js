@@ -55,16 +55,16 @@ Vue.component(
     require('./components/front/news/NewsList.vue')
 );
 Vue.component(
-    'CharList',
-    require('./components/front/char/CharList.vue')
+    'CharGenusBase',
+    require('./components/front/char/CharGenusBase.vue')
 );
 Vue.component(
-    'CharListItem',
-    require('./components/front/char/CharListItem.vue')
+    'CharVegetableList',
+    require('./components/front/char/CharVegetableList.vue')
 );
 Vue.component(
-    'CharListDetail',
-    require('./components/front/char/CharListDetail.vue')
+    'CharDetail',
+    require('./components/front/char/CharDetail.vue')
 );
 Vue.component(
     'PassportList',

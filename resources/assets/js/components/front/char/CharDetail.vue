@@ -206,7 +206,7 @@
                           </a>
                         </h4>
                       </div>
-                      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive>
+                      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                         <div class="panel-body">
                           <div class="row">
                               <div class="col-md-10 mdl-cell--4-col-phone table-responsive table-detail">
@@ -219,6 +219,7 @@
                 </div>
                 </div>
             </div>
+            </div>
         </div>
       </div><!--End of container-->
     </section>
@@ -229,31 +230,9 @@
 <script>
 import FrontBase from '../FrontBase';
 
-function Seedling() {
-            var x = document.getElementById("seedling");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }}
-        function Vegetative() {
-            var x = document.getElementById("vegetative");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }}
-        function Inflorescence() {
-            var x = document.getElementById("inflorescence");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }}
-            
 export default {
 
-  name: 'CharListDetail',
+  name: 'CharDetail',
   data () {
     return {
         load: 'characterization',

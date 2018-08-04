@@ -15,6 +15,13 @@ class VegetableController extends Controller
             $vegetable = $vegetable->with($request->load);
         }
 
+        if ($request->has('genus_id')) {
+            $vegetable = $vegetable->whereHas('species', function ($query) use ($request)
+            {
+                $query->where('genus_id', $request->genus_id);
+            });
+        }
+
         $vegetables = $vegetable->get();
 
         return VegetablesResource::collection($vegetables);
