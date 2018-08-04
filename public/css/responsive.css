@@ -1282,7 +1282,7 @@
         right: 5px;
     }
     #passport{
-        margin-top: 5px;
+        margin-top: 80px;
         margin-left: 5px;
         z-index: 99;
         transform: scale(.50);
@@ -1368,7 +1368,8 @@
         overflow-y: visible;
     }
     #slider {
-        min-height: 95px;
+        margin-top: 70px;
+        min-height: 120px;
     }
     #slider .carousel-indicators {
         bottom: 25px;
@@ -1406,6 +1407,7 @@
         font-size: 11px;
     }
     #welcome {
+        margin-top: -80px;
         min-height: 185px;
     }
     #welcome .wel_header {
@@ -1505,92 +1507,6 @@
     }
     #counter .sigle_counter_item {
         padding-top: 15px;
-    }
-    #gallery {
-        padding: 25px 0px;
-    }
-    #gallery .gallery_item img {
-        height: 370px;
-    }
-    #gallery .gallery_header h2 {
-        font-size: 16px;
-    }
-    #gallery .gallery_header {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    #gallery .gallery_header.text-center p {
-        font-size: 11px;
-    }
-    #gallery .gallery_text h4 {
-        font-size: 10px;
-    }
-    #gallery .gallery_text {
-        padding: 15px 30px 0;
-        height: 370px;
-    }
-    #gallery .gallery_text h6 {
-        font-size: 10px;
-    }
-    #gallery .gallery_text p {
-        font-size: 10px;
-    }
-    #gallery a.gallery_btn {
-        font-size: 8px;
-    }
-    #gallery a.gallery_btn {
-        padding: 7px 2px;
-    }
-    #gallery .gallery_news {
-        padding-top: 25px;
-        width: 100%;
-        padding-bottom: 5px;
-    }
-
-    #gallery .gallery_news_text h4 {
-        font-size: 12px;
-    }
-    #gallery .gallery_news_text p {
-        padding-top: 5px;
-        font-size: 10px;
-    }
-    #testimonial {
-        padding: 25px 0px;
-    }
-    #testimonial .testimonial_header {
-        padding-top: 20px;
-    }
-    #testimonial .testimonial_header h2 {
-        font-size: 20px;
-        padding-bottom: 10px;
-    }
-    #testimonial .testimonial_header p {
-        font-size: 11px;
-    }
-    #testimonial #fade-quote-carousel .profile-circle {
-        width: 50px;
-        height: 75px;
-    }
-    #testimonial .testimonial_content p {
-        font-size: 11px;
-        padding-left: 20px;
-        padding-right: 0px;
-        padding-bottom: 20px;
-    }
-    #testimonial .testimonial_content i {
-        font-size: 15px;
-    }
-    #testimonial .testimonial_author h5 {
-        font-size: 12px;
-        padding-bottom: 3px;
-    }
-    #testimonial .testimonial_author p {
-        font-size: 11px;
-    }
-    #testimonial #fade-quote-carousel.carousel .carousel-indicators > li {
-        border: 1px solid;
-        width: 8px;
-        height: 8px;
     }
     .carousel-indicators li {
         top: 35px;
@@ -1709,6 +1625,7 @@
         right: 5px;
     }
     #passport, #char, #eval{
+        margin-top: 80px;
         z-index: 99;
         transform: scale(1);
         transform-origin: left;
@@ -1725,44 +1642,25 @@
         display: block;
         font-size: 9px;
     }
-  /*  .row{
-        margin-left: -60px;
-        width:200%;
-        align-items: left;
-        transform-origin: left;
-        font-size: 10px;
-        overflow: scroll;
-    }*/
+
     h4{
         font-size: 17px;
     }
     #char, #passport p{
         font-size: 10px;
     }
+    #char #list{
+        margin-top: 20px;
+    }
+    #char .panel-group{
+        margin-top: -10px;
+    }
     .table-detail tr{
         font-size: 10px;
     }
-    /*.navbar-collapse.pull-left {
-        float: none!important;
+    .tbl-content{
+        margin-top: 0px;
+        border: 1px solid rgba(255,255,255,0.3);
     }
-    .navbar-collapse.pull-left + .navbar-custom-menu {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 40px;
-        color:#fff;
-    }
-    front-base {
-        float: none!important;
-        display: block;
-        position: absolute;
-        top: 0;
-        color:#fff;
-        right: 40px;
-    }
-    .mdl-cell--3-col, .mdl-cell--3-col-phone.mdl-cell--3-col-phone{
-        width: calc(100% - 16px);
-    }*/
-}
 }
 

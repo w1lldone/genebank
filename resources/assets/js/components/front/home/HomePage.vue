@@ -149,7 +149,6 @@
             <!--End of container-->
         </section>
         <!--End of footer-->
-        
     </front-base>
 </template>
 

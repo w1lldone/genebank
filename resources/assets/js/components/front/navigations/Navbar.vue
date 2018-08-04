@@ -1,7 +1,7 @@
 <template>
-    <section id="header">
+    <section id="header" data-spy="scroll" data-target="#header" >
         <div class="header-area">
-            <div class="header_menu text-center" data-spy="affix" data-offset-top="50" id="nav">
+            <div class="header_menu text-center" data-spy="affix" id="nav">
                 <div class="container">
                     <nav class="navbar navbar-default zero_mp ">
                         <!-- Brand and toggle get grouped for better mobile display -->
@@ -17,7 +17,7 @@
                         <!--End of navbar-header-->
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse zero_mp menu " id="bs-example-navbar-collapse-1">
+                        <div class="collapse navbar-collapse zero_mp menu" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right main_menu clearfix">
                                 <li><a :href="url('/')">Home</a></li>
                                 <li><a href="#">search</a>
@@ -46,6 +46,7 @@
         <!--end of header area-->
     </section>
     <!--End of Hedaer Section-->
+
 </template>
 
 <script>

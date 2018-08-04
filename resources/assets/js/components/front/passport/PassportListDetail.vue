@@ -40,6 +40,7 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
     </front-base>
    
