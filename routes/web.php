@@ -35,10 +35,10 @@ Route::get('/about', function ()
     return view('about.index');
 })->name('about.index');
 
-Route::group(['prefix' => 'search'], function(){
-    Route::get('/characterization', 'Front\CharController@index')->name('characterization.index');
-    Route::get('/characterization/item', 'Front\CharController@show')->name('characterization.show');
-    Route::get('/characterization/item/detail', 'Front\CharController@detail')->name('characterization.detail');
+Route::group(['prefix' => 'search/characterization'], function(){
+    Route::get('/', 'Front\CharController@index')->name('characterization.index');
+    Route::get('/item', 'Front\CharController@show')->name('characterization.show');
+    Route::get('/item/detail', 'Front\CharController@detail')->name('characterization.detail');
 });
 Route::group(['prefix' => 'search'], function(){
     Route::get('/evaluation', 'Front\EvaluationController@index')->name('evaluation.index');

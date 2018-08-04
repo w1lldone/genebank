@@ -40,7 +40,6 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
     </front-base>
    
@@ -58,7 +57,13 @@ export default {
   data () {
     return {
         load: 'passport',
-        vegetable: {},
+        vegetable: {
+            species:{
+                genus:{
+                    
+                }
+            }
+        },
         errors: {},
     }
   },
