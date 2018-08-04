@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('content')
-    <char-list-item></char-list-item>
+    <char-vegetable-list></char-vegetable-list>
 @endsection

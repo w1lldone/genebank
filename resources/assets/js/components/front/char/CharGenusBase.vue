@@ -41,12 +41,12 @@
 
 <script>
 import FrontBase from '../FrontBase';
-import CharListItem from './CharListItem';
-import CharListDetail from './CharListDetail';
+import CharVegetableList from './CharVegetableList';
+import CharDetail from './CharDetail';
 
 export default {
 
-  name: 'CharList',
+  name: 'CharGenusBase',
 
   data () {
     return {
@@ -55,8 +55,8 @@ export default {
   },
   components: {
     FrontBase,
-    CharListItem,
-    CharListDetail,
+    CharVegetableList,
+    CharDetail,
   }
 }
 </script>
