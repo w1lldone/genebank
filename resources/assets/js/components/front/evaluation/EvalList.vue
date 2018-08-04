@@ -24,31 +24,19 @@
                   <th>Operation</th>
                 </tr>
               </thead>
-           
+
               <tbody>
-                <tr>
+                <tr v-for="vegetable in vegetables":key="vegetable.id">
                   <td>VI000306</td>
                   <td></td>
-                  <td>TOT2209</td>
-                  <td>Solanaceae</td>
-                  <td>Capsicum</td>
-                  <td>Annum</td>
+                  <td>{{vegetable.temporary_number}}</td>
                   <td></td>
+                  <td>{{vegetable.species.genus.name}}</td>
+                  <td>{{vegetable.species.name}}</td>
                   <td></td>
-                  <td></td>
-                  <td><input type="button" value="Detail" onclick="window.location.href='/search/evaluation/detail'"></td>
-                </tr>
-                <tr>
-                  <td>VI000306</td>
-                  <td></td>
-                  <td>TOT2209</td>
-                  <td>Solanaceae</td>
-                  <td>Capsicum</td>
-                  <td>Chinense</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td><input type="button" value="Detail" onclick="window.location.href='search/evaluation/detail'"></td>
+                  <td>{{vegetable.species.genus.name}}</td>
+                  <td>{{vegetable.passport.country}}</td>
+                  <td><a :href="url('/search/evaluation/'+vegetable.id)" class="btn btn-success">Details</a></td>
                 </tr>
               </tbody>
             </table>
@@ -66,11 +54,21 @@ import EvalListDetail from './EvalListDetail';
 export default {
 
   name: 'EvalList',
-
   data () {
     return {
-        
+      vegetables: [],
     }
+  },
+  methods: {
+    async loadVegetables(){
+      let response = await axios.get('/api/vegetables?load=passport', {
+        
+      })
+      this.vegetables = response.data.data
+    }
+  },
+  mounted() {
+    this.loadVegetables()
   },
   components: {
     FrontBase,

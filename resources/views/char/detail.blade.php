@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('content')
-    <char-detail></char-detail>
+    <char-detail genus="{{ $genus }}" pin="{{ $pin }}"></char-detail>
 @endsection

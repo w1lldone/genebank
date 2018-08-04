@@ -20,6 +20,6 @@ class CharController extends Controller
     
     public function detail(Request $request)
     {
-        return view('char.detail');
+        return view('char.detail', compact('genus'));
     }
 }

@@ -20,15 +20,11 @@
                             <tbody>
                                 <tr>
                                     <td>Vegetable introduction number</td>
-                                    <td>VI000002</td>
+                                    <td>{{ vegetables.plant_introduction_number }}</td>
                                 </tr>
                                 <tr>
-                                    <td>Crop accession number</td>
-                                    <td>V01001</td>
-                                </tr>
-                                <tr>
-                                    <td>Temporary number</td>
-                                    <td></td>
+                                    <td>Temporary Number</td>
+                                    <td>{{ vegetables.temporary_number }}</td>
                                 </tr>
                                 <tr>
                                     <td>Variant</td>
@@ -40,6 +36,14 @@
                                 </tr>
                                 <tr>
                                     <td>Species</td>
+                                    <td>{{ vegetables.species.name }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Cultivar Name</td>
+                                    <td>{{ vegetables.cultivar_name }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Species</td>
                                     <td>ANNUM</td>
                                 </tr>
                                 <tr>
@@ -47,13 +51,13 @@
                                     <td>VAR. RADIATA</td>
                                 </tr>
                                 <tr>
-                                    <td>Pedigree / Cultivar Name</td>
-                                    <td></td>
+                                    <td>Genus</td>
+                                    <td>{{ vegetables.species.genus.name }}</td>
                                 </tr>
                                 <tr>
                                     <td>Country</td>
                                     <td></td>
-                                </tr>
+                                </tr>                                
                             </tbody>
                         </table>
                     </div>
@@ -232,16 +236,46 @@ import FrontBase from '../FrontBase';
 
 export default {
 
-  name: 'CharDetail',
-  data () {
-    return {
-        load: 'characterization',
+    name: 'CharDetail',
+    props: {
+        genus: String,
+        pin: String,
+    },
+    data () {
+        return {
+            genuss:[],
+            vegetables: {
+                species:{
+                    genus:{
+                    
+                    }
+                }
+            },
+            load: 'characterization',
+        }
+      },
+      methods: {
+        async loadVegetables(){
+          let response = await axios.get(`/api/vegetables/${this.pin}/passport`)
+          this.vegetables = response.data.data
+        },
+        async loadGenus(){
+          let response = await axios.get('/api/vegetables?load=passport', {
+            params: {
+              genus_id: this.genus
+            }
+          })
+          this.genuss= response.data.data
+        },
+       },
+      mounted() {
+        this.loadVegetables()
+        this.loadGenus()
+      },
+      components: {
+        FrontBase,
+      }
     }
-  },
-  components: {
-    FrontBase,
-  }
-}
 </script>
 
 <style lang="css" scoped>

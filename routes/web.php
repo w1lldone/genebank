@@ -38,11 +38,11 @@ Route::get('/about', function ()
 Route::group(['prefix' => 'search/characterization'], function(){
     Route::get('/', 'Front\CharController@index')->name('characterization.index');
     Route::get('/{genus}', 'Front\CharController@show')->name('characterization.show');
-    Route::get('/item/detail', 'Front\CharController@detail')->name('characterization.detail');
+    Route::get('/{genus}/{pin}', 'Front\CharController@detail')->name('characterization.detail');
 });
-Route::group(['prefix' => 'search'], function(){
-    Route::get('/evaluation', 'Front\EvaluationController@index')->name('evaluation.index');
-    Route::get('/evaluation/detail', 'Front\EvaluationController@show')->name('evaluation.show');
+Route::group(['prefix' => 'search/evaluation'], function(){
+    Route::get('/', 'Front\EvaluationController@index')->name('evaluation.index');
+    Route::get('/{pin}', 'Front\EvaluationController@show')->name('evaluation.show');
 });
 Route::group(['prefix' => 'search'], function(){
     Route::get('/passport', 'Front\PassportController@index')->name('passport.index');

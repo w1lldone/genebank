@@ -69,7 +69,7 @@ export default {
     },
     getPassportObject(vegetable) {
         return {
-            status: 'Available',
+            status: vegetable.passport.distribution_status,
             pin: vegetable.plant_introduction_number,
             tempNumber: vegetable.temporary_number,
             species: vegetable.species.name,

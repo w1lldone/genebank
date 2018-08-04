@@ -41,7 +41,8 @@ export default {
     async loadGenera(){
       let response = await axios.get('/api/genera')
       this.genera = response.data.data
-    }
+    },
+    
   },
   mounted() {
     this.loadGenera()
