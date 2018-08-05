@@ -42,7 +42,7 @@ Route::group(['prefix' => 'search/characterization'], function(){
 });
 Route::group(['prefix' => 'search/evaluation'], function(){
     Route::get('/', 'Front\EvaluationController@index')->name('evaluation.index');
-    Route::get('/{pin}', 'Front\EvaluationController@show')->name('evaluation.show');
+    Route::get('/{vegetable}', 'Front\EvaluationController@show')->name('evaluation.show');
 });
 Route::group(['prefix' => 'search'], function(){
     Route::get('/passport', 'Front\PassportController@index')->name('passport.index');
