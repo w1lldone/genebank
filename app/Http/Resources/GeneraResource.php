@@ -20,6 +20,7 @@ class GeneraResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
+            'photo' => url($this->photo),
             'vegetables_count' => $this->whenLoaded('vegetables', $this->vegetables()->count())
         ];
     }
