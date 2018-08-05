@@ -107,37 +107,13 @@
                                     <div class="col-md-10 table-responsive table-detail">
                                         <table class="table">
                                             <tbody>
-                                                <tr>
-                                                    <td>Hypocotyl color (terminal bud 1-2 mm)</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Hypocotyl color intensity</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Cotyledonous leaf length (mm) (N=10)</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Cotyledonous leaf width (mm) (N=10)</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Cotyledonous leaf shape</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Cotyledonous leaf color</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Hypocotyl pubescence</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Stem color (before transplanting)</td>
-                                                    <td>Green</td>
+                                                <tr v-for="item in vegetative">
+                                                    <td>
+                                                        {{ item.name }}
+                                                    </td>
+                                                    <td>
+                                                        {{ item.value }}
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -156,7 +132,18 @@
                               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body">
                                     <div class="col-md-10 table-responsive table-detail">
-
+                                        <!-- <table class="table">
+                                            <tbody>
+                                                <tr v-for="item in inflorescence">
+                                                    <td>
+                                                        {{ item.name }}
+                                                    </td>
+                                                    <td>
+                                                        {{ item.value }}
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table> -->
                                     </div>
                                 </div>
                             </div>
@@ -172,8 +159,19 @@
                               <div id="collapseFor" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFor">
                                 <div class="panel-body">
                                   <div class="row">
-                                      <div class="col-md-10 mdl-cell--4-col-phone table-responsive table-detail">
-
+                                      <div class="col-md-10 table-responsive table-detail">
+                                        <!-- <table class="table">
+                                            <tbody>
+                                                <tr v-for="item in fruit">
+                                                    <td>
+                                                        {{ item.name }}
+                                                    </td>
+                                                    <td>
+                                                        {{ item.value }}
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table> -->
                                       </div>
                                     </div>
                                 </div>
@@ -190,8 +188,19 @@
                               <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                                 <div class="panel-body">
                                   <div class="row">
-                                      <div class="col-md-10 mdl-cell--4-col-phone table-responsive table-detail"> 
-
+                                      <div class="col-md-10 table-responsive table-detail"> 
+                                        <!-- <table class="table">
+                                            <tbody>
+                                                <tr v-for="item in seed">
+                                                    <td>
+                                                        {{ item.name }}
+                                                    </td>
+                                                    <td>
+                                                        {{ item.value }}
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table> -->
                                       </div>
                                     </div>
                                 </div>
@@ -253,6 +262,14 @@ export default {
                 // Hanya tampilkan characters yang mempunyai kategori seedling
                 return this.vegetable.characters.filter(function (item) {
                     return item.category == 'Seedling'
+                })
+            }
+            return []
+        },
+        vegetative: function () {
+            if (this.vegetable.characters.length != 0) {
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Vegetative'
                 })
             }
             return []

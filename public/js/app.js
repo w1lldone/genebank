@@ -40290,7 +40290,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -40309,6 +40309,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -40588,6 +40597,14 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                 // Hanya tampilkan characters yang mempunyai kategori seedling
                 return this.vegetable.characters.filter(function (item) {
                     return item.category == 'Seedling';
+                });
+            }
+            return [];
+        },
+        vegetative: function vegetative() {
+            if (this.vegetable.characters.length != 0) {
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Vegetative';
                 });
             }
             return [];
@@ -40872,79 +40889,28 @@ var render = function() {
                               },
                               [
                                 _c("table", { staticClass: "table" }, [
-                                  _c("tbody", [
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v(
-                                          "Hypocotyl color (terminal bud 1-2 mm)"
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v("Hypocotyl color intensity")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v(
-                                          "Cotyledonous leaf length (mm) (N=10)"
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v(
-                                          "Cotyledonous leaf width (mm) (N=10)"
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v("Cotyledonous leaf shape")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v("Cotyledonous leaf color")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v("Hypocotyl pubescence")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v(
-                                          "Stem color (before transplanting)"
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td", [_vm._v("Green")])
-                                    ])
-                                  ])
+                                  _c(
+                                    "tbody",
+                                    _vm._l(_vm.vegetative, function(item) {
+                                      return _c("tr", [
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                    " +
+                                              _vm._s(item.name) +
+                                              "\n                                                "
+                                          )
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                    " +
+                                              _vm._s(item.value) +
+                                              "\n                                                "
+                                          )
+                                        ])
+                                      ])
+                                    })
+                                  )
                                 ])
                               ]
                             )
@@ -41053,7 +41019,7 @@ var render = function() {
                             _c("div", { staticClass: "row" }, [
                               _c("div", {
                                 staticClass:
-                                  "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                                  "col-md-10 table-responsive table-detail"
                               })
                             ])
                           ])
@@ -41108,7 +41074,7 @@ var render = function() {
                             _c("div", { staticClass: "row" }, [
                               _c("div", {
                                 staticClass:
-                                  "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                                  "col-md-10 table-responsive table-detail"
                               })
                             ])
                           ])
