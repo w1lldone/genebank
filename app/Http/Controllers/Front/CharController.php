@@ -12,13 +12,14 @@ class CharController extends Controller
         return view('char.index');
     }
 
-    public function show(Request $request)
+    public function show(Request $request, $genus)
     {
-        return view('char.show');
+        return view('char.show', compact('genus'));
+
     }
     
-    public function detail(Request $request)
+    public function detail($genus, $vegetable)
     {
-        return view('char.detail');
+        return view('char.detail', compact('genus', 'vegetable'));
     }
 }

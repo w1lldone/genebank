@@ -1,40 +1,21 @@
 <template>
     <front-base>
         <section id="char">
-          <div class="container">                
-              <div class="row col-md-12">
+          <div class="container">
+          <div class="row">                
+              <div class="col-md-12">
                   <h4><b>Characterization</b></h4>
                   <br>
                   <p>Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. </p><br><br>
-                
-                <div class="col-md-12">
-                    <div class="card col-md-3">
-                      <div class="card-header"><a href="/search/characterization/item">Capsicum</a></div>
+                </div>
+                    <div class="card col-md-3" v-for="item in genera">
+                      <div class="card-header"><a :href="'/search/characterization/'+item.id">{{item.name}}</a></div>
                       <div class="card-main">
-                        <img src="img/char/capsicum.jpg" alt="...">
-                      </div>
-                    </div>
-                    <div class="card col-md-3">
-                      <div class="card-header"><a>Cucumis</a></div>
-                      <div class="card-main">
-                        <img src="img/char/cucumis.jpg" alt="...">
-                      </div>
-                    </div>
-                    <div class="card col-md-3">
-                      <div class="card-header"><a>Solanum</a></div>
-                      <div class="card-main">
-                        <img src="img/char/solanum.jpeg" alt="...">
-                      </div>
-                    </div>
-                    <div class="card col-md-3">
-                      <div class="card-header"><a>Vigna</a></div>
-                      <div class="card-main">
-                        <img src="img/char/vigna.jpg" alt="...">
+                        <img src="/img/icons/image.svg" alt="...">
                       </div>
                     </div>
                 </div>
-              </div>
-          </div>
+        </div>
         </section>
     </front-base>
 </template>
@@ -50,14 +31,25 @@ export default {
 
   data () {
     return {
-        
+        genera: [],
     }
+  },
+  methods: {
+    async loadGenera(){
+      let response = await axios.get('/api/genera')
+      this.genera = response.data.data
+    },
+    
+  },
+  mounted() {
+    this.loadGenera()
   },
   components: {
     FrontBase,
     CharVegetableList,
     CharDetail,
-  }
+  },
+
 }
 </script>
 

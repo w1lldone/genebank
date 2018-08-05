@@ -486,6 +486,13 @@ module.exports = function normalizeComponent (
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__(52);
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -793,7 +800,7 @@ module.exports = {
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -844,13 +851,6 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(52);
-
-
-/***/ }),
 /* 6 */
 /***/ (function(module, exports) {
 
@@ -884,7 +884,7 @@ module.exports = g;
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
-var utils = __webpack_require__(3);
+var utils = __webpack_require__(4);
 var normalizeHeaderName = __webpack_require__(28);
 
 var DEFAULT_CONTENT_TYPE = {
@@ -12162,7 +12162,7 @@ process.umask = function() { return 0; };
 "use strict";
 
 
-var utils = __webpack_require__(3);
+var utils = __webpack_require__(4);
 var settle = __webpack_require__(29);
 var buildURL = __webpack_require__(31);
 var parseHeaders = __webpack_require__(32);
@@ -29918,7 +29918,7 @@ module.exports = __webpack_require__(25);
 "use strict";
 
 
-var utils = __webpack_require__(3);
+var utils = __webpack_require__(4);
 var bind = __webpack_require__(9);
 var Axios = __webpack_require__(27);
 var defaults = __webpack_require__(7);
@@ -30005,7 +30005,7 @@ function isSlowBuffer (obj) {
 
 
 var defaults = __webpack_require__(7);
-var utils = __webpack_require__(3);
+var utils = __webpack_require__(4);
 var InterceptorManager = __webpack_require__(36);
 var dispatchRequest = __webpack_require__(37);
 
@@ -30090,7 +30090,7 @@ module.exports = Axios;
 "use strict";
 
 
-var utils = __webpack_require__(3);
+var utils = __webpack_require__(4);
 
 module.exports = function normalizeHeaderName(headers, normalizedName) {
   utils.forEach(headers, function processHeader(value, name) {
@@ -30170,7 +30170,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
 "use strict";
 
 
-var utils = __webpack_require__(3);
+var utils = __webpack_require__(4);
 
 function encode(val) {
   return encodeURIComponent(val).
@@ -30243,7 +30243,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 "use strict";
 
 
-var utils = __webpack_require__(3);
+var utils = __webpack_require__(4);
 
 // Headers whose duplicates are ignored by node
 // c.f. https://nodejs.org/api/http.html#http_message_headers
@@ -30303,7 +30303,7 @@ module.exports = function parseHeaders(headers) {
 "use strict";
 
 
-var utils = __webpack_require__(3);
+var utils = __webpack_require__(4);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -30421,7 +30421,7 @@ module.exports = btoa;
 "use strict";
 
 
-var utils = __webpack_require__(3);
+var utils = __webpack_require__(4);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -30481,7 +30481,7 @@ module.exports = (
 "use strict";
 
 
-var utils = __webpack_require__(3);
+var utils = __webpack_require__(4);
 
 function InterceptorManager() {
   this.handlers = [];
@@ -30540,7 +30540,7 @@ module.exports = InterceptorManager;
 "use strict";
 
 
-var utils = __webpack_require__(3);
+var utils = __webpack_require__(4);
 var transformData = __webpack_require__(38);
 var isCancel = __webpack_require__(13);
 var defaults = __webpack_require__(7);
@@ -30633,7 +30633,7 @@ module.exports = function dispatchRequest(config) {
 "use strict";
 
 
-var utils = __webpack_require__(3);
+var utils = __webpack_require__(4);
 
 /**
  * Transform the data for a request or a response
@@ -33883,7 +33883,7 @@ module.exports = function listToStyles (parentId, list) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__GeneraList__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__GeneraList___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__GeneraList__);
@@ -35325,7 +35325,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
 
 
@@ -35645,7 +35645,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__details_Details_vue__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__details_Details_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__details_Details_vue__);
@@ -36124,7 +36124,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
 
 
@@ -36658,7 +36658,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
 
 
@@ -37078,7 +37078,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
 
 
@@ -37686,7 +37686,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
 //
 //
@@ -38662,7 +38662,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
 //
 //
@@ -39019,7 +39019,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
 //
 //
@@ -39390,7 +39390,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NewsItem__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NewsItem___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__NewsItem__);
@@ -39833,7 +39833,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -39844,31 +39844,18 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__CharVegetableList__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__CharVegetableList___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__CharVegetableList__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CharDetail__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CharDetail___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__CharDetail__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__FrontBase__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CharVegetableList__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CharVegetableList___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__CharVegetableList__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__CharDetail__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__CharDetail___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__CharDetail__);
+
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
 //
 //
 //
@@ -39901,14 +39888,52 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   name: 'CharGenusBase',
 
   data: function data() {
-    return {};
+    return {
+      genera: []
+    };
+  },
+
+  methods: {
+    loadGenera: function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+        var response;
+        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return axios.get('/api/genera');
+
+              case 2:
+                response = _context.sent;
+
+                this.genera = response.data.data;
+
+              case 4:
+              case 'end':
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function loadGenera() {
+        return _ref.apply(this, arguments);
+      }
+
+      return loadGenera;
+    }()
+  },
+  mounted: function mounted() {
+    this.loadGenera();
   },
 
   components: {
-    FrontBase: __WEBPACK_IMPORTED_MODULE_0__FrontBase___default.a,
-    CharVegetableList: __WEBPACK_IMPORTED_MODULE_1__CharVegetableList___default.a,
-    CharDetail: __WEBPACK_IMPORTED_MODULE_2__CharDetail___default.a
+    FrontBase: __WEBPACK_IMPORTED_MODULE_1__FrontBase___default.a,
+    CharVegetableList: __WEBPACK_IMPORTED_MODULE_2__CharVegetableList___default.a,
+    CharDetail: __WEBPACK_IMPORTED_MODULE_3__CharDetail___default.a
   }
+
 });
 
 /***/ }),
@@ -39946,7 +39971,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -39957,17 +39982,14 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__FrontBase__);
+
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
 //
 //
 //
@@ -40016,23 +40038,101 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-$(window).on("load resize ", function () {
-  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
-  $('.tbl-header').css({ 'padding-right': scrollWidth });
-}).resize();
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
   name: 'CharVegetableList',
+  props: {
+    genus: String,
+    pin: String
+  },
   data: function data() {
     return {
+      vegetables: [],
+      vegetable: {
+        species: {
+          genus: {}
+        },
+        passport: {}
+      },
+      genera: [],
       load: 'characterization'
     };
   },
 
+  methods: {
+    loadVegetables: function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+        var response;
+        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return axios.get('/api/vegetables?load=passport', {
+                  params: {
+                    genus_id: this.genus
+                  }
+                });
+
+              case 2:
+                response = _context.sent;
+
+                this.vegetables = response.data.data;
+
+              case 4:
+              case 'end':
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function loadVegetables() {
+        return _ref.apply(this, arguments);
+      }
+
+      return loadVegetables;
+    }(),
+    loadGenera: function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee2() {
+        var response;
+        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return axios.get('/api/genera/' + this.genus);
+
+              case 2:
+                response = _context2.sent;
+
+                this.genera = response.data.data;
+
+              case 4:
+              case 'end':
+                return _context2.stop();
+            }
+          }
+        }, _callee2, this);
+      }));
+
+      function loadGenera() {
+        return _ref2.apply(this, arguments);
+      }
+
+      return loadGenera;
+    }()
+  },
+  mounted: function mounted() {
+    this.loadVegetables();
+    this.loadGenera();
+  },
+
+
   components: {
-    FrontBase: __WEBPACK_IMPORTED_MODULE_0__FrontBase___default.a
+    FrontBase: __WEBPACK_IMPORTED_MODULE_1__FrontBase___default.a
   }
 });
 
@@ -40046,113 +40146,98 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("front-base", [
     _c("section", { staticClass: "list-table", attrs: { id: "char" } }, [
-      _c("div", { staticClass: "msg_title col-md-12" }, [
-        _c("h4", [_c("b", [_vm._v("Characterization")])]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
-          )
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "msg_title col-md-12" }, [
+          _c("h4", [_c("b", [_vm._v("Characterization")])]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
+            )
+          ]),
+          _c("br"),
+          _c("br")
         ]),
+        _vm._v(" "),
+        _c("h5", { staticClass: "col-md-2" }, [_c("b", [_vm._v("Capsicum")])]),
         _c("br"),
-        _c("br")
-      ]),
-      _vm._v(" "),
-      _c("h5", { staticClass: "col-md-2" }, [_c("b", [_vm._v("Capsicum")])]),
-      _c("br"),
-      _c("br"),
-      _c("br"),
-      _vm._v(" "),
-      _c("div", { staticClass: "tbl-header tbl-content" }, [
-        _c(
-          "table",
-          { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
-          [
-            _c("thead", [
-              _c("tr", [
-                _c("th", [_vm._v("VINO")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Variant")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Accno")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Tempno")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Variant")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Species")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Subtaxa")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Country")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("Operation")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("tbody", [
-              _c("tr", [
-                _c("td", [_vm._v("VI000306")]),
-                _vm._v(" "),
-                _c("td"),
-                _vm._v(" "),
-                _c("td"),
-                _vm._v(" "),
-                _c("td", [_vm._v("TOT2209")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("A (green plant)")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Annulus")]),
-                _vm._v(" "),
-                _c("td"),
-                _vm._v(" "),
-                _c("td"),
-                _vm._v(" "),
-                _c("td", [
-                  _c("input", {
-                    attrs: {
-                      type: "button",
-                      value: "Detail",
-                      onclick:
-                        "window.location.href='/search/characterization/item/detail'"
-                    }
-                  })
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { staticClass: "tbl-header tbl-content" }, [
+          _c(
+            "table",
+            { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
+            [
+              _c("thead", [
+                _c("tr", [
+                  _c("th", [_vm._v("VINO")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Variant")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Accno")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Temp. no")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Variant")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Species")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Subtaxa")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Country")]),
+                  _vm._v(" "),
+                  _c("th", [_vm._v("Operation")])
                 ])
               ]),
               _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("VI000306")]),
-                _vm._v(" "),
-                _c("td"),
-                _vm._v(" "),
-                _c("td"),
-                _vm._v(" "),
-                _c("td", [_vm._v("TOT2209")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("B (purple plant)")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("Annulus")]),
-                _vm._v(" "),
-                _c("td"),
-                _vm._v(" "),
-                _c("td"),
-                _vm._v(" "),
-                _c("td", [
-                  _c("input", {
-                    attrs: {
-                      type: "button",
-                      value: "Detail",
-                      onclick:
-                        "window.location.href='/search/characterization/item/detail'"
-                    }
-                  })
-                ])
-              ])
-            ])
-          ]
-        )
+              _c(
+                "tbody",
+                _vm._l(_vm.vegetables, function(vegetable) {
+                  return _c("tr", { key: vegetable.id }, [
+                    _c("td", [
+                      _vm._v(_vm._s(vegetable.plant_introduction_number))
+                    ]),
+                    _vm._v(" "),
+                    _c("td"),
+                    _vm._v(" "),
+                    _c("td"),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(vegetable.temporary_number))]),
+                    _vm._v(" "),
+                    _c("td"),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(vegetable.species.name))]),
+                    _vm._v(" "),
+                    _c("td"),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(vegetable.passport.country))]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: {
+                            href: _vm.url(
+                              "/search/characterization/" +
+                                _vm.genus +
+                                "/" +
+                                vegetable.id
+                            )
+                          }
+                        },
+                        [_vm._v("Details")]
+                      )
+                    ])
+                  ])
+                })
+              )
+            ]
+          )
+        ])
       ])
     ])
   ])
@@ -40202,7 +40287,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -40213,18 +40298,14 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__FrontBase__);
+
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
 //
 //
 //
@@ -40449,16 +40530,114 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
-  name: 'CharDetail',
-  data: function data() {
-    return {
-      load: 'characterization'
-    };
-  },
+    name: 'CharDetail',
+    props: {
+        genusId: Number,
+        vegetableId: Number
+    },
+    data: function data() {
+        return {
+            vegetable: {
+                species: {
+                    genus: {}
+                },
+                characters: []
+            },
+            result: [],
+            load: 'characterization'
+        };
+    },
 
-  components: {
-    FrontBase: __WEBPACK_IMPORTED_MODULE_0__FrontBase___default.a
-  }
+    methods: {
+        loadVegetable: function () {
+            var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+                var response;
+                return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                _context.next = 2;
+                                return axios.get('/api/vegetables/' + this.vegetableId);
+
+                            case 2:
+                                response = _context.sent;
+
+                                this.vegetable = response.data.data;
+
+                            case 4:
+                            case 'end':
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this);
+            }));
+
+            function loadVegetable() {
+                return _ref.apply(this, arguments);
+            }
+
+            return loadVegetable;
+        }()
+    },
+    // computed properties dapat digunakan untuk mendefinisikan variable yang membutuhkan proses panjang. Contohnya mengambil character yang berkategori seedling.
+    // computed bisa langsung diakses di template seperti pada baris #83
+    // https://vuejs.org/v2/guide/computed.html#Computed-Properties
+    computed: {
+        // contoh penggunaan
+        properties: function properties() {
+
+            return; // something
+        },
+        seedlings: function seedlings() {
+            // Cek apakah characters tidak kosong
+            if (this.vegetable.characters.length != 0) {
+                // Hanya tampilkan characters yang mempunyai kategori seedling
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Seedling';
+                });
+            }
+            return [];
+        },
+        vegetative: function vegetative() {
+            if (this.vegetable.characters.length != 0) {
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Vegetative';
+                });
+            }
+            return [];
+        },
+        inflorescence: function inflorescence() {
+            if (this.vegetable.characters.length != 0) {
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Inflorescence';
+                });
+            }
+            return [];
+        },
+        fruit: function fruit() {
+            if (this.vegetable.characters.length != 0) {
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Fruit';
+                });
+            }
+            return [];
+        },
+        seed: function seed() {
+            if (this.vegetable.characters.length != 0) {
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Seed';
+                });
+            }
+            return [];
+        }
+    },
+    mounted: function mounted() {
+        this.loadVegetable();
+    },
+
+    components: {
+        FrontBase: __WEBPACK_IMPORTED_MODULE_1__FrontBase___default.a
+    }
 });
 
 /***/ }),
@@ -40471,57 +40650,58 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("front-base", [
     _c("section", { attrs: { id: "char" } }, [
-      _c("div", { staticClass: "container col-md-12" }, [
-        _c("div", { staticClass: "msg" }, [
-          _c("div", { staticClass: "msg_title" }, [
-            _c("h4", [_c("b", [_vm._v("Characterization")])]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
-              )
-            ]),
-            _c("br"),
-            _c("br")
-          ]),
-          _vm._v(" "),
-          _c("h5", { staticClass: "col-md-2" }, [
-            _c("b", [_vm._v("Capsicum")])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { staticClass: "row detail" }, [
-            _c("div", { staticClass: "col-md-6" }, [
-              _c("img", { attrs: { src: "img/char/capsicum.jpg" } })
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "container col-md-12" }, [
+          _c("div", { staticClass: "msg" }, [
+            _c("div", { staticClass: "msg_title" }, [
+              _c("h4", [_c("b", [_vm._v("Characterization")])]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
+                )
+              ]),
+              _c("br"),
+              _c("br")
             ]),
             _vm._v(" "),
-            _c("div", { attrs: { id: "list" } }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6 table-responsive table-detail" },
-                [
+            _c("h5", { staticClass: "col-md-2" }, [
+              _c("b", [_vm._v(_vm._s(_vm.vegetable.species.genus.name))])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _c("br"),
+            _vm._v(" "),
+            _c("div", { staticClass: "row detail" }, [
+              _c("div", { staticClass: "col-md-6" }, [
+                _c("img", {
+                  staticClass: "img-responsive",
+                  attrs: { src: "/img/icons/image.svg" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { attrs: { id: "list col-md-6 " } }, [
+                _c("div", { staticClass: "table-responsive table-detail" }, [
                   _c("table", { staticClass: "table" }, [
                     _c("tbody", [
                       _c("tr", [
                         _c("td", [_vm._v("Vegetable introduction number")]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("VI000002")])
+                        _c("td", [
+                          _vm._v(
+                            _vm._s(_vm.vegetable.plant_introduction_number)
+                          )
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("tr", [
-                        _c("td", [_vm._v("Crop accession number")]),
+                        _c("td", [_vm._v("Temporary Number")]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("V01001")])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Temporary number")]),
-                        _vm._v(" "),
-                        _c("td")
+                        _c("td", [
+                          _vm._v(_vm._s(_vm.vegetable.temporary_number))
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("tr", [
@@ -40539,6 +40719,18 @@ var render = function() {
                       _c("tr", [
                         _c("td", [_vm._v("Species")]),
                         _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.vegetable.species.name))])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("Cultivar Name")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.vegetable.cultivar_name))])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("Species")]),
+                        _vm._v(" "),
                         _c("td", [_vm._v("ANNUM")])
                       ]),
                       _vm._v(" "),
@@ -40549,9 +40741,11 @@ var render = function() {
                       ]),
                       _vm._v(" "),
                       _c("tr", [
-                        _c("td", [_vm._v("Pedigree / Cultivar Name")]),
+                        _c("td", [_vm._v("Genus")]),
                         _vm._v(" "),
-                        _c("td")
+                        _c("td", [
+                          _vm._v(_vm._s(_vm.vegetable.species.genus.name))
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("tr", [
@@ -40561,452 +40755,441 @@ var render = function() {
                       ])
                     ])
                   ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _c("br"),
+              _c("br"),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "col-md-10 panel-group",
+                  attrs: {
+                    id: "accordion",
+                    role: "tablist",
+                    "aria-multiselectable": "true"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "panel panel-default" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-heading",
+                        attrs: { role: "tab", id: "headingOne" }
+                      },
+                      [
+                        _c("h4", { staticClass: "panel-title" }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                role: "button",
+                                "data-toggle": "collapse",
+                                "data-parent": "#accordion",
+                                href: "#collapseOne",
+                                "aria-expanded": "true",
+                                "aria-controls": "collapseOne"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                                SEEDLING DATA\n                              "
+                              )
+                            ]
+                          )
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "panel-collapse collapse in",
+                        attrs: {
+                          id: "collapseOne",
+                          role: "tabpanel",
+                          "aria-labelledby": "headingOne"
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "panel-body" }, [
+                          _c("div", { staticClass: "row" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "col-md-10 table-responsive table-detail"
+                              },
+                              [
+                                _c("table", { staticClass: "table" }, [
+                                  _c(
+                                    "tbody",
+                                    _vm._l(_vm.seedlings, function(item) {
+                                      return _c("tr", [
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                        " +
+                                              _vm._s(item.name) +
+                                              "\n                                                    "
+                                          )
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                        " +
+                                              _vm._s(item.value) +
+                                              "\n                                                    "
+                                          )
+                                        ])
+                                      ])
+                                    })
+                                  )
+                                ])
+                              ]
+                            )
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel panel-default" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          attrs: { role: "tab", id: "headingTwo" }
+                        },
+                        [
+                          _c("h4", { staticClass: "panel-title" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "collapsed",
+                                attrs: {
+                                  role: "button",
+                                  "data-toggle": "collapse",
+                                  "data-parent": "#accordion",
+                                  href: "#collapseTwo",
+                                  "aria-expanded": "false",
+                                  "aria-controls": "collapseTwo"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                VEGETATIVE DATA\n                              "
+                                )
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-collapse collapse",
+                          attrs: {
+                            id: "collapseTwo",
+                            role: "tabpanel",
+                            "aria-labelledby": "headingTwo"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "panel-body" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "col-md-10 table-responsive table-detail"
+                              },
+                              [
+                                _c("table", { staticClass: "table" }, [
+                                  _c(
+                                    "tbody",
+                                    _vm._l(_vm.vegetative, function(item) {
+                                      return _c("tr", [
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                    " +
+                                              _vm._s(item.name) +
+                                              "\n                                                "
+                                          )
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                    " +
+                                              _vm._s(item.value) +
+                                              "\n                                                "
+                                          )
+                                        ])
+                                      ])
+                                    })
+                                  )
+                                ])
+                              ]
+                            )
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel panel-default" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          attrs: { role: "tab", id: "headingThree" }
+                        },
+                        [
+                          _c("h4", { staticClass: "panel-title" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "collapsed",
+                                attrs: {
+                                  role: "button",
+                                  "data-toggle": "collapse",
+                                  "data-parent": "#accordion",
+                                  href: "#collapseThree",
+                                  "aria-expanded": "false",
+                                  "aria-controls": "collapseThree"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                INFLORESCENCE DATA\n                              "
+                                )
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-collapse collapse",
+                          attrs: {
+                            id: "collapseThree",
+                            role: "tabpanel",
+                            "aria-labelledby": "headingThree"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "panel-body" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "col-md-10 table-responsive table-detail"
+                              },
+                              [
+                                _c("table", { staticClass: "table" }, [
+                                  _c(
+                                    "tbody",
+                                    _vm._l(_vm.inflorescence, function(item) {
+                                      return _c("tr", [
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                    " +
+                                              _vm._s(item.name) +
+                                              "\n                                                "
+                                          )
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                    " +
+                                              _vm._s(item.value) +
+                                              "\n                                                "
+                                          )
+                                        ])
+                                      ])
+                                    })
+                                  )
+                                ])
+                              ]
+                            )
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel panel-default" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          attrs: { role: "tab", id: "headingFor" }
+                        },
+                        [
+                          _c("h4", { staticClass: "panel-title" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "collapsed",
+                                attrs: {
+                                  role: "button",
+                                  "data-toggle": "collapse",
+                                  "data-parent": "#accordion",
+                                  href: "#collapseFor",
+                                  "aria-expanded": "false",
+                                  "aria-controls": "collapseFor"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                FRUIT DATA\n                              "
+                                )
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-collapse collapse",
+                          attrs: {
+                            id: "collapseFor",
+                            role: "tabpanel",
+                            "aria-labelledby": "headingFor"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "panel-body" }, [
+                            _c("div", { staticClass: "row" }, [
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "col-md-10 table-responsive table-detail"
+                                },
+                                [
+                                  _c("table", { staticClass: "table" }, [
+                                    _c(
+                                      "tbody",
+                                      _vm._l(_vm.fruit, function(item) {
+                                        return _c("tr", [
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.name) +
+                                                "\n                                                "
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.value) +
+                                                "\n                                                "
+                                            )
+                                          ])
+                                        ])
+                                      })
+                                    )
+                                  ])
+                                ]
+                              )
+                            ])
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "panel panel-default" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          attrs: { role: "tab", id: "headingFive" }
+                        },
+                        [
+                          _c("h4", { staticClass: "panel-title" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "collapsed",
+                                attrs: {
+                                  role: "button",
+                                  "data-toggle": "collapse",
+                                  "data-parent": "#accordion",
+                                  href: "#collapseFive",
+                                  "aria-expanded": "false",
+                                  "aria-controls": "collapseFive"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                SEED DATA\n                              "
+                                )
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-collapse collapse",
+                          attrs: {
+                            id: "collapseFive",
+                            role: "tabpanel",
+                            "aria-labelledby": "headingFive"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "panel-body" }, [
+                            _c("div", { staticClass: "row" }, [
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "col-md-10 table-responsive table-detail"
+                                },
+                                [
+                                  _c("table", { staticClass: "table" }, [
+                                    _c(
+                                      "tbody",
+                                      _vm._l(_vm.seed, function(item) {
+                                        return _c("tr", [
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.name) +
+                                                "\n                                                "
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.value) +
+                                                "\n                                                "
+                                            )
+                                          ])
+                                        ])
+                                      })
+                                    )
+                                  ])
+                                ]
+                              )
+                            ])
+                          ])
+                        ]
+                      )
+                    ])
+                  ])
                 ]
               )
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _c("br"),
-            _c("br"),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "col-md-10 panel-group",
-                attrs: {
-                  id: "accordion",
-                  role: "tablist",
-                  "aria-multiselectable": "true"
-                }
-              },
-              [
-                _c("div", { staticClass: "panel panel-default" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "panel-heading",
-                      attrs: { role: "tab", id: "headingOne" }
-                    },
-                    [
-                      _c("h4", { staticClass: "panel-title" }, [
-                        _c(
-                          "a",
-                          {
-                            attrs: {
-                              role: "button",
-                              "data-toggle": "collapse",
-                              "data-parent": "#accordion",
-                              href: "#collapseOne",
-                              "aria-expanded": "true",
-                              "aria-controls": "collapseOne"
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n                        SEEDLING DATA\n                      "
-                            )
-                          ]
-                        )
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "panel-collapse collapse in",
-                      attrs: {
-                        id: "collapseOne",
-                        role: "tabpanel",
-                        "aria-labelledby": "headingOne"
-                      }
-                    },
-                    [
-                      _c("div", { staticClass: "panel-body" }, [
-                        _c("div", { staticClass: "row" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "col-md-10 table-responsive table-detail"
-                            },
-                            [
-                              _c("table", { staticClass: "table" }, [
-                                _c("tbody", [
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Hypocotyl color (terminal bud 1-2 mm)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v("Hypocotyl color intensity")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Cotyledonous leaf length (mm) (N=10)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Cotyledonous leaf width (mm) (N=10)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v("Cotyledonous leaf shape")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v("Cotyledonous leaf color")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [_vm._v("Hypocotyl pubescence")]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Stem color (before transplanting)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td", [_vm._v("Green")])
-                                  ])
-                                ])
-                              ])
-                            ]
-                          )
-                        ])
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "panel panel-default" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-heading",
-                        attrs: { role: "tab", id: "headingTwo" }
-                      },
-                      [
-                        _c("h4", { staticClass: "panel-title" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "collapsed",
-                              attrs: {
-                                role: "button",
-                                "data-toggle": "collapse",
-                                "data-parent": "#accordion",
-                                href: "#collapseTwo",
-                                "aria-expanded": "false",
-                                "aria-controls": "collapseTwo"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                        VEGETATIVE DATA\n                      "
-                              )
-                            ]
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-collapse collapse",
-                        attrs: {
-                          id: "collapseTwo",
-                          role: "tabpanel",
-                          "aria-labelledby": "headingTwo"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "panel-body" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "col-md-10 table-responsive table-detail"
-                            },
-                            [
-                              _c("table", { staticClass: "table" }, [
-                                _c("tbody", [
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Hypocotyl color (terminal bud 1-2 mm)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v("Hypocotyl color intensity")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Cotyledonous leaf length (mm) (N=10)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Cotyledonous leaf width (mm) (N=10)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v("Cotyledonous leaf shape")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v("Cotyledonous leaf color")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [_vm._v("Hypocotyl pubescence")]),
-                                    _vm._v(" "),
-                                    _c("td")
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "Stem color (before transplanting)"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td", [_vm._v("Green")])
-                                  ])
-                                ])
-                              ])
-                            ]
-                          )
-                        ])
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "panel panel-default" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-heading",
-                        attrs: { role: "tab", id: "headingThree" }
-                      },
-                      [
-                        _c("h4", { staticClass: "panel-title" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "collapsed",
-                              attrs: {
-                                role: "button",
-                                "data-toggle": "collapse",
-                                "data-parent": "#accordion",
-                                href: "#collapseThree",
-                                "aria-expanded": "false",
-                                "aria-controls": "collapseThree"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                        INFLORESCENCE DATA\n                      "
-                              )
-                            ]
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-collapse collapse",
-                        attrs: {
-                          id: "collapseThree",
-                          role: "tabpanel",
-                          "aria-labelledby": "headingThree"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "panel-body" }, [
-                          _c("div", {
-                            staticClass:
-                              "col-md-10 table-responsive table-detail"
-                          })
-                        ])
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "panel panel-default" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-heading",
-                        attrs: { role: "tab", id: "headingFor" }
-                      },
-                      [
-                        _c("h4", { staticClass: "panel-title" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "collapsed",
-                              attrs: {
-                                role: "button",
-                                "data-toggle": "collapse",
-                                "data-parent": "#accordion",
-                                href: "#collapseFor",
-                                "aria-expanded": "false",
-                                "aria-controls": "collapseFor"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                        FRUIT DATA\n                      "
-                              )
-                            ]
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-collapse collapse",
-                        attrs: {
-                          id: "collapseFor",
-                          role: "tabpanel",
-                          "aria-labelledby": "headingFor"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "panel-body" }, [
-                          _c("div", { staticClass: "row" }, [
-                            _c("div", {
-                              staticClass:
-                                "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-                            })
-                          ])
-                        ])
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "panel panel-default" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-heading",
-                        attrs: { role: "tab", id: "headingFive" }
-                      },
-                      [
-                        _c("h4", { staticClass: "panel-title" }, [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "collapsed",
-                              attrs: {
-                                role: "button",
-                                "data-toggle": "collapse",
-                                "data-parent": "#accordion",
-                                href: "#collapseFive",
-                                "aria-expanded": "false",
-                                "aria-controls": "collapseFive"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                        SEED DATA\n                      "
-                              )
-                            ]
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-collapse collapse",
-                        attrs: {
-                          id: "collapseFive",
-                          role: "tabpanel",
-                          "aria-labelledby": "headingFive"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "panel-body" }, [
-                          _c("div", { staticClass: "row" }, [
-                            _c("div", {
-                              staticClass:
-                                "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-                            })
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ])
-              ]
-            )
+            ])
           ])
         ])
       ])
@@ -41034,69 +41217,44 @@ var render = function() {
   return _c("front-base", [
     _c("section", { attrs: { id: "char" } }, [
       _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row col-md-12" }, [
-          _c("h4", [_c("b", [_vm._v("Characterization")])]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
-            )
-          ]),
-          _c("br"),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-12" }, [
-            _c("div", { staticClass: "card col-md-3" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("a", { attrs: { href: "/search/characterization/item" } }, [
-                  _vm._v("Capsicum")
+        _c(
+          "div",
+          { staticClass: "row" },
+          [
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("h4", [_c("b", [_vm._v("Characterization")])]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
+                )
+              ]),
+              _c("br"),
+              _c("br")
+            ]),
+            _vm._v(" "),
+            _vm._l(_vm.genera, function(item) {
+              return _c("div", { staticClass: "card col-md-3" }, [
+                _c("div", { staticClass: "card-header" }, [
+                  _c(
+                    "a",
+                    { attrs: { href: "/search/characterization/" + item.id } },
+                    [_vm._v(_vm._s(item.name))]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-main" }, [
+                  _c("img", {
+                    attrs: { src: "/img/icons/image.svg", alt: "..." }
+                  })
                 ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-main" }, [
-                _c("img", {
-                  attrs: { src: "img/char/capsicum.jpg", alt: "..." }
-                })
               ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card col-md-3" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("a", [_vm._v("Cucumis")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-main" }, [
-                _c("img", {
-                  attrs: { src: "img/char/cucumis.jpg", alt: "..." }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card col-md-3" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("a", [_vm._v("Solanum")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-main" }, [
-                _c("img", {
-                  attrs: { src: "img/char/solanum.jpeg", alt: "..." }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card col-md-3" }, [
-              _c("div", { staticClass: "card-header" }, [
-                _c("a", [_vm._v("Vigna")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-main" }, [
-                _c("img", { attrs: { src: "img/char/vigna.jpg", alt: "..." } })
-              ])
-            ])
-          ])
-        ])
+            })
+          ],
+          2
+        )
       ])
     ])
   ])
@@ -41208,9 +41366,9 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__FrontBase__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PassportListItem__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PassportListItem___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__PassportListItem__);
@@ -41322,7 +41480,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
         }(),
         getPassportObject: function getPassportObject(vegetable) {
             return {
-                status: 'Available',
+                status: vegetable.passport.distribution_status,
                 pin: vegetable.plant_introduction_number,
                 tempNumber: vegetable.temporary_number,
                 species: vegetable.species.name,
@@ -41564,9 +41722,9 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__FrontBase__);
 
 
@@ -41952,7 +42110,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -41963,22 +42121,16 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__EvalListDetail__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__EvalListDetail___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__EvalListDetail__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__FrontBase__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__EvalListDetail__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__EvalListDetail___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__EvalListDetail__);
+
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
 //
 //
 //
@@ -42035,14 +42187,50 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
 
   name: 'EvalList',
-
   data: function data() {
-    return {};
+    return {
+      vegetables: []
+    };
+  },
+
+  methods: {
+    loadVegetables: function () {
+      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+        var response;
+        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return axios.get('/api/vegetables?load=passport', {});
+
+              case 2:
+                response = _context.sent;
+
+                this.vegetables = response.data.data;
+
+              case 4:
+              case 'end':
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function loadVegetables() {
+        return _ref.apply(this, arguments);
+      }
+
+      return loadVegetables;
+    }()
+  },
+  mounted: function mounted() {
+    this.loadVegetables();
   },
 
   components: {
-    FrontBase: __WEBPACK_IMPORTED_MODULE_0__FrontBase___default.a,
-    EvalListDetail: __WEBPACK_IMPORTED_MODULE_1__EvalListDetail___default.a
+    FrontBase: __WEBPACK_IMPORTED_MODULE_1__FrontBase___default.a,
+    EvalListDetail: __WEBPACK_IMPORTED_MODULE_2__EvalListDetail___default.a
   }
 });
 
@@ -42081,7 +42269,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -42092,94 +42280,14 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__FrontBase__);
+
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
 //
 //
 //
@@ -42428,16 +42536,110 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
-  name: 'EvalListDetail',
-  data: function data() {
-    return {
-      load: 'evaluation'
-    };
-  },
+    name: 'EvalListDetail',
+    props: {
+        vegetableId: Number
+    },
+    data: function data() {
+        return {
+            vegetable: {
+                species: {
+                    genus: {}
+                },
+                evaluations: [],
+                passport: {}
+            }
+        };
+    },
 
-  components: {
-    FrontBase: __WEBPACK_IMPORTED_MODULE_0__FrontBase___default.a
-  }
+    methods: {
+        loadVegetable: function () {
+            var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+                var response;
+                return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                _context.next = 2;
+                                return axios.get('/api/vegetables/' + this.vegetableId);
+
+                            case 2:
+                                response = _context.sent;
+
+                                this.vegetable = response.data.data;
+
+                            case 4:
+                            case 'end':
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this);
+            }));
+
+            function loadVegetable() {
+                return _ref.apply(this, arguments);
+            }
+
+            return loadVegetable;
+        }()
+    },
+    computed: {
+        nutritive: function nutritive() {
+            if (this.vegetable.evaluations.length != 0) {
+                return this.vegetable.evaluations.filter(function (item) {
+                    return item.category == 'Nutritive Value';
+                });
+            }
+            return [];
+        },
+        abiotic: function abiotic() {
+            if (this.vegetable.evaluations.length != 0) {
+                return this.vegetable.evaluations.filter(function (item) {
+                    return item.category == 'Abiotic Stress Tolerance';
+                });
+            }
+            return [];
+        },
+        insect: function insect() {
+            if (this.vegetable.evaluations.length != 0) {
+                return this.vegetable.evaluations.filter(function (item) {
+                    return item.category == 'Insect Pest Resistance';
+                });
+            }
+            return [];
+        },
+        bacterial: function bacterial() {
+            if (this.vegetable.evaluations.length != 0) {
+                return this.vegetable.evaluations.filter(function (item) {
+                    return item.category == 'Bacterial Resistance';
+                });
+            }
+            return [];
+        },
+        fungal: function fungal() {
+            if (this.vegetable.evaluations.length != 0) {
+                return this.vegetable.evaluations.filter(function (item) {
+                    return item.category == 'Fungal Resistance';
+                });
+            }
+            return [];
+        },
+        virus: function virus() {
+            if (this.vegetable.evaluations.length != 0) {
+                return this.vegetable.evaluations.filter(function (item) {
+                    return item.category == 'Virus Resistance';
+                });
+            }
+            return [];
+        }
+    },
+    mounted: function mounted() {
+        this.loadVegetable();
+    },
+
+    components: {
+        FrontBase: __WEBPACK_IMPORTED_MODULE_1__FrontBase___default.a
+    }
 });
 
 /***/ }),
@@ -42450,22 +42652,22 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("front-base", [
     _c("section", { attrs: { id: "eval" } }, [
-      _c("div", { staticClass: "msg_title col-md-12" }, [
-        _c("h4", [_c("b", [_vm._v("Evaluation")])]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "Refers to the data results of screening accessions for their resistance to different pests (i.e. melon fly, cotton aphid, etc.) and diseases (i.e. Bhendi Yellow Vein Mosaic Virus,Tobacco Mosaic Virus, etc.). It also includes nutritive value (i.e.Vitamin A, Vitamin C, Anti-oxidant Activity, etc). The screening was conducted by scientists in various departments at AVRDC - The World Vegetable Center and other research institutes. "
-          )
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "msg_title col-md-12" }, [
+          _c("h4", [_c("b", [_vm._v("Evaluation")])]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Refers to the data results of screening accessions for their resistance to different pests (i.e. melon fly, cotton aphid, etc.) and diseases (i.e. Bhendi Yellow Vein Mosaic Virus,Tobacco Mosaic Virus, etc.). It also includes nutritive value (i.e.Vitamin A, Vitamin C, Anti-oxidant Activity, etc). The screening was conducted by scientists in various departments at AVRDC - The World Vegetable Center and other research institutes. "
+            )
+          ]),
+          _c("br"),
+          _c("br")
         ]),
-        _c("br"),
-        _c("br")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "detail" }, [
-        _c("div", { staticClass: "row" }, [
+        _vm._v(" "),
+        _c("div", { staticClass: "detail" }, [
           _c(
             "div",
             {
@@ -42478,7 +42680,9 @@ var render = function() {
                   _c("tr", [
                     _c("td", [_vm._v("Vegetable introduction number")]),
                     _vm._v(" "),
-                    _c("td", [_vm._v("VI000002")])
+                    _c("td", [
+                      _vm._v(_vm._s(_vm.vegetable.plant_introduction_number))
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("tr", [
@@ -42490,7 +42694,7 @@ var render = function() {
                   _c("tr", [
                     _c("td", [_vm._v("Temporary number")]),
                     _vm._v(" "),
-                    _c("td")
+                    _c("td", [_vm._v(_vm._s(_vm.vegetable.temporary_number))])
                   ]),
                   _vm._v(" "),
                   _c("tr", [
@@ -42508,7 +42712,7 @@ var render = function() {
                   _c("tr", [
                     _c("td", [_vm._v("Species")]),
                     _vm._v(" "),
-                    _c("td", [_vm._v("ANNUM")])
+                    _c("td", [_vm._v(_vm._s(_vm.vegetable.species.name))])
                   ]),
                   _vm._v(" "),
                   _c("tr", [
@@ -42520,13 +42724,13 @@ var render = function() {
                   _c("tr", [
                     _c("td", [_vm._v("Pedigree / Cultivar Name")]),
                     _vm._v(" "),
-                    _c("td")
+                    _c("td", [_vm._v(_vm._s(_vm.vegetable.cultivar_name))])
                   ]),
                   _vm._v(" "),
                   _c("tr", [
                     _c("td", [_vm._v("Country")]),
                     _vm._v(" "),
-                    _c("td")
+                    _c("td", [_vm._v(_vm._s(_vm.vegetable.passport.country))])
                   ]),
                   _vm._v(" "),
                   _c("tr", [
@@ -42538,234 +42742,43 @@ var render = function() {
               ])
             ]
           )
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "panel-group",
-          attrs: {
-            id: "accordion",
-            role: "tablist",
-            "aria-multiselectable": "true"
-          }
-        },
-        [
-          _c("div", { staticClass: "panel panel-default" }, [
-            _c(
-              "div",
-              {
-                staticClass: "panel-heading",
-                attrs: { role: "tab", id: "headingOne" }
-              },
-              [
-                _c("h4", { staticClass: "panel-title" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        role: "button",
-                        "data-toggle": "collapse",
-                        "data-parent": "#accordion",
-                        href: "#collapseOne",
-                        "aria-expanded": "true",
-                        "aria-controls": "collapseOne"
-                      }
-                    },
-                    [_vm._v("\n                NUTRITIVE DATA\n              ")]
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "panel-collapse collapse in",
-                attrs: {
-                  id: "collapseOne",
-                  role: "tabpanel",
-                  "aria-labelledby": "headingOne"
-                }
-              },
-              [
-                _c("div", { staticClass: "panel-body" }, [
-                  _c("div", { staticClass: "row" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-                      },
-                      [
-                        _c("table", { staticClass: "table" }, [
-                          _c("tbody", [
-                            _c("tr", [
-                              _c("td", [_vm._v("Dry matter (%)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Sugar (%)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v(" Color value (*100)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v(" Lipid (%)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Capsacin (mg/g)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Alkalinity (pH)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Soluble solids (Brix)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Acidity (% Citric acid)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Total solids")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Beta carotene (mg/100g)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Fiber (%)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Vitamin A (mg/100g)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Vitamin C (mg/100g)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Ascorbic acid (mg/100g)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [
-                                _vm._v(
-                                  "Total phenolic (mg/100g) (by Folin-Denis Method)"
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [
-                                _vm._v(
-                                  "Anti-oxidant activity (%) (by Modified Thiocyanate Method)"
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [
-                                _vm._v(
-                                  "Anti-oxidant activity (%) (by DPPH Method)"
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Total oil content (%)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Protein content (%)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ]),
-                            _vm._v(" "),
-                            _c("tr", [
-                              _c("td", [_vm._v("Starch content (%)")]),
-                              _vm._v(" "),
-                              _c("td")
-                            ])
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "panel-group col-md-10",
+            attrs: {
+              id: "accordion",
+              role: "tablist",
+              "aria-multiselectable": "true"
+            }
+          },
+          [
             _c("div", { staticClass: "panel panel-default" }, [
               _c(
                 "div",
                 {
                   staticClass: "panel-heading",
-                  attrs: { role: "tab", id: "headingTwo" }
+                  attrs: { role: "tab", id: "headingOne" }
                 },
                 [
                   _c("h4", { staticClass: "panel-title" }, [
                     _c(
                       "a",
                       {
-                        staticClass: "collapsed",
                         attrs: {
                           role: "button",
                           "data-toggle": "collapse",
                           "data-parent": "#accordion",
-                          href: "#collapseTwo",
-                          "aria-expanded": "false",
-                          "aria-controls": "collapseTwo"
+                          href: "#collapseOne",
+                          "aria-expanded": "true",
+                          "aria-controls": "collapseOne"
                         }
                       },
                       [
                         _vm._v(
-                          "\n                ABIOTIC STRESS TOLERANCE\n              "
+                          "\n                  NUTRITIVE DATA\n                "
                         )
                       ]
                     )
@@ -42776,11 +42789,11 @@ var render = function() {
               _c(
                 "div",
                 {
-                  staticClass: "panel-collapse collapse",
+                  staticClass: "panel-collapse collapse in",
                   attrs: {
-                    id: "collapseTwo",
+                    id: "collapseOne",
                     role: "tabpanel",
-                    "aria-labelledby": "headingTwo"
+                    "aria-labelledby": "headingOne"
                   }
                 },
                 [
@@ -42789,306 +42802,463 @@ var render = function() {
                       _c(
                         "div",
                         {
-                          staticClass:
-                            "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                          staticClass: "col-md-10 table-responsive table-detail"
                         },
                         [
                           _c("table", { staticClass: "table" }, [
-                            _c("tbody", [
-                              _c("tr", [
-                                _c("td", [_vm._v("Dry matter (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Sugar (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v(" Color value (*100)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v(" Lipid (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Capsacin (mg/g)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Alkalinity (pH)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Soluble solids (Brix)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Acidity (% Citric acid)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Total solids")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Beta carotene (mg/100g)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Fiber (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Vitamin A (mg/100g)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Vitamin C (mg/100g)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Ascorbic acid (mg/100g)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [
-                                  _vm._v(
-                                    "Total phenolic (mg/100g) (by Folin-Denis Method)"
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [
-                                  _vm._v(
-                                    "Anti-oxidant activity (%) (by Modified Thiocyanate Method)"
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [
-                                  _vm._v(
-                                    "Anti-oxidant activity (%) (by DPPH Method)"
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Total oil content (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Protein content (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Starch content (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ])
-                            ])
+                            _c(
+                              "tbody",
+                              _vm._l(_vm.nutritive, function(item) {
+                                return _c("tr", [
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.name) +
+                                        "\n                            "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.value) +
+                                        "\n                            "
+                                    )
+                                  ])
+                                ])
+                              })
+                            )
                           ])
                         ]
                       )
                     ])
                   ])
                 ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "panel panel-default" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "panel-heading",
-                  attrs: { role: "tab", id: "headingThree" }
-                },
-                [
-                  _c("h4", { staticClass: "panel-title" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "collapsed",
-                        attrs: {
-                          role: "button",
-                          "data-toggle": "collapse",
-                          "data-parent": "#accordion",
-                          href: "#collapseThree",
-                          "aria-expanded": "false",
-                          "aria-controls": "collapseThree"
-                        }
-                      },
-                      [
-                        _vm._v(
-                          "\n                INSECT PEST RESISTANCE\n              "
-                        )
-                      ]
-                    )
-                  ])
-                ]
               ),
               _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "panel-collapse collapse",
-                  attrs: {
-                    id: "collapseThree",
-                    role: "tabpanel",
-                    "aria-labelledby": "headingThree"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "panel-body" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", {
-                        staticClass:
-                          "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-                      })
+              _c("div", { staticClass: "panel panel-default" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel-heading",
+                    attrs: { role: "tab", id: "headingTwo" }
+                  },
+                  [
+                    _c("h4", { staticClass: "panel-title" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "collapsed",
+                          attrs: {
+                            role: "button",
+                            "data-toggle": "collapse",
+                            "data-parent": "#accordion",
+                            href: "#collapseTwo",
+                            "aria-expanded": "false",
+                            "aria-controls": "collapseTwo"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                  ABIOTIC STRESS TOLERANCE\n                "
+                          )
+                        ]
+                      )
                     ])
-                  ])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "panel panel-default" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "panel-heading",
-                  attrs: { role: "tab", id: "headingFor" }
-                },
-                [
-                  _c("h4", { staticClass: "panel-title" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "collapsed",
-                        attrs: {
-                          role: "button",
-                          "data-toggle": "collapse",
-                          "data-parent": "#accordion",
-                          href: "#collapseFor",
-                          "aria-expanded": "false",
-                          "aria-controls": "collapseFor"
-                        }
-                      },
-                      [
-                        _vm._v(
-                          "\n                BACTERIAL RESISTANCE\n              "
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel-collapse collapse",
+                    attrs: {
+                      id: "collapseTwo",
+                      role: "tabpanel",
+                      "aria-labelledby": "headingTwo"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "panel-body" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-md-10 table-responsive table-detail"
+                          },
+                          [
+                            _c("table", { staticClass: "table" }, [
+                              _c(
+                                "tbody",
+                                _vm._l(_vm.abiotic, function(item) {
+                                  return _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.name) +
+                                          "\n                            "
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.value) +
+                                          "\n                            "
+                                      )
+                                    ])
+                                  ])
+                                })
+                              )
+                            ])
+                          ]
                         )
-                      ]
-                    )
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "panel-collapse collapse",
-                  attrs: {
-                    id: "collapseFor",
-                    role: "tabpanel",
-                    "aria-labelledby": "headingFor"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "panel-body" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c("div", {
-                        staticClass:
-                          "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-                      })
+                      ])
                     ])
-                  ])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "panel panel-default" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "panel-heading",
-                  attrs: { role: "tab", id: "headingFive" }
-                },
-                [
-                  _c("h4", { staticClass: "panel-title" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "collapsed",
-                        attrs: {
-                          role: "button",
-                          "data-toggle": "collapse",
-                          "data-parent": "#accordion",
-                          href: "#collapseFive",
-                          "aria-expanded": "false",
-                          "aria-controls": "collapseFive"
-                        }
-                      },
-                      [
-                        _vm._v(
-                          "\n                FUNGAL RESISTANCE\n              "
-                        )
-                      ]
-                    )
-                  ])
-                ]
-              ),
+                  ]
+                )
+              ]),
               _vm._v(" "),
-              _vm._v('">\n              '),
-              _c("div", { staticClass: "row" }, [
-                _c("div", {
-                  staticClass:
-                    "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-                })
+              _c("div", { staticClass: "panel panel-default" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel-heading",
+                    attrs: { role: "tab", id: "headingThree" }
+                  },
+                  [
+                    _c("h4", { staticClass: "panel-title" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "collapsed",
+                          attrs: {
+                            role: "button",
+                            "data-toggle": "collapse",
+                            "data-parent": "#accordion",
+                            href: "#collapseThree",
+                            "aria-expanded": "false",
+                            "aria-controls": "collapseThree"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                  INSECT PEST RESISTANCE\n                "
+                          )
+                        ]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel-collapse collapse",
+                    attrs: {
+                      id: "collapseThree",
+                      role: "tabpanel",
+                      "aria-labelledby": "headingThree"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "panel-body" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-md-10 table-responsive table-detail"
+                          },
+                          [
+                            _c("table", { staticClass: "table" }, [
+                              _c(
+                                "tbody",
+                                _vm._l(_vm.insect, function(item) {
+                                  return _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.name) +
+                                          "\n                            "
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.value) +
+                                          "\n                            "
+                                      )
+                                    ])
+                                  ])
+                                })
+                              )
+                            ])
+                          ]
+                        )
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "panel panel-default" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel-heading",
+                    attrs: { role: "tab", id: "headingFor" }
+                  },
+                  [
+                    _c("h4", { staticClass: "panel-title" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "collapsed",
+                          attrs: {
+                            role: "button",
+                            "data-toggle": "collapse",
+                            "data-parent": "#accordion",
+                            href: "#collapseFor",
+                            "aria-expanded": "false",
+                            "aria-controls": "collapseFor"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                  BACTERIAL RESISTANCE\n                "
+                          )
+                        ]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel-collapse collapse",
+                    attrs: {
+                      id: "collapseFor",
+                      role: "tabpanel",
+                      "aria-labelledby": "headingFor"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "panel-body" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-md-10 table-responsive table-detail"
+                          },
+                          [
+                            _c("table", { staticClass: "table" }, [
+                              _c(
+                                "tbody",
+                                _vm._l(_vm.bacterial, function(item) {
+                                  return _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.name) +
+                                          "\n                            "
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.value) +
+                                          "\n                            "
+                                      )
+                                    ])
+                                  ])
+                                })
+                              )
+                            ])
+                          ]
+                        )
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "panel panel-default" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel-heading",
+                    attrs: { role: "tab", id: "headingFive" }
+                  },
+                  [
+                    _c("h4", { staticClass: "panel-title" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "collapsed",
+                          attrs: {
+                            role: "button",
+                            "data-toggle": "collapse",
+                            "data-parent": "#accordion",
+                            href: "#collapseFive",
+                            "aria-expanded": "false",
+                            "aria-controls": "collapseFive"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                  FUNGAL RESISTANCE\n                "
+                          )
+                        ]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel-collapse collapse",
+                    attrs: {
+                      id: "collapseFive",
+                      role: "tabpanel",
+                      "aria-labelledby": "headingFive"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "panel-body" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-md-10 table-responsive table-detail"
+                          },
+                          [
+                            _c("table", { staticClass: "table" }, [
+                              _c(
+                                "tbody",
+                                _vm._l(_vm.fungal, function(item) {
+                                  return _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.name) +
+                                          "\n                            "
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.value) +
+                                          "\n                            "
+                                      )
+                                    ])
+                                  ])
+                                })
+                              )
+                            ])
+                          ]
+                        )
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "panel panel-default" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel-heading",
+                    attrs: { role: "tab", id: "headingSix" }
+                  },
+                  [
+                    _c("h4", { staticClass: "panel-title" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "collapsed",
+                          attrs: {
+                            role: "button",
+                            "data-toggle": "collapse",
+                            "data-parent": "#accordion",
+                            href: "#collapseSix",
+                            "aria-expanded": "false",
+                            "aria-controls": "collapseSix"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                  VIRUS RESISTANCE\n                "
+                          )
+                        ]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel-collapse collapse",
+                    attrs: {
+                      id: "collapseSix",
+                      role: "tabpanel",
+                      "aria-labelledby": "headingSix"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "panel-body" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-md-10 table-responsive table-detail"
+                          },
+                          [
+                            _c("table", { staticClass: "table" }, [
+                              _c(
+                                "tbody",
+                                _vm._l(_vm.virus, function(item) {
+                                  return _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.name) +
+                                          "\n                            "
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.value) +
+                                          "\n                            "
+                                      )
+                                    ])
+                                  ])
+                                })
+                              )
+                            ])
+                          ]
+                        )
+                      ])
+                    ])
+                  ]
+                )
               ])
             ])
-          ])
-        ]
-      )
+          ]
+        )
+      ])
     ])
   ])
 }
@@ -43154,69 +43324,43 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _c("tbody", [
-                _c("tr", [
-                  _c("td", [_vm._v("VI000306")]),
-                  _vm._v(" "),
-                  _c("td"),
-                  _vm._v(" "),
-                  _c("td", [_vm._v("TOT2209")]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v("Solanaceae")]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v("Capsicum")]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v("Annum")]),
-                  _vm._v(" "),
-                  _c("td"),
-                  _vm._v(" "),
-                  _c("td"),
-                  _vm._v(" "),
-                  _c("td"),
-                  _vm._v(" "),
-                  _c("td", [
-                    _c("input", {
-                      attrs: {
-                        type: "button",
-                        value: "Detail",
-                        onclick:
-                          "window.location.href='/search/evaluation/detail'"
-                      }
-                    })
+              _c(
+                "tbody",
+                _vm._l(_vm.vegetables, function(vegetable) {
+                  return _c("tr", { key: vegetable.id }, [
+                    _c("td", [_vm._v("VI000306")]),
+                    _vm._v(" "),
+                    _c("td"),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(vegetable.temporary_number))]),
+                    _vm._v(" "),
+                    _c("td"),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(vegetable.species.genus.name))]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(vegetable.species.name))]),
+                    _vm._v(" "),
+                    _c("td"),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(vegetable.species.genus.name))]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(vegetable.passport.country))]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: {
+                            href: _vm.url("/search/evaluation/" + vegetable.id)
+                          }
+                        },
+                        [_vm._v("Details")]
+                      )
+                    ])
                   ])
-                ]),
-                _vm._v(" "),
-                _c("tr", [
-                  _c("td", [_vm._v("VI000306")]),
-                  _vm._v(" "),
-                  _c("td"),
-                  _vm._v(" "),
-                  _c("td", [_vm._v("TOT2209")]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v("Solanaceae")]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v("Capsicum")]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v("Chinense")]),
-                  _vm._v(" "),
-                  _c("td"),
-                  _vm._v(" "),
-                  _c("td"),
-                  _vm._v(" "),
-                  _c("td"),
-                  _vm._v(" "),
-                  _c("td", [
-                    _c("input", {
-                      attrs: {
-                        type: "button",
-                        value: "Detail",
-                        onclick:
-                          "window.location.href='search/evaluation/detail'"
-                      }
-                    })
-                  ])
-                ])
-              ])
+                })
+              )
             ]
           )
         ])
