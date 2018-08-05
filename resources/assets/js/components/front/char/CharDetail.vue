@@ -9,7 +9,7 @@
                         <br>
                         <p>Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. </p><br><br>
                     </div>
-                    <h5 class="col-md-2"><b>{{ vegetables.species.genus.name }}</b></h5>
+                    <h5 class="col-md-2"><b>{{ vegetable.species.genus.name }}</b></h5>
                     <br><br>
                     <div class="row detail">
                         <div class="col-md-6">
@@ -21,11 +21,11 @@
                                     <tbody>
                                         <tr>
                                             <td>Vegetable introduction number</td>
-                                            <td>{{ vegetables.plant_introduction_number }}</td>
+                                            <td>{{ vegetable.plant_introduction_number }}</td>
                                         </tr>
                                         <tr>
                                             <td>Temporary Number</td>
-                                            <td>{{ vegetables.temporary_number }}</td>
+                                            <td>{{ vegetable.temporary_number }}</td>
                                         </tr>
                                         <tr>
                                             <td>Variant</td>
@@ -37,11 +37,11 @@
                                         </tr>
                                         <tr>
                                             <td>Species</td>
-                                            <td>{{ vegetables.species.name }}</td>
+                                            <td>{{ vegetable.species.name }}</td>
                                         </tr>
                                         <tr>
                                             <td>Cultivar Name</td>
-                                            <td>{{ vegetables.cultivar_name }}</td>
+                                            <td>{{ vegetable.cultivar_name }}</td>
                                         </tr>
                                         <tr>
                                             <td>Species</td>
@@ -53,7 +53,7 @@
                                         </tr>
                                         <tr>
                                             <td>Genus</td>
-                                            <td>{{ vegetables.species.genus.name }}</td>
+                                            <td>{{ vegetable.species.genus.name }}</td>
                                         </tr>
                                         <tr>
                                             <td>Country</td>
@@ -79,42 +79,15 @@
                                         <div class="col-md-10 table-responsive table-detail">
                                             <table class="table">
                                                 <tbody>
-                                                    <tr v-for="item in result">
-                                                        <td>{{ item }}</td>
-                                                        <!-- // <td>{{ vegetable.characters.value }}</td> -->
+                                                    <!-- SEE COMPUTED SEEDLINGS METHODS -->
+                                                    <tr v-for="item in seedlings">
+                                                        <td>
+                                                            {{ item.name }}
+                                                        </td>
+                                                        <td>
+                                                            {{ item.value }}
+                                                        </td>
                                                     </tr>
-                                                    <!-- <tr>
-                                                        <td>Hypocotyl color (terminal bud 1-2 mm)</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Hypocotyl color intensity</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Cotyledonous leaf length (mm) (N=10)</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Cotyledonous leaf width (mm) (N=10)</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Cotyledonous leaf shape</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Cotyledonous leaf color</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Hypocotyl pubescence</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Stem color (before transplanting)</td>
-                                                        <td>Green</td>
-                                                    </tr> -->
                                                 </tbody>
                                             </table>
                                         </div>
@@ -200,7 +173,6 @@
                                 <div class="panel-body">
                                   <div class="row">
                                       <div class="col-md-10 mdl-cell--4-col-phone table-responsive table-detail">
-                                        
 
                                       </div>
                                     </div>
@@ -243,36 +215,52 @@ export default {
 
     name: 'CharDetail',
     props: {
-        genus: String,
-        pin: String,
+        genusId: Number,
+        vegetableId: Number,
     },
     data () {
         return {
-            vegetables: {
+            vegetable: {
                 species:{
                     genus:{
                     
                     }
                 },
-                characters: {}
+                characters: []
             },
             result:[],
             load: 'characterization',
-
         }
       },
       methods: {
-        async loadVegetables(){
-          let response = await axios.get(`/api/vegetables/${this.pin}`)
-          this.vegetables = response.data.data
+        async loadVegetable(){
+          let response = await axios.get(`/api/vegetables/${this.vegetableId}`)
+          this.vegetable = response.data.data
         }
        },
-      mounted() {
-        this.loadVegetables()
-        var result = _.pluck(vegetables.characters, 'name')
+       // computed properties dapat digunakan untuk mendefinisikan variable yang membutuhkan proses panjang. Contohnya mengambil character yang berkategori seedling.
+       // computed bisa langsung diakses di template seperti pada baris #83
+       // https://vuejs.org/v2/guide/computed.html#Computed-Properties
+      computed: {
+        // contoh penggunaan
+        properties: function () {
+
+            return // something
+        },
+        seedlings: function () {
+            // Cek apakah characters tidak kosong
+            if (this.vegetable.characters.length != 0) {
+                // Hanya tampilkan characters yang mempunyai kategori seedling
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Seedling'
+                })
+            }
+            return []
+        }
       },
-
-
+      mounted() {
+        this.loadVegetable()
+      },
       components: {
         FrontBase,
       }
