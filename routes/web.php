@@ -38,7 +38,7 @@ Route::get('/about', function ()
 Route::group(['prefix' => 'search/characterization'], function(){
     Route::get('/', 'Front\CharController@index')->name('characterization.index');
     Route::get('/{genus}', 'Front\CharController@show')->name('characterization.show');
-    Route::get('/{genus}/{pin}', 'Front\CharController@detail')->name('characterization.detail');
+    Route::get('/{genus}/{vegetable}', 'Front\CharController@detail')->name('characterization.detail');
 });
 Route::group(['prefix' => 'search/evaluation'], function(){
     Route::get('/', 'Front\EvaluationController@index')->name('evaluation.index');
