@@ -1298,12 +1298,43 @@
         top: 0;
         right: 40px;
     }
-    front-base {
-        float: none!important;
+    #passport, #char, #eval{
+        margin-top: 80px;
+        z-index: 99;
+        transform: scale(1);
+        transform-origin: left;
+        overflow: scroll;
+        width:130%;
+        margin-left: -60px;
+    }
+    #eval .detail{
+
+    }
+    table{
+        overflow: scroll;
+        display: flex;
         display: block;
-        /*position: absolute;*/
-        top: 0;
-        /*right: 40px;*/
+        font-size: 9px;
+    }
+
+    h4{
+        font-size: 17px;
+    }
+    #char, #passport p{
+        font-size: 11px;
+    }
+    #char #list{
+        margin-top: 20px;
+    }
+    #char .panel-group{
+        margin-top: -10px;
+    }
+    .table-detail tr{
+        font-size: 11px;
+    }
+    .tbl-content{
+        margin-top: 0px;
+        border: 1px solid rgba(255,255,255,0.3);
     }
 }
 @media all and (max-width: 320px) {

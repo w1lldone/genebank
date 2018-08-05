@@ -40674,7 +40674,7 @@ var render = function() {
             _c("br"),
             _c("br"),
             _vm._v(" "),
-            _c("div", { staticClass: "row detail" }, [
+            _c("div", { staticClass: "detail" }, [
               _c("div", { staticClass: "col-md-6" }, [
                 _c("img", {
                   staticClass: "img-responsive",
@@ -40816,41 +40816,39 @@ var render = function() {
                       },
                       [
                         _c("div", { staticClass: "panel-body" }, [
-                          _c("div", { staticClass: "row" }, [
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "col-md-10 table-responsive table-detail"
-                              },
-                              [
-                                _c("table", { staticClass: "table" }, [
-                                  _c(
-                                    "tbody",
-                                    _vm._l(_vm.seedlings, function(item) {
-                                      return _c("tr", [
-                                        _c("td", [
-                                          _vm._v(
-                                            "\n                                                        " +
-                                              _vm._s(item.name) +
-                                              "\n                                                    "
-                                          )
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(
-                                            "\n                                                        " +
-                                              _vm._s(item.value) +
-                                              "\n                                                    "
-                                          )
-                                        ])
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "col-md-10 table-responsive table-detail"
+                            },
+                            [
+                              _c("table", { staticClass: "table" }, [
+                                _c(
+                                  "tbody",
+                                  _vm._l(_vm.seedlings, function(item) {
+                                    return _c("tr", [
+                                      _c("td", [
+                                        _vm._v(
+                                          "\n                                                        " +
+                                            _vm._s(item.name) +
+                                            "\n                                                    "
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td", [
+                                        _vm._v(
+                                          "\n                                                        " +
+                                            _vm._s(item.value) +
+                                            "\n                                                    "
+                                        )
                                       ])
-                                    })
-                                  )
-                                ])
-                              ]
-                            )
-                          ])
+                                    ])
+                                  })
+                                )
+                              ])
+                            ]
+                          )
                         ])
                       ]
                     ),
@@ -41063,41 +41061,39 @@ var render = function() {
                         },
                         [
                           _c("div", { staticClass: "panel-body" }, [
-                            _c("div", { staticClass: "row" }, [
-                              _c(
-                                "div",
-                                {
-                                  staticClass:
-                                    "col-md-10 table-responsive table-detail"
-                                },
-                                [
-                                  _c("table", { staticClass: "table" }, [
-                                    _c(
-                                      "tbody",
-                                      _vm._l(_vm.fruit, function(item) {
-                                        return _c("tr", [
-                                          _c("td", [
-                                            _vm._v(
-                                              "\n                                                    " +
-                                                _vm._s(item.name) +
-                                                "\n                                                "
-                                            )
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("td", [
-                                            _vm._v(
-                                              "\n                                                    " +
-                                                _vm._s(item.value) +
-                                                "\n                                                "
-                                            )
-                                          ])
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "col-md-10 table-responsive table-detail"
+                              },
+                              [
+                                _c("table", { staticClass: "table" }, [
+                                  _c(
+                                    "tbody",
+                                    _vm._l(_vm.fruit, function(item) {
+                                      return _c("tr", [
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                    " +
+                                              _vm._s(item.name) +
+                                              "\n                                                "
+                                          )
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                    " +
+                                              _vm._s(item.value) +
+                                              "\n                                                "
+                                          )
                                         ])
-                                      })
-                                    )
-                                  ])
-                                ]
-                              )
-                            ])
+                                      ])
+                                    })
+                                  )
+                                ])
+                              ]
+                            )
                           ])
                         ]
                       )
@@ -41147,41 +41143,39 @@ var render = function() {
                         },
                         [
                           _c("div", { staticClass: "panel-body" }, [
-                            _c("div", { staticClass: "row" }, [
-                              _c(
-                                "div",
-                                {
-                                  staticClass:
-                                    "col-md-10 table-responsive table-detail"
-                                },
-                                [
-                                  _c("table", { staticClass: "table" }, [
-                                    _c(
-                                      "tbody",
-                                      _vm._l(_vm.seed, function(item) {
-                                        return _c("tr", [
-                                          _c("td", [
-                                            _vm._v(
-                                              "\n                                                    " +
-                                                _vm._s(item.name) +
-                                                "\n                                                "
-                                            )
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("td", [
-                                            _vm._v(
-                                              "\n                                                    " +
-                                                _vm._s(item.value) +
-                                                "\n                                                "
-                                            )
-                                          ])
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "col-md-10 table-responsive table-detail"
+                              },
+                              [
+                                _c("table", { staticClass: "table" }, [
+                                  _c(
+                                    "tbody",
+                                    _vm._l(_vm.seed, function(item) {
+                                      return _c("tr", [
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                    " +
+                                              _vm._s(item.name) +
+                                              "\n                                                "
+                                          )
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                    " +
+                                              _vm._s(item.value) +
+                                              "\n                                                "
+                                          )
                                         ])
-                                      })
-                                    )
-                                  ])
-                                ]
-                              )
-                            ])
+                                      ])
+                                    })
+                                  )
+                                ])
+                              ]
+                            )
                           ])
                         ]
                       )
@@ -41870,64 +41864,56 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            { staticClass: "col-md-12 table-responsive table-detail" },
-            [
-              _c("table", { staticClass: "table" }, [
-                _c(
-                  "tbody",
-                  [
-                    _c("tr", [
-                      _c("td", [_vm._v("Plant introduction number")]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _vm._v(_vm._s(_vm.vegetable.plant_introduction_number))
-                      ])
+        _c("div", { staticClass: "col-md-12 table-responsive table-detail" }, [
+          _c("table", { staticClass: "table" }, [
+            _c(
+              "tbody",
+              [
+                _c("tr", [
+                  _c("td", [_vm._v("Plant introduction number")]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(_vm._s(_vm.vegetable.plant_introduction_number))
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Temporary Number")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.vegetable.temporary_number))])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Cultivar Name")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.vegetable.cultivar_name))])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Genus")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.vegetable.species.genus.name))])
+                ]),
+                _vm._v(" "),
+                _c("tr", [
+                  _c("td", [_vm._v("Species")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.vegetable.species.name))])
+                ]),
+                _vm._v(" "),
+                _vm._l(_vm.vegetable.passport, function(value, index) {
+                  return _c("tr", [
+                    _c("td", [
+                      _vm._v(_vm._s(_vm._f("removeUnderScore")(index)))
                     ]),
                     _vm._v(" "),
-                    _c("tr", [
-                      _c("td", [_vm._v("Temporary Number")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(_vm.vegetable.temporary_number))])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", [_vm._v("Cultivar Name")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(_vm.vegetable.cultivar_name))])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", [_vm._v("Genus")]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _vm._v(_vm._s(_vm.vegetable.species.genus.name))
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", [_vm._v("Species")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(_vm.vegetable.species.name))])
-                    ]),
-                    _vm._v(" "),
-                    _vm._l(_vm.vegetable.passport, function(value, index) {
-                      return _c("tr", [
-                        _c("td", [
-                          _vm._v(_vm._s(_vm._f("removeUnderScore")(index)))
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(value))])
-                      ])
-                    })
-                  ],
-                  2
-                )
-              ])
-            ]
-          )
+                    _c("td", [_vm._v(_vm._s(value))])
+                  ])
+                })
+              ],
+              2
+            )
+          ])
         ])
       ])
     ])
@@ -42670,10 +42656,7 @@ var render = function() {
         _c("div", { staticClass: "detail" }, [
           _c(
             "div",
-            {
-              staticClass:
-                "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-            },
+            { staticClass: "col-md-10 table-responsive table-detail" },
             [
               _c("table", { staticClass: "table" }, [
                 _c("tbody", [
@@ -42798,40 +42781,39 @@ var render = function() {
                 },
                 [
                   _c("div", { staticClass: "panel-body" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "col-md-10 table-responsive table-detail"
-                        },
-                        [
-                          _c("table", { staticClass: "table" }, [
-                            _c(
-                              "tbody",
-                              _vm._l(_vm.nutritive, function(item) {
-                                return _c("tr", [
-                                  _c("td", [
-                                    _vm._v(
-                                      "\n                              " +
-                                        _vm._s(item.name) +
-                                        "\n                            "
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("td", [
-                                    _vm._v(
-                                      "\n                              " +
-                                        _vm._s(item.value) +
-                                        "\n                            "
-                                    )
-                                  ])
+                    _vm._v("\n            \\\n                  "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "col-md-10 table-responsive table-detail"
+                      },
+                      [
+                        _c("table", { staticClass: "table" }, [
+                          _c(
+                            "tbody",
+                            _vm._l(_vm.nutritive, function(item) {
+                              return _c("tr", [
+                                _c("td", [
+                                  _vm._v(
+                                    "\n                              " +
+                                      _vm._s(item.name) +
+                                      "\n                            "
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("td", [
+                                  _vm._v(
+                                    "\n                              " +
+                                      _vm._s(item.value) +
+                                      "\n                            "
+                                  )
                                 ])
-                              })
-                            )
-                          ])
-                        ]
-                      )
-                    ])
+                              ])
+                            })
+                          )
+                        ])
+                      ]
+                    )
                   ])
                 ]
               ),
@@ -42880,41 +42862,38 @@ var render = function() {
                   },
                   [
                     _c("div", { staticClass: "panel-body" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "col-md-10 table-responsive table-detail"
-                          },
-                          [
-                            _c("table", { staticClass: "table" }, [
-                              _c(
-                                "tbody",
-                                _vm._l(_vm.abiotic, function(item) {
-                                  return _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "\n                              " +
-                                          _vm._s(item.name) +
-                                          "\n                            "
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td", [
-                                      _vm._v(
-                                        "\n                              " +
-                                          _vm._s(item.value) +
-                                          "\n                            "
-                                      )
-                                    ])
+                      _c(
+                        "div",
+                        {
+                          staticClass: "col-md-10 table-responsive table-detail"
+                        },
+                        [
+                          _c("table", { staticClass: "table" }, [
+                            _c(
+                              "tbody",
+                              _vm._l(_vm.abiotic, function(item) {
+                                return _c("tr", [
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.name) +
+                                        "\n                            "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.value) +
+                                        "\n                            "
+                                    )
                                   ])
-                                })
-                              )
-                            ])
-                          ]
-                        )
-                      ])
+                                ])
+                              })
+                            )
+                          ])
+                        ]
+                      )
                     ])
                   ]
                 )
@@ -42964,41 +42943,38 @@ var render = function() {
                   },
                   [
                     _c("div", { staticClass: "panel-body" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "col-md-10 table-responsive table-detail"
-                          },
-                          [
-                            _c("table", { staticClass: "table" }, [
-                              _c(
-                                "tbody",
-                                _vm._l(_vm.insect, function(item) {
-                                  return _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "\n                              " +
-                                          _vm._s(item.name) +
-                                          "\n                            "
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td", [
-                                      _vm._v(
-                                        "\n                              " +
-                                          _vm._s(item.value) +
-                                          "\n                            "
-                                      )
-                                    ])
+                      _c(
+                        "div",
+                        {
+                          staticClass: "col-md-10 table-responsive table-detail"
+                        },
+                        [
+                          _c("table", { staticClass: "table" }, [
+                            _c(
+                              "tbody",
+                              _vm._l(_vm.insect, function(item) {
+                                return _c("tr", [
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.name) +
+                                        "\n                            "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.value) +
+                                        "\n                            "
+                                    )
                                   ])
-                                })
-                              )
-                            ])
-                          ]
-                        )
-                      ])
+                                ])
+                              })
+                            )
+                          ])
+                        ]
+                      )
                     ])
                   ]
                 )
@@ -43048,41 +43024,38 @@ var render = function() {
                   },
                   [
                     _c("div", { staticClass: "panel-body" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "col-md-10 table-responsive table-detail"
-                          },
-                          [
-                            _c("table", { staticClass: "table" }, [
-                              _c(
-                                "tbody",
-                                _vm._l(_vm.bacterial, function(item) {
-                                  return _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "\n                              " +
-                                          _vm._s(item.name) +
-                                          "\n                            "
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td", [
-                                      _vm._v(
-                                        "\n                              " +
-                                          _vm._s(item.value) +
-                                          "\n                            "
-                                      )
-                                    ])
+                      _c(
+                        "div",
+                        {
+                          staticClass: "col-md-10 table-responsive table-detail"
+                        },
+                        [
+                          _c("table", { staticClass: "table" }, [
+                            _c(
+                              "tbody",
+                              _vm._l(_vm.bacterial, function(item) {
+                                return _c("tr", [
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.name) +
+                                        "\n                            "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.value) +
+                                        "\n                            "
+                                    )
                                   ])
-                                })
-                              )
-                            ])
-                          ]
-                        )
-                      ])
+                                ])
+                              })
+                            )
+                          ])
+                        ]
+                      )
                     ])
                   ]
                 )
@@ -43132,41 +43105,38 @@ var render = function() {
                   },
                   [
                     _c("div", { staticClass: "panel-body" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "col-md-10 table-responsive table-detail"
-                          },
-                          [
-                            _c("table", { staticClass: "table" }, [
-                              _c(
-                                "tbody",
-                                _vm._l(_vm.fungal, function(item) {
-                                  return _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "\n                              " +
-                                          _vm._s(item.name) +
-                                          "\n                            "
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td", [
-                                      _vm._v(
-                                        "\n                              " +
-                                          _vm._s(item.value) +
-                                          "\n                            "
-                                      )
-                                    ])
+                      _c(
+                        "div",
+                        {
+                          staticClass: "col-md-10 table-responsive table-detail"
+                        },
+                        [
+                          _c("table", { staticClass: "table" }, [
+                            _c(
+                              "tbody",
+                              _vm._l(_vm.fungal, function(item) {
+                                return _c("tr", [
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.name) +
+                                        "\n                            "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.value) +
+                                        "\n                            "
+                                    )
                                   ])
-                                })
-                              )
-                            ])
-                          ]
-                        )
-                      ])
+                                ])
+                              })
+                            )
+                          ])
+                        ]
+                      )
                     ])
                   ]
                 )
@@ -43216,41 +43186,38 @@ var render = function() {
                   },
                   [
                     _c("div", { staticClass: "panel-body" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "col-md-10 table-responsive table-detail"
-                          },
-                          [
-                            _c("table", { staticClass: "table" }, [
-                              _c(
-                                "tbody",
-                                _vm._l(_vm.virus, function(item) {
-                                  return _c("tr", [
-                                    _c("td", [
-                                      _vm._v(
-                                        "\n                              " +
-                                          _vm._s(item.name) +
-                                          "\n                            "
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("td", [
-                                      _vm._v(
-                                        "\n                              " +
-                                          _vm._s(item.value) +
-                                          "\n                            "
-                                      )
-                                    ])
+                      _c(
+                        "div",
+                        {
+                          staticClass: "col-md-10 table-responsive table-detail"
+                        },
+                        [
+                          _c("table", { staticClass: "table" }, [
+                            _c(
+                              "tbody",
+                              _vm._l(_vm.virus, function(item) {
+                                return _c("tr", [
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.name) +
+                                        "\n                            "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.value) +
+                                        "\n                            "
+                                    )
                                   ])
-                                })
-                              )
-                            ])
-                          ]
-                        )
-                      ])
+                                ])
+                              })
+                            )
+                          ])
+                        ]
+                      )
                     ])
                   ]
                 )
@@ -43282,7 +43249,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("front-base", [
     _c("section", { staticClass: "list-table", attrs: { id: "eval" } }, [
-      _c("div", { staticClass: "msg_title col-md-13" }, [
+      _c("div", { staticClass: "msg_title col-md-12" }, [
         _c("h4", [_c("b", [_vm._v("Evaluation")])]),
         _vm._v(" "),
         _c("br"),
@@ -43295,7 +43262,7 @@ var render = function() {
         _c("br"),
         _c("br"),
         _vm._v(" "),
-        _c("div", { staticClass: "tbl-header tbl-content col-md-14" }, [
+        _c("div", { staticClass: "tbl-header tbl-content col-md-12" }, [
           _c(
             "table",
             { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },

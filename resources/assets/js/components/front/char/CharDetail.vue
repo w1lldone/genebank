@@ -11,7 +11,7 @@
                     </div>
                     <h5 class="col-md-2"><b>{{ vegetable.species.genus.name }}</b></h5>
                     <br><br>
-                    <div class="row detail">
+                    <div class="detail">
                         <div class="col-md-6">
                             <img src="/img/icons/image.svg" class="img-responsive">
                         </div>
@@ -75,7 +75,7 @@
                               </div>
                               <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
-                                    <div class="row">
+                                        
                                         <div class="col-md-10 table-responsive table-detail">
                                             <table class="table">
                                                 <tbody>
@@ -91,7 +91,7 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                    </div>
+                                  
                                 </div>
                             </div>
                             <div class="panel panel-default">
@@ -158,7 +158,7 @@
                               </div>
                               <div id="collapseFor" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFor">
                                 <div class="panel-body">
-                                  <div class="row">
+                                 
                                       <div class="col-md-10 table-responsive table-detail">
                                         <table class="table">
                                             <tbody>
@@ -173,7 +173,7 @@
                                             </tbody>
                                         </table>
                                       </div>
-                                    </div>
+                                    
                                 </div>
                               </div>
                             </div>
@@ -187,7 +187,7 @@
                               </div>
                               <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                                 <div class="panel-body">
-                                  <div class="row">
+                                
                                       <div class="col-md-10 table-responsive table-detail"> 
                                         <table class="table">
                                             <tbody>
@@ -202,7 +202,7 @@
                                             </tbody>
                                         </table>
                                       </div>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
