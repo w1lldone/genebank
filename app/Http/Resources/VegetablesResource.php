@@ -22,7 +22,7 @@ class VegetablesResource extends JsonResource
             'cultivar_name' => $this->cultivar_name,
             'temporary_number' => $this->temporary_number,
             'plant_introduction_number' => $this->plant_introduction_number,
-            'photo' => Storage::disk('public')->url($this->photo),
+            'photo' => $this->photoUrl,
             'created_at' => $this->created_at->toDateTimeString(),
             'updated_at' => $this->updated_at->toDateTimeString(),
             'characters' => AttributesResource::collection($this->whenLoaded('characters')),
