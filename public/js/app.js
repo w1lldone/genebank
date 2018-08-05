@@ -39833,7 +39833,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -39856,9 +39856,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
-//
-//
-//
 //
 //
 //
@@ -40679,89 +40676,86 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "row detail" }, [
               _c("div", { staticClass: "col-md-6" }, [
-                _c("img", { attrs: { src: "img/char/capsicum.jpg" } })
+                _c("img", {
+                  staticClass: "img-responsive",
+                  attrs: { src: "/img/icons/image.svg" }
+                })
               ]),
               _vm._v(" "),
-              _c("div", { attrs: { id: "list" } }, [
-                _c(
-                  "div",
-                  { staticClass: "col-md-6 table-responsive table-detail" },
-                  [
-                    _c("table", { staticClass: "table" }, [
-                      _c("tbody", [
-                        _c("tr", [
-                          _c("td", [_vm._v("Vegetable introduction number")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _vm._v(
-                              _vm._s(_vm.vegetable.plant_introduction_number)
-                            )
-                          ])
-                        ]),
+              _c("div", { attrs: { id: "list col-md-6 " } }, [
+                _c("div", { staticClass: "table-responsive table-detail" }, [
+                  _c("table", { staticClass: "table" }, [
+                    _c("tbody", [
+                      _c("tr", [
+                        _c("td", [_vm._v("Vegetable introduction number")]),
                         _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Temporary Number")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _vm._v(_vm._s(_vm.vegetable.temporary_number))
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Variant")]),
-                          _vm._v(" "),
-                          _c("td")
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Characterized Year and Season")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("1986SP")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Species")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v(_vm._s(_vm.vegetable.species.name))])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Cultivar Name")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _vm._v(_vm._s(_vm.vegetable.cultivar_name))
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Species")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("ANNUM")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Subtaxa")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("VAR. RADIATA")])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Genus")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _vm._v(_vm._s(_vm.vegetable.species.genus.name))
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Country")]),
-                          _vm._v(" "),
-                          _c("td")
+                        _c("td", [
+                          _vm._v(
+                            _vm._s(_vm.vegetable.plant_introduction_number)
+                          )
                         ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("Temporary Number")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(_vm._s(_vm.vegetable.temporary_number))
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("Variant")]),
+                        _vm._v(" "),
+                        _c("td")
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("Characterized Year and Season")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("1986SP")])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("Species")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.vegetable.species.name))])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("Cultivar Name")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.vegetable.cultivar_name))])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("Species")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("ANNUM")])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("Subtaxa")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("VAR. RADIATA")])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("Genus")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(_vm._s(_vm.vegetable.species.genus.name))
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", [_vm._v("Country")]),
+                        _vm._v(" "),
+                        _c("td")
                       ])
                     ])
-                  ]
-                )
+                  ])
+                ])
               ]),
               _vm._v(" "),
               _c("br"),
@@ -41253,7 +41247,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("div", { staticClass: "card-main" }, [
                   _c("img", {
-                    attrs: { src: "img/char/capsicum.jpg", alt: "..." }
+                    attrs: { src: "/img/icons/image.svg", alt: "..." }
                   })
                 ])
               ])

@@ -13,10 +13,10 @@
                     <br><br>
                     <div class="row detail">
                         <div class="col-md-6">
-                            <img src="img/char/capsicum.jpg">
+                            <img src="/img/icons/image.svg" class="img-responsive">
                         </div>
-                        <div id="list">
-                            <div class="col-md-6 table-responsive table-detail">
+                        <div id="list col-md-6 ">
+                            <div class="table-responsive table-detail">
                                 <table class="table">
                                     <tbody>
                                         <tr>
