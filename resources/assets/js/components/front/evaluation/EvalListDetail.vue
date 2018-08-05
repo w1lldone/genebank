@@ -14,7 +14,7 @@
                   <tbody>
                     <tr>
                       <td>Vegetable introduction number</td>
-                      <td>{{ vegetables.plant_introduction_number }}</td>
+                      <td>{{ vegetable.plant_introduction_number }}</td>
                     </tr>
                     <tr>
                       <td>Crop accession number</td>
@@ -22,7 +22,7 @@
                     </tr>
                     <tr>
                       <td>Temporary number</td>
-                      <td>{{ vegetables.temporary_number }}</td>
+                      <td>{{ vegetable.temporary_number }}</td>
                     </tr>
                     <tr>
                       <td>Variant</td>
@@ -34,7 +34,7 @@
                     </tr>
                     <tr>
                       <td>Species</td>
-                      <td>{{ vegetables.species.name }}</td>
+                      <td>{{ vegetable.species.name }}</td>
                     </tr>
                     <tr>
                       <td>Subtaxa</td>
@@ -42,11 +42,11 @@
                     </tr>
                     <tr>
                       <td>Pedigree / Cultivar Name</td>
-                      <td>{{ vegetables.cultivar_name }}</td>
+                      <td>{{ vegetable.cultivar_name }}</td>
                     </tr>
                     <tr>
                       <td>Country</td>
-                      <td>{{ vegetables.passport.country }}</td>
+                      <td>{{ vegetable.passport.country }}</td>
                     </tr>
                     <tr>
                       <td>Remarks</td>
@@ -248,11 +248,11 @@ export default {
 
   name: 'EvalListDetail',
   props: {
-    pin: String,
+    vegetableId: Number,
   },
   data () {
     return {
-      vegetables: {
+      vegetable: {
             species:{
                 genus:{
                     
@@ -264,66 +264,63 @@ export default {
     }
   },
   methods: {
-    async loadVegetables(){
-      let response = await axios.get(`/api/vegetables/${this.pin}`)
-      this.vegetables = response.data.data
+    async loadVegetable(){
+      let response = await axios.get(`/api/vegetables/${this.vegetableId}`)
+      this.vegetable = response.data.data
     }
   },
   computed: {
-        properties: function () {
-            return
-        },
-        nutritive: function () {
-            if (this.vegetables.evaluations.length != 0) {
-              return this.vegetables.evaluations.filter(function (item) {
-                return item.category == 'Nutritive'
-              })
-            }
-            return []
-        },
-        abiotic: function () {
-            if (this.vegetables.evaluations.length != 0) {
-                return this.vegetables.evaluations.filter(function (item) {
-                    return item.category == 'Abiotic'
-                })
-            }
-            return []
-        },
-        insect: function () {
-            if (this.vegetables.evaluations.length != 0) {
-                return this.vegetables.evaluations.filter(function (item) {
-                    return item.category == 'Insect'
-                })
-            }
-            return []
-        },
-        bacterial: function () {
-            if (this.vegetables.evaluations.length != 0) {
-                return this.vegetables.evaluations.filter(function (item) {
-                    return item.category == 'Bacterial'
-                })
-            }
-            return []
-        },
-        fungal: function () {
-            if (this.vegetables.evaluations.length != 0) {
-                return this.vegetables.evaluations.filter(function (item) {
-                    return item.category == 'Fungal'
-                })
-            }
-            return []
-        },
-        virus: function () {
-            if (this.vegetables.evaluations.length != 0) {
-                return this.vegetables.evaluations.filter(function (item) {
-                    return item.category == 'Virus'
-                })
-            }
-            return []
+    nutritive: function () {
+        if (this.vegetable.evaluations.length != 0) {
+          return this.vegetable.evaluations.filter(function (item) {
+            return item.category == 'Nutritive Value'
+          })
         }
-      },
+        return []
+    },
+    abiotic: function () {
+        if (this.vegetable.evaluations.length != 0) {
+            return this.vegetable.evaluations.filter(function (item) {
+                return item.category == 'Abiotic Stress Tolerance'
+            })
+        }
+        return []
+    },
+    insect: function () {
+        if (this.vegetable.evaluations.length != 0) {
+            return this.vegetable.evaluations.filter(function (item) {
+                return item.category == 'Insect Pest Resistance'
+            })
+        }
+        return []
+    },
+    bacterial: function () {
+        if (this.vegetable.evaluations.length != 0) {
+            return this.vegetable.evaluations.filter(function (item) {
+                return item.category == 'Bacterial Resistance'
+            })
+        }
+        return []
+    },
+    fungal: function () {
+        if (this.vegetable.evaluations.length != 0) {
+            return this.vegetable.evaluations.filter(function (item) {
+                return item.category == 'Fungal Resistance'
+            })
+        }
+        return []
+    },
+    virus: function () {
+        if (this.vegetable.evaluations.length != 0) {
+            return this.vegetable.evaluations.filter(function (item) {
+                return item.category == 'Virus Resistance'
+            })
+        }
+        return []
+    }
+  },
   mounted() {
-    this.loadVegetables()
+    this.loadVegetable()
   },
   components: {
     FrontBase,
