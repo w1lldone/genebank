@@ -12,8 +12,8 @@ class EvaluationController extends Controller
         return view('evaluation.index');
     }
     
-    public function show(Request $request, $pin)
+    public function show(Request $request, $vegetable)
     {
-        return view('evaluation.show', compact('pin'));
+        return view('evaluation.show', compact('vegetable'));
     }
 }
