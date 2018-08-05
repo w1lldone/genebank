@@ -34,7 +34,7 @@
                 <td></td>
                 <td>{{vegetable.passport.country}}</td>
                 <td>
-                  <a :href="url('/search/characterization/'+genus+'/'+pin)" class="btn btn-success">Details</a>
+                  <a :href="url('/search/characterization/'+genus+'/'+vegetable.id)" class="btn btn-success">Details</a>
                 </td>
               </tr>
             </tbody>
