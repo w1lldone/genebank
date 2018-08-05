@@ -70,90 +70,18 @@
               <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <div class="row">
-                    <div class="col-md-10 mdl-cell--4-col-phone table-responsive table-detail">
+                    <div class="col-md-10 table-responsive table-detail">
                         <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>Dry matter (%)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Sugar (%)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td> Color value (*100)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td> Lipid (%)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Capsacin (mg/g)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Alkalinity (pH)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Soluble solids (Brix)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Acidity (% Citric acid)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Total solids</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Beta carotene (mg/100g)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Fiber (%)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Vitamin A (mg/100g)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Vitamin C (mg/100g)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Ascorbic acid (mg/100g)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Total phenolic (mg/100g) (by Folin-Denis Method)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Anti-oxidant activity (%) (by Modified Thiocyanate Method)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Anti-oxidant activity (%) (by DPPH Method)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Total oil content (%)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Protein content (%)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Starch content (%)</td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
+                          <tbody>
+                            <tr v-for="item in nutritive">
+                              <td>
+                                {{ item.name }}
+                              </td>
+                              <td>
+                                {{ item.value }}
+                              </td>
+                            </tr>
+                          </tbody>
                         </table>
                     </div>
                 </div>
@@ -170,26 +98,18 @@
               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div class="panel-body">
                   <div class="row">
-                      <div class="col-md-10 mdl-cell--4-col-phone table-responsive table-detail">
+                      <div class="col-md-10 table-responsive table-detail">
                         <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>Dry matter (%)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Sugar (%)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td> Color value (*100)</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td> Lipid (%)</td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
+                          <tbody>
+                            <tr v-for="item in abiotic">
+                              <td>
+                                {{ item.name }}
+                              </td>
+                              <td>
+                                {{ item.value }}
+                              </td>
+                            </tr>
+                          </tbody>
                         </table>
                       </div>
                     </div>
@@ -207,9 +127,19 @@
               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">
                   <div class="row">
-                      <div class="col-md-10 mdl-cell--4-col-phone table-responsive table-detail">
-                        
-
+                      <div class="col-md-10 table-responsive table-detail">
+                        <table class="table">
+                          <tbody>
+                            <tr v-for="item in insect">
+                              <td>
+                                {{ item.name }}
+                              </td>
+                              <td>
+                                {{ item.value }}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                 </div>
@@ -226,9 +156,19 @@
               <div id="collapseFor" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFor">
                 <div class="panel-body">
                   <div class="row">
-                      <div class="col-md-10 mdl-cell--4-col-phone table-responsive table-detail">
-                        
-
+                      <div class="col-md-10 table-responsive table-detail">
+                        <table class="table">
+                          <tbody>
+                            <tr v-for="item in bacterial">
+                              <td>
+                                {{ item.name }}
+                              </td>
+                              <td>
+                                {{ item.value }}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                 </div>
@@ -245,14 +185,54 @@
               <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                 <div class="panel-body">
                   <div class="row">
-                      <div class="col-md-10 mdl-cell--4-col-phone table-responsive table-detail">      
-
+                      <div class="col-md-10 table-responsive table-detail">      
+                        <table class="table">
+                          <tbody>
+                            <tr v-for="item in fungal">
+                              <td>
+                                {{ item.name }}
+                              </td>
+                              <td>
+                                {{ item.value }}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                   </div>
               </div>
             </div>
-
           </div> 
+          <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingSix">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    VIRUS RESISTANCE
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                <div class="panel-body">
+                  <div class="row">
+                      <div class="col-md-10 table-responsive table-detail">
+                        <table class="table">
+                          <tbody>
+                            <tr v-for="item in virus">
+                              <td>
+                                {{ item.name }}
+                              </td>
+                              <td>
+                                {{ item.value }}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
         </div> <!-- end of panel-default -->
       </div> <!-- end of panel group -->
     </div>
@@ -278,6 +258,7 @@ export default {
                     
                 }
             },
+            evaluations: [],
             passport:{}
         },
     }
@@ -288,6 +269,59 @@ export default {
       this.vegetables = response.data.data
     }
   },
+  computed: {
+        properties: function () {
+            return
+        },
+        nutritive: function () {
+            if (this.vegetables.evaluations.length != 0) {
+              return this.vegetables.evaluations.filter(function (item) {
+                return item.category == 'Nutritive'
+              })
+            }
+            return []
+        },
+        abiotic: function () {
+            if (this.vegetables.evaluations.length != 0) {
+                return this.vegetables.evaluations.filter(function (item) {
+                    return item.category == 'Abiotic'
+                })
+            }
+            return []
+        },
+        insect: function () {
+            if (this.vegetables.evaluations.length != 0) {
+                return this.vegetables.evaluations.filter(function (item) {
+                    return item.category == 'Insect'
+                })
+            }
+            return []
+        },
+        bacterial: function () {
+            if (this.vegetables.evaluations.length != 0) {
+                return this.vegetables.evaluations.filter(function (item) {
+                    return item.category == 'Bacterial'
+                })
+            }
+            return []
+        },
+        fungal: function () {
+            if (this.vegetables.evaluations.length != 0) {
+                return this.vegetables.evaluations.filter(function (item) {
+                    return item.category == 'Fungal'
+                })
+            }
+            return []
+        },
+        virus: function () {
+            if (this.vegetables.evaluations.length != 0) {
+                return this.vegetables.evaluations.filter(function (item) {
+                    return item.category == 'Virus'
+                })
+            }
+            return []
+        }
+      },
   mounted() {
     this.loadVegetables()
   },

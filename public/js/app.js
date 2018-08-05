@@ -40290,7 +40290,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -40605,6 +40605,30 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
             if (this.vegetable.characters.length != 0) {
                 return this.vegetable.characters.filter(function (item) {
                     return item.category == 'Vegetative';
+                });
+            }
+            return [];
+        },
+        inflorescence: function inflorescence() {
+            if (this.vegetable.characters.length != 0) {
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Inflorescence';
+                });
+            }
+            return [];
+        },
+        fruit: function fruit() {
+            if (this.vegetable.characters.length != 0) {
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Fruit';
+                });
+            }
+            return [];
+        },
+        seed: function seed() {
+            if (this.vegetable.characters.length != 0) {
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Seed';
                 });
             }
             return [];
@@ -40963,10 +40987,39 @@ var render = function() {
                         },
                         [
                           _c("div", { staticClass: "panel-body" }, [
-                            _c("div", {
-                              staticClass:
-                                "col-md-10 table-responsive table-detail"
-                            })
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "col-md-10 table-responsive table-detail"
+                              },
+                              [
+                                _c("table", { staticClass: "table" }, [
+                                  _c(
+                                    "tbody",
+                                    _vm._l(_vm.inflorescence, function(item) {
+                                      return _c("tr", [
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                    " +
+                                              _vm._s(item.name) +
+                                              "\n                                                "
+                                          )
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                    " +
+                                              _vm._s(item.value) +
+                                              "\n                                                "
+                                          )
+                                        ])
+                                      ])
+                                    })
+                                  )
+                                ])
+                              ]
+                            )
                           ])
                         ]
                       )
@@ -41017,10 +41070,39 @@ var render = function() {
                         [
                           _c("div", { staticClass: "panel-body" }, [
                             _c("div", { staticClass: "row" }, [
-                              _c("div", {
-                                staticClass:
-                                  "col-md-10 table-responsive table-detail"
-                              })
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "col-md-10 table-responsive table-detail"
+                                },
+                                [
+                                  _c("table", { staticClass: "table" }, [
+                                    _c(
+                                      "tbody",
+                                      _vm._l(_vm.fruit, function(item) {
+                                        return _c("tr", [
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.name) +
+                                                "\n                                                "
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.value) +
+                                                "\n                                                "
+                                            )
+                                          ])
+                                        ])
+                                      })
+                                    )
+                                  ])
+                                ]
+                              )
                             ])
                           ])
                         ]
@@ -41072,10 +41154,39 @@ var render = function() {
                         [
                           _c("div", { staticClass: "panel-body" }, [
                             _c("div", { staticClass: "row" }, [
-                              _c("div", {
-                                staticClass:
-                                  "col-md-10 table-responsive table-detail"
-                              })
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "col-md-10 table-responsive table-detail"
+                                },
+                                [
+                                  _c("table", { staticClass: "table" }, [
+                                    _c(
+                                      "tbody",
+                                      _vm._l(_vm.seed, function(item) {
+                                        return _c("tr", [
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.name) +
+                                                "\n                                                "
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.value) +
+                                                "\n                                                "
+                                            )
+                                          ])
+                                        ])
+                                      })
+                                    )
+                                  ])
+                                ]
+                              )
                             ])
                           ])
                         ]
@@ -42164,7 +42275,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -42426,84 +42537,118 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 
-  name: 'EvalListDetail',
-  props: {
-    pin: String
-  },
-  data: function data() {
-    return {
-      vegetables: {
-        species: {
-          genus: {}
-        },
-        passport: {}
-      }
-    };
-  },
-
-  methods: {
-    loadVegetables: function () {
-      var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
-        var response;
-        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                _context.next = 2;
-                return axios.get('/api/vegetables/' + this.pin);
-
-              case 2:
-                response = _context.sent;
-
-                this.vegetables = response.data.data;
-
-              case 4:
-              case 'end':
-                return _context.stop();
+    name: 'EvalListDetail',
+    props: {
+        pin: String
+    },
+    data: function data() {
+        return {
+            vegetables: {
+                species: {
+                    genus: {}
+                },
+                evaluations: [],
+                passport: {}
             }
-          }
-        }, _callee, this);
-      }));
+        };
+    },
 
-      function loadVegetables() {
-        return _ref.apply(this, arguments);
-      }
+    methods: {
+        loadVegetables: function () {
+            var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
+                var response;
+                return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                _context.next = 2;
+                                return axios.get('/api/vegetables/' + this.pin);
 
-      return loadVegetables;
-    }()
-  },
-  mounted: function mounted() {
-    this.loadVegetables();
-  },
+                            case 2:
+                                response = _context.sent;
 
-  components: {
-    FrontBase: __WEBPACK_IMPORTED_MODULE_1__FrontBase___default.a
-  }
+                                this.vegetables = response.data.data;
+
+                            case 4:
+                            case 'end':
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this);
+            }));
+
+            function loadVegetables() {
+                return _ref.apply(this, arguments);
+            }
+
+            return loadVegetables;
+        }()
+    },
+    computed: {
+        properties: function properties() {
+            return;
+        },
+        nutritive: function nutritive() {
+            if (this.vegetables.evaluations.length != 0) {
+                return this.vegetables.evaluations.filter(function (item) {
+                    return item.category == 'Nutritive';
+                });
+            }
+            return [];
+        },
+        abiotic: function abiotic() {
+            if (this.vegetables.evaluations.length != 0) {
+                return this.vegetables.evaluations.filter(function (item) {
+                    return item.category == 'Abiotic';
+                });
+            }
+            return [];
+        },
+        insect: function insect() {
+            if (this.vegetables.evaluations.length != 0) {
+                return this.vegetables.evaluations.filter(function (item) {
+                    return item.category == 'Insect';
+                });
+            }
+            return [];
+        },
+        bacterial: function bacterial() {
+            if (this.vegetables.evaluations.length != 0) {
+                return this.vegetables.evaluations.filter(function (item) {
+                    return item.category == 'Bacterial';
+                });
+            }
+            return [];
+        },
+        fungal: function fungal() {
+            if (this.vegetables.evaluations.length != 0) {
+                return this.vegetables.evaluations.filter(function (item) {
+                    return item.category == 'Fungal';
+                });
+            }
+            return [];
+        },
+        virus: function virus() {
+            if (this.vegetables.evaluations.length != 0) {
+                return this.vegetables.evaluations.filter(function (item) {
+                    return item.category == 'Virus';
+                });
+            }
+            return [];
+        }
+    },
+    mounted: function mounted() {
+        this.loadVegetables();
+    },
+
+    components: {
+        FrontBase: __WEBPACK_IMPORTED_MODULE_1__FrontBase___default.a
+    }
 });
 
 /***/ }),
@@ -42666,144 +42811,32 @@ var render = function() {
                       _c(
                         "div",
                         {
-                          staticClass:
-                            "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                          staticClass: "col-md-10 table-responsive table-detail"
                         },
                         [
                           _c("table", { staticClass: "table" }, [
-                            _c("tbody", [
-                              _c("tr", [
-                                _c("td", [_vm._v("Dry matter (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Sugar (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v(" Color value (*100)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v(" Lipid (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Capsacin (mg/g)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Alkalinity (pH)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Soluble solids (Brix)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Acidity (% Citric acid)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Total solids")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Beta carotene (mg/100g)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Fiber (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Vitamin A (mg/100g)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Vitamin C (mg/100g)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Ascorbic acid (mg/100g)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [
-                                  _vm._v(
-                                    "Total phenolic (mg/100g) (by Folin-Denis Method)"
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [
-                                  _vm._v(
-                                    "Anti-oxidant activity (%) (by Modified Thiocyanate Method)"
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [
-                                  _vm._v(
-                                    "Anti-oxidant activity (%) (by DPPH Method)"
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Total oil content (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Protein content (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Starch content (%)")]),
-                                _vm._v(" "),
-                                _c("td")
-                              ])
-                            ])
+                            _c(
+                              "tbody",
+                              _vm._l(_vm.nutritive, function(item) {
+                                return _c("tr", [
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.name) +
+                                        "\n                            "
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("td", [
+                                    _vm._v(
+                                      "\n                              " +
+                                        _vm._s(item.value) +
+                                        "\n                            "
+                                    )
+                                  ])
+                                ])
+                              })
+                            )
                           ])
                         ]
                       )
@@ -42861,35 +42894,32 @@ var render = function() {
                           "div",
                           {
                             staticClass:
-                              "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
+                              "col-md-10 table-responsive table-detail"
                           },
                           [
                             _c("table", { staticClass: "table" }, [
-                              _c("tbody", [
-                                _c("tr", [
-                                  _c("td", [_vm._v("Dry matter (%)")]),
-                                  _vm._v(" "),
-                                  _c("td")
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [_vm._v("Sugar (%)")]),
-                                  _vm._v(" "),
-                                  _c("td")
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [_vm._v(" Color value (*100)")]),
-                                  _vm._v(" "),
-                                  _c("td")
-                                ]),
-                                _vm._v(" "),
-                                _c("tr", [
-                                  _c("td", [_vm._v(" Lipid (%)")]),
-                                  _vm._v(" "),
-                                  _c("td")
-                                ])
-                              ])
+                              _c(
+                                "tbody",
+                                _vm._l(_vm.abiotic, function(item) {
+                                  return _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.name) +
+                                          "\n                            "
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.value) +
+                                          "\n                            "
+                                      )
+                                    ])
+                                  ])
+                                })
+                              )
                             ])
                           ]
                         )
@@ -42944,10 +42974,39 @@ var render = function() {
                   [
                     _c("div", { staticClass: "panel-body" }, [
                       _c("div", { staticClass: "row" }, [
-                        _c("div", {
-                          staticClass:
-                            "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-                        })
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-md-10 table-responsive table-detail"
+                          },
+                          [
+                            _c("table", { staticClass: "table" }, [
+                              _c(
+                                "tbody",
+                                _vm._l(_vm.insect, function(item) {
+                                  return _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.name) +
+                                          "\n                            "
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.value) +
+                                          "\n                            "
+                                      )
+                                    ])
+                                  ])
+                                })
+                              )
+                            ])
+                          ]
+                        )
                       ])
                     ])
                   ]
@@ -42999,10 +43058,39 @@ var render = function() {
                   [
                     _c("div", { staticClass: "panel-body" }, [
                       _c("div", { staticClass: "row" }, [
-                        _c("div", {
-                          staticClass:
-                            "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-                        })
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-md-10 table-responsive table-detail"
+                          },
+                          [
+                            _c("table", { staticClass: "table" }, [
+                              _c(
+                                "tbody",
+                                _vm._l(_vm.bacterial, function(item) {
+                                  return _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.name) +
+                                          "\n                            "
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.value) +
+                                          "\n                            "
+                                      )
+                                    ])
+                                  ])
+                                })
+                              )
+                            ])
+                          ]
+                        )
                       ])
                     ])
                   ]
@@ -43054,10 +43142,123 @@ var render = function() {
                   [
                     _c("div", { staticClass: "panel-body" }, [
                       _c("div", { staticClass: "row" }, [
-                        _c("div", {
-                          staticClass:
-                            "col-md-10 mdl-cell--4-col-phone table-responsive table-detail"
-                        })
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-md-10 table-responsive table-detail"
+                          },
+                          [
+                            _c("table", { staticClass: "table" }, [
+                              _c(
+                                "tbody",
+                                _vm._l(_vm.fungal, function(item) {
+                                  return _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.name) +
+                                          "\n                            "
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.value) +
+                                          "\n                            "
+                                      )
+                                    ])
+                                  ])
+                                })
+                              )
+                            ])
+                          ]
+                        )
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "panel panel-default" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel-heading",
+                    attrs: { role: "tab", id: "headingSix" }
+                  },
+                  [
+                    _c("h4", { staticClass: "panel-title" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "collapsed",
+                          attrs: {
+                            role: "button",
+                            "data-toggle": "collapse",
+                            "data-parent": "#accordion",
+                            href: "#collapseSix",
+                            "aria-expanded": "false",
+                            "aria-controls": "collapseSix"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                  VIRUS RESISTANCE\n                "
+                          )
+                        ]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "panel-collapse collapse",
+                    attrs: {
+                      id: "collapseSix",
+                      role: "tabpanel",
+                      "aria-labelledby": "headingSix"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "panel-body" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-md-10 table-responsive table-detail"
+                          },
+                          [
+                            _c("table", { staticClass: "table" }, [
+                              _c(
+                                "tbody",
+                                _vm._l(_vm.virus, function(item) {
+                                  return _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.name) +
+                                          "\n                            "
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm._v(
+                                        "\n                              " +
+                                          _vm._s(item.value) +
+                                          "\n                            "
+                                      )
+                                    ])
+                                  ])
+                                })
+                              )
+                            ])
+                          ]
+                        )
                       ])
                     ])
                   ]

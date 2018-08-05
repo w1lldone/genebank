@@ -132,7 +132,7 @@
                               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body">
                                     <div class="col-md-10 table-responsive table-detail">
-                                        <!-- <table class="table">
+                                        <table class="table">
                                             <tbody>
                                                 <tr v-for="item in inflorescence">
                                                     <td>
@@ -143,7 +143,7 @@
                                                     </td>
                                                 </tr>
                                             </tbody>
-                                        </table> -->
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -160,7 +160,7 @@
                                 <div class="panel-body">
                                   <div class="row">
                                       <div class="col-md-10 table-responsive table-detail">
-                                        <!-- <table class="table">
+                                        <table class="table">
                                             <tbody>
                                                 <tr v-for="item in fruit">
                                                     <td>
@@ -171,7 +171,7 @@
                                                     </td>
                                                 </tr>
                                             </tbody>
-                                        </table> -->
+                                        </table>
                                       </div>
                                     </div>
                                 </div>
@@ -189,7 +189,7 @@
                                 <div class="panel-body">
                                   <div class="row">
                                       <div class="col-md-10 table-responsive table-detail"> 
-                                        <!-- <table class="table">
+                                        <table class="table">
                                             <tbody>
                                                 <tr v-for="item in seed">
                                                     <td>
@@ -200,7 +200,7 @@
                                                     </td>
                                                 </tr>
                                             </tbody>
-                                        </table> -->
+                                        </table>
                                       </div>
                                     </div>
                                 </div>
@@ -270,6 +270,30 @@ export default {
             if (this.vegetable.characters.length != 0) {
                 return this.vegetable.characters.filter(function (item) {
                     return item.category == 'Vegetative'
+                })
+            }
+            return []
+        },
+        inflorescence: function () {
+            if (this.vegetable.characters.length != 0) {
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Inflorescence'
+                })
+            }
+            return []
+        },
+        fruit: function () {
+            if (this.vegetable.characters.length != 0) {
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Fruit'
+                })
+            }
+            return []
+        },
+        seed: function () {
+            if (this.vegetable.characters.length != 0) {
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Seed'
                 })
             }
             return []
