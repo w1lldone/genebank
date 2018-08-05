@@ -39974,7 +39974,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -40059,7 +40059,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
         },
         passport: {}
       },
-      // genera:[],
+      genera: [],
       load: 'characterization'
     };
   },
@@ -40097,11 +40097,40 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
       }
 
       return loadVegetables;
+    }(),
+    loadGenera: function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee2() {
+        var response;
+        return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return axios.get('/api/genera/' + this.genus);
+
+              case 2:
+                response = _context2.sent;
+
+                this.genera = response.data.data;
+
+              case 4:
+              case 'end':
+                return _context2.stop();
+            }
+          }
+        }, _callee2, this);
+      }));
+
+      function loadGenera() {
+        return _ref2.apply(this, arguments);
+      }
+
+      return loadGenera;
     }()
   },
   mounted: function mounted() {
     this.loadVegetables();
-    // this.loadGenera()
+    this.loadGenera();
   },
 
 
@@ -40261,7 +40290,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -40514,6 +40543,10 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -40529,9 +40562,12 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
             vegetables: {
                 species: {
                     genus: {}
-                }
+                },
+                characters: {}
             },
+            result: [],
             load: 'characterization'
+
         };
     },
 
@@ -40568,7 +40604,9 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
     },
     mounted: function mounted() {
         this.loadVegetables();
+        var result = _.pluck(vegetables.characters, 'name');
     },
+
 
     components: {
         FrontBase: __WEBPACK_IMPORTED_MODULE_1__FrontBase___default.a
@@ -40765,79 +40803,14 @@ var render = function() {
                               },
                               [
                                 _c("table", { staticClass: "table" }, [
-                                  _c("tbody", [
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v(
-                                          "Hypocotyl color (terminal bud 1-2 mm)"
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v("Hypocotyl color intensity")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v(
-                                          "Cotyledonous leaf length (mm) (N=10)"
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v(
-                                          "Cotyledonous leaf width (mm) (N=10)"
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v("Cotyledonous leaf shape")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v("Cotyledonous leaf color")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v("Hypocotyl pubescence")
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td")
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _vm._v(
-                                          "Stem color (before transplanting)"
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td", [_vm._v("Green")])
-                                    ])
-                                  ])
+                                  _c(
+                                    "tbody",
+                                    _vm._l(_vm.result, function(item) {
+                                      return _c("tr", [
+                                        _c("td", [_vm._v(_vm._s(item))])
+                                      ])
+                                    })
+                                  )
                                 ])
                               ]
                             )

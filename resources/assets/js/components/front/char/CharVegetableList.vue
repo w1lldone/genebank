@@ -64,7 +64,7 @@ export default {
             },
             passport:{}
       },
-      // genera:[],
+      genera:[],
       load: 'characterization',
     }
   },
@@ -77,18 +77,14 @@ export default {
       })
       this.vegetables = response.data.data
     },
-    // async loadGenera(){
-    //   let response = await axios.get(`/api/genera/${this.genus}`) 
-    //     // {
-    //     //   params: {
-    //     //     genus_id: this.genus
-    //     // }})
-    //   this.genera = response.data.data
-    // },
+    async loadGenera(){
+      let response = await axios.get(`/api/genera/${this.genus}`) 
+      this.genera = response.data.data
+    },
   },
   mounted() {
     this.loadVegetables()
-    // this.loadGenera()
+    this.loadGenera()
   },
 
   components: {

@@ -79,7 +79,11 @@
                                         <div class="col-md-10 table-responsive table-detail">
                                             <table class="table">
                                                 <tbody>
-                                                    <tr>
+                                                    <tr v-for="item in result">
+                                                        <td>{{ item }}</td>
+                                                        <!-- // <td>{{ vegetable.characters.value }}</td> -->
+                                                    </tr>
+                                                    <!-- <tr>
                                                         <td>Hypocotyl color (terminal bud 1-2 mm)</td>
                                                         <td></td>
                                                     </tr>
@@ -110,7 +114,7 @@
                                                     <tr>
                                                         <td>Stem color (before transplanting)</td>
                                                         <td>Green</td>
-                                                    </tr>
+                                                    </tr> -->
                                                 </tbody>
                                             </table>
                                         </div>
@@ -249,9 +253,12 @@ export default {
                     genus:{
                     
                     }
-                }
+                },
+                characters: {}
             },
+            result:[],
             load: 'characterization',
+
         }
       },
       methods: {
@@ -262,7 +269,10 @@ export default {
        },
       mounted() {
         this.loadVegetables()
+        var result = _.pluck(vegetables.characters, 'name')
       },
+
+
       components: {
         FrontBase,
       }
