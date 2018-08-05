@@ -42275,7 +42275,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -42544,11 +42544,11 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
     name: 'EvalListDetail',
     props: {
-        pin: String
+        vegetableId: Number
     },
     data: function data() {
         return {
-            vegetables: {
+            vegetable: {
                 species: {
                     genus: {}
                 },
@@ -42559,7 +42559,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
     },
 
     methods: {
-        loadVegetables: function () {
+        loadVegetable: function () {
             var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
                 var response;
                 return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
@@ -42567,12 +42567,12 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                         switch (_context.prev = _context.next) {
                             case 0:
                                 _context.next = 2;
-                                return axios.get('/api/vegetables/' + this.pin);
+                                return axios.get('/api/vegetables/' + this.vegetableId);
 
                             case 2:
                                 response = _context.sent;
 
-                                this.vegetables = response.data.data;
+                                this.vegetable = response.data.data;
 
                             case 4:
                             case 'end':
@@ -42582,68 +42582,65 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                 }, _callee, this);
             }));
 
-            function loadVegetables() {
+            function loadVegetable() {
                 return _ref.apply(this, arguments);
             }
 
-            return loadVegetables;
+            return loadVegetable;
         }()
     },
     computed: {
-        properties: function properties() {
-            return;
-        },
         nutritive: function nutritive() {
-            if (this.vegetables.evaluations.length != 0) {
-                return this.vegetables.evaluations.filter(function (item) {
-                    return item.category == 'Nutritive';
+            if (this.vegetable.evaluations.length != 0) {
+                return this.vegetable.evaluations.filter(function (item) {
+                    return item.category == 'Nutritive Value';
                 });
             }
             return [];
         },
         abiotic: function abiotic() {
-            if (this.vegetables.evaluations.length != 0) {
-                return this.vegetables.evaluations.filter(function (item) {
-                    return item.category == 'Abiotic';
+            if (this.vegetable.evaluations.length != 0) {
+                return this.vegetable.evaluations.filter(function (item) {
+                    return item.category == 'Abiotic Stress Tolerance';
                 });
             }
             return [];
         },
         insect: function insect() {
-            if (this.vegetables.evaluations.length != 0) {
-                return this.vegetables.evaluations.filter(function (item) {
-                    return item.category == 'Insect';
+            if (this.vegetable.evaluations.length != 0) {
+                return this.vegetable.evaluations.filter(function (item) {
+                    return item.category == 'Insect Pest Resistance';
                 });
             }
             return [];
         },
         bacterial: function bacterial() {
-            if (this.vegetables.evaluations.length != 0) {
-                return this.vegetables.evaluations.filter(function (item) {
-                    return item.category == 'Bacterial';
+            if (this.vegetable.evaluations.length != 0) {
+                return this.vegetable.evaluations.filter(function (item) {
+                    return item.category == 'Bacterial Resistance';
                 });
             }
             return [];
         },
         fungal: function fungal() {
-            if (this.vegetables.evaluations.length != 0) {
-                return this.vegetables.evaluations.filter(function (item) {
-                    return item.category == 'Fungal';
+            if (this.vegetable.evaluations.length != 0) {
+                return this.vegetable.evaluations.filter(function (item) {
+                    return item.category == 'Fungal Resistance';
                 });
             }
             return [];
         },
         virus: function virus() {
-            if (this.vegetables.evaluations.length != 0) {
-                return this.vegetables.evaluations.filter(function (item) {
-                    return item.category == 'Virus';
+            if (this.vegetable.evaluations.length != 0) {
+                return this.vegetable.evaluations.filter(function (item) {
+                    return item.category == 'Virus Resistance';
                 });
             }
             return [];
         }
     },
     mounted: function mounted() {
-        this.loadVegetables();
+        this.loadVegetable();
     },
 
     components: {
@@ -42690,7 +42687,7 @@ var render = function() {
                     _c("td", [_vm._v("Vegetable introduction number")]),
                     _vm._v(" "),
                     _c("td", [
-                      _vm._v(_vm._s(_vm.vegetables.plant_introduction_number))
+                      _vm._v(_vm._s(_vm.vegetable.plant_introduction_number))
                     ])
                   ]),
                   _vm._v(" "),
@@ -42703,7 +42700,7 @@ var render = function() {
                   _c("tr", [
                     _c("td", [_vm._v("Temporary number")]),
                     _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(_vm.vegetables.temporary_number))])
+                    _c("td", [_vm._v(_vm._s(_vm.vegetable.temporary_number))])
                   ]),
                   _vm._v(" "),
                   _c("tr", [
@@ -42721,7 +42718,7 @@ var render = function() {
                   _c("tr", [
                     _c("td", [_vm._v("Species")]),
                     _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(_vm.vegetables.species.name))])
+                    _c("td", [_vm._v(_vm._s(_vm.vegetable.species.name))])
                   ]),
                   _vm._v(" "),
                   _c("tr", [
@@ -42733,13 +42730,13 @@ var render = function() {
                   _c("tr", [
                     _c("td", [_vm._v("Pedigree / Cultivar Name")]),
                     _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(_vm.vegetables.cultivar_name))])
+                    _c("td", [_vm._v(_vm._s(_vm.vegetable.cultivar_name))])
                   ]),
                   _vm._v(" "),
                   _c("tr", [
                     _c("td", [_vm._v("Country")]),
                     _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(_vm.vegetables.passport.country))])
+                    _c("td", [_vm._v(_vm._s(_vm.vegetable.passport.country))])
                   ]),
                   _vm._v(" "),
                   _c("tr", [
