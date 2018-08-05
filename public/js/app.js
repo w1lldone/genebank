@@ -40228,7 +40228,7 @@ var render = function() {
                               "/search/characterization/" +
                                 _vm.genus +
                                 "/" +
-                                _vm.pin
+                                vegetable.id
                             )
                           }
                         },
@@ -40290,7 +40290,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -40519,34 +40519,6 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -40554,25 +40526,24 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
     name: 'CharDetail',
     props: {
-        genus: String,
-        pin: String
+        genusId: Number,
+        vegetableId: Number
     },
     data: function data() {
         return {
-            vegetables: {
+            vegetable: {
                 species: {
                     genus: {}
                 },
-                characters: {}
+                characters: []
             },
             result: [],
             load: 'characterization'
-
         };
     },
 
     methods: {
-        loadVegetables: function () {
+        loadVegetable: function () {
             var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
                 var response;
                 return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
@@ -40580,12 +40551,12 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                         switch (_context.prev = _context.next) {
                             case 0:
                                 _context.next = 2;
-                                return axios.get('/api/vegetables/' + this.pin);
+                                return axios.get('/api/vegetables/' + this.vegetableId);
 
                             case 2:
                                 response = _context.sent;
 
-                                this.vegetables = response.data.data;
+                                this.vegetable = response.data.data;
 
                             case 4:
                             case 'end':
@@ -40595,18 +40566,36 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                 }, _callee, this);
             }));
 
-            function loadVegetables() {
+            function loadVegetable() {
                 return _ref.apply(this, arguments);
             }
 
-            return loadVegetables;
+            return loadVegetable;
         }()
     },
-    mounted: function mounted() {
-        this.loadVegetables();
-        var result = _.pluck(vegetables.characters, 'name');
-    },
+    // computed properties dapat digunakan untuk mendefinisikan variable yang membutuhkan proses panjang. Contohnya mengambil character yang berkategori seedling.
+    // computed bisa langsung diakses di template seperti pada baris #83
+    // https://vuejs.org/v2/guide/computed.html#Computed-Properties
+    computed: {
+        // contoh penggunaan
+        properties: function properties() {
 
+            return; // something
+        },
+        seedlings: function seedlings() {
+            // Cek apakah characters tidak kosong
+            if (this.vegetable.characters.length != 0) {
+                // Hanya tampilkan characters yang mempunyai kategori seedling
+                return this.vegetable.characters.filter(function (item) {
+                    return item.category == 'Seedling';
+                });
+            }
+            return [];
+        }
+    },
+    mounted: function mounted() {
+        this.loadVegetable();
+    },
 
     components: {
         FrontBase: __WEBPACK_IMPORTED_MODULE_1__FrontBase___default.a
@@ -40641,7 +40630,7 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("h5", { staticClass: "col-md-2" }, [
-              _c("b", [_vm._v(_vm._s(_vm.vegetables.species.genus.name))])
+              _c("b", [_vm._v(_vm._s(_vm.vegetable.species.genus.name))])
             ]),
             _vm._v(" "),
             _c("br"),
@@ -40664,7 +40653,7 @@ var render = function() {
                           _vm._v(" "),
                           _c("td", [
                             _vm._v(
-                              _vm._s(_vm.vegetables.plant_introduction_number)
+                              _vm._s(_vm.vegetable.plant_introduction_number)
                             )
                           ])
                         ]),
@@ -40673,7 +40662,7 @@ var render = function() {
                           _c("td", [_vm._v("Temporary Number")]),
                           _vm._v(" "),
                           _c("td", [
-                            _vm._v(_vm._s(_vm.vegetables.temporary_number))
+                            _vm._v(_vm._s(_vm.vegetable.temporary_number))
                           ])
                         ]),
                         _vm._v(" "),
@@ -40692,16 +40681,14 @@ var render = function() {
                         _c("tr", [
                           _c("td", [_vm._v("Species")]),
                           _vm._v(" "),
-                          _c("td", [
-                            _vm._v(_vm._s(_vm.vegetables.species.name))
-                          ])
+                          _c("td", [_vm._v(_vm._s(_vm.vegetable.species.name))])
                         ]),
                         _vm._v(" "),
                         _c("tr", [
                           _c("td", [_vm._v("Cultivar Name")]),
                           _vm._v(" "),
                           _c("td", [
-                            _vm._v(_vm._s(_vm.vegetables.cultivar_name))
+                            _vm._v(_vm._s(_vm.vegetable.cultivar_name))
                           ])
                         ]),
                         _vm._v(" "),
@@ -40721,7 +40708,7 @@ var render = function() {
                           _c("td", [_vm._v("Genus")]),
                           _vm._v(" "),
                           _c("td", [
-                            _vm._v(_vm._s(_vm.vegetables.species.genus.name))
+                            _vm._v(_vm._s(_vm.vegetable.species.genus.name))
                           ])
                         ]),
                         _vm._v(" "),
@@ -40805,9 +40792,23 @@ var render = function() {
                                 _c("table", { staticClass: "table" }, [
                                   _c(
                                     "tbody",
-                                    _vm._l(_vm.result, function(item) {
+                                    _vm._l(_vm.seedlings, function(item) {
                                       return _c("tr", [
-                                        _c("td", [_vm._v(_vm._s(item))])
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                        " +
+                                              _vm._s(item.name) +
+                                              "\n                                                    "
+                                          )
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                        " +
+                                              _vm._s(item.value) +
+                                              "\n                                                    "
+                                          )
+                                        ])
                                       ])
                                     })
                                   )
