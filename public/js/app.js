@@ -38147,41 +38147,60 @@ var render = function() {
                         ]),
                         _vm._v(" "),
                         _c("li", [
-                          _c("a", { attrs: { href: "#" } }, [_vm._v("search")]),
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                "data-toggle": "dropdown",
+                                "aria-haspopup": "true",
+                                "aria-expanded": "false"
+                              }
+                            },
+                            [_vm._v("Search")]
+                          ),
                           _vm._v(" "),
-                          _c("ul", { staticClass: "sub-menu" }, [
-                            _c("li", [
-                              _c(
-                                "a",
-                                {
-                                  attrs: { href: _vm.url("/search/passport") }
-                                },
-                                [_vm._v("Passport")]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c(
-                                "a",
-                                {
-                                  attrs: {
-                                    href: _vm.url("/search/characterization")
-                                  }
-                                },
-                                [_vm._v("Characterization")]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("li", [
-                              _c(
-                                "a",
-                                {
-                                  attrs: { href: _vm.url("/search/evaluation") }
-                                },
-                                [_vm._v("Evaluation")]
-                              )
-                            ])
-                          ])
+                          _c(
+                            "ul",
+                            {
+                              staticClass: "sub-menu dropdown-menu",
+                              attrs: { "aria-labelledby": "dropdownMenuButton" }
+                            },
+                            [
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    attrs: { href: _vm.url("/search/passport") }
+                                  },
+                                  [_vm._v("Passport")]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    attrs: {
+                                      href: _vm.url("/search/characterization")
+                                    }
+                                  },
+                                  [_vm._v("Characterization")]
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _c(
+                                  "a",
+                                  {
+                                    attrs: {
+                                      href: _vm.url("/search/evaluation")
+                                    }
+                                  },
+                                  [_vm._v("Evaluation")]
+                                )
+                              ])
+                            ]
+                          )
                         ]),
                         _vm._v(" "),
                         _c("li", [
@@ -43249,87 +43268,91 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("front-base", [
     _c("section", { staticClass: "list-table", attrs: { id: "eval" } }, [
-      _c("div", { staticClass: "msg_title col-md-12" }, [
-        _c("h4", [_c("b", [_vm._v("Evaluation")])]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "Refers to the data results of screening accessions for their resistance to different pests (i.e. melon fly, cotton aphid, etc.) and diseases (i.e. Bhendi Yellow Vein Mosaic Virus,Tobacco Mosaic Virus, etc.). It also includes nutritive value (i.e.Vitamin A, Vitamin C, Anti-oxidant Activity, etc). The screening was conducted by scientists in various departments at AVRDC - The World Vegetable Center and other research institutes. "
-          )
-        ]),
-        _c("br"),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { staticClass: "tbl-header tbl-content col-md-12" }, [
-          _c(
-            "table",
-            { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
-            [
-              _c("thead", [
-                _c("tr", [
-                  _c("th", [_vm._v("VINO")]),
-                  _vm._v(" "),
-                  _c("th", [_vm._v("ACCNO")]),
-                  _vm._v(" "),
-                  _c("th", [_vm._v("Tempno")]),
-                  _vm._v(" "),
-                  _c("th", [_vm._v("Family")]),
-                  _vm._v(" "),
-                  _c("th", [_vm._v("Genus")]),
-                  _vm._v(" "),
-                  _c("th", [_vm._v("Species")]),
-                  _vm._v(" "),
-                  _c("th", [_vm._v("Subtaxa")]),
-                  _vm._v(" "),
-                  _c("th", [_vm._v("Pedigree / Cultivar Name")]),
-                  _vm._v(" "),
-                  _c("th", [_vm._v("Country")]),
-                  _vm._v(" "),
-                  _c("th", [_vm._v("Operation")])
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "tbody",
-                _vm._l(_vm.vegetables, function(vegetable) {
-                  return _c("tr", { key: vegetable.id }, [
-                    _c("td", [_vm._v("VI000306")]),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "msg_title col-md-12" }, [
+          _c("h4", [_c("b", [_vm._v("Evaluation")])]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Refers to the data results of screening accessions for their resistance to different pests (i.e. melon fly, cotton aphid, etc.) and diseases (i.e. Bhendi Yellow Vein Mosaic Virus,Tobacco Mosaic Virus, etc.). It also includes nutritive value (i.e.Vitamin A, Vitamin C, Anti-oxidant Activity, etc). The screening was conducted by scientists in various departments at AVRDC - The World Vegetable Center and other research institutes. "
+            )
+          ]),
+          _c("br"),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { staticClass: "tbl-header tbl-content col-md-12" }, [
+            _c(
+              "table",
+              { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
+              [
+                _c("thead", [
+                  _c("tr", [
+                    _c("th", [_vm._v("VINO")]),
                     _vm._v(" "),
-                    _c("td"),
+                    _c("th", [_vm._v("ACCNO")]),
                     _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(vegetable.temporary_number))]),
+                    _c("th", [_vm._v("Tempno")]),
                     _vm._v(" "),
-                    _c("td"),
+                    _c("th", [_vm._v("Family")]),
                     _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(vegetable.species.genus.name))]),
+                    _c("th", [_vm._v("Genus")]),
                     _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(vegetable.species.name))]),
+                    _c("th", [_vm._v("Species")]),
                     _vm._v(" "),
-                    _c("td"),
+                    _c("th", [_vm._v("Subtaxa")]),
                     _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(vegetable.species.genus.name))]),
+                    _c("th", [_vm._v("Pedigree / Cultivar Name")]),
                     _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(vegetable.passport.country))]),
+                    _c("th", [_vm._v("Country")]),
                     _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-success",
-                          attrs: {
-                            href: _vm.url("/search/evaluation/" + vegetable.id)
-                          }
-                        },
-                        [_vm._v("Details")]
-                      )
-                    ])
+                    _c("th", [_vm._v("Operation")])
                   ])
-                })
-              )
-            ]
-          )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.vegetables, function(vegetable) {
+                    return _c("tr", { key: vegetable.id }, [
+                      _c("td", [_vm._v("VI000306")]),
+                      _vm._v(" "),
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(vegetable.temporary_number))]),
+                      _vm._v(" "),
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(vegetable.species.genus.name))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(vegetable.species.name))]),
+                      _vm._v(" "),
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(vegetable.species.genus.name))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(vegetable.passport.country))]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-success",
+                            attrs: {
+                              href: _vm.url(
+                                "/search/evaluation/" + vegetable.id
+                              )
+                            }
+                          },
+                          [_vm._v("Details")]
+                        )
+                      ])
+                    ])
+                  })
+                )
+              ]
+            )
+          ])
         ])
       ])
     ])

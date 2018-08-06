@@ -314,7 +314,6 @@ input: -webkit-autofill:focus {
     z-index:99999;
     text-decoration:none;
     background: #ffff;
-    /*color:#fff;*/
 }
 .menu .arrow {
     font-size:11px;
@@ -322,9 +321,7 @@ input: -webkit-autofill:focus {
 }
 /*----- Top Level -----*/
 .menu > ul > li {
-    /*float:left;*/
     display:inline-block;
-    /*position:relative;*/
     font-size:19px;
 }
 .menu > ul > li > a {
@@ -332,41 +329,19 @@ input: -webkit-autofill:focus {
     display:inline-block;
 }
 /*----- Bottom Level -----*/
-.menu li:hover .sub-menu {
-    z-index:99999;
-    opacity:1;
-    align-items: middle;
-}
-.sub-menu li {
-    display:block;
-    font-size:16px;
-}
 .sub-menu li a {
     padding:10px 30px;
     display:block;
 }
-.clearfix:after {
-    display:block;
-    clear:both;
-}
 .sub-menu {
     width:160%;
-    align-items: middle;
+    text-align:center;
     padding:5px 0px;
-    position:absolute;
     top:100%;
     left:0px;
     z-index:99999;
-    opacity:0;
     transition:opacity linear 0.15s;
     background: #fff;
-    /*color:#fff;*/
-}
-.sub-menu li a:hover, .sub-menu .current-item a {
-    /*background:#3e3436;*/
-}
-.trans{
-     background: rgb(76, 175, 80, 0.1);
 }
 
 /*Slider*/

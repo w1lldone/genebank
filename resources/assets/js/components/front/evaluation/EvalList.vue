@@ -2,7 +2,7 @@
     <front-base>
         <section id="eval" class="list-table">
       <!--for demo wrap-->
-        <div class="row"
+        <div class="row">
           <div class="msg_title col-md-12">
             <h4><b>Evaluation</b></h4>
             <br>
