@@ -325,18 +325,18 @@ input: -webkit-autofill:focus {
     font-size:19px;
 }
 .menu > ul > li > a {
-    padding:10px 40px;
+    /*padding:10px 40px;*/
     display:inline-block;
 }
 /*----- Bottom Level -----*/
 .sub-menu li a {
-    padding:10px 30px;
+    padding:10px 10px;
     display:block;
 }
 .sub-menu {
     width:160%;
     text-align:center;
-    padding:5px 0px;
+    /*padding:5px 0px;*/
     top:100%;
     left:0px;
     z-index:99999;
