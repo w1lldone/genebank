@@ -9,7 +9,7 @@
                 </div>
             
                     <div class="col-md-12 table-responsive table-detail">
-                        <table class="table">
+                        <table class="table table-striped">
                             <tbody>
                                 <tr>
                                     <td>Plant introduction number</td>

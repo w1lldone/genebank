@@ -42078,7 +42078,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-md-12 table-responsive table-detail" }, [
-          _c("table", { staticClass: "table" }, [
+          _c("table", { staticClass: "table table-striped" }, [
             _c(
               "tbody",
               [
@@ -42168,7 +42168,7 @@ var render = function() {
             _c("br"),
             _vm._v(" "),
             _c("div", { staticClass: "table-responsive passport-list" }, [
-              _c("table", { staticClass: "table" }, [
+              _c("table", { staticClass: "table table-striped" }, [
                 _c("thead", [
                   _c("tr", [
                     _c("th", [_vm._v("Distribution status")]),
