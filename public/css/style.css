@@ -863,13 +863,7 @@ table{
   margin-top: 10px;
   border: 1px solid rgba(255,255,255,0.3);
 }
-.tbl-content input{
-    background-color: #73c6b6;
-    padding: 5px 30px;
-    /*font-size: 13px;*/
-    color:#fff;
-    align-items: middle;
-}
+
 .list-table th{
   padding: 20px 15px;
   text-align: center;
@@ -877,8 +871,9 @@ table{
   /*font-size: 15px;*/
   color: #fff;
   text-transform: uppercase;
-  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-  background: linear-gradient(to right, #25c481, #25b7c4);
+  background: #58d68d;
+  /*background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);*/
 }
 .list-table td{
   padding: 15px;
