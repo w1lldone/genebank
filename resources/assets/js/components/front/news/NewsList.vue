@@ -33,6 +33,7 @@
 <script>
 import FrontBase from '../FrontBase';
 import NewsItem from './NewsItem';
+import NewsDetail from './NewsDetail';
 
 export default {
 
@@ -41,6 +42,7 @@ export default {
     return {
         news: [
             {
+                id:1,
                 title: "Climate change is affecting bird migration",
                 image: "/img/climate_effect.jpg",
                 date: "Aug 12, 2018",
@@ -48,6 +50,7 @@ export default {
                 body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,"
             },
             {
+                id:2,
                 title: "How to avoid indoor air pollution?",
                 image: "/img/air_pollutuon.jpg",
                 date: "Aug 12, 2018",
@@ -55,6 +58,7 @@ export default {
                 body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
             },
             {
+                id:3,
                 title: "Threat to Yellowstone’s grizzly bears.",
                 image: "/img/threat_bear.jpg",
                 date: "Aug 12, 2018",
@@ -66,6 +70,7 @@ export default {
   },
   components: {
       NewsItem,
+      NewsDetail,
       FrontBase,
   }
 }

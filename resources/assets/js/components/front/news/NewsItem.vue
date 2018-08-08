@@ -21,7 +21,7 @@
                 </div>
 
                 <p class="news_news_content">{{ body }}</p>
-                <a href="" class="news_link">read more</a>
+                <a :href="url('/news/'+id)" class="news_link">read more</a>
             </div>
         </div>
     </div>
@@ -32,6 +32,7 @@ export default {
 
   name: 'NewsList',
   props: {
+    id: Number,
     news: String,
     title: String,
     image: String,

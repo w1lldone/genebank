@@ -197,7 +197,7 @@ input: -webkit-autofill:focus {
 /*Header Top header*/
 #header img{
     height: 50px;
-    width: 100%;
+    width: 80%;
 }
 
 #header .top_header {
@@ -638,9 +638,14 @@ section#counter {
 /*Latest news*/
 
 #news {
+    background: #eee;
     margin-top:80px;
     min-height: 500px;
     padding: 80px 0;
+}
+#news h4{
+    margin-top: -20px;
+    margin-bottom: 30px;
 }
 #news p {
     display: inline-block;
@@ -648,7 +653,7 @@ section#counter {
 #news .latest_news {
 }
 #news .latest_news h2 {
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
@@ -656,7 +661,7 @@ section#counter {
     color: #222222;
 }
 #news .latest_news p {
-    padding-bottom: 45px;
+    /*padding-bottom: 45px;*/
     font-size: 16px;
     color: #646464;
     font-family: 'Open Sans', sans-serif;
@@ -984,7 +989,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
 #footer {
     min-height: 100px;
-    background: #0000;
+    background: #000001;
     color: #fff;
 }
 #footer .copyright,
@@ -1101,10 +1106,11 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     margin: 0 auto;
 }
 
-
-/*.about_us_padding {
-    padding: 80px 0px;
-}*/
+#about{
+    margin-top:80px;
+    background: #eeeeee;
+    padding: 0px 80px 0px 80px; 
+}
 #about-us .wel_header {
     padding-top: 0px;
     padding-bottom: 0;

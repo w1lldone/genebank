@@ -55,6 +55,10 @@ Vue.component(
     require('./components/front/news/NewsList.vue')
 );
 Vue.component(
+    'NewsDetail',
+    require('./components/front/news/NewsDetail.vue')
+);
+Vue.component(
     'CharGenusBase',
     require('./components/front/char/CharGenusBase.vue')
 );
