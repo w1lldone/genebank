@@ -19,13 +19,19 @@
                                 <span><strong>I Wayan Mustika</strong></span><br>
                                 <span>Supervisor</span>
                             </div>
+                            <br>
                             <div style="display:inline-block; margin-bottom:30px">
                                 <img src="img/member/wildan.jpg" style="height: 100px; margin:30px; border-radius:50%"><br>
                                 <span><strong>Wildan Ainurrahman</strong></span><br>
                                 <span>Back-end Developer</span>
                             </div>
                             <div style="display:inline-block; margin-bottom:30px">
-                                <img src="img/member/member2.jpg" style="height: 100px; margin:30px; border-radius:50%"><br>
+                                <img src="img/member/faiz.jpg" style="height: 100px; margin:30px; border-radius:50%"><br>
+                                <span><strong>Hernawan Fa'iz A</strong></span><br>
+                                <span>Back-end Developer</span>
+                            </div>
+                            <div style="display:inline-block; margin-bottom:30px">
+                                <img src="img/member/priska.jpg" style="height: 100px; margin:30px; border-radius:50%"><br>
                                 <span><strong>Rara Priska Yuniar</strong></span><br>
                                 <span>Front-end Developer</span>
                             </div>
