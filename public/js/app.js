@@ -39396,7 +39396,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n#terms[data-v-74840692] {\n    margin-top:80px;\n    min-height:2000px;\n    background: #eeeeee;\n    padding: 0px 80px 0px 80px;\n}\n", ""]);
+exports.push([module.i, "\n#terms[data-v-74840692] {\n    margin-top:80px;\n    min-height:1500px;\n    background: #eeeeee;\n    padding: 0px 80px 0px 80px;\n}\nh4[data-v-74840692]{\n    margin-bottom: 30px;\n}\np[data-v-74840692] {\n    margin-top: 15px;\n    margin-bottom: 15px;\n}\nli[data-v-74840692] {\n    text-align: left;\n}\n\n", ""]);
 
 // exports
 
@@ -39409,6 +39409,47 @@ exports.push([module.i, "\n#terms[data-v-74840692] {\n    margin-top:80px;\n    
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -39449,7 +39490,195 @@ var render = function() {
     _c("section", { attrs: { id: "terms" } }, [
       _c("div", { staticClass: "container animated fadeIn" }, [
         _c("div", { staticClass: "row" }, [
-          _c("h4", [_c("b", [_vm._v("Terms of Use")])])
+          _c("h4", [_c("b", [_vm._v("Terms of Use")])]),
+          _vm._v(" "),
+          _c("p", { staticStyle: { color: "blue", "font-weight": "bold" } }, [
+            _vm._v("Legal Notice and License Agreement")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticStyle: { color: "red", "font-weight": "bold" } }, [
+            _vm._v(
+              'You must read this Notice and License Agreement ("Agreement") before entering this site'
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("span", { staticStyle: { "font-weight": "bold" } }, [
+              _vm._v("General")
+            ]),
+            _c("br"),
+            _vm._v(
+              "This site provides common access to information concerning the collections of genetic resources held by GRSU (Genetic Resources and Seed Unit), at AVRDC - The World Vegetable Center."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("span", { staticStyle: { "font-weight": "bold" } }, [
+              _vm._v("Trademarks")
+            ]),
+            _c("br"),
+            _vm._v(
+              "The logo on this site is the trademark of AVRDC - The World Vegetable Center. Other product, service, and organization names mentioned in this Web site are for identification purposes only and may be trademarks of their respective owners."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("span", { staticStyle: { "font-weight": "bold" } }, [
+              _vm._v("Copyright")
+            ]),
+            _c("br"),
+            _vm._v(
+              'Copyright laws and treaty provisions protect information appearing on this site ("Information"). AVRDC - The World Vegetable Center holds the copyright on such information. None of the Information may be copied, reproduced, modified, published, uploaded, posted, transmitted, or distributed in any form or by any means other than as described below, or with prior written permission of the copyright holder.'
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("span", { staticStyle: { "font-weight": "bold" } }, [
+              _vm._v("Special Terms of Use")
+            ]),
+            _c("br"),
+            _vm._v(
+              "Any requests to use or reproduce information in a manner other than as expressly granted below, whether in whole or part, should be submitted in writing to AVRDC - The World Vegetable Center, Genetic Resources and Seed Unit (GRSU), PO Box 42, Shanhua, Tainan 741; Taiwan."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "You must receive permission in writing prior to acting on the request."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "You may access and use the Information only if you agree to and abide by the terms of this Agreement. Permission is granted to access and use the Information from this site, provided that:"
+            )
+          ]),
+          _vm._v(" "),
+          _c("ul", { staticClass: "fa-ul" }, [
+            _c("li", [
+              _c("i", { staticClass: "fa-li fa fa-square" }),
+              _vm._v(
+                'the copyright notice (i.e., "©" with the year and owner as listed at the end of the Information being used) appears in all copies;'
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa-li fa fa-square" }),
+              _vm._v(
+                "use of such Information is only for scientific research, breeding, genetic resource conservation, the sustainable management of genetic resources, or academic, informational, or personal use,"
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa-li fa fa-square" }),
+              _vm._v(
+                "the access or use of the Information, or any part thereof, does not result in the Information being sold or distributed for profit, including any commercial publication, reproduction, transmission or storage in a retrieval system;"
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa-li fa fa-square" }),
+              _vm._v("no modifications to any of the Information are made;")
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa-li fa fa-square" }),
+              _vm._v(
+                'the source of the Information is identified as "AVRDC - The World Vegetable Center "'
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa-li fa fa-square" }),
+              _vm._v("you do not claim ownership of the Information,")
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa-li fa fa-square" }),
+              _vm._v(
+                "you do not claim any intellectual property rights in the Information other than those specifically granted by this Agreement, and"
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa-li fa fa-square" }),
+              _vm._v(
+                "you take reasonable steps to communicate these terms in connection with any use and to and ensure compliance with these terms by any persons who obtain access to or use the Information as a result of your access or use of the Information."
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("span", { staticStyle: { "font-weight": "bold" } }, [
+              _vm._v("Disclaimers")
+            ]),
+            _c("br"),
+            _vm._v(
+              "The contents of this site should not be construed as professional opinion. They are intended for general informational purposes only. The contents may contain technical inaccuracies or typographical errors. Users must directly contact AVRDC - The World Vegetable Center with questions or comments regarding information available on this site."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              'THE CONTENTS OF THIS SITE ARE PROVIDED "AS IS." AVRDC - THE WORLD VEGETABLE CENTER DISCLAIM ALL WARRANTIES REGARDING THE CONTENTS OF THIS SITE, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.'
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "AVRDC - THE WORLD VEGETABLE CENTER SHALL NOT BE LIABLE FOR DAMAGES RESULTING FROM LOSS OF USE, DATA, OR PROFITS, ARISING OUT OF OR IN CONNECTION WITH THE USE, ACCURACY, CONTENTS, OR PERFORMANCE OF INFORMATION OR INFORMATION ON THIS SITE, WHETHER IN AN ACTION OF CONTRACT, OR NEGLIGENCE OR OTHER TORT."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "The designations employed and the presentation of the Information stored in or made accessible by this web site do not imply the expression of any opinion of AVRDC - The World Vegetable Center concerning the legal status of any country, city or area or its authorities, or concerning the delimitation of its frontiers or boundaries."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("span", { staticStyle: { "font-weight": "bold" } }, [
+              _vm._v("Termination of License")
+            ]),
+            _c("br"),
+            _vm._v(
+              "This License shall terminate immediately if you violate any of the terms of this Agreement. You may terminate at any time the license to use the Information from this site. Upon termination for any reason, you agree to delete or destroy all copies of the Information, which you have made, and to cease all uses of the information."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("span", { staticStyle: { "font-weight": "bold" } }, [
+              _vm._v("Assignability")
+            ]),
+            _c("br"),
+            _vm._v(
+              "The rights and licenses herein granted by Licensor with respect to any Information you obtain from this site are personal to you. You may assign or otherwise transfer these rights to another person, subject to the provisions of this agreement and subject to such other person agreeing to be bound by the terms of this agreement. You shall not assign or otherwise transfer to another person any other rights or licenses granted to you under by this Agreement. This Agreement shall be binding upon and inure to the benefit of the parties hereto and their respective heirs, personal representatives, successors and assigns."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("span", { staticStyle: { "font-weight": "bold" } }, [
+              _vm._v("Invalidity or Unenforceability")
+            ]),
+            _c("br"),
+            _vm._v(
+              "If any provision of this Agreement is deemed to be invalid or unenforceable in whole or in part, such provision, to the extent that it is invalid or unenforceable, shall be deemed struck from the Agreement and shall not affect the validity or enforceability of any other provision hereof. In addition, the parties agree that a court having jurisdiction may revise any provision determined to be invalid or unenforceable to the extent required to make it valid and enforceable consistent with the intention of the parties and, if a court will not do so, the parties agree to negotiate a provision having an effect as close as permitted by applicable law to the provision determined to be invalid or unenforceable and to incorporate such substitute provision in the Agreement."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("span", { staticStyle: { "font-weight": "bold" } }, [
+              _vm._v("Waiver")
+            ]),
+            _c("br"),
+            _vm._v(
+              "No delay in acting or failure to act shall constitute a waiver of any right of any party under this Agreement. Any waiver must be in writing and signed by the party entitled to the benefit of the right being waived. Unless otherwise stated in the waiver, any waiver applies only to the specific circumstance for which the waiver is given and not to any subsequent circumstance involving the same or any other right."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", { staticStyle: { color: "blue", "font-weight": "bold" } }, [
+            _vm._v("This is the end of the Legal Notice and License Agreement.")
+          ])
         ])
       ])
     ])
