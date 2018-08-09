@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('content')
-    <news-list></news-list>
+    <terms></home>
 @endsection

@@ -7,9 +7,9 @@
                         <h4><b>Passport Data {{ pin }}</b></h4>
                     </div>
                 </div>
-                <div class="row">
+            
                     <div class="col-md-12 table-responsive table-detail">
-                        <table class="table">
+                        <table class="table table-striped">
                             <tbody>
                                 <tr>
                                     <td>Plant introduction number</td>
@@ -38,7 +38,7 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
+            
             </div>
         </section>
     </front-base>

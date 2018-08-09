@@ -20,8 +20,8 @@
                         <div class="collapse navbar-collapse zero_mp menu" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right main_menu clearfix">
                                 <li><a :href="url('/')">Home</a></li>
-                                <li><a href="#">search</a>
-                                    <ul class="sub-menu">
+                                <li><a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search</a>
+                                    <ul class="sub-menu dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <li><a :href="url('/search/passport')">Passport</a></li>
                                         <li><a :href="url('/search/characterization')">Characterization</a></li>
                                         <li><a :href="url('/search/evaluation')">Evaluation</a></li>

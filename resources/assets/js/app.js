@@ -46,6 +46,16 @@ Vue.component(
 );
 
 Vue.component(
+    'download',
+    require('./components/front/download/download.vue')
+);
+
+Vue.component(
+    'terms',
+    require('./components/front/terms/terms.vue')
+);
+
+Vue.component(
     'Gallery',
     require('./components/front/gallery/Gallery.vue')
 );
@@ -53,6 +63,10 @@ Vue.component(
 Vue.component(
     'NewsList',
     require('./components/front/news/NewsList.vue')
+);
+Vue.component(
+    'NewsDetail',
+    require('./components/front/news/NewsDetail.vue')
 );
 Vue.component(
     'CharGenusBase',

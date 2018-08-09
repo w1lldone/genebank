@@ -19,22 +19,6 @@ Route::get('/', function ()
 {
     return view('index');
 });
-
-Route::get('/news', function ()
-{
-    return view('news.index');
-})->name('news.index');
-
-Route::get('/gallery', function ()
-{
-    return view('gallery.index');
-})->name('gallery.index');
-
-Route::get('/about', function ()
-{
-    return view('about.index');
-})->name('about.index');
-
 Route::group(['prefix' => 'search/characterization'], function(){
     Route::get('/', 'Front\CharController@index')->name('characterization.index');
     Route::get('/{genus}', 'Front\CharController@show')->name('characterization.show');
@@ -48,4 +32,33 @@ Route::group(['prefix' => 'search'], function(){
     Route::get('/passport', 'Front\PassportController@index')->name('passport.index');
     Route::get('/passport/{pin}', 'Front\PassportController@show')->name('passport.show');
 });
+Route::get('/news', function ()
+{
+    return view('news.index');
+})->name('news.index');
+
+Route::group(['prefix' => 'news'], function(){
+    Route::get('/', 'Front\NewsController@index')->name('news.index');
+    Route::get('/{news}', 'Front\NewsController@show')->name('news.show');
+});
+
+Route::get('/gallery', function ()
+{
+    return view('gallery.index');
+})->name('gallery.index');
+
+Route::get('/about', function ()
+{
+    return view('about.index');
+})->name('about.index');
+
+Route::get('/download', function ()
+{
+    return view('download.index');
+})->name('download.index');
+
+Route::get('/terms', function ()
+{
+    return view('terms.index');
+})->name('terms.index');
 
