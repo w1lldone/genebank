@@ -1169,6 +1169,7 @@ ul.entry-meta {
     margin-top: 80px;
 }
 
+
 /*Medium Screen*/
 
 @media (max-width: 1199px) {}
@@ -2872,5 +2873,18 @@ ul.entry-meta {
     .container{
         /*margin-left: 20px;*/
     }
+
+    /*download*/
+    #download li{
+        overflow: scroll;
+    }
+    #download {
+        margin-left: -50px;
+        font-size: 12px;
+    }
+    #download p{
+        font-size: 12px;
+    }
+
 }
 
