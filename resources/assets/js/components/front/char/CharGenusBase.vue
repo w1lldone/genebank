@@ -11,7 +11,7 @@
                     <div class="card col-md-3" v-for="item in genera">
                       <div class="card-header"><a :href="'/search/characterization/'+item.id">{{item.name}}</a></div>
                       <div class="card-main">
-                        <img src="/img/icons/image.svg" alt="...">
+                        <img :src="item.photo" alt="...">
                       </div>
                     </div>
                 </div>
