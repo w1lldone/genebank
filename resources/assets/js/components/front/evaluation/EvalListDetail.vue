@@ -9,7 +9,7 @@
             <p>Refers to the data results of screening accessions for their resistance to different pests (i.e. melon fly, cotton aphid, etc.) and diseases (i.e. Bhendi Yellow Vein Mosaic Virus,Tobacco Mosaic Virus, etc.). It also includes nutritive value (i.e.Vitamin A, Vitamin C, Anti-oxidant Activity, etc). The screening was conducted by scientists in various departments at AVRDC - The World Vegetable Center and other research institutes. </p><br><br>
           </div>
           <div class="detail">
-              <div class="col-md-10 table-responsive table-detail">
+              <div class="col-md-10 col-xs-4 table-responsive table-detail">
                 <table class="table table-hover">
                   <tbody>
                     <tr>

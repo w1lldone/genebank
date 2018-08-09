@@ -1694,8 +1694,12 @@
         border: 1px solid rgba(255,255,255,0.3);
     }
     #header img{
+        margin-top: 0px;
         height: 40px;
-        width: 80%;
+        width: 50%;
+    }
+    .container{
+        /*margin-left: 20px;*/
     }
 }
 
