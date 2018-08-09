@@ -22,10 +22,10 @@
     <link rel="stylesheet" href={{ url("css/isotope/style.css") }}>
 
     <!--Main Stylesheet-->
-    <link href={{ url("css/style.css") }} rel="stylesheet">
-    
+    <link href={{ mix("css/app.css") }} rel="stylesheet">
+
     <!--Responsive Framework-->
-    <link href={{ url("css/responsive.css") }} rel="stylesheet">
+    {{-- <link href={{ url("css/responsive.css") }} rel="stylesheet"> --}}
     <title>{{ config('app.name', 'Laravel') }}</title>
     <script type="text/javascript">
         window.env = {
