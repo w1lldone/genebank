@@ -875,7 +875,6 @@ table{
   text-transform: uppercase;
   vertical-align:middle;
   font-weight: 300;
-  /*font-size: 14px;*/
   background-color: #fff;
   border-bottom: solid 1px rgba(255,255,255,0.1);
 }
@@ -885,7 +884,6 @@ table{
   text-align: left;
   text-transform: uppercase;
   font-weight: 300;
-  /*font-size: 14px;*/
   border-bottom: solid 1px rgba(255,255,255,0.1);
 }
 
@@ -906,7 +904,7 @@ table{
     display: none;
 }
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+/*tr:nth-child(even) {background-color: #f2f2f2;}*/
 
 /*eval*/
 #eval {

@@ -10,7 +10,7 @@
           </div>
           <div class="detail">
               <div class="col-md-10 table-responsive table-detail">
-                <table class="table">
+                <table class="table table-hover">
                   <tbody>
                     <tr>
                       <td>Vegetable introduction number</td>

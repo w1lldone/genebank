@@ -52,3 +52,13 @@ Route::get('/about', function ()
     return view('about.index');
 })->name('about.index');
 
+Route::get('/download', function ()
+{
+    return view('download.index');
+})->name('download.index');
+
+Route::get('/terms', function ()
+{
+    return view('terms.index');
+})->name('terms.index');
+

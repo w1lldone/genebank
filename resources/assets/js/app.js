@@ -46,6 +46,16 @@ Vue.component(
 );
 
 Vue.component(
+    'download',
+    require('./components/front/download/download.vue')
+);
+
+Vue.component(
+    'terms',
+    require('./components/front/terms/terms.vue')
+);
+
+Vue.component(
     'Gallery',
     require('./components/front/gallery/Gallery.vue')
 );

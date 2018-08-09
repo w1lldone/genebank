@@ -8,7 +8,7 @@
                         <h5>Positive signals for Vietnam's recovering tomato market</h5>
                         
                         <div class="detail">
-                            <a href="#"><h3>{{ title }}</h3></a>
+                            <h3>{{ title }}</h3>
                             <div class="expert">
                                 <div class="left-side text-left">
                                     <p class="left_side">

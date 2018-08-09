@@ -132,23 +132,6 @@
             <!--End of container-->
         </section>
         <!--end of welcome section-->
-
-        <!--Start of footer-->
-        <section id="footer">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <div class="copyright" style="text-align:center">
-                            <p >@ 2018 - Copyright <span><a href="">Smart System Research Group</a></span>, Universitas Gadjah Mada</p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <!--End of row-->
-            </div>
-            <!--End of container-->
-        </section>
-        <!--End of footer-->
     </front-base>
 </template>
 
