@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Events\NewPhotoUploaded;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\VegetablesResource;
 use App\Vegetable;
@@ -41,6 +42,26 @@ class VegetableController extends Controller
         ]);
 
         $vegetable = Vegetable::create($data);
+
+        return new VegetablesResource($vegetable);
+    }
+
+    public function storePhoto(Request $request, Vegetable $vegetable)
+    {
+        $data = $request->validate([
+            'photo' => 'required|image',
+        ]);
+
+        // UPLOAD IMAGE
+        $path = $request->photo->store("photos/vegetables/$vegetable->id", 'public');
+
+        // DISPATCH EVENT
+        event(new NewPhotoUploaded($vegetable->photo));
+
+        // UPDATE PHOTOS 
+        $vegetable->update([
+            'photo' => $path
+        ]);
 
         return new VegetablesResource($vegetable);
     }

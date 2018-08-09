@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Vegetable extends Model
 {
@@ -50,4 +51,13 @@ class Vegetable extends Model
     {
         return $this->characters()->whereIn('category_id', $categories)->get();
     }
+
+    public function getPhotoUrlAttribute(){
+        if ($this->photo) {
+            return Storage::disk('public')->url($this->photo);
+        }
+
+        return null;
+    }
+        
 }
