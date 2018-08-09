@@ -38773,7 +38773,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -38786,6 +38786,11 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -39072,11 +39077,50 @@ var render = function() {
                           margin: "30px",
                           "border-radius": "50%"
                         },
-                        attrs: { src: "img/panahMerah.png" }
+                        attrs: { src: "img/ugm.png" }
                       }),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [_c("strong", [_vm._v("Panah Merah")])]),
+                      _c("br")
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticStyle: {
+                        display: "inline-block",
+                        "margin-bottom": "30px"
+                      }
+                    },
+                    [
+                      _c("img", {
+                        staticStyle: {
+                          height: "100px",
+                          margin: "30px",
+                          "border-radius": "50%"
+                        },
+                        attrs: { src: "img/ewindo.png" }
+                      }),
+                      _c("br")
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticStyle: {
+                        display: "inline-block",
+                        "margin-bottom": "30px"
+                      }
+                    },
+                    [
+                      _c("img", {
+                        staticStyle: {
+                          height: "100px",
+                          margin: "30px",
+                          "border-radius": "50%"
+                        },
+                        attrs: { src: "img/PanahMerah.png" }
+                      }),
                       _c("br")
                     ]
                   )
@@ -39277,20 +39321,12 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("front-base", [
     _c("section", { staticClass: "text-center", attrs: { id: "gall" } }, [
-      _c("div", { staticClass: "col-md-12" }, [
+      _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "gall_title" }, [
-          _c("h2", [_vm._v("gallery")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit."
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "colum" }, [
-        _c("div", { staticClass: "container" }, [
+          _c("h2", [_vm._v("gallery")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "colum" }, [
           _c("div", { staticClass: "row" }, [
             _c(
               "div",
@@ -39394,7 +39430,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -39442,7 +39478,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -39455,18 +39490,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             news: [{
                 id: 1,
-                title: "Climate change is affecting bird migration",
-                image: "/img/climate_effect.jpg",
+                title: "Positive signals for Vietnam's recovering tomato market",
+                image: "/img/news1.JPG",
                 date: "Aug 12, 2018",
                 author: "admin",
-                body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,"
+                body: "The end of 2017 saw Vietnamese tomato growers in great distress when nearly 2,500 hectares were infected with a strange virus causing a major crop loss for tomato growers. The disease began in Lam Dong province "
             }, {
                 id: 2,
-                title: "How to avoid indoor air pollution?",
-                image: "/img/air_pollutuon.jpg",
+                title: "Nepal Field Day: East-West Seed partners with Jai Kisan Seed Centre",
+                image: "/img/news2.jpg",
                 date: "Aug 12, 2018",
                 author: "admin",
-                body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
+                body: "Kathmandu, Nepal — Despite adverse weather conditions, the Nepal Mega Field Day on 16 June 2018 held in partnership with Jai Kisan Seed Centre was a huge success."
             }, {
                 id: 3,
                 title: "Threat to Yellowstone’s grizzly bears.",
@@ -39749,7 +39784,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\nh5[data-v-5c4e3773]{\n    text-align: center;\n    font-size: 30px;\n    margin-top: 20px;\n    margin-bottom: 20px;\n}\n.news_detail img[data-v-5c4e3773]{\n    height: 30%;\n    width: 60%;\n    -webkit-box-align: middle;\n        -ms-flex-align: middle;\n            align-items: middle;\n    margin-bottom: 30px;\n    margin-left: 20px;\n}\np[data-v-5c4e3773]{\n    margin: 20px;\n}\n", ""]);
 
 // exports
 
@@ -39764,6 +39799,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NewsList__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NewsList___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__NewsList__);
+//
+//
 //
 //
 //
@@ -39839,11 +39876,11 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "single_news_item news_news" }, [
-            _c("div", { staticClass: "news_img" }, [
-              _c("img", { attrs: { src: _vm.image, alt: _vm.title } })
+            _c("h5", [
+              _vm._v("Positive signals for Vietnam's recovering tomato market")
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "news_content" }, [
+            _c("div", { staticClass: "detail" }, [
               _c("a", { attrs: { href: "#" } }, [
                 _c("h3", [_vm._v(_vm._s(_vm.title))])
               ]),
@@ -39879,8 +39916,14 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _c("p", { staticClass: "news_news_content" }, [
-                _vm._v(_vm._s(_vm.body))
+              _c("div", { staticClass: "news_detail" }, [
+                _c("img", { attrs: { src: "/img/news1.JPG" } })
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "The end of 2017 saw Vietnamese tomato growers in great distress when nearly 2,500 hectares were infected with a strange virus causing a major crop loss for tomato growers. The disease began in Lam Dong province affecting foliage and stunting growth of affected tomato plants. Government agencies and research institutes both in and outside of the country have undertaken research to identify the cause, as well as potential solutions, to this ongoing problem. Many seed companies are also participating in helping solve Vietnam’s tomato virus problem."
+                )
               ])
             ])
           ])
@@ -39913,13 +39956,7 @@ var render = function() {
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-md-12" }, [
             _c("div", { staticClass: "latest_news text-center" }, [
-              _c("h2", [_vm._v("news")]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo cum libero vitae quos eaque commodi."
-                )
-              ])
+              _c("h4", [_c("b", [_vm._v("news")])])
             ])
           ])
         ]),
@@ -39930,7 +39967,7 @@ var render = function() {
           _vm._l(_vm.news, function(item, index) {
             return _c(
               "div",
-              { key: index, staticClass: "col-md-4" },
+              { key: index, staticClass: "col-md-4 item" },
               [
                 _c("news-item", {
                   attrs: {

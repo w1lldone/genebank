@@ -1,15 +1,15 @@
 <template>
     <front-base>
         <section id="gall" class="text-center">
-            <div class="col-md-12">
+            <div class="container">
+            <!-- <div class="col-md-12"> -->
                 <div class="gall_title">
                     <h2>gallery</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
                 </div>
-            </div>
+            <!-- </div> -->
             <!--End of col-md-2-->
             <div class="colum">
-                <div class="container">
+                <!-- <div class="container"> -->
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="notes">
@@ -46,8 +46,8 @@
                             </div><!--End of notes-->
                         </div><!--End of col-lg-12-->
                     </div><!--End of row-->
-                </div><!--End of container-->
-            </div><!--End of colum-->
+                </div><!--End of colum-->
+            </div><!--End of container-->
         </section>
     </front-base>
 </template>

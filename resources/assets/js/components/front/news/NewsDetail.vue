@@ -5,10 +5,9 @@
                 <h4><b>News</b></h4>
                 <div class="row">
                     <div class="single_news_item news_news">
-                        <div class="news_img">
-                            <img :src="image" :alt="title">
-                        </div>
-                        <div class="news_content">
+                        <h5>Positive signals for Vietnam's recovering tomato market</h5>
+                        
+                        <div class="detail">
                             <a href="#"><h3>{{ title }}</h3></a>
                             <div class="expert">
                                 <div class="left-side text-left">
@@ -23,7 +22,10 @@
                                     </p>
                                 </div>
                             </div>
-                            <p class="news_news_content">{{ body }}</p>
+                            <div class="news_detail">
+                            <img src="/img/news1.JPG" >
+                        </div>
+                            <p>The end of 2017 saw Vietnamese tomato growers in great distress when nearly 2,500 hectares were infected with a strange virus causing a major crop loss for tomato growers. The disease began in Lam Dong province affecting foliage and stunting growth of affected tomato plants. Government agencies and research institutes both in and outside of the country have undertaken research to identify the cause, as well as potential solutions, to this ongoing problem. Many seed companies are also participating in helping solve Vietnam’s tomato virus problem.</p>
                         </div>
                     </div>
                 </div>
@@ -61,4 +63,20 @@ export default {
 </script>
 
 <style lang="css" scoped>
+h5{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.news_detail img{
+    height: 30%;
+    width: 60%;
+    align-items: middle;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+p{
+    margin: 20px;
+}
 </style>

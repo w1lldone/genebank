@@ -35,8 +35,13 @@
                         <hr style="border-top: 3px solid #00877d; width: 40px; margin:0 auto 20px">
                         <div class="row center" align="center" style="width:100%">
                             <div style="display:inline-block; margin-bottom:30px">
-                                <img src="img/panahMerah.png" style="height: 100px; margin:30px; border-radius:50%"><br>
-                                <span><strong>Panah Merah</strong></span><br>
+                                <img src="img/ugm.png" style="height: 100px; margin:30px; border-radius:50%"><br>
+                            </div>
+                            <div style="display:inline-block; margin-bottom:30px">
+                                <img src="img/ewindo.png" style="height: 100px; margin:30px; border-radius:50%"><br>
+                            </div>
+                            <div style="display:inline-block; margin-bottom:30px">
+                                <img src="img/PanahMerah.png" style="height: 100px; margin:30px; border-radius:50%"><br>
                             </div>
                             
                         </div>

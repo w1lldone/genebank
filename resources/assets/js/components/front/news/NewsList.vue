@@ -5,8 +5,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="latest_news text-center">
-                            <h2>news</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo cum libero vitae quos eaque commodi.</p>
+                            <h4><b>news</b></h4>
                         </div>
                     </div>
                 </div><!--End of row-->
@@ -14,7 +13,7 @@
                     <div 
                     v-for="(item, index) in news"
                     :key="index"
-                    class="col-md-4" 
+                    class="col-md-4 item" 
                     >
                         <news-item
                         :title="item.title"
@@ -43,19 +42,19 @@ export default {
         news: [
             {
                 id:1,
-                title: "Climate change is affecting bird migration",
-                image: "/img/climate_effect.jpg",
+                title: "Positive signals for Vietnam's recovering tomato market",
+                image: "/img/news1.JPG",
                 date: "Aug 12, 2018",
                 author: "admin",
-                body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,"
+                body: "The end of 2017 saw Vietnamese tomato growers in great distress when nearly 2,500 hectares were infected with a strange virus causing a major crop loss for tomato growers. The disease began in Lam Dong province "
             },
             {
                 id:2,
-                title: "How to avoid indoor air pollution?",
-                image: "/img/air_pollutuon.jpg",
+                title: "Nepal Field Day: East-West Seed partners with Jai Kisan Seed Centre",
+                image: "/img/news2.jpg",
                 date: "Aug 12, 2018",
                 author: "admin",
-                body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+                body: "Kathmandu, Nepal — Despite adverse weather conditions, the Nepal Mega Field Day on 16 June 2018 held in partnership with Jai Kisan Seed Centre was a huge success.",
             },
             {
                 id:3,
