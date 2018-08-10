@@ -42,17 +42,17 @@ Vue.component(
 
 Vue.component(
     'about',
-    require('./components/front/about/about.vue')
+    require('./components/front/about/About.vue')
 );
 
 Vue.component(
     'download',
-    require('./components/front/download/download.vue')
+    require('./components/front/download/Download.vue')
 );
 
 Vue.component(
     'terms',
-    require('./components/front/terms/terms.vue')
+    require('./components/front/terms/Terms.vue')
 );
 
 Vue.component(

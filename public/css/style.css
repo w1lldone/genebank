@@ -54,6 +54,16 @@ font-family: 'Roboto', sans-serif;
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
 
+@supports (-webkit-appearance:none) {}
+
+/*Chrome, Safari, AND NOW ALSO the Edge Browser and Firefox */
+@media and (-webkit-min-device-pixel-ratio:0) {
+    #header img{
+        height: 50px;
+        width: 80%;
+    } 
+}
+
 /*UNIVERSAL CODE*/
 
 * {
@@ -192,19 +202,11 @@ input: -webkit-autofill:focus {
 
 
 /*header*/
-
-
-/*Header Top header*/
-#header img{
-    height: 50px;
-    width: 80%;
-}
-
 #header .top_header {
-    min-height: 50px;
+    /*min-height: 50px;*/
     background: #Ffff;
     border-bottom: 2px solid #ffff;
-    padding-top: 15px;
+    /*padding-top: 15px;*/
 }
 #header .top_header .address {
     border-right: 1px solid #E6E5E5;
@@ -213,22 +215,18 @@ input: -webkit-autofill:focus {
     font-size: 12px;
     padding-top: 2px;
     color: #646464;
-    /*font-family: 'Open Sans', sans-serif;*/
 }
 #header .top_header .phone p {
     color: #646464;
-    font-size: 12px;
-    /*font-family: 'Open Sans', sans-serif;*/
+    font-size: 8px;
     padding-top: 1px;
     display: inline-block;
 }
 #header .top_header .address i,
 #header .top_header .phone i {
-    padding: 3px 5px;
     font-size: 15px;
 }
 #header .top_header .social_icon i {
-    padding: 0 5px;
     color: #787878;
     font-size: 12px;
     font-weight: 700;
@@ -240,15 +238,28 @@ input: -webkit-autofill:focus {
 /*End of top header*/
 
 #header .header_menu {
-    min-height: 80px;
+    /*min-height: 80px;*/
     border-bottom: 1px solid #3D3E3D;
     z-index: 9999
 }
 #header .header_menu .navbar {
     border: 0px solid transparent;
 }
-#header .header_menu .custom_navbar-brand {
-    padding-left: 0;
+#header .header_menu .custom_navbar-brand img{
+        height: 50px;
+        width: 80%;
+        padding-left: 0;
+    }
+/*for firefox*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){ 
+}
+/*for chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    #header .header_menu .custom_navbar-brand{
+        height: 10px;
+        width: 15%;
+        padding-left: 0;
+    } 
 }
 #header .header_menu .navbar-default {
     background-color: rgba(255, 255, 255, 0);
@@ -330,7 +341,7 @@ input: -webkit-autofill:focus {
 }
 /*----- Bottom Level -----*/
 .sub-menu li a {
-    padding:10px 10px;
+    /*padding:10px 10px;*/
     display:block;
 }
 .sub-menu {
@@ -361,12 +372,12 @@ input: -webkit-autofill:focus {
     text-transform: uppercase;
 }
 #slider .slider_text h3 {
-    font-size: 45px;
+    /*font-size: 45px;*/
     /*font-family: 'Open Sans', sans-serif;*/
     color: #fff;
 }
 #slider .slider_text p {
-    font-size: 17px;
+    /*font-size: 17px;*/
     padding-bottom: 60px;
     /*font-family: 'Lato', sans-serif;*/
     font-weight: 400;

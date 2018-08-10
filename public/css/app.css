@@ -54,6 +54,16 @@ font-family: 'Roboto', sans-serif;
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
 
+@supports (-webkit-appearance:none) {}
+
+/*Chrome, Safari, AND NOW ALSO the Edge Browser and Firefox */
+@media and (-webkit-min-device-pixel-ratio:0) {
+    #header img{
+        height: 50px;
+        width: 80%;
+    } 
+}
+
 /*UNIVERSAL CODE*/
 
 * {
@@ -192,19 +202,11 @@ input: -webkit-autofill:focus {
 
 
 /*header*/
-
-
-/*Header Top header*/
-#header img{
-    height: 50px;
-    width: 80%;
-}
-
 #header .top_header {
-    min-height: 50px;
+    /*min-height: 50px;*/
     background: #Ffff;
     border-bottom: 2px solid #ffff;
-    padding-top: 15px;
+    /*padding-top: 15px;*/
 }
 #header .top_header .address {
     border-right: 1px solid #E6E5E5;
@@ -213,22 +215,18 @@ input: -webkit-autofill:focus {
     font-size: 12px;
     padding-top: 2px;
     color: #646464;
-    /*font-family: 'Open Sans', sans-serif;*/
 }
 #header .top_header .phone p {
     color: #646464;
-    font-size: 12px;
-    /*font-family: 'Open Sans', sans-serif;*/
+    font-size: 8px;
     padding-top: 1px;
     display: inline-block;
 }
 #header .top_header .address i,
 #header .top_header .phone i {
-    padding: 3px 5px;
     font-size: 15px;
 }
 #header .top_header .social_icon i {
-    padding: 0 5px;
     color: #787878;
     font-size: 12px;
     font-weight: 700;
@@ -240,15 +238,28 @@ input: -webkit-autofill:focus {
 /*End of top header*/
 
 #header .header_menu {
-    min-height: 80px;
+    /*min-height: 80px;*/
     border-bottom: 1px solid #3D3E3D;
     z-index: 9999
 }
 #header .header_menu .navbar {
     border: 0px solid transparent;
 }
-#header .header_menu .custom_navbar-brand {
-    padding-left: 0;
+#header .header_menu .custom_navbar-brand img{
+        height: 50px;
+        width: 80%;
+        padding-left: 0;
+    }
+/*for firefox*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){ 
+}
+/*for chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    #header .header_menu .custom_navbar-brand{
+        height: 10px;
+        width: 15%;
+        padding-left: 0;
+    } 
 }
 #header .header_menu .navbar-default {
     background-color: rgba(255, 255, 255, 0);
@@ -330,7 +341,7 @@ input: -webkit-autofill:focus {
 }
 /*----- Bottom Level -----*/
 .sub-menu li a {
-    padding:10px 10px;
+    /*padding:10px 10px;*/
     display:block;
 }
 .sub-menu {
@@ -361,12 +372,12 @@ input: -webkit-autofill:focus {
     text-transform: uppercase;
 }
 #slider .slider_text h3 {
-    font-size: 45px;
+    /*font-size: 45px;*/
     /*font-family: 'Open Sans', sans-serif;*/
     color: #fff;
 }
 #slider .slider_text p {
-    font-size: 17px;
+    /*font-size: 17px;*/
     padding-bottom: 60px;
     /*font-family: 'Lato', sans-serif;*/
     font-weight: 400;
@@ -1669,7 +1680,10 @@ ul.entry-meta {
         right: 5px;
     }
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 769px) {
+    #header .navbar-header{
+        margin-right: 100px;
+    }
     #header .top_header .address {
         margin-right: -10px;
         margin-left: -10px;
@@ -1704,6 +1718,11 @@ ul.entry-meta {
     }
     #header .header_menu .custom_navbar-brand {
         padding-top: 8px;
+        height: 40px;
+        width: 125px;
+        padding-left: 0;
+        margin-top: 0px;
+        margin-left: 0px;
     }
     #header .header_menu .custom_navbar-brand>img {
         width: 75%;
@@ -2076,8 +2095,99 @@ ul.entry-meta {
         bottom: 5px;
         right: 5px;
     }
+    #download, #passport, #char, #eval{
+        margin-top: 80px;
+        z-index: 99;
+        transform: scale(1);
+        transform-origin: left;
+        overflow: scroll;
+        width:130%;
+        margin-left: -60px;
+    }
+    #eval .detail{
+
+    }
+    table{
+        overflow: scroll;
+        display: flex;
+        display: block;
+        font-size: 9px;
+    }
+
+    h4{
+        font-size: 17px;
+    }
+    #char, #passport p{
+        font-size: 10px;
+    }
+    #char #list{
+        margin-top: 20px;
+    }
+    #char .panel-group{
+        margin-top: -10px;
+    }
+    .table-detail tr{
+        font-size: 10px;
+    }
+    .tbl-content{
+        margin-top: 0px;
+        border: 1px solid rgba(255,255,255,0.3);
+    }
+    #header img{
+        
+    }
+    .container{
+        /*margin-left: 20px;*/
+    }
+    /*download*/
+    
+    #download_menu{
+        margin-left: 5px;
+        display: flex;
+        font-size: 9px;
+        width:160%;
+    }
+    #download {
+        font-size: 12px;
+        margin-left: -100px;
+    }
+    #download p{
+        font-size: 12px;
+    }
+    #descriptors{
+        margin-left: -70px;
+    }
+    /*terms*/
+    #terms{
+        margin-left: -50px;
+        margin-right: -50px;
+    }
+    #terms p{
+        font-size: 10px;
+    }
+
+    /*about*/
+    #about .container{
+        margin-left: -80px;
+        margin-right: -60px;
+    }
+    #about .row{
+        margin-left: 5px;
+    }
+
 }
 @media all and (max-width: 640px){
+    #header .navbar-header{
+        margin-right: 90px;
+    }
+    #header .header_menu .custom_navbar-brand {
+        padding-top: 8px;
+        height: 40px;
+        width: 125px;
+        padding-left: 0;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
     #slider .slider_text h2 {
         font-size: 18px;
         padding: 5px 0;
@@ -2101,11 +2211,95 @@ ul.entry-meta {
     .carousel-indicators li {
         top: 60px;
     }
+    #passport, #char, #eval{
+        margin-top: 80px;
+        z-index: 99;
+        transform: scale(1);
+        transform-origin: left;
+        overflow: scroll;
+        width:130%;
+        margin-left: -70px;
+    }
+    #eval .detail{
+
+    }
+    table{
+        overflow: scroll;
+        display: flex;
+        display: block;
+        font-size: 9px;
+    }
+
+    h4{
+        font-size: 17px;
+    }
+    #char, #passport p{
+        font-size: 10px;
+    }
+    #char #list{
+        margin-top: 20px;
+    }
+    #char .panel-group{
+        margin-top: -10px;
+    }
+    .table-detail tr{
+        font-size: 10px;
+    }
+    .tbl-content{
+        margin-top: 0px;
+        border: 1px solid rgba(255,255,255,0.3);
+    }
+    #header img{
+        
+    }
+    .container{
+        /*margin-left: 20px;*/
+    }
+    /*download*/
+    #download_menu{
+        margin-left: -25px;
+        display: flex;
+        font-size: 9px;
+        width:160%;
+    }
+    #download {
+        overflow: scroll;
+        margin-left: -50px;
+        font-size: 12px;
+    }
+    #download p{
+        font-size: 12px;
+    }
+
+    /*terms*/
+    #terms{
+        margin-left: -50px;
+        margin-right: -50px;
+    }
+    #terms p{
+        font-size: 10px;
+    }
+
+    /*about*/
+    #about .container{
+        margin-left: -80px;
+        margin-right: -60px;
+    }
+    #about .row{
+        margin-left: 5px;
+    }
 }
 @media all and (max-width: 480px) {
-
+    #header .navbar-header{
+        margin-right: 70px;
+    }
     #header .header_menu .custom_navbar-brand {
         padding-top: 8px;
+        height: 30px;
+        width: 100px;
+        padding-left: 0;
+        margin-top: 0px;
+        margin-left: 0px;
     }
     #header .header_menu .custom_navbar-brand>img {
         width: 75%;
@@ -2138,6 +2332,16 @@ ul.entry-meta {
     }
     #header .header_menu .navbar-collapse.in {
         overflow-y: visible;
+    }
+    #slider {
+        margin-top: 70px;
+        min-height: 200px;
+    }
+    #slider img{
+        height: 230px;
+    }
+    #slider .wel_header{
+        margin-top: -40px;
     }
     #slider .slider_text h2 {
         font-size: 18px;
@@ -2277,79 +2481,6 @@ ul.entry-meta {
     .wel_header p {
         font-size: 13px;
     }
-    #gallery .gallery_header h2 {
-        font-size: 16px;
-    }
-    #gallery .gallery_header {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    #gallery .gallery_header.text-center p {
-        font-size: 11px;
-    }
-    #gallery .gallery_text h4 {
-        font-size: 14px;
-    }
-    #gallery .gallery_text {
-        padding: 15px 30px 0;
-    }
-    #gallery .gallery_text h6 {
-        font-size: 10px;
-    }
-    #gallery .gallery_text p {
-        font-size: 10px;
-    }
-    #gallery a.gallery_btn {
-        font-size: 10px;
-    }
-
-    #gallery .gallery_news {
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 5px;
-    }
-    #gallery .gallery_news_text h4 {
-        font-size: 12px;
-    }
-    #gallery .gallery_news_text p {
-        padding-top: 5px;
-        font-size: 10px;
-    }
-    #testimonial .testimonial_header {
-        padding-top: 20px;
-    }
-    #testimonial .testimonial_header h2 {
-        font-size: 20px;
-        padding-bottom: 10px;
-    }
-    #testimonial .testimonial_header p {
-        font-size: 11px;
-    }
-    #testimonial #fade-quote-carousel .profile-circle {
-        width: 50px;
-        height: 75px;
-    }
-    #testimonial .testimonial_content p {
-        font-size: 11px;
-        padding-left: 20px;
-        padding-right: 0px;
-        padding-bottom: 20px;
-    }
-    #testimonial .testimonial_content i {
-        font-size: 15px;
-    }
-    #testimonial .testimonial_author h5 {
-        font-size: 12px;
-        padding-bottom: 3px;
-    }
-    #testimonial .testimonial_author p {
-        font-size: 11px;
-    }
-    #testimonial #fade-quote-carousel.carousel .carousel-indicators > li {
-        border: 1px solid;
-        width: 8px;
-        height: 8px;
-    }
     #news .single_news_item {
         margin: 8px 0;
     }
@@ -2391,46 +2522,11 @@ ul.entry-meta {
     #news a.news_link {
         font-size: 11px;
     }
-    #purches h2.purches_title {
-        font-size: 20px;
-        padding-top: 35px;
+    #news h4{
+        margin-top: -45px;
     }
-    #purches a.purches_btn {
-        margin-top: 60px;
-        padding: 7px 40px;
-        border-radius: 2px;
-        font-size: 12px;
-    }
-    #market .market_area {
-        padding-top: 20px;
-    }
-    #market .market_logo {
-        margin: 20px 0;
-    }
-    #contact .contact_area {
-        padding-top: 20px;
-    }
-    #contact .contact_area h3 {
-        font-size: 20px;
-    }
-    #contact .contact_area p {
-        font-size: 11px;
-    }
-    #contact .office {
-        padding-top: 30px;
-    }
-    #contact .office .title h5 {
-        font-size: 15px;
-    }
-    #contact .office_location i span {
-        font-size: 11px;
-    }
-    #contact .msg_title h5 {
-        font-size: 14px;
-    }
-    #contact .custom-btn {
-        padding: 11px 98px;
-        font-size: 10px;
+    #news .item{
+        margin-top: -10px;
     }
     #footer {
         min-height: 80px;
@@ -2510,7 +2606,7 @@ ul.entry-meta {
     }
     /*about*/
     #about .container{
-        margin-left: -90px;
+        margin-left: -90px;a
         margin-right: -65px;
     }
     #about .row{
@@ -2549,10 +2645,16 @@ ul.entry-meta {
     }
     #header .header_menu .custom_navbar-brand {
         padding-top: 8px;
+        height: 20px;
+        width: 85px;
+        padding-left: 0;
+        margin-top: 0px;
+        margin-left: 0px;
+        /*transform: scale(.80);*/
     }
-    #header .header_menu .custom_navbar-brand>img {
+    /*#header .header_menu .custom_navbar-brand>img {
         width: 75%;
-    }
+    }*/
     #header .header_menu {
         min-height: 60px;
     }
@@ -2584,7 +2686,13 @@ ul.entry-meta {
     }
     #slider {
         margin-top: 70px;
-        min-height: 120px;
+        min-height: 200px;
+    }
+    #slider img{
+        height: 200px;
+    }
+    #slider .wel_header{
+        margin-top: -20px;
     }
     #slider .carousel-indicators {
         bottom: 25px;
@@ -2610,7 +2718,7 @@ ul.entry-meta {
     #slider .slider_text {
         padding-bottom: 10px;
     }
-    #slider .slider_text p {
+    #slider p {
         font-size: 8px;
         padding-bottom: 2px;
     }
@@ -2803,18 +2911,13 @@ ul.entry-meta {
         border: 1px solid rgba(255,255,255,0.3);
     }
     #header img{
-        margin-top: -10px;
-        margin-left: -20px;
-        transform: scale(.55);
+        
     }
     .container{
         /*margin-left: 20px;*/
     }
-
     /*download*/
-    #download li{
-        overflow: scroll;
-    }
+    
     #download_menu{
         margin-left: -25px;
         display: flex;

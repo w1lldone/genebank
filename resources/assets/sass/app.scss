@@ -7,7 +7,7 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-
+/*
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
@@ -83,7 +83,7 @@
 }
 .menu a {
     transition:all linear 0.15s;
-    /*color:#919191;*/
+
 }
 .menu li:hover > a, .menu .current-item > a {
     text-decoration:none;
@@ -93,7 +93,7 @@
     font-size:11px;
     line-height:0%;
 }
-/*----- Top Level -----*/
+
 .menu > ul > li {
     float:left;
     display:inline-block;
@@ -104,7 +104,7 @@
     padding:10px 40px;
     display:inline-block;
 }
-/*----- Bottom Level -----*/
+
 .menu li:hover .sub-menu {
     z-index:1;
     opacity:1;
@@ -133,5 +133,6 @@
     background:#ffffff;
 }
 .sub-menu li a:hover, .sub-menu .current-item a {
-    /*background:#3e3436;*/
+
 }
+*/
