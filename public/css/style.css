@@ -184,6 +184,7 @@ input: -webkit-autofill:focus {
 .zero_mp {
     padding: 0;
     margin: 0;
+    background: #fff;
 }
 .margin_btm {
     margin-bottom: 0px !important;
@@ -256,8 +257,10 @@ input: -webkit-autofill:focus {
 /*for chrome*/
 @media screen and (-webkit-min-device-pixel-ratio:0){
     #header .header_menu .custom_navbar-brand{
-        height: 10px;
+        height: 15px;
         width: 15%;
+        display: flex;
+        margin-bottom: -25px;
         padding-left: 0;
     } 
 }
@@ -345,7 +348,7 @@ input: -webkit-autofill:focus {
     display:block;
 }
 .sub-menu {
-    width:160%;
+    /*width:180%;*/
     text-align:center;
     /*padding:5px 0px;*/
     top:100%;
