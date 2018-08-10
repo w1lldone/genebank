@@ -61,9 +61,3 @@ Route::get('/terms', function ()
 {
     return view('terms.index');
 })->name('terms.index');
-
-Route::get('/admin', function ()
-{
-    return view('admin.layouts.master');
-});
-

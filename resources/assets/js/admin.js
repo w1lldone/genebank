@@ -16,11 +16,12 @@
   */
 
  try {
-     window.$ = window.jQuery = require('jquery');
+     // window.$ = window.jQuery = require('jquery');
 
      require('bootstrap');
  } catch (e) {}
 
+require('./sb-admin');
  /**
   * We'll load the axios HTTP library which allows us to easily issue requests
   * to our Laravel back-end. This library automatically handles sending the
@@ -36,8 +37,6 @@
  });
 
  // window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-require('jquery');
-require('./sb-admin');
 
  /**
   * Next we will register the CSRF Token as a common header with Axios so that
@@ -76,7 +75,9 @@ Vue.mixin({
     }
 });
 
+Vue.component('VegetableIndex', require('./components/admin/vegetable/VegetableIndex'));
+Vue.component('VegetableShow', require('./components/admin/vegetable/VegetableShow'));
 
 const app = new Vue({
-    el: '#app',
+    el: '#wrapper',
 });
