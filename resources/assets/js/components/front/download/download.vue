@@ -17,11 +17,12 @@
                                 <li role="presentation"><a href="#other" role="tab" data-toggle="tab"><span class="tabHeadings">Other</span></a></li>
                             </ul>
 
+                            <br>
                             <!-- tab panes -->
                             <div class="tab-content">
                                 <!-- Descriptors -->
                                 <div role="tabpanel" class="tab-pane fade in active" id="descriptors">
-                                    <div class="card col-md-3" v-for="item in genera">
+                                    <div class="card col-md-3 col-xs-12" v-for="item in genera">
                                       <div class="card-header"><a :href="'/search/characterization/'+item.id">{{item.name}}</a></div>
                                       <div class="card-main">
                                         <img :src="item.photo" alt="...">
@@ -124,8 +125,6 @@ h4{
     padding-top: 0;
 }
 #download_menu li{
-    margin-top: 30px;
-    margin-bottom: 20px;
     border-right: 1px solid lightgrey; 
     border-bottom: 2px solid grey;
     background: #aed6f1;

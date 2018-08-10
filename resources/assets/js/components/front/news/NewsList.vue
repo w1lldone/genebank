@@ -4,12 +4,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="latest_news text-center">
-                            <h4><b>news</b></h4>
-                        </div>
+                        <h4><b>news</b></h4>
                     </div>
-                </div><!--End of row-->
-                <div class="row">
+                </div>
+                <!-- <div class="row"> -->
                     <div 
                     v-for="(item, index) in news"
                     :key="index"
@@ -23,7 +21,7 @@
                         :body="item.body"
                         ></news-item>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </section>
     </front-base>

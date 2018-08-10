@@ -39275,7 +39275,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\nh4[data-v-576d0982]{\n    margin-bottom: 30px;\n}\n#download[data-v-576d0982] {\n    margin-top:80px;\n    margin-bottom: 20px;\n    min-height:2000px;\n    background: #eeeeee;\n    padding: 0px 80px 0px 80px;\n}\n.menu[data-v-576d0982]{\n    /*background: #eeeeee;*/\n    align-items: left;\n    margin-left: -20px;\n}\n#download .download_title p[data-v-576d0982] {\n    font-size: 16px;\n    color: #393939;\n    padding-bottom: 25px;\n    padding-top: 0;\n}\n#download_menu li[data-v-576d0982]{\n    margin-top: 30px;\n    margin-bottom: 20px;\n    border-right: 1px solid lightgrey; \n    border-bottom: 2px solid grey;\n    background: #aed6f1;\n}\n.tab-content[data-v-576d0982]{\n    margin-top: 30px;\n}\nimg[data-v-576d0982]{\n    margin-top: 30px;\n    height: 140px;\n    width:90%;\n}\n#protocols li[data-v-576d0982], p[data-v-576d0982]{\n    text-align: left;\n    margin-top: 20px;\n    margin-bottom: 20px;\n}\n#record li[data-v-576d0982], p[data-v-576d0982]{\n    text-align: left;\n    margin-top: 20px;\n    margin-bottom: 20px;\n}\n#other li[data-v-576d0982], p[data-v-576d0982]{\n    text-align: left;\n    margin-top: 20px;\n    margin-bottom: 20px;\n}\n", ""]);
+exports.push([module.i, "\nh4[data-v-576d0982]{\n    margin-bottom: 30px;\n}\n#download[data-v-576d0982] {\n    margin-top:80px;\n    margin-bottom: 20px;\n    min-height:2000px;\n    background: #eeeeee;\n    padding: 0px 80px 0px 80px;\n}\n.menu[data-v-576d0982]{\n    /*background: #eeeeee;*/\n    align-items: left;\n    margin-left: -20px;\n}\n#download .download_title p[data-v-576d0982] {\n    font-size: 16px;\n    color: #393939;\n    padding-bottom: 25px;\n    padding-top: 0;\n}\n#download_menu li[data-v-576d0982]{\n    border-right: 1px solid lightgrey; \n    border-bottom: 2px solid grey;\n    background: #aed6f1;\n}\n.tab-content[data-v-576d0982]{\n    margin-top: 30px;\n}\nimg[data-v-576d0982]{\n    margin-top: 30px;\n    height: 140px;\n    width:90%;\n}\n#protocols li[data-v-576d0982], p[data-v-576d0982]{\n    text-align: left;\n    margin-top: 20px;\n    margin-bottom: 20px;\n}\n#record li[data-v-576d0982], p[data-v-576d0982]{\n    text-align: left;\n    margin-top: 20px;\n    margin-bottom: 20px;\n}\n#other li[data-v-576d0982], p[data-v-576d0982]{\n    text-align: left;\n    margin-top: 20px;\n    margin-bottom: 20px;\n}\n", ""]);
 
 // exports
 
@@ -39294,6 +39294,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
+//
 //
 //
 //
@@ -39528,6 +39529,8 @@ var render = function() {
                   ]
                 ),
                 _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
                 _c("div", { staticClass: "tab-content" }, [
                   _c(
                     "div",
@@ -39536,23 +39539,29 @@ var render = function() {
                       attrs: { role: "tabpanel", id: "descriptors" }
                     },
                     _vm._l(_vm.genera, function(item) {
-                      return _c("div", { staticClass: "card col-md-3" }, [
-                        _c("div", { staticClass: "card-header" }, [
-                          _c(
-                            "a",
-                            {
-                              attrs: {
-                                href: "/search/characterization/" + item.id
-                              }
-                            },
-                            [_vm._v(_vm._s(item.name))]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "card-main" }, [
-                          _c("img", { attrs: { src: item.photo, alt: "..." } })
-                        ])
-                      ])
+                      return _c(
+                        "div",
+                        { staticClass: "card col-md-3 col-xs-12" },
+                        [
+                          _c("div", { staticClass: "card-header" }, [
+                            _c(
+                              "a",
+                              {
+                                attrs: {
+                                  href: "/search/characterization/" + item.id
+                                }
+                              },
+                              [_vm._v(_vm._s(item.name))]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "card-main" }, [
+                            _c("img", {
+                              attrs: { src: item.photo, alt: "..." }
+                            })
+                          ])
+                        ]
+                      )
                     })
                   ),
                   _vm._v(" "),
@@ -40362,7 +40371,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -40379,8 +40388,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__NewsItem___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__NewsItem__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__NewsDetail__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__NewsDetail___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__NewsDetail__);
-//
-//
 //
 //
 //
@@ -40882,18 +40889,16 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("front-base", [
     _c("section", { attrs: { id: "news" } }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-12" }, [
-            _c("div", { staticClass: "latest_news text-center" }, [
+      _c(
+        "div",
+        { staticClass: "container" },
+        [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-12" }, [
               _c("h4", [_c("b", [_vm._v("news")])])
             ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "row" },
+          ]),
+          _vm._v(" "),
           _vm._l(_vm.news, function(item, index) {
             return _c(
               "div",
@@ -40912,8 +40917,9 @@ var render = function() {
               1
             )
           })
-        )
-      ])
+        ],
+        2
+      )
     ])
   ])
 }

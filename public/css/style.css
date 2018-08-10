@@ -641,7 +641,7 @@ section#counter {
 #news {
     background: #eee;
     margin-top:80px;
-    min-height: 1500px;
+    /*min-height: 1500px;*/
     padding: 80px 0;
 }
 #news h4{
