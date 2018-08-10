@@ -1336,8 +1336,19 @@
         margin-top: 0px;
         border: 1px solid rgba(255,255,255,0.3);
     }
+    /*about*/
+    #about .container{
+        margin-left: -90px;
+        margin-right: -65px;
+    }
+    #about .row{
+        margin-left: 5px;
+    }
 }
 @media all and (max-width: 320px) {
+    #header, .navbar-header{
+        background: #fff;
+    }
     #header .top_header .address {
         margin-right: -10px;
         margin-left: -10px;
@@ -1351,6 +1362,7 @@
         padding-top: 6px;
     }
     #header .top_header .phone p {
+        background: #fff;
         font-size: 6px;
         padding-top: 8px;
     }
@@ -1550,89 +1562,14 @@
         width: 8px;
         height: 8px;
     }
-    #news .single_news_item {
-        margin: 8px 0;
+    #news{
+        display: table;
     }
-    #news .latest_news {
-        padding-top: 20px;
+    #news h4{
+        margin-top: -80px;
     }
-    #news .latest_news h2 {
-        font-size: 20px;
-    }
-    #news .latest_news p {
-        padding-bottom: 20px;
-        font-size: 11px;
-    }
-    #news .news_content h3 {
-        font-size: 16px;
-    }
-    #news span.clock {
-        font-size: 10px;
-    }
-    #news .expert span.time {
-        font-size: 10px;
-    }
-    #news .expert span.admin {
-        font-size: 10px;
-    }
-    #news .expert a {
-        font-size: 10px;
-    }
-    #news .expert p.right_side {
-        padding-left: 30px;
-    }
-    #news p.news_news_content {
-        font-size: 12px;
-    }
-    #news a.news_link {
-        font-size: 11px;
-    }
-    #purches h2.purches_title {
-        font-size: 20px;
-        padding-top: 35px;
-    }
-    #purches a.purches_btn {
-        margin-top: 60px;
-        padding: 7px 40px;
-        border-radius: 2px;
-        font-size: 12px;
-    }
-    #market .market_area {
-        padding-top: 20px;
-    }
-    #market .market_logo {
-        margin: 20px 0;
-    }
-    .contact_us_padding {
-        padding: 25px 0px;
-    }
-    #contact-us h3 {
-        font-size: 20px;
-    }
-    #contact .contact_area {
-        padding-top: 20px;
-    }
-    #contact .contact_area h3 {
-        font-size: 20px;
-    }
-    #contact .contact_area p {
-        font-size: 11px;
-    }
-    #contact .office {
-        padding-top: 30px;
-    }
-    #contact .office .title h5 {
-        font-size: 15px;
-    }
-    #contact .office_location i span {
-        font-size: 11px;
-    }
-    #contact .msg_title h5 {
-        font-size: 14px;
-    }
-    #contact .custom-btn {
-        padding: 11px 98px;
-        font-size: 10px;
+    #news .item{
+        margin-top: -40px;
     }
     #footer {
         min-height: 80px;
@@ -1694,9 +1631,9 @@
         border: 1px solid rgba(255,255,255,0.3);
     }
     #header img{
-        margin-top: 0px;
-        height: 40px;
-        width: 50%;
+        margin-top: -10px;
+        margin-left: -20px;
+        transform: scale(.55);
     }
     .container{
         /*margin-left: 20px;*/
@@ -1706,7 +1643,14 @@
     #download li{
         overflow: scroll;
     }
+    #download_menu{
+        margin-left: -25px;
+        display: flex;
+        font-size: 9px;
+        width:160%;
+    }
     #download {
+        overflow: scroll;
         margin-left: -50px;
         font-size: 12px;
     }
@@ -1714,5 +1658,22 @@
         font-size: 12px;
     }
 
+    /*terms*/
+    #terms{
+        margin-left: -50px;
+        margin-right: -50px;
+    }
+    #terms p{
+        font-size: 10px;
+    }
+
+    /*about*/
+    #about .container{
+        margin-left: -80px;
+        margin-right: -60px;
+    }
+    #about .row{
+        margin-left: 5px;
+    }
 }
 
