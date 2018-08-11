@@ -22,9 +22,7 @@
     @yield('layout')
     <!-- Bootstrap core JavaScript-->
     <script type="text/javascript">
-        window.env = {
-            apiToken: '{{ env('API_TOKEN_DEVELOPMENT') }}',
-        }
+        window.env = {}
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{{ mix('js/admin.js') }}"></script>

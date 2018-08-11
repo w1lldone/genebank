@@ -29,7 +29,6 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
     <script type="text/javascript">
         window.env = {
-            apiToken: '{{ env('API_TOKEN_DEVELOPMENT') }}',
             baseUrl: '{{ env('APP_URL') }}',
         }
     </script>
