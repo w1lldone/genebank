@@ -21,8 +21,8 @@
                             <!-- tab panes -->
                             <div class="tab-content">
                                 <!-- Descriptors -->
-                                <div role="tabpanel" class="tab-pane fade in active" id="descriptors">
-                                    <div class="card col-md-3 col-xs-12" v-for="item in genera">
+                                <div role="tabpanel" class="tab-pane fade in active" id="char" >
+                                    <div  class="card col-md-3 col-sm-4" v-for="item in genera">
                                       <div class="card-header"><a :href="'/search/characterization/'+item.id">{{item.name}}</a></div>
                                       <div class="card-main">
                                         <img :src="item.photo" alt="...">

@@ -8,7 +8,7 @@
                   <br>
                   <p>Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. </p><br><br>
                 </div>
-                    <div class="card col-md-3" v-for="item in genera">
+                    <div class="card col-md-3 col-sm-4" v-for="item in genera">
                       <div class="card-header"><a :href="'/search/characterization/'+item.id">{{item.name}}</a></div>
                       <div class="card-main">
                         <img :src="item.photo" alt="...">
