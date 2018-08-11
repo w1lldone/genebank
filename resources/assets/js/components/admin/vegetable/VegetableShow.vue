@@ -31,10 +31,16 @@
                 ></vegetable-show-passport>
               </div>
               <div class="tab-pane fade" id="nav-characters" role="tabpanel" aria-labelledby="nav-characters-tab">
-                
+                <vegetable-show-characters
+                type="characters"
+                :vegetableId="vegetableId"
+                :characters="vegetable.characters"></vegetable-show-characters>
               </div>
               <div class="tab-pane fade" id="nav-evaluations" role="tabpanel" aria-labelledby="nav-evaluations-tab">
-                
+                <vegetable-show-characters
+                type="evaluation"
+                :vegetableId="vegetableId"
+                :characters="vegetable.evaluations"></vegetable-show-characters>
               </div>
             </div>
           </div>
@@ -45,6 +51,7 @@
 <script>
 import VegetableShowGeneral from './VegetableShowGeneral';
 import VegetableShowPassport from './VegetableShowPassport';
+import VegetableShowCharacters from './VegetableShowCharacters';
 
 export default {
 
@@ -58,7 +65,9 @@ export default {
         species: {
           id: null,
         },
-        passport: {}
+        passport: {},
+        characters: [],
+        evaluations: [],
       }
     }
   },
@@ -88,6 +97,7 @@ export default {
   components: {
     VegetableShowGeneral,
     VegetableShowPassport,
+    VegetableShowCharacters,
   }
 }
 </script>
