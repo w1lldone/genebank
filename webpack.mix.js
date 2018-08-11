@@ -14,11 +14,12 @@ let mix = require('laravel-mix');
 mix.disableSuccessNotifications();
 
 mix.js('resources/assets/js/app.js', 'public/js')
+    .js('resources/assets/js/admin.js', 'public/js')
     .styles([
         'public/css/style.css',
         'public/css/responsive.css',
-    ], 'public/css/app.css');
-   // .sass('resources/assets/sass/app.scss', 'public/css');
+    ], 'public/css/app.css')
+   .sass('resources/assets/sass/admin.scss', 'public/css');
 
 if (mix.inProduction()) {
    mix.version();
