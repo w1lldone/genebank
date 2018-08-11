@@ -20,9 +20,14 @@ class PassportController extends Controller
     public function update(Vegetable $vegetable, Request $request)
     {   
         $data = $request->validate([
+            'incoming_date' => 'nullable|date',
             'donor_number' => 'nullable|string',
+            'donor_institute' => 'nullable|string',
+            'donor_address' => 'nullable|string',
+            'sender_name' => 'nullable|string',
             'country' => 'nullable|string',
             'location' => 'nullable|string',
+            'province' => 'nullable|string',
             'collecting_institute' => 'nullable|string',
             'collector' => 'nullable|string',
             'collecting_number' => 'nullable|string',
@@ -30,6 +35,8 @@ class PassportController extends Controller
             'latitide' => 'nullable|string',
             'longitude' => 'nullable|string',
             'altitude' => 'nullable|string',
+            'distribution_status' => 'nullable|string',
+            'season' => 'nullable|string',
         ]);
 
         $passport = $vegetable->passport;
