@@ -11,7 +11,7 @@
 
     <title>{{ env('APP_NAME') }} - Administration</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    {{-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> --}}
 
     <link href="{{ mix('css/admin.css') }}" rel="stylesheet">
 
@@ -28,6 +28,7 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{{ mix('js/admin.js') }}"></script>
+    {{-- <script src="{{ url('js/toastr.min.js') }}"></script> --}}
 
   </body>
 

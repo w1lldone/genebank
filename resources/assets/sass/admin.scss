@@ -2,7 +2,11 @@
 @import '~bootstrap/scss/bootstrap';
 
 // Fontawsome
-@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "./font-awesome/fontawesome.scss";
+@import "./font-awesome/regular.scss";
+@import "./font-awesome/solid.scss";
+@import "./font-awesome/brands.scss";
 
 // SB-Admin
-@import './sb-admin/sb-admin.scss'
+@import './sb-admin/sb-admin.scss';
+@import './toastr.scss';

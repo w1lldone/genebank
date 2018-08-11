@@ -5,7 +5,7 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-
+ window.toastr = require('./toastr')
  window._ = require('lodash');
  window.Popper = require('popper.js').default;
 
@@ -44,14 +44,6 @@ require('./sb-admin');
   * a simple convenience so we don't have to attach every token manually.
   */
 
- let token = document.head.querySelector('meta[name="csrf-token"]');
-
- if (token) {
-     window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
- } else {
-     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
- }
-
  let apiToken = window.env.apiToken;
 
  if (apiToken) {
@@ -77,6 +69,14 @@ Vue.mixin({
 
 Vue.component('VegetableIndex', require('./components/admin/vegetable/VegetableIndex'));
 Vue.component('VegetableShow', require('./components/admin/vegetable/VegetableShow'));
+
+Vue.filter('titleCase', function (value) {
+  if (!value) return ''
+  
+  return value.toLowerCase().split('_').map(function(word) {
+    return (word.charAt(0).toUpperCase() + word.slice(1));
+  }).join(' ');
+})
 
 const app = new Vue({
     el: '#wrapper',
