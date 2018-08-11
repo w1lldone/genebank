@@ -23,6 +23,7 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.2.0",
+        "toastr": "^2.1.4",
         "vue-router": "^3.0.1",
         "vuex": "^3.0.1"
     }
