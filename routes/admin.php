@@ -1,5 +1,10 @@
 <?php
 
+Route::get('/', function ()
+{
+    return redirect()->route('admin.dashboard.index');
+})->name('admin.index');
+
 Route::get('/dashboard', function ()
 {
     return view('admin.dashboard.index');
