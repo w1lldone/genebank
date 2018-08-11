@@ -44,7 +44,7 @@ require('./sb-admin');
   * a simple convenience so we don't have to attach every token manually.
   */
 
- let apiToken = process.env.MIX_API_TOKEN_DEVELOPMENT
+ let apiToken = window.env.apiToken;
 
  if (apiToken) {
      window.axios.defaults.headers.common['Authorization'] = 'Bearer ' + apiToken
