@@ -38,4 +38,10 @@ class VegetableObserver
         // ADD PASSPORT TO VEGETABLE
         $vegetable->passport()->create([]);
     }
+
+    public function deleting(Vegetable $vegetable)
+    {
+        $vegetable->passport()->delete();
+        $vegetable->attributes()->detach();
+    }
 }
