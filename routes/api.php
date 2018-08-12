@@ -27,6 +27,7 @@ Route::group(['prefix' => 'species'], function(){
 
     Route::group(['middleware' => 'auth:api'], function(){
         Route::post('/', 'SpeciesController@store');
+        Route::delete('/{species}', 'SpeciesController@destroy');
     });
 });
 
@@ -42,6 +43,7 @@ Route::group(['prefix' => 'vegetables'], function(){
         Route::put('/{vegetable}/attributes', 'VegetableAttributesController@update');
         Route::put('/{vegetable}/passport', 'PassportController@update');
         Route::post('/{vegetable}/photo', 'VegetableController@storePhoto');
+        Route::delete('/{vegetable}', 'VegetableController@destroy');
     });
 });
 
