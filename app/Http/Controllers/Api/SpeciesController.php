@@ -23,6 +23,13 @@ class SpeciesController extends Controller
 
         $species = Species::create($data);
 
-        return $species;
+        return new SpeciesResource($species);
+    }
+
+    public function destroy(Species $species)
+    {
+        $species->delete();
+
+        return response(null, 204);
     }
 }

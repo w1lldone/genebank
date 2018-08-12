@@ -78,4 +78,11 @@ class VegetableController extends Controller
 
         return new VegetablesResource($vegetable);
     }
+
+    public function destroy(Vegetable $vegetable)
+    {
+        $vegetable->delete();
+
+        return response(null, 204);
+    }
 }
