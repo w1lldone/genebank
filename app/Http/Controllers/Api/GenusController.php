@@ -13,4 +13,9 @@ class GenusController extends Controller
     {
         return GeneraResource::collection(Genus::get()->load('vegetables'));
     }
+
+    public function show(Genus $genus)
+    {
+        return new GeneraResource($genus);
+    }
 }

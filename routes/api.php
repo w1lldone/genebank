@@ -19,6 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['prefix' => 'genera'], function(){
     Route::get('/', 'GenusController@index');
+    Route::get('/{genus}', 'GenusController@show');
 });
 
 Route::group(['prefix' => 'species'], function(){
