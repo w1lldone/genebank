@@ -23,10 +23,6 @@ class Vegetable extends Model
         return $this->belongsToMany('App\Attribute')->whereIn('category_id', $categories)->withPivot('value');
     }
 
-    /**
-     * Evaluations relatioship
-     * @return Relationship
-     */
     public function evaluations(){
         $categories = \App\Category::getEvaluationCharacters();
 
@@ -35,6 +31,11 @@ class Vegetable extends Model
 
     public function passport(){
         return $this->hasOne('App\Passport');
+    }
+
+    public function photos()
+    {
+        return $this->morphMany('App\Photo', 'photoable');
     }
 
     public function generatePIN()
