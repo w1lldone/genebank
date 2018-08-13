@@ -42,8 +42,9 @@ Route::group(['prefix' => 'vegetables'], function(){
         Route::put('/{vegetable}', 'VegetableController@update');
         Route::put('/{vegetable}/attributes', 'VegetableAttributesController@update');
         Route::put('/{vegetable}/passport', 'PassportController@update');
-        Route::post('/{vegetable}/photo', 'VegetableController@storePhoto');
+        Route::post('/{vegetable}/photos', 'VegetablePhotoController@store');
         Route::delete('/{vegetable}', 'VegetableController@destroy');
+        Route::delete('/photos/{photo}', 'VegetablePhotoController@destroy');
     });
 });
 
