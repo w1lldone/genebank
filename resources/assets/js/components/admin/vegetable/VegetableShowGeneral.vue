@@ -10,16 +10,24 @@
         <div v-show="!loading">
           <div class="form-group row">
               <label class="col-md-2">
+                  Photos
+              </label>
+              <div class="col-md-8">
+                  <photos :photos="photos" :vegetableId="vegetableId" @delete:photo="onDeletePhoto" @store:photo="onStorePhoto"></photos>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-md-2">
                   Cultivar name
               </label>
               <div class="col-md-5">
-                  <input type="text" :value="cultivar_name" name="cultivar_name" class="form-control" @input="$emit('update:cultivar_name', $event.target.value)">
+                  <input type="text" v-model="inputs.cultivar_name" name="cultivar_name" class="form-control">
               </div>
           </div>
           <div class="form-group row">
             <label class="col-md-2">Species</label>
             <div class="col-md-4">
-                <select required class="custom-select" :value="species_id" @change="$emit('update:species_id', $event.target.value)">
+                <select required class="custom-select" v-model="inputs.species_id">
                     <option value="">Choose...</option>
                     <option v-for="item in allSpecies" :value=item.id>
                         {{ item.genus.name }} {{ item.name }}
@@ -32,7 +40,7 @@
                   Temporary number
               </label>
               <div class="col-md-5">
-                  <input type="text" name="temporary_number" class="form-control" :value="temporary_number" @input="$emit('update:temporary_number', $event.target.value)">
+                  <input type="text" name="temporary_number" class="form-control" v-model="inputs.temporary_number">
               </div>
           </div>
         </div>
@@ -45,12 +53,14 @@
 </template>
 
 <script>
+import Photos from './VegetableShowGeneralPhotos';
+
 export default {
 
   name: 'VegetableShowGeneral',
   props: {
     vegetableId: Number,
-    photo: String,
+    photos: Array,
     species_id: Number,
     temporary_number: String,
     cultivar_name: String,
@@ -58,6 +68,7 @@ export default {
   data () {
     return {
         allSpecies: [],
+        inputs: {...this.$props},
         errors: {},
         loading: false,
     }
@@ -72,17 +83,26 @@ export default {
     async submitForm() {
         this.loading = true
         try {
-          let response = await axios.put(`/api/vegetables/${this.vegetableId}`, this.$props)
+          let response = await axios.put(`/api/vegetables/${this.vegetableId}`, this.inputs)
           toastr.success('The vegetable has been updated', 'Success!')
         } catch(error) {
           toastr.error('Please check the form carefully', 'Oops!')
         }
         this.loading = false
     },
+    onDeletePhoto(event) {
+      this.inputs.photos.splice(event.index, true)
+    },
+    onStorePhoto(event) {
+      this.inputs.photos.push(event.data)
+    }
   },
   mounted() {
     this.loadSpecies()
-  }
+  },
+  components: {
+    Photos,
+  },
 }
 </script>
 

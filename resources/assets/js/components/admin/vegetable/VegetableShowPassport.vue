@@ -47,7 +47,7 @@ export default {
   data () {
     return {
         loading: false,
-        inputs: {},
+        inputs: {...this.passport},
     }
   },
   methods: {
@@ -73,11 +73,6 @@ export default {
       return this.inputs
     }
   },
-  watch: {
-     passport: function (newValue, oldValue) {
-       this.inputs = {...this.passport}
-     }
-  }
 }
 </script>
 

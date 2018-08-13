@@ -1,6 +1,6 @@
 <template>
     <form @submit.prevent="submitForm()">
-        <div class="form-group row" v-for="(attribute, index) in inputs">
+        <div class="form-group row" v-for="(attribute, index) in sortedInputs">
             <label class="col-md-2 form-label">
                 {{ attribute.name }}
             </label>
@@ -55,6 +55,21 @@ export default {
                 id: item.id,
                 value: item.value,
             }
+        })
+    },
+    sortedInputs: function () {
+        return this.inputs.sort((a, b) => {
+            var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+            var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+            if (nameA < nameB) {
+              return -1;
+            }
+            if (nameA > nameB) {
+              return 1;
+            }
+
+            // names must be equal
+            return 0;
         })
     }
   }

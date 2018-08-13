@@ -5,7 +5,12 @@
             <h3>Vegetable {{ vegetable.plant_introduction_number }} details</h3>
           </div>
         </div>
-        <div class="row mt-3">
+        <div class="row py-4" v-if="loading">
+          <div class="col-md-7 text-center">
+            <h3 class="text-muted">Loading...</h3>
+          </div>
+        </div>
+        <div class="row mt-3" v-if="!loading">
           <div class="col">
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -19,7 +24,7 @@
               <div class="tab-pane fade show active" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab">
                 <vegetable-show-general
                 :vegetableId="vegetableId"
-                :photo="vegetable.photo"
+                :photos="vegetable.photos"
                 :species_id.sync="vegetable.species.id"
                 :temporary_number.sync="vegetable.temporary_number"
                 :cultivar_name.sync="vegetable.cultivar_name"></vegetable-show-general>
@@ -61,6 +66,7 @@ export default {
   },
   data () {
     return {
+      loading: true,
       vegetable: {
         species: {
           id: null,
@@ -68,13 +74,15 @@ export default {
         passport: {},
         characters: [],
         evaluations: [],
-      }
+        photos: [],
+      },
     }
   },
   methods: {
     async loadVegetable() {
-      let response = await axios(`/api/vegetables/${this.vegetableId}`)
+      let response = await axios.get(`/api/vegetables/${this.vegetableId}`)
       this.vegetable = response.data.data
+      this.loading = false
     }
   },
   computed: {
