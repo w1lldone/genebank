@@ -41175,7 +41175,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -41194,6 +41194,89 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -41349,7 +41432,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("front-base", [
-    _c("section", { staticClass: "list-table", attrs: { id: "char" } }, [
+    _c("section", { attrs: { id: "char" } }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "msg_title col-md-12" }, [
           _c("h4", [_c("b", [_vm._v("Characterization")])]),
@@ -41362,6 +41445,285 @@ var render = function() {
             )
           ]),
           _c("br"),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "filters_area" } }, [
+            _c("div", { attrs: { id: "filters" } }, [
+              _c("b", [_vm._v("Show:")]),
+              _vm._v(" "),
+              _c("select", { attrs: { id: "perLow" } }, [
+                _c("option", { attrs: { value: "20", selected: "selected" } }, [
+                  _vm._v("20")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "40" } }, [_vm._v("40")]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "60" } }, [_vm._v("60")]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "80" } }, [_vm._v("80")]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "100" } }, [_vm._v("100")])
+              ]),
+              _vm._v(" "),
+              _c("b", { attrs: { id: "add_area" } }, [
+                _vm._v("   Filters:  \n                                  "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-success",
+                    attrs: {
+                      id: "add",
+                      title: "search",
+                      "data-toggle": "collapse",
+                      href: "#collapseExample",
+                      role: "button",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseExample"
+                    }
+                  },
+                  [_vm._v("SEARCH")]
+                ),
+                _vm._v("  \n                                  "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-success",
+                    attrs: { id: "reset_filters", title: "reset all" }
+                  },
+                  [_vm._v("RESET ALL")]
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "options collapse",
+              attrs: { id: "collapseExample" }
+            },
+            [
+              _c("table", [
+                _c("thead", { staticClass: "list-table" }, [
+                  _c("tr", [
+                    _c("th", { attrs: { colspan: "6" } }, [
+                      _vm._v("Filter Options")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tbody", [
+                  _c("tr", [
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("AVRDC Code (VINO)")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("input", {
+                        attrs: {
+                          name: "VINO",
+                          placeholder: "e.g. VI000001, VI000002, ...",
+                          type: "text"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Crop Accession Number (ACCNO)")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("input", {
+                        attrs: {
+                          name: "ACCNO",
+                          placeholder: "e.g. A00001, B00001, ...",
+                          type: "text"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Temporary Number (TEMPNO)")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("input", {
+                        attrs: {
+                          name: "TEMPNO",
+                          placeholder: "e.g. TA00001, TB00001, ...",
+                          type: "text"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Pedigree / Cultivar Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("input", { attrs: { name: "PEDCUL", type: "text" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Donor identification number (DONO)")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("input", { attrs: { name: "DONO", type: "text" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("PI number (PINO)")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("input", { attrs: { name: "PINO", type: "text" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Species")
+                    ]),
+                    _c("td", [_c("select", { attrs: { name: "SPECIES" } })]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          staticStyle: { display: "none" },
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Subtaxa")
+                    ]),
+                    _c("td", [_c("select", { attrs: { name: "SUBTAXA" } })]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          staticStyle: { display: "none" },
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Country")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("select", { attrs: { name: "COUNTRY" } }, [
+                        _c("option", { attrs: { value: "" } }, [
+                          _vm._v("* Any *")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td"),
+                    _c("td"),
+                    _c("td")
+                  ])
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
           _c("br")
         ]),
         _vm._v(" "),
@@ -41370,7 +41732,7 @@ var render = function() {
         _c("br"),
         _c("br"),
         _vm._v(" "),
-        _c("div", { staticClass: "tbl-header tbl-content" }, [
+        _c("div", { staticClass: "tbl-header tbl-content list-table" }, [
           _c(
             "table",
             { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
@@ -42551,7 +42913,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -42574,6 +42936,113 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -43140,7 +43609,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("front-base", [
-    _c("section", { staticClass: "list-table", attrs: { id: "passport" } }, [
+    _c("section", { attrs: { id: "passport" } }, [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-md-12" }, [
@@ -43156,46 +43625,420 @@ var render = function() {
             _c("br"),
             _c("br"),
             _vm._v(" "),
-            _c("div", { staticClass: "table-responsive passport-list" }, [
-              _c("table", { staticClass: "table table-striped" }, [
-                _c("thead", [
-                  _c("tr", [
-                    _c("th", [_vm._v("Distribution status")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("VINO")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Temp. no")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Genus")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Species")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Cultivar name")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Country")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Operation")])
-                  ])
+            _c("div", { attrs: { id: "filters_area" } }, [
+              _c("div", { attrs: { id: "filters" } }, [
+                _c("b", [_vm._v("Show:")]),
+                _vm._v(" "),
+                _c("select", { attrs: { id: "perLow" } }, [
+                  _c(
+                    "option",
+                    { attrs: { value: "20", selected: "selected" } },
+                    [_vm._v("20")]
+                  ),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "40" } }, [_vm._v("40")]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "60" } }, [_vm._v("60")]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "80" } }, [_vm._v("80")]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "100" } }, [_vm._v("100")])
                 ]),
                 _vm._v(" "),
-                _vm.vegetables.length != 0
-                  ? _c(
-                      "tbody",
-                      _vm._l(_vm.vegetables, function(vegetable) {
-                        return _c(
-                          "passport-list-item",
-                          _vm._b(
-                            { key: vegetable.id },
-                            "passport-list-item",
-                            _vm.getPassportObject(vegetable),
-                            false
-                          )
-                        )
-                      })
-                    )
-                  : _vm._e()
+                _c("b", { attrs: { id: "add_area" } }, [
+                  _vm._v("   Filters:  \n                                "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "btn btn-success",
+                      attrs: {
+                        id: "add",
+                        title: "search",
+                        "data-toggle": "collapse",
+                        href: "#collapseExample",
+                        role: "button",
+                        "aria-expanded": "false",
+                        "aria-controls": "collapseExample"
+                      }
+                    },
+                    [_vm._v("SEARCH")]
+                  ),
+                  _vm._v("  \n                                "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "btn btn-success",
+                      attrs: { id: "reset_filters", title: "reset all" }
+                    },
+                    [_vm._v("RESET ALL")]
+                  )
+                ])
               ])
-            ])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "options collapse",
+                attrs: { id: "collapseExample" }
+              },
+              [
+                _c("table", [
+                  _c("thead", { staticClass: "list-table" }, [
+                    _c("tr", [
+                      _c("th", { attrs: { colspan: "6" } }, [
+                        _vm._v("Filter Options")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", { staticStyle: { "text-align": "right" } }, [
+                        _vm._v("AVRDC Code (VINO)")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("input", {
+                          attrs: {
+                            name: "VINO",
+                            placeholder: "e.g. VI000001, VI000002, ...",
+                            type: "text"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-success",
+                            attrs: { name: "add", title: "add" }
+                          },
+                          [_vm._v("ADD")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticStyle: { "text-align": "right" } }, [
+                        _vm._v("Crop Accession Number (ACCNO)")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("input", {
+                          attrs: {
+                            name: "ACCNO",
+                            placeholder: "e.g. A00001, B00001, ...",
+                            type: "text"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-success",
+                            attrs: { name: "add", title: "add" }
+                          },
+                          [_vm._v("ADD")]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { "text-align": "right" } }, [
+                        _vm._v("Temporary Number (TEMPNO)")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("input", {
+                          attrs: {
+                            name: "TEMPNO",
+                            placeholder: "e.g. TA00001, TB00001, ...",
+                            type: "text"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-success",
+                            attrs: { name: "add", title: "add" }
+                          },
+                          [_vm._v("ADD")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticStyle: { "text-align": "right" } }, [
+                        _vm._v("Pedigree / Cultivar Name")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("input", { attrs: { name: "PEDCUL", type: "text" } })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-success",
+                            attrs: { name: "add", title: "add" }
+                          },
+                          [_vm._v("ADD")]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { "text-align": "right" } }, [
+                        _vm._v("Donor identification number (DONO)")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("input", { attrs: { name: "DONO", type: "text" } })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-success",
+                            attrs: { name: "add", title: "add" }
+                          },
+                          [_vm._v("ADD")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticStyle: { "text-align": "right" } }, [
+                        _vm._v("PI number (PINO)")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("input", { attrs: { name: "PINO", type: "text" } })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-success",
+                            attrs: { name: "add", title: "add" }
+                          },
+                          [_vm._v("ADD")]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { "text-align": "right" } }, [
+                        _vm._v("Genus")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("select", { attrs: { name: "GENUS" } }, [
+                          _c("option", { attrs: { value: "" } }, [
+                            _vm._v("* Any *")
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "ABELMOSCHUS" } }, [
+                            _vm._v("ABELMOSCHUS")
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "ABRUS" } }, [
+                            _vm._v("ABRUS")
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-success",
+                            attrs: { name: "add", title: "add" }
+                          },
+                          [_vm._v("ADD")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticStyle: { "text-align": "right" } }, [
+                        _vm._v("Species")
+                      ]),
+                      _c("td", [_c("select", { attrs: { name: "SPECIES" } })]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-success",
+                            staticStyle: { display: "none" },
+                            attrs: { name: "add", title: "add" }
+                          },
+                          [_vm._v("ADD")]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { "text-align": "right" } }, [
+                        _vm._v("Subtaxa")
+                      ]),
+                      _c("td", [_c("select", { attrs: { name: "SUBTAXA" } })]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-success",
+                            staticStyle: { display: "none" },
+                            attrs: { name: "add", title: "add" }
+                          },
+                          [_vm._v("ADD")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticStyle: { "text-align": "right" } }, [
+                        _vm._v("Country")
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("select", { attrs: { name: "COUNTRY" } }, [
+                          _c("option", { attrs: { value: "" } }, [
+                            _vm._v("* Any *")
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-success",
+                            attrs: { name: "add", title: "add" }
+                          },
+                          [_vm._v("ADD")]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", { staticStyle: { "text-align": "right" } }, [
+                        _vm._v("Text Search")
+                      ]),
+                      _c("td", [
+                        _c("input", { attrs: { name: "TEXT", type: "text" } })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-success",
+                            attrs: { name: "add", title: "add" }
+                          },
+                          [_vm._v("ADD")]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticStyle: { "text-align": "right" } }, [
+                        _vm._v("Distribution Status")
+                      ]),
+                      _c("td", [
+                        _c("select", { attrs: { name: "DISSTA" } }, [
+                          _c("option", { attrs: { value: "" } }, [
+                            _vm._v("* Any *")
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "Available" } }, [
+                            _vm._v("Available")
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "option",
+                            { attrs: { value: "No Longer Available" } },
+                            [_vm._v("No Longer Available")]
+                          ),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "Not Available" } }, [
+                            _vm._v("Not Available")
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "option",
+                            { attrs: { value: "Restricted Distribution" } },
+                            [_vm._v("Restricted Distribution")]
+                          )
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-success",
+                            attrs: { name: "add", title: "add" }
+                          },
+                          [_vm._v("ADD")]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "table-responsive passport-list list-table" },
+              [
+                _c("table", { staticClass: "table table-striped" }, [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", [_vm._v("Distribution status")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("VINO")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Temp. no")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Genus")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Species")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Cultivar name")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Country")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Operation")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _vm.vegetables.length != 0
+                    ? _c(
+                        "tbody",
+                        _vm._l(_vm.vegetables, function(vegetable) {
+                          return _c(
+                            "passport-list-item",
+                            _vm._b(
+                              { key: vegetable.id },
+                              "passport-list-item",
+                              _vm.getPassportObject(vegetable),
+                              false
+                            )
+                          )
+                        })
+                      )
+                    : _vm._e()
+                ])
+              ]
+            )
           ])
         ])
       ])
@@ -43298,7 +44141,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -43319,6 +44162,104 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -44450,7 +45391,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("front-base", [
-    _c("section", { staticClass: "list-table", attrs: { id: "eval" } }, [
+    _c("section", { attrs: { id: "eval" } }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "msg_title col-md-12" }, [
           _c("h4", [_c("b", [_vm._v("Evaluation")])]),
@@ -44465,77 +45406,416 @@ var render = function() {
           _c("br"),
           _c("br"),
           _vm._v(" "),
-          _c("div", { staticClass: "tbl-header tbl-content col-md-12" }, [
-            _c(
-              "table",
-              { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
-              [
-                _c("thead", [
+          _c("div", { attrs: { id: "filters_area" } }, [
+            _c("div", { attrs: { id: "filters" } }, [
+              _c("b", [_vm._v("Show:")]),
+              _vm._v(" "),
+              _c("select", { attrs: { id: "perLow" } }, [
+                _c("option", { attrs: { value: "20", selected: "selected" } }, [
+                  _vm._v("20")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "40" } }, [_vm._v("40")]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "60" } }, [_vm._v("60")]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "80" } }, [_vm._v("80")]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "100" } }, [_vm._v("100")])
+              ]),
+              _vm._v(" "),
+              _c("b", { attrs: { id: "add_area" } }, [
+                _vm._v("   Filters:  \n                                "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-success",
+                    attrs: {
+                      id: "add",
+                      title: "search",
+                      "data-toggle": "collapse",
+                      href: "#collapseExample",
+                      role: "button",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseExample"
+                    }
+                  },
+                  [_vm._v("SEARCH")]
+                ),
+                _vm._v("  \n                                "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-success",
+                    attrs: { id: "reset_filters", title: "reset all" }
+                  },
+                  [_vm._v("RESET ALL")]
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "options collapse",
+              attrs: { id: "collapseExample" }
+            },
+            [
+              _c("table", [
+                _c("thead", { staticClass: "list-table" }, [
                   _c("tr", [
-                    _c("th", [_vm._v("VINO")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("ACCNO")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Tempno")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Family")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Genus")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Species")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Subtaxa")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Pedigree / Cultivar Name")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Country")]),
-                    _vm._v(" "),
-                    _c("th", [_vm._v("Operation")])
+                    _c("th", { attrs: { colspan: "6" } }, [
+                      _vm._v("Filter Options")
+                    ])
                   ])
                 ]),
                 _vm._v(" "),
-                _c(
-                  "tbody",
-                  _vm._l(_vm.vegetables, function(vegetable) {
-                    return _c("tr", { key: vegetable.id }, [
-                      _c("td", [_vm._v("VI000306")]),
-                      _vm._v(" "),
-                      _c("td"),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(vegetable.temporary_number))]),
-                      _vm._v(" "),
-                      _c("td"),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(vegetable.species.genus.name))]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(vegetable.species.name))]),
-                      _vm._v(" "),
-                      _c("td"),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(vegetable.species.genus.name))]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(vegetable.passport.country))]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "btn btn-success",
-                            attrs: {
-                              href: _vm.url(
-                                "/search/evaluation/" + vegetable.id
-                              )
-                            }
-                          },
-                          [_vm._v("Details")]
-                        )
-                      ])
+                _c("tbody", [
+                  _c("tr", [
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("AVRDC Code (VINO)")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("input", {
+                        attrs: {
+                          name: "VINO",
+                          placeholder: "e.g. VI000001, VI000002, ...",
+                          type: "text"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Crop Accession Number (ACCNO)")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("input", {
+                        attrs: {
+                          name: "ACCNO",
+                          placeholder: "e.g. A00001, B00001, ...",
+                          type: "text"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
                     ])
-                  })
-                )
-              ]
-            )
-          ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Temporary Number (TEMPNO)")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("input", {
+                        attrs: {
+                          name: "TEMPNO",
+                          placeholder: "e.g. TA00001, TB00001, ...",
+                          type: "text"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Pedigree / Cultivar Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("input", { attrs: { name: "PEDCUL", type: "text" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Donor identification number (DONO)")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("input", { attrs: { name: "DONO", type: "text" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("PI number (PINO)")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("input", { attrs: { name: "PINO", type: "text" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Genus")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("select", { attrs: { name: "GENUS" } }, [
+                        _c("option", { attrs: { value: "" } }, [
+                          _vm._v("* Any *")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "ABELMOSCHUS" } }, [
+                          _vm._v("ABELMOSCHUS")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "ABRUS" } }, [
+                          _vm._v("ABRUS")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Species")
+                    ]),
+                    _c("td", [_c("select", { attrs: { name: "SPECIES" } })]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          staticStyle: { display: "none" },
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Subtaxa")
+                    ]),
+                    _c("td", [_c("select", { attrs: { name: "SUBTAXA" } })]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          staticStyle: { display: "none" },
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Country")
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c("select", { attrs: { name: "COUNTRY" } }, [
+                        _c("option", { attrs: { value: "" } }, [
+                          _vm._v("* Any *")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", { staticStyle: { "text-align": "right" } }, [
+                      _vm._v("Text Search")
+                    ]),
+                    _c("td", [
+                      _c("input", { attrs: { name: "TEXT", type: "text" } })
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-success",
+                          attrs: { name: "add", title: "add" }
+                        },
+                        [_vm._v("ADD")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td"),
+                    _c("td"),
+                    _vm._v(" "),
+                    _c("td")
+                  ])
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "tbl-header tbl-content col-md-12 list-table" },
+            [
+              _c(
+                "table",
+                { attrs: { cellpadding: "0", cellspacing: "0", border: "0" } },
+                [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", [_vm._v("VINO")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("ACCNO")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Tempno")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Family")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Genus")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Species")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Subtaxa")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Pedigree / Cultivar Name")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Country")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Operation")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "tbody",
+                    _vm._l(_vm.vegetables, function(vegetable) {
+                      return _c("tr", { key: vegetable.id }, [
+                        _c("td", [_vm._v("VI000306")]),
+                        _vm._v(" "),
+                        _c("td"),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(vegetable.temporary_number))]),
+                        _vm._v(" "),
+                        _c("td"),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(_vm._s(vegetable.species.genus.name))
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(vegetable.species.name))]),
+                        _vm._v(" "),
+                        _c("td"),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(_vm._s(vegetable.species.genus.name))
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(vegetable.passport.country))]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "btn btn-success",
+                              attrs: {
+                                href: _vm.url(
+                                  "/search/evaluation/" + vegetable.id
+                                )
+                              }
+                            },
+                            [_vm._v("Details")]
+                          )
+                        ])
+                      ])
+                    })
+                  )
+                ]
+              )
+            ]
+          )
         ])
       ])
     ])
