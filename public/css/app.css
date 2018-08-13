@@ -2722,6 +2722,17 @@ select {
         margin-top: 0px;
         border: 1px solid rgba(255,255,255,0.3);
     }
+    .btn, td{
+        font-size:9px;
+    }
+    #filters select{
+        width:50px;
+        display: block;
+    }
+    .options select{
+        width:110px;
+        height:20px;
+    }
     /*about*/
     #about .container{
         margin-left: -100px;
@@ -3007,16 +3018,6 @@ select {
     #eval .detail{
 
     }
-    table{
-        overflow: scroll;
-        display: flex;
-        display: block;
-        font-size: 9px;
-    }
-
-    h4{
-        font-size: 17px;
-    }
     #char, #passport p{
         font-size: 10px;
     }
@@ -3089,6 +3090,30 @@ select {
     }
     #about .box-2 img{
         display: inline;
+    }
+    .btn, td{
+        font-size:9px;
+    }
+    #filters select{
+        width:50px;
+        display: block;
+    }
+    .options select{
+        width:110px;
+        height:20px;
+    }
+    table{
+        overflow: scroll;
+        display: flex;
+        /*display: block;*/
+        font-size: 10px;
+    }
+    #eval p, #char p{
+        font-size: 10px;
+        margin-bottom: -30px;
+    }
+    h4{
+        font-size: 17px;
     }
 }
 
