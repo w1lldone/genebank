@@ -16,10 +16,13 @@
             <img :src="photo.url" class="img-fluid">
         </div>
         <div class="col-12 mt-2">
-            <label class="btn btn-info btn-file">
+            <label class="btn btn-info btn-file" v-if="photos.length < 2">
               <i class="fa fa-upload fa-fw"></i> Upload new photo
               <input type="file" ref="photo" name="front_cover" style="display: none;" @change="uploadPhoto">
             </label>
+            <div class="alert alert-warning" role="alert" v-else>
+              Only two photos are allowed. Please remove a photo to add a new one.
+            </div>
         </div>
     </div>
 </template>
@@ -42,11 +45,16 @@ export default {
         let confirmed = confirm('Are you sure?')
 
         if (confirmed) {
-            let response = await axios.delete(`/api/vegetables/photos/${photoId}`)
-            toastr.success('The photo has been deleted', 'Success!')
-            this.$emit('delete:photo', {
-                index: index
-            })
+            try {
+              let response = await axios.delete(`/api/vegetables/photos/${photoId}`)
+              toastr.success('The photo has been deleted', 'Success!')
+              this.$emit('delete:photo', {
+                  index: index
+              })
+            } catch(error) {
+              console.log(error.response)
+              toastr.error(error.response.statusText, error.response.status)
+            }
         }
     },
     async uploadPhoto() {
@@ -55,19 +63,24 @@ export default {
       formData.append('name', 'Photo')
       formData.append('photo', photo)
 
-      let response = await axios.post(`/api/vegetables/${this.vegetableId}/photos`, 
-          formData,
-          {
-              headers: {
-                  'Content-Type': 'multipart/form-data'
-              }
-          }
-      )
+      try {
+        let response = await axios.post(`/api/vegetables/${this.vegetableId}/photos`, 
+            formData,
+            {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            }
+        )
 
-      toastr.success('The photo has been uploaded', 'Success!')
-      this.$emit('store:photo', {
-        data: response.data.data
-      })
+        toastr.success('The photo has been uploaded', 'Success!')
+        this.$emit('store:photo', {
+          data: response.data.data
+        })
+      } catch(error) {
+        console.log(error.response)
+        toastr.error(error.response.statusText, error.response.status)
+      }
     }
   },
   computed: {
