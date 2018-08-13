@@ -38501,7 +38501,7 @@ var render = function() {
                       _c("h3", [_vm._v("Genetic Resources & Seed Unit")]),
                       _c("br"),
                       _vm._v(" "),
-                      _c("p", { attrs: { id: "trans" } }, [
+                      _c("p", [
                         _vm._v(
                           "Initially, AVRDC’s genebank collection only addressed specific needs of crop breeders. Gradually it grew into a multiple-use collection for research and development at the global level. The large number of vegetable species (438) now included in AVRDC’s genebank collection enables us not only to conserve, explore and utilize vegetable biodiversity, but also to contribute to the diversification of vegetable production systems and consumption patterns in the developing world."
                         )
@@ -38520,7 +38520,7 @@ var render = function() {
                       _c("h3", [_vm._v("Keeping the collection safe")]),
                       _c("br"),
                       _vm._v(" "),
-                      _c("p", { attrs: { id: "trans" } }, [
+                      _c("p", [
                         _vm._v(
                           "A new seed storage facility was completed in 2010 to provide a safe storage environment for AVRDC’s extensive germplasm collection. The floor of the facility has been substantially raised above ground to protect the collection from flooding and other natural disasters. "
                         )
@@ -38539,7 +38539,7 @@ var render = function() {
                       _c("h3", [_vm._v("Germplasm characterization")]),
                       _c("br"),
                       _vm._v(" "),
-                      _c("p", { attrs: { id: "trans" } }, [
+                      _c("p", [
                         _vm._v(
                           "Germplasm characterization is the recording of characters or traits that are highly heritable or can be easily seen and are expressed in all environments. Characterization is a common responsibility of genebank curators; AVGRIS makes the easy and quick discrimination between accessions or phenotypes possible."
                         )
@@ -38565,7 +38565,7 @@ var render = function() {
                   staticClass: "wow bounce",
                   attrs: { "data-wow-delay": "0.2s" }
                 },
-                [_vm._v("welcome to genebank")]
+                [_vm._v("welcome to bank plasma nutfah")]
               ),
               _c("br"),
               _vm._v(" "),
@@ -38579,7 +38579,11 @@ var render = function() {
                   _vm._v(
                     "The AVRDC Vegetable Genetic Resources Information System (AVGRIS) is an information system that manages the data of all vegetable germplasm conserved in the AVRDC genebank. The Genetic Resources and Seed Unit uses this system to efficiently manage genebank operations. AVGRIS links all germplasm conservation and management operations, from registration, characterization, evaluation and seed inventory to seed distribution to end-users.\n                        AVGRIS provides the user direct access to germplasm data through the internet.\n                        Use of the system is FREE but please first read the "
                   ),
-                  _c("span", [_c("a", [_vm._v("terms of use.")])])
+                  _c("span", [
+                    _c("a", { attrs: { href: _vm.url("/terms") } }, [
+                      _vm._v("terms of use.")
+                    ])
+                  ])
                 ]
               )
             ])
@@ -38785,7 +38789,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -38798,6 +38802,41 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -38901,191 +38940,170 @@ var render = function() {
                 {
                   staticStyle: {
                     "margin-left": "1vmax",
-                    "text-align": "center",
-                    margin: "4px 0px 16px"
+                    margin: "4px 4px 16px"
                   }
                 },
                 [_vm._v("ABOUT US")]
               ),
               _vm._v(" "),
-              _c("hr", {
-                staticStyle: {
-                  "border-top": "3px solid #00877d",
-                  width: "40px",
-                  margin: "0 auto 20px"
-                }
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "conten-about",
-                  staticStyle: {
-                    "text-align": "center",
-                    "vertical-align": "middle"
-                  }
-                },
-                [
-                  _c("span", [
-                    _c("p", { staticStyle: { "font-weight": "600" } }, [
-                      _vm._v("Genebank Universitas Gadjah Mada")
+              _c("div", { staticClass: "container_12 minH-wrap" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "column col-md-6" }, [
+                    _c("h2", { staticClass: "color-2" }, [
+                      _vm._v("PT EAST WEST SEED INDONESIA")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "box-2" }, [
+                      _c("img", {
+                        staticClass: "img-bord wrapper",
+                        attrs: {
+                          src:
+                            "http://www.panahmerah.id/image/cache/data/page/ewindo-460x204.jpg",
+                          alt: "PT EAST WEST SEED INDONESIA"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("br", { attrs: { clear: "all" } }),
+                      _vm._v(" "),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("div", [
+                        _c("p", [
+                          _vm._v(
+                            "\n                                        PT EAST WEST SEED INDONESIA (EWINDO) is the first integrated vegetable seed company in Indonesia which produces vegetable seeds through plant breeding. EWINDO primarily aims for the development of local, cutting-edge seed industry to produce high quality vegetable seeds.\n\n                                        In developing seeds, EWINDO uses professionals who are experienced in the area of plant breeding and seed science. Vegetable seeds resulting from research and development are produced, processed, packed and marketed for Indonesian farmers with the brand CAP PANAH MERAH.\n\n                                        For more than two decades EWINDO always provides healthy seeds with high genetic purity and good germination in order to achieve good results aligning with the consumers’ wants and to become the key to success for INDONESIAN FARMERS."
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "box-2" }, [
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("img", {
+                        staticClass: "img-bord img-ind w1",
+                        attrs: {
+                          src:
+                            "http://www.panahmerah.id/image/cache/data/page/vision-mission-200x200.jpg",
+                          alt: "PT EAST WEST SEED INDONESIA"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", [
+                        _c("h3", { staticClass: "color-2" }, [
+                          _vm._v("Vision & Mission")
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "extra-wrap" }, [
+                          _c("p", [
+                            _c("strong", [_vm._v("VISION ")]),
+                            _vm._v(
+                              "We believe in high quality vegetable seeds for better living"
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("p", [
+                            _c("strong", [_vm._v("MISSION ")]),
+                            _vm._v(
+                              "Provide high quality seeds to increase farmers income and promote vegetable consumption"
+                            )
+                          ])
+                        ])
+                      ])
                     ])
                   ]),
                   _vm._v(" "),
-                  _c("p", [
-                    _vm._v("Copyright 2018 Smart System Research Group")
+                  _c("div", { staticClass: "column col-md-5 bord-1" }, [
+                    _c("h2", { staticClass: "color-2" }, [
+                      _vm._v("COMPANY VALUES")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "box-2" }, [
+                      _c("div", { staticClass: "clearfix" }, [
+                        _c("img", {
+                          staticClass: "img-bord img-ind w1",
+                          attrs: {
+                            src:
+                              "http://www.panahmerah.id/image/cache/data/page/about-1-108x135.jpg",
+                            alt: "Sahabat Petani yang paling Baik"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "extra-wrap" }, [
+                          _c("h3", { staticClass: "color-2" }, [
+                            _vm._v("Farmers' Best Friend")
+                          ]),
+                          _vm._v(" "),
+                          _c("p", [
+                            _vm._v(
+                              "Close to farmers to guide and encourage them to be successful farmers, solve all problems together by visiting and serving them unconditionally."
+                            )
+                          ])
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "box-2" }, [
+                      _c("div", { staticClass: "clearfix" }, [
+                        _c("img", {
+                          staticClass: "img-bord img-ind w1",
+                          attrs: {
+                            src:
+                              "http://www.panahmerah.id/image/cache/data/page/about-3-108x135.jpg",
+                            alt: "Karyawan yang Bahagia"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "extra-wrap" }, [
+                          _c("h3", { staticClass: "color-2" }, [
+                            _vm._v("Happy Employee")
+                          ]),
+                          _vm._v(" "),
+                          _c("p", [
+                            _vm._v(
+                              "Enthusiastic employees, who enjoy being part of the company, always strive to develop their capacities and competencies. There is no burden in working hard, work together from different backgrounds to achieve company goal effectively."
+                            )
+                          ])
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "box-2" }, [
+                      _c("div", { staticClass: "clearfix" }, [
+                        _c("img", {
+                          staticClass: "img-bord img-ind w1",
+                          attrs: {
+                            src:
+                              "http://www.panahmerah.id/image/cache/data/page/about-4-108x135.jpg",
+                            alt: "Inovatif"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "extra-wrap" }, [
+                          _c("h3", { staticClass: "color-2" }, [
+                            _vm._v("Innovation")
+                          ]),
+                          _vm._v(" "),
+                          _c("p", [
+                            _vm._v(
+                              "With all ability, EWINDO will try to find the best way to provide high quality seeds to the farmers. We continuously find novel ways in thoughts, services, technology by listening to the costumers’ and consumers’ need."
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
                   ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "h4",
-                {
-                  staticStyle: {
-                    "margin-left": "1vmax",
-                    "text-align": "center",
-                    margin: "64px 0px 16px"
-                  }
-                },
-                [_vm._v("OUR TEAM")]
-              ),
-              _vm._v(" "),
-              _c("hr", {
-                staticStyle: {
-                  "border-top": "3px solid #00877d",
-                  width: "40px",
-                  margin: "0 auto 20px"
-                }
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "row center",
-                  staticStyle: { width: "100%" },
-                  attrs: { align: "center" }
-                },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticStyle: {
-                        display: "inline-block",
-                        "margin-bottom": "30px"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticStyle: {
-                          height: "100px",
-                          margin: "30px",
-                          "border-radius": "50%"
-                        },
-                        attrs: { src: "img/member/wayan.jpg" }
-                      }),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [_c("strong", [_vm._v("I Wayan Mustika")])]),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [_vm._v("Supervisor")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticStyle: {
-                        display: "inline-block",
-                        "margin-bottom": "30px"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticStyle: {
-                          height: "100px",
-                          margin: "30px",
-                          "border-radius": "50%"
-                        },
-                        attrs: { src: "img/member/wildan.jpg" }
-                      }),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [
-                        _c("strong", [_vm._v("Wildan Ainurrahman")])
-                      ]),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [_vm._v("Back-end Developer")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticStyle: {
-                        display: "inline-block",
-                        "margin-bottom": "30px"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticStyle: {
-                          height: "100px",
-                          margin: "30px",
-                          "border-radius": "50%"
-                        },
-                        attrs: { src: "img/member/faiz.jpg" }
-                      }),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [_c("strong", [_vm._v("Hernawan Fa'iz A")])]),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [_vm._v("Back-end Developer")])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticStyle: {
-                        display: "inline-block",
-                        "margin-bottom": "30px"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticStyle: {
-                          height: "100px",
-                          margin: "30px",
-                          "border-radius": "50%"
-                        },
-                        attrs: { src: "img/member/priska.jpg" }
-                      }),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [
-                        _c("strong", [_vm._v("Rara Priska Yuniar")])
-                      ]),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [_vm._v("Front-end Developer")])
-                    ]
-                  )
-                ]
-              ),
+                ])
+              ]),
               _vm._v(" "),
               _c("br"),
               _vm._v(" "),
               _c(
-                "h4",
+                "h5",
                 {
                   staticStyle: {
                     "margin-left": "1vmax",
                     "text-align": "center",
+                    "font-size": "30px",
                     margin: "40px 0px 16px"
                   }
                 },
@@ -39103,7 +39121,7 @@ var render = function() {
               _c(
                 "div",
                 {
-                  staticClass: "row center",
+                  staticClass: " support row center",
                   staticStyle: { width: "100%" },
                   attrs: { align: "center" }
                 },
@@ -40264,7 +40282,7 @@ var render = function() {
     _c("section", { staticClass: "text-center", attrs: { id: "gall" } }, [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "gall_title" }, [
-          _c("h2", [_vm._v("gallery")])
+          _c("h4", [_vm._v("gallery")])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "colum" }, [
