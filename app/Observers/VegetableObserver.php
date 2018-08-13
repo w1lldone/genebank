@@ -43,5 +43,6 @@ class VegetableObserver
     {
         $vegetable->passport()->delete();
         $vegetable->attributes()->detach();
+        $vegetable->photos()->delete();
     }
 }
