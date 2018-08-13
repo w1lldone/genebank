@@ -26,9 +26,8 @@
             apiToken: '{{ auth()->check() ? env('API_TOKEN_DEVELOPMENT') : '' }}',
         }
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> --}}
     <script src="{{ mix('js/admin.js') }}"></script>
-    {{-- <script src="{{ url('js/toastr.min.js') }}"></script> --}}
 
   </body>
 
