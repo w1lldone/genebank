@@ -153,11 +153,7 @@ export default {
   },
   methods: {
     async loadVegetables(){
-      let response = await axios.get('/api/vegetables?load=passport', {
-        params: {
-          genus_id: this.genusId
-        }
-      })
+      let response = await axios.get(`/api/vegetables/${this.genusId}`)
       this.vegetables = response.data.data
     },
     async loadGenera(){
