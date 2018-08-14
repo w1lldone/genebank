@@ -5,6 +5,11 @@
 
     RewriteEngine On
 
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.[0-9]+$
+    RewriteCond %{REMOTE_ADDR} !=::1
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

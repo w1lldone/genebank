@@ -19,6 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['prefix' => 'genera'], function(){
     Route::get('/', 'GenusController@index');
+    Route::get('/{genus}', 'GenusController@show');
 });
 
 Route::group(['prefix' => 'species'], function(){
@@ -26,6 +27,7 @@ Route::group(['prefix' => 'species'], function(){
 
     Route::group(['middleware' => 'auth:api'], function(){
         Route::post('/', 'SpeciesController@store');
+        Route::delete('/{species}', 'SpeciesController@destroy');
     });
 });
 
@@ -40,7 +42,9 @@ Route::group(['prefix' => 'vegetables'], function(){
         Route::put('/{vegetable}', 'VegetableController@update');
         Route::put('/{vegetable}/attributes', 'VegetableAttributesController@update');
         Route::put('/{vegetable}/passport', 'PassportController@update');
-        Route::post('/{vegetable}/photo', 'VegetableController@storePhoto');
+        Route::post('/{vegetable}/photos', 'VegetablePhotoController@store');
+        Route::delete('/{vegetable}', 'VegetableController@destroy');
+        Route::delete('/photos/{photo}', 'VegetablePhotoController@destroy');
     });
 });
 

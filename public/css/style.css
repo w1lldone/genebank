@@ -1322,7 +1322,7 @@ ul.entry-meta {
     display: none;
 }
 
-/*select {
+select {
     display: inline-block;
     height:30px;
     padding: 2px 10px 2px 2px;
@@ -1333,9 +1333,5 @@ ul.entry-meta {
     box-shadow: inset 1px 1px 2px #ddd8dc;
     background: #fff;
     width: 191px;
-
-    &#perLow{
-        width: 60px;
-    }
-}*/
+}
 
