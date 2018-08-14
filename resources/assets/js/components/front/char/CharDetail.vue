@@ -12,8 +12,8 @@
                     <h5><b>{{ vegetable.species.genus.name }}</b></h5>
                     <br><br>
                     <div class="detail">
-                        <div class="col-md-6">
-                            <img src="/img/icons/image.svg" class="img-responsive">
+                        <div class="col-md-6" v-for="item in vegetable">
+                            <img :src="item.photo" alt="..." class="img-responsive">
                         </div>
                         <div id="list col-md-6 ">
                             <div class="table-responsive table-detail">

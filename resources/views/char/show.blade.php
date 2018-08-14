@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('content')
-    <char-vegetable-list genus="{{ $genus }}"></char-vegetable-list>
+    <char-vegetable-list :genus-id="{{ $genus }}"></char-vegetable-list>
 @endsection

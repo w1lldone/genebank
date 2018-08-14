@@ -91,7 +91,7 @@
           <br> <br>
           <!-- end of filters -->
         </div>
-        <h5 class="col-md-2"><b>Capsicum</b></h5><br><br><br>
+        <h5 class="col-md-2"><b>{{genera.name}}</b></h5><br><br><br>
         <div class="tbl-header tbl-content list-table">
           <table cellpadding="0" cellspacing="0" border="0">
             <thead>
@@ -118,7 +118,7 @@
                 <td></td>
                 <td>{{vegetable.passport.country}}</td>
                 <td>
-                  <a :href="url('/search/characterization/'+genus+'/'+vegetable.id)" class="btn btn-success">Details</a>
+                  <a :href="url('/search/characterization/'+genusId+'/'+vegetable.id)" class="btn btn-success">Details</a>
                 </td>
               </tr>
             </tbody>
@@ -136,8 +136,7 @@ export default {
 
   name: 'CharVegetableList',
   props: {
-    genus: String,
-    pin: String,
+    genusId: Number,
   },
   data () {
     return {
@@ -156,13 +155,13 @@ export default {
     async loadVegetables(){
       let response = await axios.get('/api/vegetables?load=passport', {
         params: {
-          genus_id: this.genus
+          genus_id: this.genusId
         }
       })
       this.vegetables = response.data.data
     },
     async loadGenera(){
-      let response = await axios.get(`/api/genera/${this.genus}`) 
+      let response = await axios.get(`/api/genera/${this.genusId}`) 
       this.genera = response.data.data
     },
   },

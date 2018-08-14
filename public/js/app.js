@@ -41175,7 +41175,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -41332,8 +41332,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
   name: 'CharVegetableList',
   props: {
-    genus: String,
-    pin: String
+    genusId: Number
   },
   data: function data() {
     return {
@@ -41360,7 +41359,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                 _context.next = 2;
                 return axios.get('/api/vegetables?load=passport', {
                   params: {
-                    genus_id: this.genus
+                    genus_id: this.genusId
                   }
                 });
 
@@ -41391,7 +41390,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return axios.get('/api/genera/' + this.genus);
+                return axios.get('/api/genera/' + this.genusId);
 
               case 2:
                 response = _context2.sent;
@@ -41730,7 +41729,9 @@ var render = function() {
           _c("br")
         ]),
         _vm._v(" "),
-        _c("h5", { staticClass: "col-md-2" }, [_c("b", [_vm._v("Capsicum")])]),
+        _c("h5", { staticClass: "col-md-2" }, [
+          _c("b", [_vm._v(_vm._s(_vm.genera.name))])
+        ]),
         _c("br"),
         _c("br"),
         _c("br"),
@@ -41792,7 +41793,7 @@ var render = function() {
                           attrs: {
                             href: _vm.url(
                               "/search/characterization/" +
-                                _vm.genus +
+                                _vm.genusId +
                                 "/" +
                                 vegetable.id
                             )
@@ -42243,516 +42244,525 @@ var render = function() {
             _c("br"),
             _c("br"),
             _vm._v(" "),
-            _c("div", { staticClass: "detail" }, [
-              _c("div", { staticClass: "col-md-6" }, [
-                _c("img", {
-                  staticClass: "img-responsive",
-                  attrs: { src: "/img/icons/image.svg" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { attrs: { id: "list col-md-6 " } }, [
-                _c("div", { staticClass: "table-responsive table-detail" }, [
-                  _c("table", { staticClass: "table" }, [
-                    _c("tbody", [
-                      _c("tr", [
-                        _c("td", [_vm._v("Vegetable introduction number")]),
+            _c(
+              "div",
+              { staticClass: "detail" },
+              [
+                _vm._l(_vm.vegetable, function(item) {
+                  return _c("div", { staticClass: "col-md-6" }, [
+                    _c("img", {
+                      staticClass: "img-responsive",
+                      attrs: { src: item.photo, alt: "..." }
+                    })
+                  ])
+                }),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "list col-md-6 " } }, [
+                  _c("div", { staticClass: "table-responsive table-detail" }, [
+                    _c("table", { staticClass: "table" }, [
+                      _c("tbody", [
+                        _c("tr", [
+                          _c("td", [_vm._v("Vegetable introduction number")]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _vm._v(
+                              _vm._s(_vm.vegetable.plant_introduction_number)
+                            )
+                          ])
+                        ]),
                         _vm._v(" "),
-                        _c("td", [
-                          _vm._v(
-                            _vm._s(_vm.vegetable.plant_introduction_number)
-                          )
+                        _c("tr", [
+                          _c("td", [_vm._v("Temporary Number")]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _vm._v(_vm._s(_vm.vegetable.temporary_number))
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Variant")]),
+                          _vm._v(" "),
+                          _c("td")
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Characterized Year and Season")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("1986SP")])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Species")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v(_vm._s(_vm.vegetable.species.name))])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Cultivar Name")]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _vm._v(_vm._s(_vm.vegetable.cultivar_name))
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Species")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("ANNUM")])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Subtaxa")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("VAR. RADIATA")])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Genus")]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _vm._v(_vm._s(_vm.vegetable.species.genus.name))
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Country")]),
+                          _vm._v(" "),
+                          _c("td")
                         ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Temporary Number")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _vm._v(_vm._s(_vm.vegetable.temporary_number))
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Variant")]),
-                        _vm._v(" "),
-                        _c("td")
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Characterized Year and Season")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("1986SP")])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Species")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(_vm.vegetable.species.name))])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Cultivar Name")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(_vm.vegetable.cultivar_name))])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Species")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("ANNUM")])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Subtaxa")]),
-                        _vm._v(" "),
-                        _c("td", [_vm._v("VAR. RADIATA")])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Genus")]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _vm._v(_vm._s(_vm.vegetable.species.genus.name))
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", [_vm._v("Country")]),
-                        _vm._v(" "),
-                        _c("td")
                       ])
                     ])
                   ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _c("br"),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-10 panel-group",
-                  attrs: {
-                    id: "accordion",
-                    role: "tablist",
-                    "aria-multiselectable": "true"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "panel panel-default" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-heading",
-                        attrs: { role: "tab", id: "headingOne" }
-                      },
-                      [
-                        _c("h4", { staticClass: "panel-title" }, [
-                          _c(
-                            "a",
-                            {
-                              attrs: {
-                                role: "button",
-                                "data-toggle": "collapse",
-                                "data-parent": "#accordion",
-                                href: "#collapseOne",
-                                "aria-expanded": "true",
-                                "aria-controls": "collapseOne"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                                SEEDLING DATA\n                              "
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _c("br"),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "col-md-10 panel-group",
+                    attrs: {
+                      id: "accordion",
+                      role: "tablist",
+                      "aria-multiselectable": "true"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "panel panel-default" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-heading",
+                          attrs: { role: "tab", id: "headingOne" }
+                        },
+                        [
+                          _c("h4", { staticClass: "panel-title" }, [
+                            _c(
+                              "a",
+                              {
+                                attrs: {
+                                  role: "button",
+                                  "data-toggle": "collapse",
+                                  "data-parent": "#accordion",
+                                  href: "#collapseOne",
+                                  "aria-expanded": "true",
+                                  "aria-controls": "collapseOne"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                SEEDLING DATA\n                              "
+                                )
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "panel-collapse collapse in",
+                          attrs: {
+                            id: "collapseOne",
+                            role: "tabpanel",
+                            "aria-labelledby": "headingOne"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "panel-body" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "col-md-10 table-responsive table-detail"
+                              },
+                              [
+                                _c("table", { staticClass: "table" }, [
+                                  _c(
+                                    "tbody",
+                                    _vm._l(_vm.seedlings, function(item) {
+                                      return _c("tr", [
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                        " +
+                                              _vm._s(item.name) +
+                                              "\n                                                    "
+                                          )
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("td", [
+                                          _vm._v(
+                                            "\n                                                        " +
+                                              _vm._s(item.value) +
+                                              "\n                                                    "
+                                          )
+                                        ])
+                                      ])
+                                    })
+                                  )
+                                ])
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "panel panel-default" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "panel-heading",
+                            attrs: { role: "tab", id: "headingTwo" }
+                          },
+                          [
+                            _c("h4", { staticClass: "panel-title" }, [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "collapsed",
+                                  attrs: {
+                                    role: "button",
+                                    "data-toggle": "collapse",
+                                    "data-parent": "#accordion",
+                                    href: "#collapseTwo",
+                                    "aria-expanded": "false",
+                                    "aria-controls": "collapseTwo"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                VEGETATIVE DATA\n                              "
+                                  )
+                                ]
                               )
-                            ]
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "panel-collapse collapse in",
-                        attrs: {
-                          id: "collapseOne",
-                          role: "tabpanel",
-                          "aria-labelledby": "headingOne"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "panel-body" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "col-md-10 table-responsive table-detail"
-                            },
-                            [
-                              _c("table", { staticClass: "table" }, [
-                                _c(
-                                  "tbody",
-                                  _vm._l(_vm.seedlings, function(item) {
-                                    return _c("tr", [
-                                      _c("td", [
-                                        _vm._v(
-                                          "\n                                                        " +
-                                            _vm._s(item.name) +
-                                            "\n                                                    "
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td", [
-                                        _vm._v(
-                                          "\n                                                        " +
-                                            _vm._s(item.value) +
-                                            "\n                                                    "
-                                        )
-                                      ])
-                                    ])
-                                  })
-                                )
-                              ])
-                            ]
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "panel panel-default" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-heading",
-                          attrs: { role: "tab", id: "headingTwo" }
-                        },
-                        [
-                          _c("h4", { staticClass: "panel-title" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "collapsed",
-                                attrs: {
-                                  role: "button",
-                                  "data-toggle": "collapse",
-                                  "data-parent": "#accordion",
-                                  href: "#collapseTwo",
-                                  "aria-expanded": "false",
-                                  "aria-controls": "collapseTwo"
-                                }
-                              },
-                              [
-                                _vm._v(
-                                  "\n                                VEGETATIVE DATA\n                              "
-                                )
-                              ]
-                            )
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-collapse collapse",
-                          attrs: {
-                            id: "collapseTwo",
-                            role: "tabpanel",
-                            "aria-labelledby": "headingTwo"
-                          }
-                        },
-                        [
-                          _c("div", { staticClass: "panel-body" }, [
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "col-md-10 table-responsive table-detail"
-                              },
-                              [
-                                _c("table", { staticClass: "table" }, [
-                                  _c(
-                                    "tbody",
-                                    _vm._l(_vm.vegetative, function(item) {
-                                      return _c("tr", [
-                                        _c("td", [
-                                          _vm._v(
-                                            "\n                                                    " +
-                                              _vm._s(item.name) +
-                                              "\n                                                "
-                                          )
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(
-                                            "\n                                                    " +
-                                              _vm._s(item.value) +
-                                              "\n                                                "
-                                          )
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "panel-collapse collapse",
+                            attrs: {
+                              id: "collapseTwo",
+                              role: "tabpanel",
+                              "aria-labelledby": "headingTwo"
+                            }
+                          },
+                          [
+                            _c("div", { staticClass: "panel-body" }, [
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "col-md-10 table-responsive table-detail"
+                                },
+                                [
+                                  _c("table", { staticClass: "table" }, [
+                                    _c(
+                                      "tbody",
+                                      _vm._l(_vm.vegetative, function(item) {
+                                        return _c("tr", [
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.name) +
+                                                "\n                                                "
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.value) +
+                                                "\n                                                "
+                                            )
+                                          ])
                                         ])
-                                      ])
-                                    })
-                                  )
-                                ])
-                              ]
-                            )
-                          ])
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "panel panel-default" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-heading",
-                          attrs: { role: "tab", id: "headingThree" }
-                        },
-                        [
-                          _c("h4", { staticClass: "panel-title" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "collapsed",
-                                attrs: {
-                                  role: "button",
-                                  "data-toggle": "collapse",
-                                  "data-parent": "#accordion",
-                                  href: "#collapseThree",
-                                  "aria-expanded": "false",
-                                  "aria-controls": "collapseThree"
-                                }
-                              },
-                              [
-                                _vm._v(
-                                  "\n                                INFLORESCENCE DATA\n                              "
-                                )
-                              ]
-                            )
-                          ])
-                        ]
-                      ),
+                                      })
+                                    )
+                                  ])
+                                ]
+                              )
+                            ])
+                          ]
+                        )
+                      ]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-collapse collapse",
-                          attrs: {
-                            id: "collapseThree",
-                            role: "tabpanel",
-                            "aria-labelledby": "headingThree"
-                          }
-                        },
-                        [
-                          _c("div", { staticClass: "panel-body" }, [
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "col-md-10 table-responsive table-detail"
-                              },
-                              [
-                                _c("table", { staticClass: "table" }, [
-                                  _c(
-                                    "tbody",
-                                    _vm._l(_vm.inflorescence, function(item) {
-                                      return _c("tr", [
-                                        _c("td", [
-                                          _vm._v(
-                                            "\n                                                    " +
-                                              _vm._s(item.name) +
-                                              "\n                                                "
-                                          )
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(
-                                            "\n                                                    " +
-                                              _vm._s(item.value) +
-                                              "\n                                                "
-                                          )
-                                        ])
-                                      ])
-                                    })
+                      _c("div", { staticClass: "panel panel-default" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "panel-heading",
+                            attrs: { role: "tab", id: "headingThree" }
+                          },
+                          [
+                            _c("h4", { staticClass: "panel-title" }, [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "collapsed",
+                                  attrs: {
+                                    role: "button",
+                                    "data-toggle": "collapse",
+                                    "data-parent": "#accordion",
+                                    href: "#collapseThree",
+                                    "aria-expanded": "false",
+                                    "aria-controls": "collapseThree"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                INFLORESCENCE DATA\n                              "
                                   )
-                                ])
-                              ]
-                            )
-                          ])
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "panel panel-default" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-heading",
-                          attrs: { role: "tab", id: "headingFor" }
-                        },
-                        [
-                          _c("h4", { staticClass: "panel-title" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "collapsed",
-                                attrs: {
-                                  role: "button",
-                                  "data-toggle": "collapse",
-                                  "data-parent": "#accordion",
-                                  href: "#collapseFor",
-                                  "aria-expanded": "false",
-                                  "aria-controls": "collapseFor"
-                                }
-                              },
-                              [
-                                _vm._v(
-                                  "\n                                FRUIT DATA\n                              "
-                                )
-                              ]
-                            )
-                          ])
-                        ]
-                      ),
+                                ]
+                              )
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "panel-collapse collapse",
+                            attrs: {
+                              id: "collapseThree",
+                              role: "tabpanel",
+                              "aria-labelledby": "headingThree"
+                            }
+                          },
+                          [
+                            _c("div", { staticClass: "panel-body" }, [
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "col-md-10 table-responsive table-detail"
+                                },
+                                [
+                                  _c("table", { staticClass: "table" }, [
+                                    _c(
+                                      "tbody",
+                                      _vm._l(_vm.inflorescence, function(item) {
+                                        return _c("tr", [
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.name) +
+                                                "\n                                                "
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.value) +
+                                                "\n                                                "
+                                            )
+                                          ])
+                                        ])
+                                      })
+                                    )
+                                  ])
+                                ]
+                              )
+                            ])
+                          ]
+                        )
+                      ]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-collapse collapse",
-                          attrs: {
-                            id: "collapseFor",
-                            role: "tabpanel",
-                            "aria-labelledby": "headingFor"
-                          }
-                        },
-                        [
-                          _c("div", { staticClass: "panel-body" }, [
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "col-md-10 table-responsive table-detail"
-                              },
-                              [
-                                _c("table", { staticClass: "table" }, [
-                                  _c(
-                                    "tbody",
-                                    _vm._l(_vm.fruit, function(item) {
-                                      return _c("tr", [
-                                        _c("td", [
-                                          _vm._v(
-                                            "\n                                                    " +
-                                              _vm._s(item.name) +
-                                              "\n                                                "
-                                          )
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(
-                                            "\n                                                    " +
-                                              _vm._s(item.value) +
-                                              "\n                                                "
-                                          )
-                                        ])
-                                      ])
-                                    })
+                      _c("div", { staticClass: "panel panel-default" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "panel-heading",
+                            attrs: { role: "tab", id: "headingFor" }
+                          },
+                          [
+                            _c("h4", { staticClass: "panel-title" }, [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "collapsed",
+                                  attrs: {
+                                    role: "button",
+                                    "data-toggle": "collapse",
+                                    "data-parent": "#accordion",
+                                    href: "#collapseFor",
+                                    "aria-expanded": "false",
+                                    "aria-controls": "collapseFor"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                FRUIT DATA\n                              "
                                   )
-                                ])
-                              ]
-                            )
-                          ])
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "panel panel-default" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-heading",
-                          attrs: { role: "tab", id: "headingFive" }
-                        },
-                        [
-                          _c("h4", { staticClass: "panel-title" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "collapsed",
-                                attrs: {
-                                  role: "button",
-                                  "data-toggle": "collapse",
-                                  "data-parent": "#accordion",
-                                  href: "#collapseFive",
-                                  "aria-expanded": "false",
-                                  "aria-controls": "collapseFive"
-                                }
-                              },
-                              [
-                                _vm._v(
-                                  "\n                                SEED DATA\n                              "
-                                )
-                              ]
-                            )
-                          ])
-                        ]
-                      ),
+                                ]
+                              )
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "panel-collapse collapse",
+                            attrs: {
+                              id: "collapseFor",
+                              role: "tabpanel",
+                              "aria-labelledby": "headingFor"
+                            }
+                          },
+                          [
+                            _c("div", { staticClass: "panel-body" }, [
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "col-md-10 table-responsive table-detail"
+                                },
+                                [
+                                  _c("table", { staticClass: "table" }, [
+                                    _c(
+                                      "tbody",
+                                      _vm._l(_vm.fruit, function(item) {
+                                        return _c("tr", [
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.name) +
+                                                "\n                                                "
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.value) +
+                                                "\n                                                "
+                                            )
+                                          ])
+                                        ])
+                                      })
+                                    )
+                                  ])
+                                ]
+                              )
+                            ])
+                          ]
+                        )
+                      ]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "panel-collapse collapse",
-                          attrs: {
-                            id: "collapseFive",
-                            role: "tabpanel",
-                            "aria-labelledby": "headingFive"
-                          }
-                        },
-                        [
-                          _c("div", { staticClass: "panel-body" }, [
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "col-md-10 table-responsive table-detail"
-                              },
-                              [
-                                _c("table", { staticClass: "table" }, [
-                                  _c(
-                                    "tbody",
-                                    _vm._l(_vm.seed, function(item) {
-                                      return _c("tr", [
-                                        _c("td", [
-                                          _vm._v(
-                                            "\n                                                    " +
-                                              _vm._s(item.name) +
-                                              "\n                                                "
-                                          )
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("td", [
-                                          _vm._v(
-                                            "\n                                                    " +
-                                              _vm._s(item.value) +
-                                              "\n                                                "
-                                          )
-                                        ])
-                                      ])
-                                    })
+                      _c("div", { staticClass: "panel panel-default" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "panel-heading",
+                            attrs: { role: "tab", id: "headingFive" }
+                          },
+                          [
+                            _c("h4", { staticClass: "panel-title" }, [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "collapsed",
+                                  attrs: {
+                                    role: "button",
+                                    "data-toggle": "collapse",
+                                    "data-parent": "#accordion",
+                                    href: "#collapseFive",
+                                    "aria-expanded": "false",
+                                    "aria-controls": "collapseFive"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                SEED DATA\n                              "
                                   )
-                                ])
-                              ]
-                            )
-                          ])
-                        ]
-                      )
+                                ]
+                              )
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "panel-collapse collapse",
+                            attrs: {
+                              id: "collapseFive",
+                              role: "tabpanel",
+                              "aria-labelledby": "headingFive"
+                            }
+                          },
+                          [
+                            _c("div", { staticClass: "panel-body" }, [
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "col-md-10 table-responsive table-detail"
+                                },
+                                [
+                                  _c("table", { staticClass: "table" }, [
+                                    _c(
+                                      "tbody",
+                                      _vm._l(_vm.seed, function(item) {
+                                        return _c("tr", [
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.name) +
+                                                "\n                                                "
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _vm._v(
+                                              "\n                                                    " +
+                                                _vm._s(item.value) +
+                                                "\n                                                "
+                                            )
+                                          ])
+                                        ])
+                                      })
+                                    )
+                                  ])
+                                ]
+                              )
+                            ])
+                          ]
+                        )
+                      ])
                     ])
-                  ])
-                ]
-              )
-            ])
+                  ]
+                )
+              ],
+              2
+            )
           ])
         ])
       ])
