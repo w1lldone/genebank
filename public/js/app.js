@@ -38225,7 +38225,7 @@ var render = function() {
                     },
                     [
                       _c("img", {
-                        attrs: { src: _vm.url("/img/logo.png"), alt: "" }
+                        attrs: { src: _vm.url("/img/PanahMerah.png"), alt: "" }
                       })
                     ]
                   )

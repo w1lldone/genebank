@@ -12,7 +12,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand custom_navbar-brand" :href="url('/')"><img :src="url('/img/logo.png')" alt=""></a>
+                            <a class="navbar-brand custom_navbar-brand" :href="url('/')"><img :src="url('/img/PanahMerah.png')" alt=""></a>
                         </div>
                         <!--End of navbar-header-->
 

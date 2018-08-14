@@ -247,8 +247,8 @@ input: -webkit-autofill:focus {
     border: 0px solid transparent;
 }
 #header .header_menu .custom_navbar-brand img{
-        height: 50px;
-        width: 80%;
+        height: 60px;
+        width: 90%;
         padding-left: 0;
     }
 /*for firefox*/
@@ -257,8 +257,8 @@ input: -webkit-autofill:focus {
 /*for chrome*/
 @media screen and (-webkit-min-device-pixel-ratio:0){
     #header .header_menu .custom_navbar-brand{
-        height: 15px;
-        width: 15%;
+        height: 60px;
+        width: 90%;
         display: flex;
         margin-bottom: -25px;
         padding-left: 0;
