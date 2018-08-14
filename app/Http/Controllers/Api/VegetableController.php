@@ -38,7 +38,7 @@ class VegetableController extends Controller
         $data = $request->validate([
             'species_id' => 'required|exists:species,id',
             'cultivar_name' => 'nullable|string',
-            'temporary_number' => 'nullable|string|unique:vegetables',
+            'temporary_number' => 'nullable|unique:vegetables',
         ]);
 
         $vegetable = Vegetable::create($data);
@@ -70,10 +70,19 @@ class VegetableController extends Controller
     {
         $data = $request->validate([
             'cultivar_name' => 'nullable|string',
+            'species_id' => 'exists:species,id',
+            'temporary_number' => 'nullable|string',
         ]);
 
         $vegetable->update($data);
 
         return new VegetablesResource($vegetable);
+    }
+
+    public function destroy(Vegetable $vegetable)
+    {
+        $vegetable->delete();
+
+        return response(null, 204);
     }
 }
