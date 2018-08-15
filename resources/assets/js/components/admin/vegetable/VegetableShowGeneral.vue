@@ -43,6 +43,14 @@
                   <input type="text" name="temporary_number" class="form-control" v-model="inputs.temporary_number">
               </div>
           </div>
+          <div class="form-group row">
+              <label class="col-md-2">
+                  Subtaxa
+              </label>
+              <div class="col-md-3">
+                  <input type="text" name="temporary_number" class="form-control" v-model="inputs.subtaxa">
+              </div>
+          </div>
         </div>
         <div class="form-group row">
           <div class="col-md-7 text-right">
@@ -64,6 +72,7 @@ export default {
     species_id: Number,
     temporary_number: String,
     cultivar_name: String,
+    subtaxa: String,
   },
   data () {
     return {
