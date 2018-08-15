@@ -25,12 +25,13 @@ class VegetablesResource extends JsonResource
             'cultivar_name' => $this->cultivar_name,
             'temporary_number' => $this->temporary_number,
             'plant_introduction_number' => $this->plant_introduction_number,
+            'subtaxa' => $this->subtaxa,
             'photos' => PhotosResource::collection($this->photos),
-            'created_at' => $this->created_at->toDateTimeString(),
-            'updated_at' => $this->updated_at->toDateTimeString(),
             'characters' => AttributesResource::collection($this->whenLoaded('characters')),
             'evaluations' => AttributesResource::collection($this->whenLoaded('evaluations')),
             'passport' => new PassportsResource($this->whenLoaded('passport')),
+            'created_at' => $this->created_at->toDateTimeString(),
+            'updated_at' => $this->updated_at->toDateTimeString(),
         ];
     }
 
