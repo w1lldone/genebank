@@ -257,8 +257,8 @@ input: -webkit-autofill:focus {
 /*for chrome*/
 @media screen and (-webkit-min-device-pixel-ratio:0){
     #header .header_menu .custom_navbar-brand{
-        height: 60px;
-        width: 90%;
+        height: 30px;
+        width: 40%;
         display: flex;
         margin-bottom: -25px;
         padding-left: 0;
@@ -1878,16 +1878,17 @@ select {
         font-size: 10px;
     }
     #header .header_menu .custom_navbar-brand {
-        padding-top: 8px;
-        height: 40px;
-        width: 125px;
+        /*padding-top: 8px;*/
+        /*height: 0px;*/
+        width: 40%;
         padding-left: 0;
-        margin-top: 0px;
+        margin-top: -10px;
         margin-left: 0px;
+        /*transform: scale(.80);*/
     }
-    #header .header_menu .custom_navbar-brand>img {
+    /*#header .header_menu .custom_navbar-brand>img {
         width: 75%;
-    }
+    }*/
     #header .header_menu {
         min-height: 60px;
     }
@@ -2410,13 +2411,14 @@ select {
     #header .navbar-header{
         /*margin-right: 70px;*/
     }
-    #header .header_menu .custom_navbar-brand {
-        padding-top: 8px;
-        height: 30px;
-        width: 100px;
+     #header .header_menu .custom_navbar-brand {
+        /*padding-top: 8px;*/
+        /*height: 0px;*/
+        width: 90%;
         padding-left: 0;
-        margin-top: 0px;
+        margin-top: -10px;
         margin-left: 0px;
+        /*transform: scale(.80);*/
     }
     #header .header_menu .custom_navbar-brand>img {
         width: 75%;
@@ -2769,11 +2771,11 @@ select {
         font-size: 7px;
     }
     #header .header_menu .custom_navbar-brand {
-        padding-top: 8px;
-        height: 20px;
-        width: 85px;
+        /*padding-top: 8px;*/
+        /*height: 0px;*/
+        width: 90%;
         padding-left: 0;
-        margin-top: 0px;
+        margin-top: -70px;
         margin-left: 0px;
         /*transform: scale(.80);*/
     }
@@ -3030,9 +3032,7 @@ select {
         margin-top: 0px;
         border: 1px solid rgba(255,255,255,0.3);
     }
-    #header img{
-        
-    }
+    
     .container{
         /*margin-left: 20px;*/
     }

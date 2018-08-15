@@ -32706,7 +32706,7 @@ var render = function() {
                     },
                     [
                       _c("img", {
-                        attrs: { src: _vm.url("/img/PanahMerah.png"), alt: "" }
+                        attrs: { src: _vm.url("/img/logoPM.PNG"), alt: "" }
                       })
                     ]
                   )
@@ -32979,12 +32979,12 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "carousel-caption" }, [
                     _c("div", { staticClass: "slider_text" }, [
-                      _c("h3", [_vm._v("Genetic Resources & Seed Unit")]),
+                      _c("h3", [_vm._v("Sumber Daya Genetik & Unit Benih")]),
                       _c("br"),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "Initially, AVRDC’s genebank collection only addressed specific needs of crop breeders. Gradually it grew into a multiple-use collection for research and development at the global level. The large number of vegetable species (438) now included in AVRDC’s genebank collection enables us not only to conserve, explore and utilize vegetable biodiversity, but also to contribute to the diversification of vegetable production systems and consumption patterns in the developing world."
+                          "Awalnya, koleksi genebank AVRDC hanya membahas kebutuhan khusus pemulia tanaman. Berangsur-angsur tumbuh menjadi koleksi multi guna untuk penelitian dan pengembangan di tingkat global. Sejumlah besar spesies sayuran (438) yang sekarang termasuk dalam koleksi genebank AVRDC memungkinkan kita tidak hanya untuk melestarikan, mengeksplorasi dan memanfaatkan keanekaragaman hayati sayuran, tetapi juga berkontribusi terhadap diversifikasi sistem produksi sayuran dan pola konsumsi di negara berkembang."
                         )
                       ])
                     ])
@@ -32998,12 +32998,12 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "carousel-caption" }, [
                     _c("div", { staticClass: "slider_text" }, [
-                      _c("h3", [_vm._v("Keeping the collection safe")]),
+                      _c("h3", [_vm._v("Menjaga Penyimpanan Tetap Aman")]),
                       _c("br"),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "A new seed storage facility was completed in 2010 to provide a safe storage environment for AVRDC’s extensive germplasm collection. The floor of the facility has been substantially raised above ground to protect the collection from flooding and other natural disasters. "
+                          "Fasilitas penyimpanan benih baru selesai pada tahun 2010 untuk menyediakan lingkungan penyimpanan yang aman untuk koleksi plasma nutfah AVRDC yang luas. Lantai fasilitas lebih ditinggikan di atas tanah untuk melindungi dari banjir dan bencana alam lainnya. Pusat menyimpulkan pengaturan kotak hitam untuk cadangan keselamatan dari plasma nutfah yang paling berharga dengan Nordic Genetic Resource Center di Norwegia dan bank gen dari National Agrobiodiversity Center of the Rural Development Administration (RDA) di Korea Selatan."
                         )
                       ])
                     ])
@@ -33017,12 +33017,12 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "carousel-caption" }, [
                     _c("div", { staticClass: "slider_text" }, [
-                      _c("h3", [_vm._v("Germplasm characterization")]),
+                      _c("h3", [_vm._v("Karakterisasi Plasma Nutfah")]),
                       _c("br"),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "Germplasm characterization is the recording of characters or traits that are highly heritable or can be easily seen and are expressed in all environments. Characterization is a common responsibility of genebank curators; AVGRIS makes the easy and quick discrimination between accessions or phenotypes possible."
+                          "Benih dalam penyimpanan akan habis seiring waktu. Maka sangat penting dalam penyimpanan benih diisi ulang untuk memastikan kelanjutan konservasi bahan plasma nutfah dan distribusinya kepada pengguna di seluruh dunia. Program regenerasi AVRDC bertujuan untuk memaksimalkan produksi benih, meminimalkan siklus regenerasi, menjaga integritas genetik populasi dan memaksimalkan kualitas benih."
                         )
                       ])
                     ])
@@ -33046,7 +33046,7 @@ var render = function() {
                   staticClass: "wow bounce",
                   attrs: { "data-wow-delay": "0.2s" }
                 },
-                [_vm._v("welcome to bank plasma nutfah")]
+                [_vm._v("selamat datang di bank plasma nutfah")]
               ),
               _c("br"),
               _vm._v(" "),
@@ -33058,11 +33058,11 @@ var render = function() {
                 },
                 [
                   _vm._v(
-                    "The AVRDC Vegetable Genetic Resources Information System (AVGRIS) is an information system that manages the data of all vegetable germplasm conserved in the AVRDC genebank. The Genetic Resources and Seed Unit uses this system to efficiently manage genebank operations. AVGRIS links all germplasm conservation and management operations, from registration, characterization, evaluation and seed inventory to seed distribution to end-users.\n                        AVGRIS provides the user direct access to germplasm data through the internet.\n                        Use of the system is FREE but please first read the "
+                    "Bank Plasma Nutfah adalah sistem informasi yang mengelola data semua plasma nutfah sayuran yang disimpan di bank gen AVRDC. Sumber Daya Genetik dan Unit Benih menggunakan sistem ini untuk mengelola operasional genebank secara efisien. AVGRIS menghubungkan semua operasi konservasi dan manajemen plasma nutfah, mulai dari pendaftaran, karakterisasi, evaluasi dan inventarisasi benih hingga distribusi benih hingga pengguna akhir.\n                        AVGRIS menyediakan akses langsung pengguna ke data plasma nutfah melalui internet.\n                        Penggunaan sistem ini GRATIS tetapi mohon dibaca terlebih dahulu"
                   ),
                   _c("span", [
                     _c("a", { attrs: { href: _vm.url("/terms") } }, [
-                      _vm._v("terms of use.")
+                      _vm._v("persyaratan pengguna (terms of use).")
                     ])
                   ])
                 ]
@@ -33088,7 +33088,7 @@ var render = function() {
                     _c("br"),
                     _vm._v(" "),
                     _c("p", [
-                      _vm._v("Assists GRSU staff in day-to-day activities.")
+                      _vm._v("Membantu staf GRSU dalam kegiatan sehari-hari.")
                     ])
                   ]
                 )
@@ -33113,7 +33113,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("p", [
                       _vm._v(
-                        "Facilitates recording, storage and maintenance of germplasm data."
+                        "Memudahkan perekaman, penyimpanan dan pemeliharaan data plasma nutfah."
                       )
                     ])
                   ]
@@ -33139,7 +33139,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("p", [
                       _vm._v(
-                        "Provides direct access to information pertaining to accessions in the genebank."
+                        "Menyediakan akses langsung ke informasi yang berkaitan dengan aksesi di bank gen."
                       )
                     ])
                   ]
@@ -33163,7 +33163,11 @@ var render = function() {
                     ]),
                     _c("br"),
                     _vm._v(" "),
-                    _c("p", [_vm._v("Allows requests for the desired seeds.")])
+                    _c("p", [
+                      _vm._v(
+                        "Memungkinkan permintaan untuk benih yang diinginkan."
+                      )
+                    ])
                   ]
                 )
               ])
@@ -33270,7 +33274,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -33283,7 +33287,6 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
-//
 //
 //
 //
@@ -33451,7 +33454,7 @@ var render = function() {
                       _c("div", [
                         _c("p", [
                           _vm._v(
-                            "\n                                        PT EAST WEST SEED INDONESIA (EWINDO) is the first integrated vegetable seed company in Indonesia which produces vegetable seeds through plant breeding. EWINDO primarily aims for the development of local, cutting-edge seed industry to produce high quality vegetable seeds.\n\n                                        In developing seeds, EWINDO uses professionals who are experienced in the area of plant breeding and seed science. Vegetable seeds resulting from research and development are produced, processed, packed and marketed for Indonesian farmers with the brand CAP PANAH MERAH.\n\n                                        For more than two decades EWINDO always provides healthy seeds with high genetic purity and good germination in order to achieve good results aligning with the consumers’ wants and to become the key to success for INDONESIAN FARMERS."
+                            "\n                                        PT EAST WEST SEED INDONESIA (EWINDO) adalah perusahaan benih sayuran terpadu pertama di Indonesia yang menghasilkan benih unggul sayuran melalui kegiatan pemuliaan tanaman. EWINDO mempunyai tujuan utama dalam pengembangan industri benih lokal yang canggih untuk menghasilkan benih sayur berkualitas tinggi.\n\n                                        Dalam pengembangan benih EWINDO menempatkan tenaga ahli profesional yang telah berpengalaman di bidang pemuliaan tanaman dan perbenihan. Hasil penelitian dan pengembangan benih sayuran ini diproduksi, diproses dan dikemas serta dipasarkan untuk petani Indonesia dengan merek dagang CAP PANAH MERAH.\n\n                                        Lebih dari dua dekade EWINDO selalu menyediakan benih yang sehat dengan kemurnian genetika tinggi serta daya kecambah yang baik untuk mendapatkan hasil yang tinggi sesuai dengan permintaan konsumen dan menjadi kunci sukses PETANI INDONESIA."
                           )
                         ])
                       ])
@@ -33471,21 +33474,21 @@ var render = function() {
                       _vm._v(" "),
                       _c("div", [
                         _c("h3", { staticClass: "color-2" }, [
-                          _vm._v("Vision & Mission")
+                          _vm._v("Visi & Misi")
                         ]),
                         _vm._v(" "),
                         _c("div", { staticClass: "extra-wrap" }, [
                           _c("p", [
-                            _c("strong", [_vm._v("VISION ")]),
+                            _c("strong", [_vm._v("VISI ")]),
                             _vm._v(
-                              "We believe in high quality vegetable seeds for better living"
+                              "Kami percaya pada benih sayuran berkualitas tinggi untuk hidup yang lebih baik"
                             )
                           ]),
                           _vm._v(" "),
                           _c("p", [
-                            _c("strong", [_vm._v("MISSION ")]),
+                            _c("strong", [_vm._v("MISI ")]),
                             _vm._v(
-                              "Provide high quality seeds to increase farmers income and promote vegetable consumption"
+                              "Menyediakan benih berkualitas tinggi untuk meningkatkan pendapatan petani dan memperbesar konsumsi sayuran"
                             )
                           ])
                         ])
@@ -33495,7 +33498,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "column col-md-5 bord-1" }, [
                     _c("h2", { staticClass: "color-2" }, [
-                      _vm._v("COMPANY VALUES")
+                      _vm._v("NILAI PERUSAHAAN")
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "box-2" }, [
@@ -33510,13 +33513,11 @@ var render = function() {
                         }),
                         _vm._v(" "),
                         _c("div", { staticClass: "extra-wrap" }, [
-                          _c("h3", { staticClass: "color-2" }, [
-                            _vm._v("Farmers' Best Friend")
-                          ]),
+                          _vm._v("Sahabat Petani yang Paling Baik"),
                           _vm._v(" "),
                           _c("p", [
                             _vm._v(
-                              "Close to farmers to guide and encourage them to be successful farmers, solve all problems together by visiting and serving them unconditionally."
+                              "Selalu dekat dengan petani untuk membimbing dan mendorong mereka agar menjadi petani sukses dan memecahkan permasalahan bersama-sama. Bersedia mengunjungi dan melayani petani apapun kondisinya."
                             )
                           ])
                         ])
@@ -33536,12 +33537,12 @@ var render = function() {
                         _vm._v(" "),
                         _c("div", { staticClass: "extra-wrap" }, [
                           _c("h3", { staticClass: "color-2" }, [
-                            _vm._v("Happy Employee")
+                            _vm._v("Karyawan yang Bahagia")
                           ]),
                           _vm._v(" "),
                           _c("p", [
                             _vm._v(
-                              "Enthusiastic employees, who enjoy being part of the company, always strive to develop their capacities and competencies. There is no burden in working hard, work together from different backgrounds to achieve company goal effectively."
+                              "Karyawan yang antusias dan menikmati menjadi bagian dari perusahaan, selalu mengembangkan kapastitas dan kompetensi diri. Tidak ada beban dalam bekerja keras, bekerja sama dengan latar belakang ilmu yang berbeda untuk mencapai tujuan perusahaan secara efektif."
                             )
                           ])
                         ])
@@ -33561,12 +33562,12 @@ var render = function() {
                         _vm._v(" "),
                         _c("div", { staticClass: "extra-wrap" }, [
                           _c("h3", { staticClass: "color-2" }, [
-                            _vm._v("Innovation")
+                            _vm._v("Inovatif")
                           ]),
                           _vm._v(" "),
                           _c("p", [
                             _vm._v(
-                              "With all ability, EWINDO will try to find the best way to provide high quality seeds to the farmers. We continuously find novel ways in thoughts, services, technology by listening to the costumers’ and consumers’ need."
+                              "Dengan segala kemampuan yang ada EWINDO selalu berusaha menemukan cara yang terbaik dalam menyediakan benih berkualitas tinggi untuk petani. Kami terus menerus mencari cara baru baik dalam pemikiran, pelayanan maupun teknologi dengan mendengarkan secara seksama apa yang menjadi keinginan para pelanggan."
                             )
                           ])
                         ])

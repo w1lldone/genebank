@@ -15,34 +15,33 @@
                                         <br clear="all">
                                         <br>
                                         <div><p>
-                                            PT EAST WEST SEED INDONESIA (EWINDO) is the first integrated vegetable seed company in Indonesia which produces vegetable seeds through plant breeding. EWINDO primarily aims for the development of local, cutting-edge seed industry to produce high quality vegetable seeds.
+                                            PT EAST WEST SEED INDONESIA (EWINDO) adalah perusahaan benih sayuran terpadu pertama di Indonesia yang menghasilkan benih unggul sayuran melalui kegiatan pemuliaan tanaman. EWINDO mempunyai tujuan utama dalam pengembangan industri benih lokal yang canggih untuk menghasilkan benih sayur berkualitas tinggi.
 
-                                            In developing seeds, EWINDO uses professionals who are experienced in the area of plant breeding and seed science. Vegetable seeds resulting from research and development are produced, processed, packed and marketed for Indonesian farmers with the brand CAP PANAH MERAH.
+                                            Dalam pengembangan benih EWINDO menempatkan tenaga ahli profesional yang telah berpengalaman di bidang pemuliaan tanaman dan perbenihan. Hasil penelitian dan pengembangan benih sayuran ini diproduksi, diproses dan dikemas serta dipasarkan untuk petani Indonesia dengan merek dagang CAP PANAH MERAH.
 
-                                            For more than two decades EWINDO always provides healthy seeds with high genetic purity and good germination in order to achieve good results aligning with the consumers’ wants and to become the key to success for INDONESIAN FARMERS.</p>
+                                            Lebih dari dua dekade EWINDO selalu menyediakan benih yang sehat dengan kemurnian genetika tinggi serta daya kecambah yang baik untuk mendapatkan hasil yang tinggi sesuai dengan permintaan konsumen dan menjadi kunci sukses PETANI INDONESIA.</p>
                                         </div>
                                     </div>
                                     <div class="box-2">
                                         <br>
                                         <img src="http://www.panahmerah.id/image/cache/data/page/vision-mission-200x200.jpg" alt="PT EAST WEST SEED INDONESIA" class="img-bord img-ind w1">
                                         <div>
-                                            <h3 class="color-2">Vision &amp; Mission</h3>
+                                            <h3 class="color-2">Visi &amp; Misi</h3>
                                             <div class="extra-wrap"><p>
-                                                <strong>VISION </strong>We believe in high quality vegetable seeds for better living</p>
+                                                <strong>VISI </strong>Kami percaya pada benih sayuran berkualitas tinggi untuk hidup yang lebih baik</p>
                                             <p>
-                                                <strong>MISSION </strong>Provide high quality seeds to increase farmers income and promote vegetable consumption</p>
+                                                <strong>MISI </strong>Menyediakan benih berkualitas tinggi untuk meningkatkan pendapatan petani dan memperbesar konsumsi sayuran</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="column col-md-5 bord-1">
-                                    <h2 class="color-2">COMPANY VALUES</h2>
+                                    <h2 class="color-2">NILAI PERUSAHAAN</h2>
                                     <div class="box-2">
                                         <div class="clearfix">
                                             <img src="http://www.panahmerah.id/image/cache/data/page/about-1-108x135.jpg" alt="Sahabat Petani yang paling Baik" class="img-bord img-ind w1">
-                                            <div class="extra-wrap">
-                                                <h3 class="color-2">Farmers' Best Friend</h3>
-                                                <p>Close to farmers to guide and encourage them to be successful farmers, solve all problems together by visiting and serving them unconditionally.</p>
+                                            <div class="extra-wrap">Sahabat Petani yang Paling Baik</h3>
+                                                <p>Selalu dekat dengan petani untuk membimbing dan mendorong mereka agar menjadi petani sukses dan memecahkan permasalahan bersama-sama. Bersedia mengunjungi dan melayani petani apapun kondisinya.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -50,8 +49,8 @@
                                         <div class="clearfix">
                                             <img src="http://www.panahmerah.id/image/cache/data/page/about-3-108x135.jpg" alt="Karyawan yang Bahagia" class="img-bord img-ind w1">
                                             <div class="extra-wrap">
-                                                <h3 class="color-2">Happy Employee</h3>
-                                                <p>Enthusiastic employees, who enjoy being part of the company, always strive to develop their capacities and competencies. There is no burden in working hard, work together from different backgrounds to achieve company goal effectively.</p>
+                                                <h3 class="color-2">Karyawan yang Bahagia</h3>
+                                                <p>Karyawan yang antusias dan menikmati menjadi bagian dari perusahaan, selalu mengembangkan kapastitas dan kompetensi diri. Tidak ada beban dalam bekerja keras, bekerja sama dengan latar belakang ilmu yang berbeda untuk mencapai tujuan perusahaan secara efektif.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -59,8 +58,8 @@
                                         <div class="clearfix">
                                             <img src="http://www.panahmerah.id/image/cache/data/page/about-4-108x135.jpg" alt="Inovatif" class="img-bord img-ind w1">
                                             <div class="extra-wrap">
-                                                <h3 class="color-2">Innovation</h3>
-                                                <p>With all ability, EWINDO will try to find the best way to provide high quality seeds to the farmers. We continuously find novel ways in thoughts, services, technology by listening to the costumers’ and consumers’ need.</p>
+                                                <h3 class="color-2">Inovatif</h3>
+                                                <p>Dengan segala kemampuan yang ada EWINDO selalu berusaha menemukan cara yang terbaik dalam menyediakan benih berkualitas tinggi untuk petani. Kami terus menerus mencari cara baru baik dalam pemikiran, pelayanan maupun teknologi dengan mendengarkan secara seksama apa yang menjadi keinginan para pelanggan.</p>
                                             </div>
                                         </div>
                                     </div>
