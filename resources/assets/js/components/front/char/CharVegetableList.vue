@@ -3,9 +3,9 @@
     <section id="char">
       <div class="row">
         <div class="msg_title col-md-12">
-          <h4><b>Characterization</b></h4>
+          <h4><b>Karakterisasi</b></h4>
           <br>
-          <p>Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. </p><br><br>
+          <p>Mengacu pada deskripsi morfologi dan agronomi dari aksesi (yaitu warna hypocotyl, kebiasaan pertumbuhan tanaman, warna corolla, panjang buah, warna biji, dll.). Data ini diamati dan dikumpulkan di lapangan eksperimental oleh Bank Sumber Daya Genetik Sayuran.</p><br><br>
           <!-- Filters -->
           <div id="filters_area">            
             <div id="filters">
@@ -153,7 +153,11 @@ export default {
   },
   methods: {
     async loadVegetables(){
-      let response = await axios.get(`/api/vegetables/${this.genusId}`)
+      let response = await axios.get('/api/vegetables?load=passport', {
+        params: {
+          genus_id: this.genusId
+        }
+      })
       this.vegetables = response.data.data
     },
     async loadGenera(){

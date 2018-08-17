@@ -4,7 +4,7 @@
             <div class="container">
             <!-- <div class="col-md-12"> -->
                 <div class="gall_title">
-                    <h4>gallery</h4>
+                    <h4>Galeri</h4>
                 </div>
             <!-- </div> -->
             <!--End of col-md-2-->

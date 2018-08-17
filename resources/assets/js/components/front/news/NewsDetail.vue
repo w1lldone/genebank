@@ -2,7 +2,7 @@
     <front-base>
         <section id="news">
             <div class="container">
-                <h4><b>News</b></h4>
+                <h4><b>Berita</b></h4>
                 <div class="row">
                     <div class="single_news_item news_news">
                         <h5>Positive signals for Vietnam's recovering tomato market</h5>

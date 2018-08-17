@@ -3,25 +3,25 @@
         <section id="download" >
             <div class="container animated fadeIn">
                 <div class="row">
-                    <h4><b>Download</b></h4>
+                    <h4><b>Unduh</b></h4>
                     <div class="row" data-ng-if="showcharts">
                         <div class="col-md-12">
                             <!-- Nav tabs -->
                             <ul id="download_menu" class="nav nav-pills nav-tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#descriptors" role="tab" data-toggle="tab"><span class="tabHeadings">Descriptors</span></a></li>
+                                <li role="presentation" class="active"><a href="#descriptors" role="tab" data-toggle="tab"><span class="tabHeadings">Deskriptor</span></a></li>
 
-                                <li role="presentation" ><a href="#protocols" role="tab" data-toggle="tab"><span class="tabHeadings">Protocols</span></a></li>
+                                <li role="presentation" ><a href="#protocols" role="tab" data-toggle="tab"><span class="tabHeadings">Protokol</span></a></li>
 
-                                <li role="presentation"><a href="#record" role="tab" data-toggle="tab"><span class="tabHeadings">Record Sheets</span></a></li>
+                                <li role="presentation"><a href="#record" role="tab" data-toggle="tab"><span class="tabHeadings">Data</span></a></li>
 
-                                <li role="presentation"><a href="#other" role="tab" data-toggle="tab"><span class="tabHeadings">Other</span></a></li>
+                                <li role="presentation"><a href="#other" role="tab" data-toggle="tab"><span class="tabHeadings">Lainnya</span></a></li>
                             </ul>
 
                             <br>
                             <!-- tab panes -->
                             <div class="tab-content">
                                 <!-- Descriptors -->
-                                <div role="tabpanel" class="tab-pane fade in active" id="char" >
+                                <div role="tabpanel" class="tab-pane fade in active" id="descriptors" >
                                     <div  class="card col-md-3 col-sm-4" v-for="item in genera">
                                       <div class="card-header"><a :href="'/search/characterization/'+item.id">{{item.name}}</a></div>
                                       <div class="card-main">
@@ -33,35 +33,35 @@
                                 <!-- Protocols -->
                                 <div role="tabpanel" class="tab-pane" id="protocols">
                                     <ul class="fa-ul">
-                                        <li><i class="fa-li fa fa-square"></i><b>Crop regeneration</b></li>
-                                        <p><a>Protocol for Regeneration and Characterization of Capsicum (2015)</a></p>
-                                        <li><i class="fa-li fa fa-square"></i><b>Germination test</b></li>
-                                        <p>Not available</p>
-                                        <li><i class="fa-li fa fa-square"></i><b>Measurement of seed moisture content</b></li>
-                                        <p>Not available</p>
+                                        <li><i class="fa-li fa fa-square"></i><b>Regenerasi tanaman</b></li>
+                                        <p><a>Protokol untuk Regenerasi dan Karakterisasi Capsicum (2015)</a></p>
+                                        <li><i class="fa-li fa fa-square"></i><b>Uji perkecambahan</b></li>
+                                        <p>Tidak tersedia</p>
+                                        <li><i class="fa-li fa fa-square"></i><b>Pengukuran kadar air biji</b></li>
+                                        <p>Tidak tersedia</p>
                                     </ul>
                                 </div>
 
                                 <!-- Record -->
                                 <div role="tabpanel" class="tab-pane" id="record">
                                     <ul class="fa-ul">
-                                        <li><i class="fa-li fa fa-square"></i><b>Collecting record</b></li>
-                                        <p><a>Collecting record sheet 20151020 revised</a></p>
-                                        <li><i class="fa-li fa fa-square"></i><b>Germination test</b></li>
-                                        <p><a>Germination sheet 2015 revised</a></p>
+                                        <li><i class="fa-li fa fa-square"></i><b>Mengumpulkan data</b></li>
+                                        <p><a>Mengumpulkan 20151020 data yang direvisi</a></p>
+                                        <li><i class="fa-li fa fa-square"></i><b>Uji perkecambahan</b></li>
+                                        <p><a>Data perkecambahan 2015 yang direvisi</a></p>
                                     </ul>
                                 </div>
 
                                 <!-- Other-->
                                 <div role="tabpanel" class="tab-pane" id="other">
                                     <ul class="fa-ul">
-                                        <li><i class="fa-li fa fa-square"></i><b>Monthly update on AVRDC Genebank holdings</b></li>
+                                        <li><i class="fa-li fa fa-square"></i><b>Pembaruan bulanan pada kepemilikan Bank Sumber Daya Genetik Sayuran</b></li>
                                         <p><a></a></p>
-                                        <li><i class="fa-li fa fa-square"></i><b>Key to species identification</b></li>
-                                        <p><a>Key to the pepper species</a></p>
-                                        <p><a>Key to the tomato species</a></p>
-                                        <li><i class="fa-li fa fa-square"></i><b>Seed treatment for Capsicum germplasm</b></li>
-                                        <p><a>Seed treatment for Capsicum germplasm</a></p>
+                                        <li><i class="fa-li fa fa-square"></i><b>Kunci untuk identifikasi spesies</b></li>
+                                        <p><a>Kunci untuk spesies lada</a></p>
+                                        <p><a>Kunci untuk spesies tomat</a></p>
+                                        <li><i class="fa-li fa fa-square"></i><b>Perawatan benih untuk plasma nutfah Capsicum</b></li>
+                                        <p><a>Perawatan benih untuk plasma nutfah Capsicum</a></p>
                                     </ul>
                                 </div>
 

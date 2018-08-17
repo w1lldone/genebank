@@ -32262,7 +32262,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -32275,6 +32275,8 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
+//
+//
 //
 //
 //
@@ -32728,7 +32730,7 @@ var render = function() {
                       [
                         _c("li", [
                           _c("a", { attrs: { href: _vm.url("/") } }, [
-                            _vm._v("Home")
+                            _vm._v("Beranda")
                           ])
                         ]),
                         _vm._v(" "),
@@ -32744,7 +32746,7 @@ var render = function() {
                                 "aria-expanded": "false"
                               }
                             },
-                            [_vm._v("Search")]
+                            [_vm._v("Telusur")]
                           ),
                           _vm._v(" "),
                           _c(
@@ -32760,7 +32762,7 @@ var render = function() {
                                   {
                                     attrs: { href: _vm.url("/search/passport") }
                                   },
-                                  [_vm._v("Passport")]
+                                  [_vm._v("Paspor")]
                                 )
                               ]),
                               _vm._v(" "),
@@ -32772,7 +32774,7 @@ var render = function() {
                                       href: _vm.url("/search/characterization")
                                     }
                                   },
-                                  [_vm._v("Characterization")]
+                                  [_vm._v("Karakterisasi")]
                                 )
                               ]),
                               _vm._v(" "),
@@ -32784,7 +32786,7 @@ var render = function() {
                                       href: _vm.url("/search/evaluation")
                                     }
                                   },
-                                  [_vm._v("Evaluation")]
+                                  [_vm._v("Evaluasi")]
                                 )
                               ])
                             ]
@@ -32793,31 +32795,31 @@ var render = function() {
                         _vm._v(" "),
                         _c("li", [
                           _c("a", { attrs: { href: _vm.url("/news") } }, [
-                            _vm._v("news")
+                            _vm._v("Berita")
                           ])
                         ]),
                         _vm._v(" "),
                         _c("li", [
                           _c("a", { attrs: { href: _vm.url("/gallery") } }, [
-                            _vm._v("gallery")
+                            _vm._v("Galeri")
                           ])
                         ]),
                         _vm._v(" "),
                         _c("li", [
                           _c("a", { attrs: { href: _vm.url("/download") } }, [
-                            _vm._v("download")
+                            _vm._v("Unduh")
                           ])
                         ]),
                         _vm._v(" "),
                         _c("li", [
                           _c("a", { attrs: { href: _vm.url("/terms") } }, [
-                            _vm._v("terms of use")
+                            _vm._v("Syarat & Ketentuan")
                           ])
                         ]),
                         _vm._v(" "),
                         _c("li", [
                           _c("a", { attrs: { href: _vm.url("/about") } }, [
-                            _vm._v("about us")
+                            _vm._v("Tentang")
                           ])
                         ])
                       ]
@@ -33046,7 +33048,7 @@ var render = function() {
                   staticClass: "wow bounce",
                   attrs: { "data-wow-delay": "0.2s" }
                 },
-                [_vm._v("selamat datang di bank plasma nutfah")]
+                [_vm._v("selamat datang di Bank Sumber Daya Genetik Sayuran")]
               ),
               _c("br"),
               _vm._v(" "),
@@ -33058,11 +33060,11 @@ var render = function() {
                 },
                 [
                   _vm._v(
-                    "Bank Plasma Nutfah adalah sistem informasi yang mengelola data semua plasma nutfah sayuran yang disimpan di bank gen AVRDC. Sumber Daya Genetik dan Unit Benih menggunakan sistem ini untuk mengelola operasional genebank secara efisien. AVGRIS menghubungkan semua operasi konservasi dan manajemen plasma nutfah, mulai dari pendaftaran, karakterisasi, evaluasi dan inventarisasi benih hingga distribusi benih hingga pengguna akhir.\n                        AVGRIS menyediakan akses langsung pengguna ke data plasma nutfah melalui internet.\n                        Penggunaan sistem ini GRATIS tetapi mohon dibaca terlebih dahulu"
+                    "Bank Sumber Daya Genetik Sayuran adalah sistem informasi yang mengelola data semua plasma nutfah sayuran yang disimpan di bank plasma nutfah. Sistem ini digunakan untuk mengelola operasional bank plasma nutfah secara efisien. Bank Sumber Daya Genetik Sayuran menghubungkan semua operasi konservasi dan manajemen plasma nutfah, mulai dari pendaftaran, karakterisasi, evaluasi dan inventarisasi benih hingga distribusi benih hingga pengguna akhir.\n                            \n                        Bank Sumber Daya Genetik Sayuran menyediakan akses langsung pengguna ke data plasma nutfah melalui internet.\n\n                        Penggunaan sistem ini GRATIS tetapi mohon dibaca terlebih dahulu"
                   ),
                   _c("span", [
                     _c("a", { attrs: { href: _vm.url("/terms") } }, [
-                      _vm._v("persyaratan pengguna (terms of use).")
+                      _vm._v(" syarat dan ketentuan.")
                     ])
                   ])
                 ]
@@ -33274,7 +33276,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.container_12 li[data-v-4f71d004]{\n    text-align: left;\n}\n", ""]);
 
 // exports
 
@@ -33287,6 +33289,39 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -33427,8 +33462,76 @@ var render = function() {
                     margin: "4px 4px 16px"
                   }
                 },
-                [_vm._v("ABOUT US")]
+                [_vm._v("Tentang Kami")]
               ),
+              _vm._v(" "),
+              _c("div", { staticClass: "container_12 minH-wrap" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", [
+                    _c("h2", { staticClass: "color-2" }, [
+                      _vm._v(
+                        "Pusat Inovasi Agroteknologi Universitas Gadjah Mada"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", [
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("div", [
+                        _c("p", [
+                          _vm._v(
+                            "\n                                        Pusat Inovasi Agroteknologi (PIAT) Universitas Gadjah Mada adalah laboratorium lapangan yang digunakan untuk melaksanakan kegiatan pendidikan, penelitian, dan pengabdian masyarakat yang merupakan layananan tridharma berbasis pertanian terpadu. \n                                        Pusat Inovasi Agroteknologi (PIAT) UGM adalah jawaban Universitas Gadjah Mada dalam menghadapi Masyarakat Ekonomi ASEAN (MEA) tahun 2015. PIAT secara aktif berupaya meletakkan pondasi yang sistematis dan terintegrasi dalam mewujudkan kemandirian sektor agro sebagai pilar ekonomi nasional. Yaitu menjadi produsen komoditas pertanian maupun pangan yang handal dan berdaulat.\n                                        PIAT terbentuk sebagai jawaban atas tantangan ke depan dari era globalisasi. Dengan menitikberatkan pada unsur inovasi, PIAT berangkat dari sumberdaya lahan milik UGM yang semula sebagai penunjang penelitian di bidang agro, selanjutnya beralih menjadi unit produktif yang mampu menghasilkan produk-produk agro yang inovatif. Saat ini PIAT UGM mengelola lahan produktif yang terltak di Yogyakarta, yaitu di Kalitirto, Berbah, Sleman seluas 35 hektar dan Mangunan-Girirejo, Bantul seluas 153 hektar. Sebagai lahan produktif, untuk areal Berbah telah dikelola oleh UGM sejak tahun 1951. Di sini akan dibangun sejumlah sarana dan prasarana yang mendukung konsep agrotechno park dengan pola edutainment. PIAT akan menjadikan lokasi Kalitirto sebagai tujuan wisata dengan mengusung wisata pendidikan khususnya untuk pengembangan inovasi dan teknologi di bidang agro dan, pengelolaan limbah, dan energi terbarukan."
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", [
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("div", [
+                        _c("h3", { staticClass: "color-2" }, [
+                          _vm._v("Visi & Misi")
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "extra-wrap" }, [
+                          _c("p", [
+                            _c("strong", [_vm._v("VISI ")]),
+                            _vm._v(
+                              "Menjadi center of excellence bidang pertanian tropika terpadu bereputasi internasional."
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("p", [_c("strong", [_vm._v("MISI ")])]),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "fa-ul" }, [
+                            _c("li", [
+                              _c("i", { staticClass: "fa-li fa fa-square" }),
+                              _vm._v(
+                                "Pelayan tridharma perguruan tinggi berbasis pertanian terpadu ramah lingkungan."
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c("i", { staticClass: "fa-li fa fa-square" }),
+                              _vm._v(
+                                "Pengembangan inovasi agroteknologi menjadi pusat unggulan pertanian tropika terpadu."
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c("i", { staticClass: "fa-li fa fa-square" }),
+                              _vm._v(
+                                "Implementasi teknologi inovatif yang bermanfaat bagi masyarakat, pemerintah, swasta, dan akademisi."
+                              )
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "container_12 minH-wrap" }, [
                 _c("div", { staticClass: "row" }, [
@@ -33441,8 +33544,7 @@ var render = function() {
                       _c("img", {
                         staticClass: "img-bord wrapper",
                         attrs: {
-                          src:
-                            "http://www.panahmerah.id/image/cache/data/page/ewindo-460x204.jpg",
+                          src: "img/ewindo-460x204.jpg",
                           alt: "PT EAST WEST SEED INDONESIA"
                         }
                       }),
@@ -33466,8 +33568,7 @@ var render = function() {
                       _c("img", {
                         staticClass: "img-bord img-ind w1",
                         attrs: {
-                          src:
-                            "http://www.panahmerah.id/image/cache/data/page/vision-mission-200x200.jpg",
+                          src: "img/vision-mission-200x200.jpg",
                           alt: "PT EAST WEST SEED INDONESIA"
                         }
                       }),
@@ -33506,8 +33607,7 @@ var render = function() {
                         _c("img", {
                           staticClass: "img-bord img-ind w1",
                           attrs: {
-                            src:
-                              "http://www.panahmerah.id/image/cache/data/page/about-1-108x135.jpg",
+                            src: "img/about-1-108x135.jpg",
                             alt: "Sahabat Petani yang paling Baik"
                           }
                         }),
@@ -33529,8 +33629,7 @@ var render = function() {
                         _c("img", {
                           staticClass: "img-bord img-ind w1",
                           attrs: {
-                            src:
-                              "http://www.panahmerah.id/image/cache/data/page/about-3-108x135.jpg",
+                            src: "img/about-3-108x135.jpg",
                             alt: "Karyawan yang Bahagia"
                           }
                         }),
@@ -33554,8 +33653,7 @@ var render = function() {
                         _c("img", {
                           staticClass: "img-bord img-ind w1",
                           attrs: {
-                            src:
-                              "http://www.panahmerah.id/image/cache/data/page/about-4-108x135.jpg",
+                            src: "img/about-4-108x135.jpg",
                             alt: "Inovatif"
                           }
                         }),
@@ -33575,103 +33673,7 @@ var render = function() {
                     ])
                   ])
                 ])
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "h5",
-                {
-                  staticStyle: {
-                    "margin-left": "1vmax",
-                    "text-align": "center",
-                    "font-size": "30px",
-                    margin: "40px 0px 16px"
-                  }
-                },
-                [_vm._v("SUPPORTED BY")]
-              ),
-              _vm._v(" "),
-              _c("hr", {
-                staticStyle: {
-                  "border-top": "3px solid #00877d",
-                  width: "40px",
-                  margin: "0 auto 20px"
-                }
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: " support row center",
-                  staticStyle: { width: "100%" },
-                  attrs: { align: "center" }
-                },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticStyle: {
-                        display: "inline-block",
-                        "margin-bottom": "30px"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticStyle: {
-                          height: "100px",
-                          margin: "30px",
-                          "border-radius": "50%"
-                        },
-                        attrs: { src: "img/ugm.png" }
-                      }),
-                      _c("br")
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticStyle: {
-                        display: "inline-block",
-                        "margin-bottom": "30px"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticStyle: {
-                          height: "100px",
-                          margin: "30px",
-                          "border-radius": "50%"
-                        },
-                        attrs: { src: "img/ewindo.png" }
-                      }),
-                      _c("br")
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticStyle: {
-                        display: "inline-block",
-                        "margin-bottom": "30px"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticStyle: {
-                          height: "100px",
-                          margin: "30px",
-                          "border-radius": "50%"
-                        },
-                        attrs: { src: "img/PanahMerah.png" }
-                      }),
-                      _c("br")
-                    ]
-                  )
-                ]
-              )
+              ])
             ]
           )
         ])
@@ -33934,7 +33936,7 @@ var render = function() {
     _c("section", { attrs: { id: "download" } }, [
       _c("div", { staticClass: "container animated fadeIn" }, [
         _c("div", { staticClass: "row" }, [
-          _c("h4", [_c("b", [_vm._v("Download")])]),
+          _c("h4", [_c("b", [_vm._v("Unduh")])]),
           _vm._v(" "),
           _c(
             "div",
@@ -33966,7 +33968,7 @@ var render = function() {
                           },
                           [
                             _c("span", { staticClass: "tabHeadings" }, [
-                              _vm._v("Descriptors")
+                              _vm._v("Deskriptor")
                             ])
                           ]
                         )
@@ -33985,7 +33987,7 @@ var render = function() {
                         },
                         [
                           _c("span", { staticClass: "tabHeadings" }, [
-                            _vm._v("Protocols")
+                            _vm._v("Protokol")
                           ])
                         ]
                       )
@@ -34003,7 +34005,7 @@ var render = function() {
                         },
                         [
                           _c("span", { staticClass: "tabHeadings" }, [
-                            _vm._v("Record Sheets")
+                            _vm._v("Data")
                           ])
                         ]
                       )
@@ -34021,7 +34023,7 @@ var render = function() {
                         },
                         [
                           _c("span", { staticClass: "tabHeadings" }, [
-                            _vm._v("Other")
+                            _vm._v("Lainnya")
                           ])
                         ]
                       )
@@ -34036,7 +34038,7 @@ var render = function() {
                     "div",
                     {
                       staticClass: "tab-pane fade in active",
-                      attrs: { role: "tabpanel", id: "char" }
+                      attrs: { role: "tabpanel", id: "descriptors" }
                     },
                     _vm._l(_vm.genera, function(item) {
                       return _c(
@@ -34075,32 +34077,30 @@ var render = function() {
                       _c("ul", { staticClass: "fa-ul" }, [
                         _c("li", [
                           _c("i", { staticClass: "fa-li fa fa-square" }),
-                          _c("b", [_vm._v("Crop regeneration")])
+                          _c("b", [_vm._v("Regenerasi tanaman")])
                         ]),
                         _vm._v(" "),
                         _c("p", [
                           _c("a", [
                             _vm._v(
-                              "Protocol for Regeneration and Characterization of Capsicum (2015)"
+                              "Protokol untuk Regenerasi dan Karakterisasi Capsicum (2015)"
                             )
                           ])
                         ]),
                         _vm._v(" "),
                         _c("li", [
                           _c("i", { staticClass: "fa-li fa fa-square" }),
-                          _c("b", [_vm._v("Germination test")])
+                          _c("b", [_vm._v("Uji perkecambahan")])
                         ]),
                         _vm._v(" "),
-                        _c("p", [_vm._v("Not available")]),
+                        _c("p", [_vm._v("Tidak tersedia")]),
                         _vm._v(" "),
                         _c("li", [
                           _c("i", { staticClass: "fa-li fa fa-square" }),
-                          _c("b", [
-                            _vm._v("Measurement of seed moisture content")
-                          ])
+                          _c("b", [_vm._v("Pengukuran kadar air biji")])
                         ]),
                         _vm._v(" "),
-                        _c("p", [_vm._v("Not available")])
+                        _c("p", [_vm._v("Tidak tersedia")])
                       ])
                     ]
                   ),
@@ -34115,22 +34115,24 @@ var render = function() {
                       _c("ul", { staticClass: "fa-ul" }, [
                         _c("li", [
                           _c("i", { staticClass: "fa-li fa fa-square" }),
-                          _c("b", [_vm._v("Collecting record")])
+                          _c("b", [_vm._v("Mengumpulkan data")])
                         ]),
                         _vm._v(" "),
                         _c("p", [
                           _c("a", [
-                            _vm._v("Collecting record sheet 20151020 revised")
+                            _vm._v("Mengumpulkan 20151020 data yang direvisi")
                           ])
                         ]),
                         _vm._v(" "),
                         _c("li", [
                           _c("i", { staticClass: "fa-li fa fa-square" }),
-                          _c("b", [_vm._v("Germination test")])
+                          _c("b", [_vm._v("Uji perkecambahan")])
                         ]),
                         _vm._v(" "),
                         _c("p", [
-                          _c("a", [_vm._v("Germination sheet 2015 revised")])
+                          _c("a", [
+                            _vm._v("Data perkecambahan 2015 yang direvisi")
+                          ])
                         ])
                       ])
                     ]
@@ -34147,7 +34149,9 @@ var render = function() {
                         _c("li", [
                           _c("i", { staticClass: "fa-li fa fa-square" }),
                           _c("b", [
-                            _vm._v("Monthly update on AVRDC Genebank holdings")
+                            _vm._v(
+                              "Pembaruan bulanan pada kepemilikan Bank Sumber Daya Genetik Sayuran"
+                            )
                           ])
                         ]),
                         _vm._v(" "),
@@ -34155,27 +34159,31 @@ var render = function() {
                         _vm._v(" "),
                         _c("li", [
                           _c("i", { staticClass: "fa-li fa fa-square" }),
-                          _c("b", [_vm._v("Key to species identification")])
+                          _c("b", [_vm._v("Kunci untuk identifikasi spesies")])
                         ]),
                         _vm._v(" "),
                         _c("p", [
-                          _c("a", [_vm._v("Key to the pepper species")])
+                          _c("a", [_vm._v("Kunci untuk spesies lada")])
                         ]),
                         _vm._v(" "),
                         _c("p", [
-                          _c("a", [_vm._v("Key to the tomato species")])
+                          _c("a", [_vm._v("Kunci untuk spesies tomat")])
                         ]),
                         _vm._v(" "),
                         _c("li", [
                           _c("i", { staticClass: "fa-li fa fa-square" }),
                           _c("b", [
-                            _vm._v("Seed treatment for Capsicum germplasm")
+                            _vm._v(
+                              "Perawatan benih untuk plasma nutfah Capsicum"
+                            )
                           ])
                         ]),
                         _vm._v(" "),
                         _c("p", [
                           _c("a", [
-                            _vm._v("Seed treatment for Capsicum germplasm")
+                            _vm._v(
+                              "Perawatan benih untuk plasma nutfah Capsicum"
+                            )
                           ])
                         ])
                       ])
@@ -34380,67 +34388,67 @@ var render = function() {
     _c("section", { attrs: { id: "terms" } }, [
       _c("div", { staticClass: "container animated fadeIn" }, [
         _c("div", { staticClass: "row" }, [
-          _c("h4", [_c("b", [_vm._v("Terms of Use")])]),
+          _c("h4", [_c("b", [_vm._v("Syarat dan Ketentuan")])]),
           _vm._v(" "),
           _c("p", { staticStyle: { color: "blue", "font-weight": "bold" } }, [
-            _vm._v("Legal Notice and License Agreement")
+            _vm._v("Pemberitahuan Hukum dan Perjanjian Lisensi")
           ]),
           _vm._v(" "),
           _c("p", { staticStyle: { color: "red", "font-weight": "bold" } }, [
             _vm._v(
-              'You must read this Notice and License Agreement ("Agreement") before entering this site'
+              'Anda harus membaca Pemberitahuan Hukum dan Perjanjian Lisensi ("Perjanjian") sebelum memasuki situs ini'
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _c("span", { staticStyle: { "font-weight": "bold" } }, [
-              _vm._v("General")
+              _vm._v("Umum")
             ]),
             _c("br"),
             _vm._v(
-              "This site provides common access to information concerning the collections of genetic resources held by GRSU (Genetic Resources and Seed Unit), at AVRDC - The World Vegetable Center."
+              "Situs ini menyediakan akses umum ke informasi mengenai koleksi sumber daya genetik yang dimiliki oleh Bank Sumber Daya Genetik Sayuran"
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _c("span", { staticStyle: { "font-weight": "bold" } }, [
-              _vm._v("Trademarks")
+              _vm._v("Merek Dagang")
             ]),
             _c("br"),
             _vm._v(
-              "The logo on this site is the trademark of AVRDC - The World Vegetable Center. Other product, service, and organization names mentioned in this Web site are for identification purposes only and may be trademarks of their respective owners."
+              "Logo di situs ini adalah merek dagang Bank Sumber Daya Genetik Sayuran, dan nama organisasi lainnya yang disebutkan dalam situs Web ini untuk identifikasi dan mungkin merupakan merek dagang dari pemiliknya masing-masing."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _c("span", { staticStyle: { "font-weight": "bold" } }, [
-              _vm._v("Copyright")
+              _vm._v("Hak Cipta")
             ]),
             _c("br"),
             _vm._v(
-              'Copyright laws and treaty provisions protect information appearing on this site ("Information"). AVRDC - The World Vegetable Center holds the copyright on such information. None of the Information may be copied, reproduced, modified, published, uploaded, posted, transmitted, or distributed in any form or by any means other than as described below, or with prior written permission of the copyright holder.'
+              'Undang-undang hak cipta dan ketentuan perjanjian melindungi informasi yang muncul di situs ini ("Informasi"). Bank Sumber Daya Geneik Sayuran memegang hak cipta atas informasi tersebut. Tak satu pun dari informasi dapat disalin, direproduksi, dimodifikasi, diterbitkan, diunggah, diposting, dikirim, atau didistribusikan dalam bentuk apa pun atau dengan cara apa pun selain seperti yang dijelaskan di bawah ini, atau dengan izin tertulis sebelumnya dari pemegang hak cipta.'
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _c("span", { staticStyle: { "font-weight": "bold" } }, [
-              _vm._v("Special Terms of Use")
+              _vm._v("Syarat dan Ketentuan Khusus")
             ]),
             _c("br"),
             _vm._v(
-              "Any requests to use or reproduce information in a manner other than as expressly granted below, whether in whole or part, should be submitted in writing to AVRDC - The World Vegetable Center, Genetic Resources and Seed Unit (GRSU), PO Box 42, Shanhua, Tainan 741; Taiwan."
+              "Setiap permintaan untuk menggunakan atau mereproduksi informasi dengan cara selain dari yang secara tegas diberikan di bawah ini, baik secara keseluruhan atau sebagian, harus diserahkan secara tertulis kepada Bank Sumber Daya Genetik Sayuran di Purwakarta"
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "You must receive permission in writing prior to acting on the request."
+              "Anda harus menerima izin secara tertulis sebelum bertindak atas permintaan tersebut."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "You may access and use the Information only if you agree to and abide by the terms of this Agreement. Permission is granted to access and use the Information from this site, provided that:"
+              "Anda dapat mengakses dan menggunakan Informasi hanya jika Anda setuju dan mematuhi ketentuan Perjanjian ini. Izin diberikan untuk mengakses dan menggunakan Informasi dari situs ini, dengan ketentuan bahwa:"
             )
           ]),
           _vm._v(" "),
@@ -34448,126 +34456,130 @@ var render = function() {
             _c("li", [
               _c("i", { staticClass: "fa-li fa fa-square" }),
               _vm._v(
-                'the copyright notice (i.e., "©" with the year and owner as listed at the end of the Information being used) appears in all copies;'
+                'pemberitahuan hak cipta (misal, "©" dengan tahun dan pemilik sebagaimana tercantum pada bagian akhir informasi yang digunakan) muncul di semua salinan;'
               )
             ]),
             _vm._v(" "),
             _c("li", [
               _c("i", { staticClass: "fa-li fa fa-square" }),
               _vm._v(
-                "use of such Information is only for scientific research, breeding, genetic resource conservation, the sustainable management of genetic resources, or academic, informational, or personal use,"
+                "penggunaan Informasi tersebut hanya untuk penelitian ilmiah, pemuliaan, konservasi sumber daya genetik, pengelolaan sumber daya genetik yang berkelanjutan, atau penggunaan akademis, informasi, atau pribadi,"
               )
             ]),
             _vm._v(" "),
             _c("li", [
               _c("i", { staticClass: "fa-li fa fa-square" }),
               _vm._v(
-                "the access or use of the Information, or any part thereof, does not result in the Information being sold or distributed for profit, including any commercial publication, reproduction, transmission or storage in a retrieval system;"
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("i", { staticClass: "fa-li fa fa-square" }),
-              _vm._v("no modifications to any of the Information are made;")
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("i", { staticClass: "fa-li fa fa-square" }),
-              _vm._v(
-                'the source of the Information is identified as "AVRDC - The World Vegetable Center "'
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("i", { staticClass: "fa-li fa fa-square" }),
-              _vm._v("you do not claim ownership of the Information,")
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("i", { staticClass: "fa-li fa fa-square" }),
-              _vm._v(
-                "you do not claim any intellectual property rights in the Information other than those specifically granted by this Agreement, and"
+                "akses atau penggunaan informasi, atau bagian apa pun darinya, tidak menghasilkan informasi yang dijual atau didistribusikan untuk mendapatkan keuntungan, termasuk publikasi komersial, reproduksi, transmisi atau penyimpanan dalam sistem pengambilan;"
               )
             ]),
             _vm._v(" "),
             _c("li", [
               _c("i", { staticClass: "fa-li fa fa-square" }),
               _vm._v(
-                "you take reasonable steps to communicate these terms in connection with any use and to and ensure compliance with these terms by any persons who obtain access to or use the Information as a result of your access or use of the Information."
+                "tidak ada modifikasi terhadap Informasi apa pun yang dibuat;"
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa-li fa fa-square" }),
+              _vm._v(
+                "sumber informasi diidentifikasi sebagai Bank Sumber Daya Genetik Sayuran"
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa-li fa fa-square" }),
+              _vm._v("Anda tidak dapat mengklaim kepemilikan Informasi,")
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa-li fa fa-square" }),
+              _vm._v(
+                "Anda tidak dapat mengklaim hak kekayaan intelektual apa pun dalam informasi selain yang secara khusus diberikan oleh Perjanjian ini, dan"
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa-li fa fa-square" }),
+              _vm._v(
+                "Anda mengambil langkah-langkah yang wajar untuk mengomunikasikan ketentuan-ketentuan ini sehubungan dengan penggunaan apa pun dan untuk dan memastikan kepatuhan dengan persyaratan ini oleh setiap orang yang memperoleh akses ke atau menggunakan Informasi sebagai akibat dari akses atau penggunaan Informasi Anda."
               )
             ])
           ]),
           _vm._v(" "),
           _c("p", [
             _c("span", { staticStyle: { "font-weight": "bold" } }, [
-              _vm._v("Disclaimers")
+              _vm._v("Penafian")
             ]),
             _c("br"),
             _vm._v(
-              "The contents of this site should not be construed as professional opinion. They are intended for general informational purposes only. The contents may contain technical inaccuracies or typographical errors. Users must directly contact AVRDC - The World Vegetable Center with questions or comments regarding information available on this site."
+              "Isi situs ini tidak boleh dianggap sebagai opini profesional. Mereka dimaksudkan untuk tujuan informasi umum saja. Isinya mungkin mengandung ketidakakuratan teknis atau kesalahan tipografi. Pengguna harus langsung menghubungi Bank Sumber Daya Genetik Sayuran dengan pertanyaan atau komentar mengenai informasi yang tersedia di situs ini."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              'THE CONTENTS OF THIS SITE ARE PROVIDED "AS IS." AVRDC - THE WORLD VEGETABLE CENTER DISCLAIM ALL WARRANTIES REGARDING THE CONTENTS OF THIS SITE, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.'
+              'ISI SITUS INI DISEDIAKAN "SEBAGAIMANA ADANYA." BANK SUMBER DAYA GENETIK SAYURAN MENAFIKAN SEMUA JAMINAN TENTANG ISI SITUS INI, TERMASUK JAMINAN TERSIRAT DARI DAPAT DIPERDAGANGKAN, KESESUAIAN UNTUK TUJUAN TERTENTU, JUDUL, DAN NON-PELANGGARAN.'
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "AVRDC - THE WORLD VEGETABLE CENTER SHALL NOT BE LIABLE FOR DAMAGES RESULTING FROM LOSS OF USE, DATA, OR PROFITS, ARISING OUT OF OR IN CONNECTION WITH THE USE, ACCURACY, CONTENTS, OR PERFORMANCE OF INFORMATION OR INFORMATION ON THIS SITE, WHETHER IN AN ACTION OF CONTRACT, OR NEGLIGENCE OR OTHER TORT."
+              "BANK SUMBER DAYA GENETIK SAYURAN TIDAK AKAN BERTANGGUNG JAWAB ATAS KERUSAKAN YANG DITIMBULKAN DARI HILANGNYA PENGGUNAAN, DATA, ATAU KEUNTUNGAN, YANG TIMBUL DARI ATAU TERHUBUNG DENGAN PENGGUNAAN, AKURASI, ISI, ATAU KINERJA INFORMASI ATAU INFORMASI PADA SITUS INI, BAIK DALAM TINDAKAN KONTRAK, ATAU KELALAIAN ATAU TORT LAINNYA."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "The designations employed and the presentation of the Information stored in or made accessible by this web site do not imply the expression of any opinion of AVRDC - The World Vegetable Center concerning the legal status of any country, city or area or its authorities, or concerning the delimitation of its frontiers or boundaries."
+              "Sebutan yang digunakan dan penyajian Informasi yang disimpan dapat diakses melalui situs web ini dan tidak menggambarkan pendapat Bank Sumber Daya Genetik Sayuran mengenai status hukum negara, kota atau daerah atau otoritasnya, atau mengenai penetapan batas-batas atau batas-batasnya."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _c("span", { staticStyle: { "font-weight": "bold" } }, [
-              _vm._v("Termination of License")
+              _vm._v("Pengakhiran Lisensi")
             ]),
             _c("br"),
             _vm._v(
-              "This License shall terminate immediately if you violate any of the terms of this Agreement. You may terminate at any time the license to use the Information from this site. Upon termination for any reason, you agree to delete or destroy all copies of the Information, which you have made, and to cease all uses of the information."
+              "Lisensi ini akan segera berakhir jika Anda melanggar salah satu ketentuan perjanjian ini. Anda dapat mengakhiri setiap saat lisensi untuk menggunakan informasi dari situs ini. Setelah pengakhiran karena alasan apa pun, Anda setuju untuk menghapus atau menghancurkan semua salinan informasi, yang telah Anda buat, dan untuk menghentikan semua penggunaan informasi."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _c("span", { staticStyle: { "font-weight": "bold" } }, [
-              _vm._v("Assignability")
+              _vm._v("Ketegasan")
             ]),
             _c("br"),
             _vm._v(
-              "The rights and licenses herein granted by Licensor with respect to any Information you obtain from this site are personal to you. You may assign or otherwise transfer these rights to another person, subject to the provisions of this agreement and subject to such other person agreeing to be bound by the terms of this agreement. You shall not assign or otherwise transfer to another person any other rights or licenses granted to you under by this Agreement. This Agreement shall be binding upon and inure to the benefit of the parties hereto and their respective heirs, personal representatives, successors and assigns."
+              "Hak dan lisensi yang diberikan oleh pemberi lisensi sehubungan dengan informasi yang Anda dapatkan dari situs ini bersifat pribadi bagi Anda. Anda dapat mengalihkan atau mentransfer hak ini kepada orang lain, tunduk pada ketentuan perjanjian ini dan tunduk pada orang lain yang menyetujui untuk terikat dengan ketentuan perjanjian ini. Anda tidak boleh mengalihkan atau mentransfer kepada orang lain terkait hak atau lisensi lain yang diberikan kepada Anda berdasarkan perjanjian ini. Perjanjian ini akan mengikat dan diberlakukan untuk kepentingan para pihak di sini dan ahli waris masing-masing, perwakilan pribadi, penerus dan penerima."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _c("span", { staticStyle: { "font-weight": "bold" } }, [
-              _vm._v("Invalidity or Unenforceability")
+              _vm._v("Invaliditas atau Tidak berlaku")
             ]),
             _c("br"),
             _vm._v(
-              "If any provision of this Agreement is deemed to be invalid or unenforceable in whole or in part, such provision, to the extent that it is invalid or unenforceable, shall be deemed struck from the Agreement and shall not affect the validity or enforceability of any other provision hereof. In addition, the parties agree that a court having jurisdiction may revise any provision determined to be invalid or unenforceable to the extent required to make it valid and enforceable consistent with the intention of the parties and, if a court will not do so, the parties agree to negotiate a provision having an effect as close as permitted by applicable law to the provision determined to be invalid or unenforceable and to incorporate such substitute provision in the Agreement."
+              "Jika ada ketentuan dalam perjanjian ini yang dianggap tidak sah atau tidak dapat diterapkan secara keseluruhan atau sebagian, ketentuan tersebut akan dianggap melanggar perjanjian dan tidak mempengaruhi keabsahan atau keberlakuan dari yang lain ketentuan perjanjian ini. Selain itu, para pihak setuju bahwa pengadilan yang memiliki yurisdiksi dapat merevisi ketentuan yang telah ditetapkan menjadi tidak sah atau tidak dapat diberlakukan sejauh yang diperlukan untuk membuatnya valid dan dapat diberlakukan konsisten dengan tujuan para pihak dan, jika pengadilan tidak akan melakukannya, para pihak menyetujui untuk menegosiasikan ketentuan sesuai dengan undang-undang yang berlaku."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _c("span", { staticStyle: { "font-weight": "bold" } }, [
-              _vm._v("Waiver")
+              _vm._v("Pengabaian")
             ]),
             _c("br"),
             _vm._v(
-              "No delay in acting or failure to act shall constitute a waiver of any right of any party under this Agreement. Any waiver must be in writing and signed by the party entitled to the benefit of the right being waived. Unless otherwise stated in the waiver, any waiver applies only to the specific circumstance for which the waiver is given and not to any subsequent circumstance involving the same or any other right."
+              "Tidak ada penundaan dalam bertindak atau gagal bertindak merupakan pengesampingan hak pihak mana pun berdasarkan perjanjian ini. Pengabaian apa pun harus dilakukan secara tertulis dan ditandatangani oleh pihak yang berhak atas hak bebas yang dibebaskan. Kecuali dinyatakan lain dalam pengabaian, setiap pengabaian berlaku hanya untuk keadaan tertentu yang pembebasannya diberikan dan tidak pada keadaan berikutnya yang melibatkan hak yang sama atau yang lainnya."
             )
           ]),
           _vm._v(" "),
           _c("p", { staticStyle: { color: "blue", "font-weight": "bold" } }, [
-            _vm._v("This is the end of the Legal Notice and License Agreement.")
+            _vm._v(
+              "Ini adalah akhir dari Pemberitahuan Hukum dan Perjanjian Lisensi."
+            )
           ])
         ])
       ])
@@ -34764,7 +34776,7 @@ var render = function() {
     _c("section", { staticClass: "text-center", attrs: { id: "gall" } }, [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "gall_title" }, [
-          _c("h4", [_vm._v("gallery")])
+          _c("h4", [_vm._v("Galeri")])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "colum" }, [
@@ -35311,7 +35323,7 @@ var render = function() {
   return _c("front-base", [
     _c("section", { attrs: { id: "news" } }, [
       _c("div", { staticClass: "container" }, [
-        _c("h4", [_c("b", [_vm._v("News")])]),
+        _c("h4", [_c("b", [_vm._v("Berita")])]),
         _vm._v(" "),
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "single_news_item news_news" }, [
@@ -35395,7 +35407,7 @@ var render = function() {
         [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-md-12" }, [
-              _c("h4", [_c("b", [_vm._v("news")])])
+              _c("h4", [_c("b", [_vm._v("Berita")])])
             ])
           ]),
           _vm._v(" "),
@@ -35657,7 +35669,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -35839,7 +35851,11 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return axios.get('/api/vegetables/' + this.genusId);
+                return axios.get('/api/vegetables?load=passport', {
+                  params: {
+                    genus_id: this.genusId
+                  }
+                });
 
               case 2:
                 response = _context.sent;
@@ -35913,13 +35929,13 @@ var render = function() {
     _c("section", { attrs: { id: "char" } }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "msg_title col-md-12" }, [
-          _c("h4", [_c("b", [_vm._v("Characterization")])]),
+          _c("h4", [_c("b", [_vm._v("Karakterisasi")])]),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
+              "Mengacu pada deskripsi morfologi dan agronomi dari aksesi (yaitu warna hypocotyl, kebiasaan pertumbuhan tanaman, warna corolla, panjang buah, warna biji, dll.). Data ini diamati dan dikumpulkan di lapangan eksperimental oleh Bank Sumber Daya Genetik Sayuran."
             )
           ]),
           _c("br"),
@@ -36702,20 +36718,20 @@ var render = function() {
         _c("div", { staticClass: "container col-md-12" }, [
           _c("div", { staticClass: "msg" }, [
             _c("div", { staticClass: "msg_title" }, [
-              _c("h4", [_c("b", [_vm._v("Characterization")])]),
+              _c("h4", [_c("b", [_vm._v("Karakterisasi")])]),
               _vm._v(" "),
               _c("br"),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
+                  "Mengacu pada deskripsi morfologi dan agronomi dari aksesi (yaitu warna hypocotyl, kebiasaan pertumbuhan tanaman, warna corolla, panjang buah, warna biji, dll.). Data ini diamati dan dikumpulkan di lapangan eksperimental oleh Bank Sumber Daya Genetik Sayuran."
                 )
               ]),
               _c("br"),
               _c("br")
             ]),
             _vm._v(" "),
-            _c("h5", [
+            _c("h5", { staticClass: "col-md-2" }, [
               _c("b", [_vm._v(_vm._s(_vm.vegetable.species.genus.name))])
             ]),
             _vm._v(" "),
@@ -36726,16 +36742,16 @@ var render = function() {
               "div",
               { staticClass: "detail" },
               [
-                _vm._l(_vm.vegetable, function(item) {
-                  return _c("div", { staticClass: "col-md-6" }, [
+                _vm._l(_vm.vegetable.photos, function(photo) {
+                  return _c("div", { staticClass: "col-md-3" }, [
                     _c("img", {
                       staticClass: "img-responsive",
-                      attrs: { src: item.photo, alt: "..." }
+                      attrs: { src: photo.url, alt: "..." }
                     })
                   ])
                 }),
                 _vm._v(" "),
-                _c("div", { attrs: { id: "list col-md-6 " } }, [
+                _c("div", { staticClass: "col-md-6", attrs: { id: "list" } }, [
                   _c("div", { staticClass: "table-responsive table-detail" }, [
                     _c("table", { staticClass: "table" }, [
                       _c("tbody", [
@@ -37273,13 +37289,13 @@ var render = function() {
           { staticClass: "row" },
           [
             _c("div", { staticClass: "col-md-12" }, [
-              _c("h4", [_c("b", [_vm._v("Characterization")])]),
+              _c("h4", [_c("b", [_vm._v("Karakterisasi")])]),
               _vm._v(" "),
               _c("br"),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. "
+                  "Mengacu pada deskripsi morfologi dan agronomi dari aksesi (yaitu warna hypocotyl, kebiasaan pertumbuhan tanaman, warna corolla, panjang buah, warna biji, dll.). Data ini diamati dan dikumpulkan di lapangan eksperimental oleh Bank Sumber Daya Genetik Sayuran."
                 )
               ]),
               _c("br"),
@@ -38104,13 +38120,13 @@ var render = function() {
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-md-12" }, [
-            _c("h4", [_c("b", [_vm._v("Passport")])]),
+            _c("h4", [_c("b", [_vm._v("Paspor")])]),
             _vm._v(" "),
             _c("br"),
             _vm._v(" "),
             _c("p", [
               _vm._v(
-                "Refers to accession no. and data recorded when the sample was originally collected (i.e. crop accession no., genus, species, altitude, collecting location, etc.). These data were received from the seed donor together with the germplasm. "
+                "Mengacu pada nomor aksesi dan data dicatat ketika sampel telah dikumpulkan (yaitu aksesi tanaman no., genus, spesies, ketinggian, mengumpulkan lokasi, dll.). Data ini diterima dari donor benih bersama dengan plasma nutfah. "
               )
             ]),
             _c("br"),
@@ -38444,24 +38460,24 @@ var render = function() {
                             _vm._v("* Any *")
                           ]),
                           _vm._v(" "),
-                          _c("option", { attrs: { value: "Available" } }, [
-                            _vm._v("Available")
+                          _c("option", { attrs: { value: "Tersedia" } }, [
+                            _vm._v("Tersedia")
                           ]),
                           _vm._v(" "),
                           _c(
                             "option",
-                            { attrs: { value: "No Longer Available" } },
-                            [_vm._v("No Longer Available")]
+                            { attrs: { value: "Sudah Tidak Tersedia" } },
+                            [_vm._v("Sudah Tidak Tersedia")]
                           ),
                           _vm._v(" "),
-                          _c("option", { attrs: { value: "Not Available" } }, [
-                            _vm._v("Not Available")
+                          _c("option", { attrs: { value: "Tidak Tersedia" } }, [
+                            _vm._v("Tidak Tersedia")
                           ]),
                           _vm._v(" "),
                           _c(
                             "option",
-                            { attrs: { value: "Restricted Distribution" } },
-                            [_vm._v("Restricted Distribution")]
+                            { attrs: { value: "Distribusi Terbatas" } },
+                            [_vm._v("Distribusi Terbatas")]
                           )
                         ])
                       ]),
@@ -38632,7 +38648,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\nh5[data-v-a1f9b300]{\n  padding: 10px 5px;\n  text-align: left;\n  font-weight: 500;\n  color: #fff;\n  text-transform: uppercase;\n  background:  #808b96 ;\n}\n.other_filters select[data-v-a1f9b300]{\n    display: inline-block;\n    text-align: center;\n    height:30px;\n    margin-right: 10px;\n    outline: none;\n    color: #74646e;\n    border: 1px solid #C8BFC4;\n    -webkit-box-shadow: inset 1px 1px 2px #ddd8dc;\n            box-shadow: inset 1px 1px 2px #ddd8dc;\n    background: #fff;\n    width: 45px;\n}\n.other_filters input[data-v-a1f9b300]{\n    display: inline-block;\n    text-align: center;\n    height:30px;\n    margin-right: 10px;\n    outline: none;\n    color: #74646e;\n    border: 1px solid #C8BFC4;\n    -webkit-box-shadow: inset 1px 1px 2px #ddd8dc;\n            box-shadow: inset 1px 1px 2px #ddd8dc;\n    background: #fff;\n    width: 65px;\n}\n\n", ""]);
 
 // exports
 
@@ -38653,6 +38669,121 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -39273,13 +39404,13 @@ var render = function() {
     _c("section", { attrs: { id: "eval" } }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "msg_title col-md-12" }, [
-          _c("h4", [_c("b", [_vm._v("Evaluation")])]),
+          _c("h4", [_c("b", [_vm._v("Evaluasi")])]),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "Refers to the data results of screening accessions for their resistance to different pests (i.e. melon fly, cotton aphid, etc.) and diseases (i.e. Bhendi Yellow Vein Mosaic Virus,Tobacco Mosaic Virus, etc.). It also includes nutritive value (i.e.Vitamin A, Vitamin C, Anti-oxidant Activity, etc). The screening was conducted by scientists in various departments at AVRDC - The World Vegetable Center and other research institutes. "
+              "Mengacu pada hasil data aksesi penyaringan untuk ketahanannya terhadap hama yang berbeda (yaitu lalat melon, kutu kapas, dll.) dan penyakit (yaitu Virus Benyak Kuning Vena, Virus Mosaik Tembakau, dll.). Ini juga termasuk nilai gizi (yaitu. Vitamin A, Vitamin C, Aktivitas Anti-oksidan, dll). Penyaringan dilakukan oleh para ilmuwan di berbagai departemen di Bank Sumber Daya Genetik Sayuran dan lembaga penelitian lainnya."
             )
           ]),
           _c("br"),
@@ -39884,13 +40015,13 @@ var render = function() {
     _c("section", { attrs: { id: "eval" } }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "msg_title col-md-12" }, [
-          _c("h4", [_c("b", [_vm._v("Evaluation")])]),
+          _c("h4", [_c("b", [_vm._v("Evaluasi")])]),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "Refers to the data results of screening accessions for their resistance to different pests (i.e. melon fly, cotton aphid, etc.) and diseases (i.e. Bhendi Yellow Vein Mosaic Virus,Tobacco Mosaic Virus, etc.). It also includes nutritive value (i.e.Vitamin A, Vitamin C, Anti-oxidant Activity, etc). The screening was conducted by scientists in various departments at AVRDC - The World Vegetable Center and other research institutes. "
+              "Mengacu pada hasil data aksesi penyaringan untuk ketahanannya terhadap hama yang berbeda (yaitu lalat melon, kutu kapas, dll.) dan penyakit (yaitu Virus Benyak Kuning Vena, Virus Mosaik Tembakau, dll.). Ini juga termasuk nilai gizi (yaitu. Vitamin A, Vitamin C, Aktivitas Anti-oksidan, dll). Penyaringan dilakukan oleh para ilmuwan di berbagai departemen di Bank Sumber Daya Genetik Sayuran dan lembaga penelitian lainnya."
             )
           ]),
           _c("br"),
@@ -40220,6 +40351,382 @@ var render = function() {
                     _c("td")
                   ])
                 ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "other_filters" }, [
+                _c(
+                  "div",
+                  {
+                    attrs: {
+                      "data-toggle": "collapse",
+                      href: "#collapseNutritive",
+                      role: "button",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseNutritive"
+                    }
+                  },
+                  [_c("h5", [_vm._v("For Nutritive Value")])]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: { id: "collapseNutritive" }
+                  },
+                  [
+                    _c("table", [
+                      _c("tbody", [
+                        _c("tr", [
+                          _c("td", { staticStyle: { "text-align": "right" } }, [
+                            _vm._v("Dry matter (%)")
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c("select", { attrs: { name: "DRYMAT" } }, [
+                              _c("option", { attrs: { value: ">" } }, [
+                                _vm._v(">")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "=" } }, [
+                                _vm._v("=")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "<" } }, [
+                                _vm._v("<")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: { name: "DRYMAT", type: "number" }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn btn-success",
+                                attrs: { name: "add", title: "add" }
+                              },
+                              [_vm._v("ADD")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("td", { staticStyle: { "text-align": "right" } }, [
+                            _vm._v("Vitamin A (mg/100g)")
+                          ]),
+                          _c("td", [
+                            _c("select", { attrs: { name: "VITA" } }, [
+                              _c("option", { attrs: { value: ">" } }, [
+                                _vm._v(">")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "=" } }, [
+                                _vm._v("=")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "<" } }, [
+                                _vm._v("<")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: { name: "VITA", type: "number" }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn btn-success",
+                                attrs: { name: "add", title: "add" }
+                              },
+                              [_vm._v("ADD")]
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", { staticStyle: { "text-align": "right" } }, [
+                            _vm._v("Sugar (%)")
+                          ]),
+                          _c("td", [
+                            _c("select", { attrs: { name: "SUGAR" } }, [
+                              _c("option", { attrs: { value: ">" } }, [
+                                _vm._v(">")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "=" } }, [
+                                _vm._v("=")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "<" } }, [
+                                _vm._v("<")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: { name: "SUGAR", type: "number" }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn btn-success",
+                                attrs: { name: "add", title: "add" }
+                              },
+                              [_vm._v("ADD")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("td", { staticStyle: { "text-align": "right" } }, [
+                            _vm._v("Vitamin C (mg/100g)")
+                          ]),
+                          _c("td", [
+                            _c("select", { attrs: { name: "VITC" } }, [
+                              _c("option", { attrs: { value: ">" } }, [
+                                _vm._v(">")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "=" } }, [
+                                _vm._v("=")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "<" } }, [
+                                _vm._v("<")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: { name: "VITC", type: "number" }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn btn-success",
+                                attrs: { name: "add", title: "add" }
+                              },
+                              [_vm._v("ADD")]
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", { staticStyle: { "text-align": "right" } }, [
+                            _vm._v("Color value (*100)")
+                          ]),
+                          _c("td", [
+                            _c("select", { attrs: { name: "COLORVAL" } }, [
+                              _c("option", { attrs: { value: ">" } }, [
+                                _vm._v(">")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "=" } }, [
+                                _vm._v("=")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "<" } }, [
+                                _vm._v("<")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: { name: "COLORVAL", type: "number" }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn btn-success",
+                                attrs: { name: "add", title: "add" }
+                              },
+                              [_vm._v("ADD")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("td", { staticStyle: { "text-align": "right" } }, [
+                            _vm._v("Ascorbic acid (mg/100g)")
+                          ]),
+                          _c("td", [
+                            _c("select", { attrs: { name: "ASA" } }, [
+                              _c("option", { attrs: { value: ">" } }, [
+                                _vm._v(">")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "=" } }, [
+                                _vm._v("=")
+                              ]),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "<" } }, [
+                                _vm._v("<")
+                              ])
+                            ]),
+                            _c("input", {
+                              attrs: { name: "ASA", type: "number" }
+                            })
+                          ]),
+                          _c("td", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn btn-success",
+                                attrs: { name: "add", title: "add" }
+                              },
+                              [_vm._v("ADD")]
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    attrs: {
+                      "data-toggle": "collapse",
+                      href: "#collapseAbiotic",
+                      role: "button",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseAbiotic"
+                    }
+                  },
+                  [_c("h5", [_vm._v("For Abiotic Stress Tolerance")])]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "collapse", attrs: { id: "collapseAbiotic" } },
+                  [
+                    _c("table", { staticStyle: { display: "none" } }, [
+                      _c("tbody", [
+                        _c("tr", [
+                          _c("td", [_vm._v("Heat tolerance")]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c("select", { attrs: { name: "HEAT" } }, [
+                              _c("option", { attrs: { value: "" } }, [
+                                _vm._v("* Any *")
+                              ])
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn btn-success",
+                                attrs: { name: "add", title: "add" }
+                              },
+                              [_vm._v("ADD")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Cold tolerance")]),
+                          _c("td", [
+                            _c("select", { attrs: { name: "COLD" } }, [
+                              _c("option", { attrs: { value: "" } }, [
+                                _vm._v("* Any *")
+                              ])
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn btn-success",
+                                attrs: { name: "add", title: "add" }
+                              },
+                              [_vm._v("ADD")]
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Drought tolerance")]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c("select", { attrs: { name: "DROUGHT" } }, [
+                              _c("option", { attrs: { value: "" } }, [
+                                _vm._v("* Any *")
+                              ])
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn btn-success",
+                                attrs: { name: "add", title: "add" }
+                              },
+                              [_vm._v("ADD")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Flooding  tolerance")]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c("select", { attrs: { name: "FLOOD" } }, [
+                              _c("option", { attrs: { value: "" } }, [
+                                _vm._v("* Any *")
+                              ])
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn btn-success",
+                                attrs: { name: "add", title: "add" }
+                              },
+                              [_vm._v("ADD")]
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("Salinity tolerance")]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c("select", { attrs: { name: "SALINITY" } }, [
+                              _c("option", { attrs: { value: "" } }, [
+                                _vm._v("* Any *")
+                              ])
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn btn-success",
+                                attrs: { name: "add", title: "add" }
+                              },
+                              [_vm._v("ADD")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("td"),
+                          _c("td"),
+                          _c("td")
+                        ])
+                      ])
+                    ])
+                  ]
+                )
               ])
             ]
           ),

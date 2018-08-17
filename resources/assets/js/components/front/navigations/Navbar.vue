@@ -19,19 +19,19 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse zero_mp menu" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right main_menu clearfix">
-                                <li><a :href="url('/')">Home</a></li>
-                                <li><a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Search</a>
+                                <li><a :href="url('/')">Beranda</a></li>
+                                <li><a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Telusur</a>
                                     <ul class="sub-menu dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <li><a :href="url('/search/passport')">Passport</a></li>
-                                        <li><a :href="url('/search/characterization')">Characterization</a></li>
-                                        <li><a :href="url('/search/evaluation')">Evaluation</a></li>
+                                        <li><a :href="url('/search/passport')">Paspor</a></li>
+                                        <li><a :href="url('/search/characterization')">Karakterisasi</a></li>
+                                        <li><a :href="url('/search/evaluation')">Evaluasi</a></li>
                                     </ul>
                                 </li>
-                                <li><a :href="url('/news')">news</a></li>
-                                <li><a :href="url('/gallery')">gallery</a></li>
-                                <li><a :href="url('/download')">download</a></li>
-                                <li><a :href="url('/terms')">terms of use</a></li>
-                                <li><a :href="url('/about')">about us</a></li>
+                                <li><a :href="url('/news')">Berita</a></li>
+                                <li><a :href="url('/gallery')">Galeri</a></li>
+                                <li><a :href="url('/download')">Unduh</a></li>
+                                <li><a :href="url('/terms')">Syarat & Ketentuan</a></li>
+                                <li><a :href="url('/about')">Tentang</a></li>
                             </ul>
                             
                         </div>

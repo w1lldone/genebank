@@ -61,10 +61,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="wel_header">
-                            <h2 class="wow bounce" data-wow-delay="0.2s">selamat datang di bank plasma nutfah</h2><br>
-                            <p id="trans" class="wow fadeInUp" data-wow-delay="0.2s">Bank Plasma Nutfah adalah sistem informasi yang mengelola data semua plasma nutfah sayuran yang disimpan di bank gen AVRDC. Sumber Daya Genetik dan Unit Benih menggunakan sistem ini untuk mengelola operasional genebank secara efisien. AVGRIS menghubungkan semua operasi konservasi dan manajemen plasma nutfah, mulai dari pendaftaran, karakterisasi, evaluasi dan inventarisasi benih hingga distribusi benih hingga pengguna akhir.
-                            AVGRIS menyediakan akses langsung pengguna ke data plasma nutfah melalui internet.
-                            Penggunaan sistem ini GRATIS tetapi mohon dibaca terlebih dahulu<span><a :href="url('/terms')">persyaratan pengguna (terms of use).</a></span></p>
+                            <h2 class="wow bounce" data-wow-delay="0.2s">selamat datang di Bank Sumber Daya Genetik Sayuran</h2><br>
+                            <p id="trans" class="wow fadeInUp" data-wow-delay="0.2s">Bank Sumber Daya Genetik Sayuran adalah sistem informasi yang mengelola data semua plasma nutfah sayuran yang disimpan di bank plasma nutfah. Sistem ini digunakan untuk mengelola operasional bank plasma nutfah secara efisien. Bank Sumber Daya Genetik Sayuran menghubungkan semua operasi konservasi dan manajemen plasma nutfah, mulai dari pendaftaran, karakterisasi, evaluasi dan inventarisasi benih hingga distribusi benih hingga pengguna akhir.
+                                
+                            Bank Sumber Daya Genetik Sayuran menyediakan akses langsung pengguna ke data plasma nutfah melalui internet.
+
+                            Penggunaan sistem ini GRATIS tetapi mohon dibaca terlebih dahulu<span><a :href="url('/terms')"> syarat dan ketentuan.</a></span></p>
                         </div>
                     </div>
                 </div>

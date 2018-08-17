@@ -4,9 +4,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4><b>Passport</b></h4>
+                        <h4><b>Paspor</b></h4>
                         <br>
-                        <p>Refers to accession no. and data recorded when the sample was originally collected (i.e. crop accession no., genus, species, altitude, collecting location, etc.). These data were received from the seed donor together with the germplasm. </p><br><br>
+                        <p>Mengacu pada nomor aksesi dan data dicatat ketika sampel telah dikumpulkan (yaitu aksesi tanaman no., genus, spesies, ketinggian, mengumpulkan lokasi, dll.). Data ini diterima dari donor benih bersama dengan plasma nutfah. </p><br><br>
                         
                         <!-- Filters -->
                         <div id="filters_area">            
@@ -100,10 +100,10 @@
                                         <td style="text-align: right">Distribution Status</td><td>
                                             <select name="DISSTA">
                                                 <option value="">* Any *</option>
-                                                <option value="Available">Available</option>
-                                                <option value="No Longer Available">No Longer Available</option>
-                                                <option value="Not Available">Not Available</option>
-                                                <option value="Restricted Distribution">Restricted Distribution</option>
+                                                <option value="Tersedia">Tersedia</option>
+                                                <option value="Sudah Tidak Tersedia">Sudah Tidak Tersedia</option>
+                                                <option value="Tidak Tersedia">Tidak Tersedia</option>
+                                                <option value="Distribusi Terbatas">Distribusi Terbatas</option>
                                             </select>
                                         </td>
                                         <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
