@@ -6,47 +6,52 @@
                 <div class="gall_title">
                     <h4>Galeri</h4>
                 </div>
-            <!-- </div> -->
-            <!--End of col-md-2-->
-            <div class="colum">
-                <!-- <div class="container"> -->
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="notes">
-                                <div class="note blue">
-                                    <div class="img_overlay">
-                                        <p>Caption 1</p>
+                            <div class="container_12 minH-wrap">
+                                <div class="row">
+                                    <div>
+                                        <div>
+                                            <div class="col-md-3" style="height: 296px;">
+                                                <div class="box_inner">
+                                                    <img src="img/galeri1.jpg" class="img-bord">
+                                                    <p>Ekspor 700 Ton Benih Kangkung</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3" style="height: 296px;">
+                                                <div class="box_inner">
+                                                    <img src="img/galeri2.jpg" class="img-bord">
+                                                    <p>Expo Nasional 2017</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3" style="height: 296px;">
+                                                <div class="box_inner">
+                                                    <img src="img/galeri3.jpg" class="img-bord">
+                                                    <p>Peresmian Kampung Panah Merah</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3" style="height: 296px;">
+                                                <div class="box_inner">
+                                                    <img src="img/galeri4.jpg" class="img-bord">
+                                                    <p>Brebes Berbagi Teknologi menanam Bawang Merah Biji</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3" style="height: 296px;">
+                                                <div class="box_inner">
+                                                    <img src="img/galeri5.jpg" class="img-bord">
+                                                    <p>Pelangi Award 2016</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3" style="height: 296px;">
+                                                <div class="box_inner">
+                                                    <img src="img/galeri6.jpg" class="img6-bord">
+                                                    <p>Panah Merah Expo 2016</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <img src="img/environment.jpg" alt="">
                                 </div>
-                                <div class="note red">
-                                    <div class="img_overlay">
-                                        <p>Caption 2</p>
-                                    </div>
-                                    <img src="img/gall_1.jpg" alt="">
-                                </div>
-                                <div class="note green">
-                                    <div class="img_overlay">
-                                        <p>Caption 3</p>
-                                    </div>
-                                    <img src="img/cliemate.jpg" alt="">
-                                </div>
-                                <div class="note yellow">
-                                    <div class="img_overlay">
-                                        <p>Caption 4</p>
-                                    </div>
-                                    <img src="img/photography.jpg" alt="">
-                                </div>
-                                <div class="note black">
-                                    <div class="img_overlay">
-                                        <p>Caption 5</p>
-                                    </div>
-                                    <img src="img/species.jpg" alt="">
-                                </div>
-                            </div><!--End of notes-->
-                        </div><!--End of col-lg-12-->
-                    </div><!--End of row-->
-                </div><!--End of colum-->
+                            </div>
+                     
+                    
             </div><!--End of container-->
         </section>
     </front-base>

@@ -34685,7 +34685,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -34698,6 +34698,11 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -34782,59 +34787,105 @@ var render = function() {
           _c("h4", [_vm._v("Galeri")])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "colum" }, [
+        _c("div", { staticClass: "container_12 minH-wrap" }, [
           _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              { staticClass: "col-lg-12 col-md-12 col-sm-12 col-xs-12" },
-              [
-                _c("div", { staticClass: "notes" }, [
-                  _c("div", { staticClass: "note blue" }, [
-                    _c("div", { staticClass: "img_overlay" }, [
-                      _c("p", [_vm._v("Caption 1")])
-                    ]),
-                    _vm._v(" "),
-                    _c("img", {
-                      attrs: { src: "img/environment.jpg", alt: "" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "note red" }, [
-                    _c("div", { staticClass: "img_overlay" }, [
-                      _c("p", [_vm._v("Caption 2")])
-                    ]),
-                    _vm._v(" "),
-                    _c("img", { attrs: { src: "img/gall_1.jpg", alt: "" } })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "note green" }, [
-                    _c("div", { staticClass: "img_overlay" }, [
-                      _c("p", [_vm._v("Caption 3")])
-                    ]),
-                    _vm._v(" "),
-                    _c("img", { attrs: { src: "img/cliemate.jpg", alt: "" } })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "note yellow" }, [
-                    _c("div", { staticClass: "img_overlay" }, [
-                      _c("p", [_vm._v("Caption 4")])
-                    ]),
-                    _vm._v(" "),
-                    _c("img", {
-                      attrs: { src: "img/photography.jpg", alt: "" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "note black" }, [
-                    _c("div", { staticClass: "img_overlay" }, [
-                      _c("p", [_vm._v("Caption 5")])
-                    ]),
-                    _vm._v(" "),
-                    _c("img", { attrs: { src: "img/species.jpg", alt: "" } })
-                  ])
-                ])
-              ]
-            )
+            _c("div", [
+              _c("div", [
+                _c(
+                  "div",
+                  { staticClass: "col-md-3", staticStyle: { height: "296px" } },
+                  [
+                    _c("div", { staticClass: "box_inner" }, [
+                      _c("img", {
+                        staticClass: "img-bord",
+                        attrs: { src: "img/galeri1.jpg" }
+                      }),
+                      _vm._v(" "),
+                      _c("p", [_vm._v("Ekspor 700 Ton Benih Kangkung")])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-md-3", staticStyle: { height: "296px" } },
+                  [
+                    _c("div", { staticClass: "box_inner" }, [
+                      _c("img", {
+                        staticClass: "img-bord",
+                        attrs: { src: "img/galeri2.jpg" }
+                      }),
+                      _vm._v(" "),
+                      _c("p", [_vm._v("Expo Nasional 2017")])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-md-3", staticStyle: { height: "296px" } },
+                  [
+                    _c("div", { staticClass: "box_inner" }, [
+                      _c("img", {
+                        staticClass: "img-bord",
+                        attrs: { src: "img/galeri3.jpg" }
+                      }),
+                      _vm._v(" "),
+                      _c("p", [_vm._v("Peresmian Kampung Panah Merah")])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-md-3", staticStyle: { height: "296px" } },
+                  [
+                    _c("div", { staticClass: "box_inner" }, [
+                      _c("img", {
+                        staticClass: "img-bord",
+                        attrs: { src: "img/galeri4.jpg" }
+                      }),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "Brebes Berbagi Teknologi menanam Bawang Merah Biji"
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-md-3", staticStyle: { height: "296px" } },
+                  [
+                    _c("div", { staticClass: "box_inner" }, [
+                      _c("img", {
+                        staticClass: "img-bord",
+                        attrs: { src: "img/galeri5.jpg" }
+                      }),
+                      _vm._v(" "),
+                      _c("p", [_vm._v("Pelangi Award 2016")])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col-md-3", staticStyle: { height: "296px" } },
+                  [
+                    _c("div", { staticClass: "box_inner" }, [
+                      _c("img", {
+                        staticClass: "img6-bord",
+                        attrs: { src: "img/galeri6.jpg" }
+                      }),
+                      _vm._v(" "),
+                      _c("p", [_vm._v("Panah Merah Expo 2016")])
+                    ])
+                  ]
+                )
+              ])
+            ])
           ])
         ])
       ])
@@ -34944,25 +34995,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             news: [{
                 id: 1,
-                title: "Positive signals for Vietnam's recovering tomato market",
-                image: "/img/news1.JPG",
-                date: "Aug 12, 2018",
+                title: "Penandatanganan Perjanjian Kerjasama Pendampingan Pengelolaan Gene bank Sayuran Nasional UGM dan EWINDO",
+                image: "/img/news1.png",
+                date: "Kamis, 26 Juli 2018",
                 author: "admin",
-                body: "The end of 2017 saw Vietnamese tomato growers in great distress when nearly 2,500 hectares were infected with a strange virus causing a major crop loss for tomato growers. The disease began in Lam Dong province "
+                body: "Dalam catatan perjalanan kerjasama bersama Akademisi, UGM memiliki ikatan yang sangat erat dengan Ewindo. Salah satu wujud nyata kerjasamanya adalah pengelolaan Gene Bank atau Bank Plasma Nutfah."
             }, {
                 id: 2,
-                title: "Nepal Field Day: East-West Seed partners with Jai Kisan Seed Centre",
+                title: "Bank Genetik Sayuran UGM dan EWINDO",
                 image: "/img/news2.jpg",
-                date: "Aug 12, 2018",
+                date: "Kamis, 09 November 2017",
                 author: "admin",
-                body: "Kathmandu, Nepal — Despite adverse weather conditions, the Nepal Mega Field Day on 16 June 2018 held in partnership with Jai Kisan Seed Centre was a huge success."
+                body: "Menjaga kekayaan plasma nutfah bukanlah perkara mudah yang bisa dikerjakan sendiri oleh satu pihak. Dibutuhkan banyak sumber daya manusia dan teknologi yang tepat untuk melestarikannya. Hal ini memang harus dilakukan mengingat kesuksesan kualitas dari hasil pertanian terletak pada plasma nutfah yang terjaga agar menghasilkan benih yang unggul."
             }, {
                 id: 3,
-                title: "Threat to Yellowstone’s grizzly bears.",
-                image: "/img/threat_bear.jpg",
-                date: "Aug 12, 2018",
+                title: "Hibah Bank Plasma EWINDO dengan UGM",
+                image: "/img/news3.JPG",
+                date: "Kamis, 02 November 2017",
                 author: "admin",
-                body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. "
+                body: "Pertukaran cendera mata antara Managing Director of PT East West Seed Indonesia (Ewindo) Glenn Pardede (kiri) dengan Rektor UGM Panut Mulyono seusai menandatangani perjanjian penyaluran hibah pembangunan dan operasional Bank Plasma Nutfah tanaman hortikultura di UGM, Yogyakarta."
             }]
         };
     },
@@ -35290,6 +35341,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -35328,53 +35387,85 @@ var render = function() {
       _c("div", { staticClass: "container" }, [
         _c("h4", [_c("b", [_vm._v("Berita")])]),
         _vm._v(" "),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "single_news_item news_news" }, [
-            _c("h5", [
-              _vm._v("Positive signals for Vietnam's recovering tomato market")
-            ]),
-            _vm._v(" "),
             _c("div", { staticClass: "detail" }, [
+              _c("br"),
+              _vm._v(" "),
               _c("h3", [_vm._v(_vm._s(_vm.title))]),
               _vm._v(" "),
+              _c(
+                "h3",
+                {
+                  staticClass: "color-2",
+                  staticStyle: {
+                    "text-align": "center",
+                    "padding-bottom": "5px"
+                  }
+                },
+                [
+                  _vm._v(
+                    "Penandatanganan Perjanjian Kerjasama Pendampingan Pengelolaan Gene Bank Sayuran Nasional UGM dan EWINDO"
+                  )
+                ]
+              ),
+              _vm._v(" "),
               _c("div", { staticClass: "expert" }, [
-                _c("div", { staticClass: "left-side text-left" }, [
-                  _c("p", { staticClass: "left_side" }, [
-                    _c("span", { staticClass: "clock" }, [
-                      _c("i", { staticClass: "fa fa-clock-o" })
-                    ]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "time" }, [
-                      _vm._v(_vm._s(_vm.date))
-                    ]),
-                    _vm._v(" "),
-                    _c("a", { attrs: { href: "" } }, [
-                      _c("span", { staticClass: "admin" }, [
-                        _c("i", { staticClass: "fa fa-user" }),
-                        _vm._v(" " + _vm._s(_vm.author))
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "right_side text-right" }, [
-                    _c("a", { attrs: { href: "" } }, [
-                      _c("span", { staticClass: "right_msg text-right" }, [
-                        _c("i", { staticClass: "fa fa-comments-o" })
+                _c(
+                  "div",
+                  {
+                    staticClass: "left-side text-left",
+                    staticStyle: { display: "inline" }
+                  },
+                  [
+                    _c("p", { staticClass: "left_side" }, [
+                      _c("span", { staticClass: "clock" }, [
+                        _c("i", { staticClass: "fa fa-clock-o" })
                       ]),
                       _vm._v(" "),
-                      _c("span", { staticClass: "count" }, [_vm._v("0")])
+                      _c("span", { staticClass: "time" }, [
+                        _vm._v("Selasa, 15 Mei 2018")
+                      ]),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "" } }, [
+                        _c("span", { staticClass: "admin" }, [
+                          _c("i", { staticClass: "fa fa-user" }),
+                          _vm._v("admin")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "" } }, [
+                        _c("span", { staticClass: "right_msg text-right" }, [
+                          _c("i", { staticClass: "fa fa-comments-o" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "count" }, [_vm._v("0")])
+                      ])
                     ])
-                  ])
-                ])
+                  ]
+                )
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "news_detail" }, [
-                _c("img", { attrs: { src: "/img/news1.JPG" } })
+                _c("img", { attrs: { src: "/img/news1.png" } })
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "The end of 2017 saw Vietnamese tomato growers in great distress when nearly 2,500 hectares were infected with a strange virus causing a major crop loss for tomato growers. The disease began in Lam Dong province affecting foliage and stunting growth of affected tomato plants. Government agencies and research institutes both in and outside of the country have undertaken research to identify the cause, as well as potential solutions, to this ongoing problem. Many seed companies are also participating in helping solve Vietnam’s tomato virus problem."
+                  " Dalam catatan perjalanan kerjasama bersama Akademisi, UGM memiliki ikatan yang sangat erat dengan Ewindo. Salah satu wujud nyata kerjasamanya adalah pengelolaan Gene Bank atau Bank Plasma Nutfah. Di sela Expo Nasional 2018 kemarin, Ewindo mengundang perwakilan akademisi dari UGM untuk merealisasikan kerjasama kedua belah pihak dengan menandatangani Perjanjian Kerjasama Pendampingan Pengelolaan Gene Bank Sayuran Nasional di kantor pusat Purwakarta.\n                        "
+                ),
+                _c("br"),
+                _c("br"),
+                _vm._v(
+                  "\n                        Bertanggal 15 Mei, Wakil Rektor Bidang Kerjasama dan Alumni, Dr. Paripurna, S.H., M.Hum., LL.M. Direktur Kemitraan, Alumni dan Urusan International, Dr. Danang Sri Hadmoko, S.Si., M.Sc. Kepala Pusat Inovasi Agro Teknologi, Dr. Ir, Taryono, M.Sc. Dekan Fakultas Pertanian UGM, Dr. Jamhari, S.P, M.P. sebagai perwakilan undangan Universitas Gadjah Mada menyempatkan untuk mengunjungi Expo Nasional Panah Merah 2018. Mereka diajak untuk melihat inovasi dan teknologi yang digunakan dalam pengembangan produk Cap Panah Merah dari uji penelitian hingga proses pengemasan. Selain itu, mereka juga berkesempatan melihat varietas-varietas baru yang bersamaan diluncurkan dengan acara Expo Nasional Panah Merah 2018 sebanyak 15 varietas. \n                        "
+                ),
+                _c("br"),
+                _c("br"),
+                _vm._v(
+                  "\n                        Dengan penandatangan ini diharapkan Ewindo dan UGM bisa membentuk kerjasama yang juga membantu pertanian Indonesia kedepannya dengan membuat Gene Bank Nasional. Kerjasama ini bukanlah awal atau akhir namun sebuah tonggak sejarah dari perubahan masa depan Pertanian Indonesia.\n                    "
                 )
               ])
             ])

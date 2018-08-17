@@ -40,27 +40,27 @@ export default {
         news: [
             {
                 id:1,
-                title: "Positive signals for Vietnam's recovering tomato market",
-                image: "/img/news1.JPG",
-                date: "Aug 12, 2018",
+                title: "Penandatanganan Perjanjian Kerjasama Pendampingan Pengelolaan Gene bank Sayuran Nasional UGM dan EWINDO",
+                image: "/img/news1.png",
+                date: "Kamis, 26 Juli 2018",
                 author: "admin",
-                body: "The end of 2017 saw Vietnamese tomato growers in great distress when nearly 2,500 hectares were infected with a strange virus causing a major crop loss for tomato growers. The disease began in Lam Dong province "
+                body: "Dalam catatan perjalanan kerjasama bersama Akademisi, UGM memiliki ikatan yang sangat erat dengan Ewindo. Salah satu wujud nyata kerjasamanya adalah pengelolaan Gene Bank atau Bank Plasma Nutfah."
             },
             {
                 id:2,
-                title: "Nepal Field Day: East-West Seed partners with Jai Kisan Seed Centre",
+                title: "Bank Genetik Sayuran UGM dan EWINDO",
                 image: "/img/news2.jpg",
-                date: "Aug 12, 2018",
+                date: "Kamis, 09 November 2017",
                 author: "admin",
-                body: "Kathmandu, Nepal — Despite adverse weather conditions, the Nepal Mega Field Day on 16 June 2018 held in partnership with Jai Kisan Seed Centre was a huge success.",
+                body: "Menjaga kekayaan plasma nutfah bukanlah perkara mudah yang bisa dikerjakan sendiri oleh satu pihak. Dibutuhkan banyak sumber daya manusia dan teknologi yang tepat untuk melestarikannya. Hal ini memang harus dilakukan mengingat kesuksesan kualitas dari hasil pertanian terletak pada plasma nutfah yang terjaga agar menghasilkan benih yang unggul.",
             },
             {
                 id:3,
-                title: "Threat to Yellowstone’s grizzly bears.",
-                image: "/img/threat_bear.jpg",
-                date: "Aug 12, 2018",
+                title: "Hibah Bank Plasma EWINDO dengan UGM",
+                image: "/img/news3.JPG",
+                date: "Kamis, 02 November 2017",
                 author: "admin",
-                body: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
+                body: "Pertukaran cendera mata antara Managing Director of PT East West Seed Indonesia (Ewindo) Glenn Pardede (kiri) dengan Rektor UGM Panut Mulyono seusai menandatangani perjanjian penyaluran hibah pembangunan dan operasional Bank Plasma Nutfah tanaman hortikultura di UGM, Yogyakarta.",
             }
         ]
     }
