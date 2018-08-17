@@ -27,8 +27,8 @@ class VegetableController extends Controller
             $model = $model->where('species_id', "$request->species_id");
         }
 
-        if ($request->has('vegetable_introduction_number')) {
-            $model = $model->where('vegetable_introduction_number', 'like', "%$request->vegetable_introduction_number%");
+        if ($request->has('plant_introduction_number')) {
+            $model = $model->where('plant_introduction_number', 'like', "%$request->plant_introduction_number%");
         }
 
         if ($request->has('temporary_number')) {
