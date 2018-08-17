@@ -33276,7 +33276,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n.container_12 li[data-v-4f71d004]{\n    text-align: left;\n}\n", ""]);
+exports.push([module.i, "\n.container_11 li[data-v-4f71d004]{\n    text-align: left;\n}\n.container_11[data-v-4f71d004] {\n    margin-left:25px;\n    margin-right:-25px;\n}\n", ""]);
 
 // exports
 
@@ -33289,6 +33289,7 @@ exports.push([module.i, "\n.container_12 li[data-v-4f71d004]{\n    text-align: l
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
+//
 //
 //
 //
@@ -33465,7 +33466,7 @@ var render = function() {
                 [_vm._v("Tentang Kami")]
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "container_12 minH-wrap" }, [
+              _c("div", { staticClass: "container_11 minH-wrap" }, [
                 _c("div", { staticClass: "row" }, [
                   _c("div", [
                     _c("h2", { staticClass: "color-2" }, [
@@ -33532,6 +33533,8 @@ var render = function() {
                   ])
                 ])
               ]),
+              _vm._v(" "),
+              _c("br"),
               _vm._v(" "),
               _c("div", { staticClass: "container_12 minH-wrap" }, [
                 _c("div", { staticClass: "row" }, [
