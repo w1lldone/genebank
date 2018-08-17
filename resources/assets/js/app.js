@@ -34,6 +34,11 @@ Vue.component(
 );
 
 Vue.component(
+    'Spinner',
+    require('./components/Spinner.vue')
+);
+
+Vue.component(
     'HomePage',
     require('./components/front/home/HomePage.vue')
 );
