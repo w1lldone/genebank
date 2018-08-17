@@ -22,6 +22,7 @@ class GeneraTableSeeder extends Seeder
 
         Genus::create(['name' => 'Capsicum'])->species()->createMany([
             ['name' => 'annuum'],
+            ['name' => 'frutescens'],
         ]);
 
         Genus::create(['name' => 'Cucumis'])->species()->createMany([
