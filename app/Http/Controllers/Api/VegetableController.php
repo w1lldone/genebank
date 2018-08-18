@@ -79,6 +79,10 @@ class VegetableController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+            'incoming_date' => 'nullable|date'
+        ]);
+
         $data = $request->validate([
             'species_id' => 'required|exists:species,id',
             'cultivar_name' => 'nullable|string',

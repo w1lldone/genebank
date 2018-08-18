@@ -29,6 +29,7 @@ class PassportController extends Controller
             'location' => 'nullable|string',
             'province' => 'nullable|string',
             'collecting_institute' => 'nullable|string',
+            'collecting_source' => 'nullable|string',
             'collector' => 'nullable|string',
             'collecting_number' => 'nullable|string',
             'collecting_date' => 'nullable|date',
