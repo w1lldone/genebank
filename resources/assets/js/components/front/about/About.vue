@@ -6,7 +6,7 @@
                     <div class="thumbnail col-sm-12" style="padding:20px; bottom:0; margin:0 auto 30px">
                         <h4 style="margin-left:1vmax; margin:4px 4px 16px;">Tentang Kami</h4>
                         <!-- Content PIAT -->
-                        <div class="container_12 minH-wrap">
+                        <div class="container_11 minH-wrap">
                             <div class="row">
                                 <div>
                                     <h2 class="color-2">Pusat Inovasi Agroteknologi Universitas Gadjah Mada</h2>
@@ -38,6 +38,7 @@
                                 </div>
                             </div>
                         </div>
+                        <br>
                         <!-- Content East West Seed -->
                         <div class="container_12 minH-wrap">
                             <div class="row">
@@ -142,7 +143,11 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.container_12 li{
+.container_11 li{
     text-align: left;
+}
+.container_11 {
+    margin-left:25px;
+    margin-right:-25px;
 }
 </style>
