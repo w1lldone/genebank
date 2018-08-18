@@ -32708,7 +32708,7 @@ var render = function() {
                     },
                     [
                       _c("img", {
-                        attrs: { src: _vm.url("/img/logoPM.PNG"), alt: "" }
+                        attrs: { src: _vm.url("/img/logo.png"), alt: "" }
                       })
                     ]
                   )

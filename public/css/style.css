@@ -258,7 +258,7 @@ input: -webkit-autofill:focus {
 @media screen and (-webkit-min-device-pixel-ratio:0){
     #header .header_menu .custom_navbar-brand{
         height: 30px;
-        width: 40%;
+        width: 25%;
         display: flex;
         margin-bottom: -25px;
         padding-left: 0;
