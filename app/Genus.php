@@ -115,7 +115,7 @@ class Genus extends Model
                     '100 Seed Weight',
                     'Seed hilum size',
                     'Seed hilum color',
-                    'Seed Size (l x d)',
+                    'Seed Size (l x w)',
                 ];
                 break;
 
@@ -166,7 +166,7 @@ class Genus extends Model
                     'Fruit spines',
                     'Fruit flesh thickness',
                     'Fruit cavity',
-                    'Flesh color',
+                    // 'Flesh color',
                     'Fruit bitterness',
                     'No. of locules',
                     'Fruit Aroma',
