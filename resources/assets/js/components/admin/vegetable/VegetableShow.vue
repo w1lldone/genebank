@@ -28,7 +28,8 @@
                 :species_id="vegetable.species.id"
                 :temporary_number="vegetable.temporary_number"
                 :cultivar_name="vegetable.cultivar_name"
-                :subtaxa="vegetable.subtaxa"></vegetable-show-general>
+                :subtaxa="vegetable.subtaxa"
+                :accession_number="vegetable.accession_number"></vegetable-show-general>
               </div>
               <div class="tab-pane fade" id="nav-passport" role="tabpanel" aria-labelledby="nav-passport-tab">
                 <vegetable-show-passport 
