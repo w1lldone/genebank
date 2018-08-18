@@ -97,7 +97,8 @@ class VegetableController extends Controller
             'cultivar_name' => 'nullable|string',
             'species_id' => 'exists:species,id',
             'temporary_number' => 'nullable|string',
-            'subtaxa' => 'nullable|string'
+            'subtaxa' => 'nullable|string',
+            'accession_number' => 'nullable|string',
         ]);
 
         $vegetable->update($data);

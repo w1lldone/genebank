@@ -23,6 +23,7 @@ class VegetablesResource extends JsonResource
             'id' => $this->id,
             'species' => new SpeciesResource($this->species),
             'cultivar_name' => $this->cultivar_name,
+            'accession_number' => $this->accession_number,
             'temporary_number' => $this->temporary_number,
             'plant_introduction_number' => $this->plant_introduction_number,
             'subtaxa' => $this->subtaxa,
