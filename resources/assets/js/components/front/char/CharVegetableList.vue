@@ -17,7 +17,7 @@
             <table cellpadding="0" cellspacing="0" border="0">
               <thead>
                 <tr>
-                  <th>VINO</th>
+                  <th>UGM Number (PINO)</th>
                   <th>Temp. no</th>
                   <th>Species</th>
                   <th>Subtaxa</th>

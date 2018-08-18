@@ -26,7 +26,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td style="text-align: right">Bank number (VINO)</td>
+                  <td style="text-align: right">UGM Number (PIN)</td>
                   <td><input name="VINO" v-model="filters.plant_introduction_number" placeholder="e.g. UGM000001, UGM000002, ..." type="text"></td>
                   <td><button type="button" class="btn btn-success" title="add" @click="updateFilter('plant_introduction_number')">ADD</button></td>
                   

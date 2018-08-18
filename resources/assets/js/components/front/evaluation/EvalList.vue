@@ -109,7 +109,7 @@
                 <table cellpadding="0" cellspacing="0" border="0">
                   <thead>
                     <tr>
-                      <th>VINO</th>
+                      <th>UGM Number (PINO)</th>
                       <th>ACCNO</th>
                       <th>Tempno</th>
                       <th>Family</th>

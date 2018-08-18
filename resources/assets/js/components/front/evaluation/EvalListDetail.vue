@@ -13,7 +13,7 @@
                 <table class="table table-hover">
                   <tbody>
                     <tr>
-                      <td>Vegetable introduction number</td>
+                      <td>UGM Number (PINO)</td>
                       <td>{{ vegetable.plant_introduction_number }}</td>
                     </tr>
                     <tr>
