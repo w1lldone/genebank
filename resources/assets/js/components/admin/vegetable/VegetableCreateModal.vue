@@ -19,30 +19,42 @@
                         <div class="form-group row">
                           <label class="col-md-4">Species</label>
                           <div class="col-md">
-                              <select required class="custom-select" v-model="inputs.species_id">
+                              <select required class="custom-select" v-model="inputs.species_id" :class="hasError('species_id')">
                                   <option value="">Choose...</option>
                                   <option v-for="item in species" :value="item.id">
                                       {{ item.genus.name }} {{ item.name }}
                                   </option>
                               </select>
+                              <div class="invalid-feedback">
+                                {{ errorMessage('species_id') }}
+                              </div>
                           </div>
                         </div>
                         <div class="form-group row">
                           <label class="col-md-4">Incoming date</label>
                           <div class="col-md">
-                              <input class="form-control" type="text" placeholder="YYYY-MM-DD" v-model="inputs.incoming_date">
+                              <input class="form-control" type="text" placeholder="YYYY-MM-DD" v-model="inputs.incoming_date" :class="hasError('incoming_date')">
+                              <div class="invalid-feedback">
+                                {{ errorMessage('incoming_date') }} Please use this format: YYYY-MM-DD
+                              </div>
                           </div>
                         </div>
                         <div class="form-group row">
                           <label class="col-md-4">Cultivar name</label>
                           <div class="col-md">
-                              <input class="form-control" type="text" placeholder="Green chili" v-model="inputs.cultivar_name">
+                              <input class="form-control" type="text" placeholder="Green chili" v-model="inputs.cultivar_name" :class="hasError('cultivar_name')">
+                              <div class="invalid-feedback">
+                                {{ errorMessage('cultivar_name') }}
+                              </div>
                           </div>
                         </div>
                         <div class="form-group row">
                           <label class="col-md-4">Temp. number</label>
                           <div class="col-md">
-                              <input class="form-control" type="text" placeholder="GPT223" v-model="inputs.temporary_number">
+                              <input class="form-control" type="text" placeholder="GPT223" v-model="inputs.temporary_number" :class="hasError('temporary_number')">
+                              <div class="invalid-feedback">
+                                {{ errorMessage('temporary_number') }}
+                              </div>
                           </div>
                         </div>
                     </div>
@@ -87,8 +99,8 @@ export default {
             console.log(response.data.data)
             return response.data.data
         } catch(error) {
-            this.errors = error.response.data
-            console.log(error.response)
+            this.errors = error.response.data.errors
+            toastr.error('We could not make a new vegetable. Please check the form carefully', 'Opps!')
             return false
         }
     },
@@ -102,6 +114,16 @@ export default {
             this.loading = false
         }
 
+    },
+    hasError(type) {
+      if (this.errors[type]) {
+        return 'is-invalid'
+      }
+    },
+    errorMessage(type) {
+      if (this.errors[type]) {
+        return this.errors[type][0]
+      }
     }
   },
   mounted() {

@@ -32,6 +32,10 @@
                                             <td>{{ vegetable.plant_introduction_number }}</td>
                                         </tr>
                                         <tr>
+                                            <td>Accession number</td>
+                                            <td>{{ vegetable.accesion_number }}</td>
+                                        </tr>
+                                        <tr>
                                             <td>Temporary Number</td>
                                             <td>{{ vegetable.temporary_number }}</td>
                                         </tr>
@@ -48,16 +52,8 @@
                                             <td>{{ vegetable.cultivar_name }}</td>
                                         </tr>
                                         <tr>
-                                            <td>Species</td>
-                                            <td>{{ vegetable.species.name }}</td>
-                                        </tr>
-                                        <tr>
                                             <td>Subtaxa</td>
                                             <td>{{ vegetable.subtaxa }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Genus</td>
-                                            <td>{{ vegetable.species.genus.name }}</td>
                                         </tr>
                                         <tr>
                                             <td>Country</td>
