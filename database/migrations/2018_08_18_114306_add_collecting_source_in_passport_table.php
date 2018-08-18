@@ -15,6 +15,7 @@ class AddCollectingSourceInPassportTable extends Migration
     {
         Schema::table('passports', function (Blueprint $table) {
             $table->string('collecting_source')->nullable();
+            $table->string('collecting_site')->nullable();
         });
     }
 
@@ -26,7 +27,7 @@ class AddCollectingSourceInPassportTable extends Migration
     public function down()
     {
         Schema::table('passports', function (Blueprint $table) {
-            $table->dropColumn('collecting_source');
+            $table->dropColumn(['collecting_source', 'collecting_site']);
         });
     }
 }

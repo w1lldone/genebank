@@ -13,9 +13,6 @@ class GeneraTableSeeder extends Seeder
      */
     public function run()
     {
-        Genus::truncate();
-        Species::truncate();
-
         Genus::create(['name' => 'Vigna'])->species()->createMany([
             ['name' => 'unguiculata'],
         ]);

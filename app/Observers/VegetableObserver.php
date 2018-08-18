@@ -33,7 +33,7 @@ class VegetableObserver
         $attributes = $evaluations->merge($characters);
 
         // attach the attribute id to vegetable
-        $vegetable->attributes()->syncWithoutDetaching($attributes);
+        $vegetable->attributes()->attach($attributes);
 
         // ADD PASSPORT TO VEGETABLE
         $vegetable->passport()->create([
