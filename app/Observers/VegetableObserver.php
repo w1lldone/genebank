@@ -36,7 +36,9 @@ class VegetableObserver
         $vegetable->attributes()->attach($attributes);
 
         // ADD PASSPORT TO VEGETABLE
-        $vegetable->passport()->create([]);
+        $vegetable->passport()->create([
+            'incoming_date' => request('incoming_date'),
+        ]);
     }
 
     public function deleting(Vegetable $vegetable)

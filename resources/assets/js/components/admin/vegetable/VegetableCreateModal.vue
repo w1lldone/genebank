@@ -28,9 +28,15 @@
                           </div>
                         </div>
                         <div class="form-group row">
+                          <label class="col-md-4">Incoming date</label>
+                          <div class="col-md">
+                              <input class="form-control" type="text" placeholder="YYYY-MM-DD" v-model="inputs.incoming_date">
+                          </div>
+                        </div>
+                        <div class="form-group row">
                           <label class="col-md-4">Cultivar name</label>
                           <div class="col-md">
-                              <input required class="form-control" type="text" placeholder="Green chili" v-model="inputs.cultivar_name">
+                              <input class="form-control" type="text" placeholder="Green chili" v-model="inputs.cultivar_name">
                           </div>
                         </div>
                         <div class="form-group row">
@@ -65,6 +71,7 @@ export default {
             species_id: '',
             cultivar_name: '',
             temporary_number: '',
+            incoming_date: '',
         },
         errors: [],
     }

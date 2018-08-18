@@ -34,7 +34,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="text-align: right">AVRDC Code (VINO)</td>
+                                        <td style="text-align: right">UGM Number (PINO)</td>
                                         <td><input name="VINO" placeholder="e.g. VI000001, VI000002, ..." type="text"></td>
                                         <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
 
@@ -119,7 +119,7 @@
                                 <thead>
                                     <tr>
                                         <th>Distribution status</th>
-                                        <th>VINO</th>
+                                        <th>UGM Number (PINO)</th>
                                         <th>Temp. no</th>
                                         <th>Genus</th>
                                         <th>Species</th>

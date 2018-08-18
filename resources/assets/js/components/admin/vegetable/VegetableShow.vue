@@ -7,7 +7,7 @@
         </div>
         <div class="row py-4" v-if="loading">
           <div class="col-md-7 text-center">
-            <h3 class="text-muted">Loading...</h3>
+            <spinner></spinner>
           </div>
         </div>
         <div class="row mt-3" v-if="!loading">
@@ -25,9 +25,11 @@
                 <vegetable-show-general
                 :vegetableId="vegetableId"
                 :photos="vegetable.photos"
-                :species_id.sync="vegetable.species.id"
-                :temporary_number.sync="vegetable.temporary_number"
-                :cultivar_name.sync="vegetable.cultivar_name"></vegetable-show-general>
+                :species_id="vegetable.species.id"
+                :temporary_number="vegetable.temporary_number"
+                :cultivar_name="vegetable.cultivar_name"
+                :subtaxa="vegetable.subtaxa"
+                :accession_number="vegetable.accession_number"></vegetable-show-general>
               </div>
               <div class="tab-pane fade" id="nav-passport" role="tabpanel" aria-labelledby="nav-passport-tab">
                 <vegetable-show-passport 

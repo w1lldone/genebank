@@ -1,6 +1,7 @@
 <?php
 
 use App\Genus;
+use App\Species;
 use Illuminate\Database\Seeder;
 
 class GeneraTableSeeder extends Seeder
@@ -12,18 +13,24 @@ class GeneraTableSeeder extends Seeder
      */
     public function run()
     {
-        Genus::create(['name' => 'Vigna']);
+        Genus::truncate();
+        Species::truncate();
+
+        Genus::create(['name' => 'Vigna'])->species()->createMany([
+            ['name' => 'unguiculata'],
+        ]);
 
         Genus::create(['name' => 'Capsicum'])->species()->createMany([
             ['name' => 'annuum'],
-            ['name' => 'baccatum'],
-            ['name' => 'chinense'],
             ['name' => 'frutescens'],
-            ['name' => 'pubescens'],
         ]);
 
-        Genus::create(['name' => 'Cucumis']);
+        Genus::create(['name' => 'Cucumis'])->species()->createMany([
+            ['name' => 'sativus'],
+        ]);
 
-        Genus::create(['name' => 'Solanum']);
+        Genus::create(['name' => 'Solanum'])->species()->createMany([
+            ['name' => 'melongena'],
+        ]);
     }
 }

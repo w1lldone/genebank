@@ -6,123 +6,55 @@
           <h4><b>Karakterisasi</b></h4>
           <br>
           <p>Mengacu pada deskripsi morfologi dan agronomi dari aksesi (yaitu warna hypocotyl, kebiasaan pertumbuhan tanaman, warna corolla, panjang buah, warna biji, dll.). Data ini diamati dan dikumpulkan di lapangan eksperimental oleh Bank Sumber Daya Genetik Sayuran.</p><br><br>
+          <!-- ACTIVE FILTERS -->
+          <active-filters
+          :filters="filters"
+          @update:filters="onUpdateFilter"
+          ></active-filters>
+
           <!-- Filters -->
-          <div id="filters_area">            
-            <div id="filters">
-              <b>Show:</b>
-              <select id="perLow">
-                <option value="20" selected="selected">20</option>
-                <option value="40">40</option>
-                <option value="60">60</option>
-                <option value="80">80</option>
-                <option value="100">100</option>
-              </select> 
-              <b id="add_area"> &nbsp; Filters: &nbsp;
-                <a id="add" title="search" class="btn btn-success" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">SEARCH</a> &nbsp;
-                <a id="reset_filters" title="reset all" class="btn btn-success">RESET ALL</a>
-              </b>
-            </div>
-          </div>
-          <br>
-          <div class="options collapse" id="collapseExample" >
-            <table>
-              <thead class=list-table>
+          <char-vegetable-list-filter
+          :species="genus.species"
+          :active-filters="filters"
+          @update:filters="onUpdateFilter"
+          ></char-vegetable-list-filter>
+          <h5 class="col-md-2"><b>{{ genus.name }}</b></h5>
+          <br><br><br>
+          <spinner v-if="loading"></spinner>
+          <div class="tbl-header tbl-content list-table" v-else>
+            <table cellpadding="0" cellspacing="0" border="0">
+              <thead>
                 <tr>
-                  <th colspan="6">Filter Options</th>
+                  <th>UGM Number (PINO)</th>
+                  <th>Temp. no</th>
+                  <th>Acc. no</th>
+                  <th>Species</th>
+                  <th>Subtaxa</th>
+                  <th>Country</th>
+                  <th>Operation</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td style="text-align: right">AVRDC Code (VINO)</td>
-                  <td><input name="VINO" placeholder="e.g. VI000001, VI000002, ..." type="text"></td>
-                  <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-                  
-                  <td style="text-align: right">Crop Accession Number (ACCNO)</td>
-                  <td><input name="ACCNO" placeholder="e.g. A00001, B00001, ..." type="text"></td>
-                  <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right">Temporary Number (TEMPNO)</td>
-                  <td><input name="TEMPNO" placeholder="e.g. TA00001, TB00001, ..." type="text"></td>
-                  <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-                  
-                  <td style="text-align: right">Pedigree / Cultivar Name</td>
-                  <td><input name="PEDCUL" type="text"></td>
-                  <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right">Donor identification number (DONO)</td>
-                  <td><input name="DONO" type="text"></td>
-                  <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-
-                  <td style="text-align: right">PI number (PINO)</td>
-                  <td><input name="PINO" type="text"></td>
-                  <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right">Species</td>
+                <tr v-for="vegetable in vegetables":key="vegetable.id">
+                  <td>{{ vegetable.plant_introduction_number }}</td>
+                  <td>{{ vegetable.temporary_number }}</td>
+                  <td>{{ vegetable.accession_number }}</td>
+                  <td>{{ vegetable.species.name }}</td>
+                  <td>{{ vegetable.subtaxa }}</td>
+                  <td>{{ vegetable.passport.country }}</td>
                   <td>
-                    <select name="SPECIES">
-                    </select>
+                    <a :href="url('/search/characterization/'+genusId+'/'+vegetable.id)" class="btn btn-success">Details</a>
                   </td>
-                  <td><a name="add" class="btn btn-success" title="add" style="display: none;">ADD</a></td>
-
-                  <td style="text-align: right">Subtaxa</td>
-                  <td>
-                    <select name="SUBTAXA">
-                    </select>
-                  </td>
-                  <td><a name="add" class="btn btn-success" title="add" style="display: none;">ADD</a></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right">Country</td>
-                  <td>
-                    <select name="COUNTRY">
-                      <option value="">* Any *</option>
-                    </select>
-                  </td>
-                  <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-                  <!-- kosong -->
-                  <td></td><td></td><td></td>
                 </tr>
               </tbody>
             </table>
-          </div>      
-          <br> <br>
-          <!-- end of filters -->
-        </div>
-        <h5 class="col-md-2"><b>{{genera.name}}</b></h5><br><br><br>
-        <div class="tbl-header tbl-content list-table">
-          <table cellpadding="0" cellspacing="0" border="0">
-            <thead>
-              <tr>
-                <th>VINO</th>
-                <th>Variant</th>
-                <th>Accno</th>
-                <th>Temp. no</th>
-                <th>Variant</th>
-                <th>Species</th>
-                <th>Subtaxa</th>
-                <th>Country</th>
-                <th>Operation</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="vegetable in vegetables":key="vegetable.id">
-                <td>{{vegetable.plant_introduction_number}}</td>
-                <td></td>
-                <td></td>
-                <td>{{vegetable.temporary_number}}</td>
-                <td></td>
-                <td>{{vegetable.species.name}}</td>
-                <td></td>
-                <td>{{vegetable.passport.country}}</td>
-                <td>
-                  <a :href="url('/search/characterization/'+genusId+'/'+vegetable.id)" class="btn btn-success">Details</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            <div class="panel panel-default" v-if="vegetables.length == 0" >
+              <div class="panel-body text-center">
+                Sorry. We could't find the vegetables you're looking for. <br>
+                Please try again with different filters.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -131,6 +63,8 @@
 </template>
 <script>
 import FrontBase from '../FrontBase';
+import CharVegetableListFilter from './CharVegetableListFilter';
+import ActiveFilters from './CharVegetableListActiveFilters';
 
 export default {
 
@@ -140,38 +74,67 @@ export default {
   },
   data () {
     return {
-      vegetables:[],
-      vegetable: {
-            species:{
-                genus:{}
-            },
-            passport:{}
+      loading: true,
+      vegetables: [],
+      params: {
+        load: 'passport',
+        genus_id: this.genusId,
       },
-      genera:[],
-      load: 'characterization',
+      filters: {
+        plant_introduction_number: null,
+        temporary_number: null,
+        donor_number: null,
+        cultivar_name: null,
+        species_id: null,
+        accession_number: null,
+      },
+      genus: {},
     }
   },
   methods: {
     async loadVegetables(){
-      let response = await axios.get('/api/vegetables?load=passport', {
-        params: {
-          genus_id: this.genusId
-        }
-      })
-      this.vegetables = response.data.data
+      try {
+        let response = await axios.get('/api/vegetables', {
+          params: this.allParams
+        })
+        this.vegetables = response.data.data
+      } catch(error) {
+        console.log(error.response)
+      }
     },
-    async loadGenera(){
+    async loadGenus(){
       let response = await axios.get(`/api/genera/${this.genusId}`) 
-      this.genera = response.data.data
+      this.genus = response.data.data
+    },
+    async onUpdateFilter({index, value}) {
+      this.filters[index] = value
     },
   },
-  mounted() {
-    this.loadVegetables()
-    this.loadGenera()
+  computed: {
+    allParams: function () {
+      return {...this.params, ...this.filters}
+    },
+  },
+  watch: {
+    filters: {
+      async handler(newVal, oldVal) {
+        this.loading = true
+        await this.loadVegetables()
+        this.loading = false
+      },
+      deep: true
+    }
+  },
+  async mounted() {
+    await this.loadVegetables()
+    await this.loadGenus()
+    this.loading = false
   },
 
   components: {
     FrontBase,
+    CharVegetableListFilter,
+    ActiveFilters,
   }
 }
 </script>
