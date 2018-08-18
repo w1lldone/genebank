@@ -220,7 +220,18 @@
               </div>      
               <br> <br>
               <!-- end of filters -->
-              <div class="tbl-header tbl-content col-md-12 list-table">
+              <div class="col-md-12">
+                <div class="panel panel-default">
+                  <div class="panel-body text-center">
+                    <center>
+                      <img :src="url('/img/logo.png')" class="img-responsive" style="width: 300px">
+                    </center>
+                    <br>
+                    <span style="font-size: 1.7rem">Fitur Evaluasi sedang dalam proses pengembangan. Evaluasi akan menampilkan hasil data aksesi penyaringan untuk ketahanannya terhadap hama dan penyakit. Ini juga termasuk nilai gizi. Penyaringan dilakukan oleh para ilmuwan di berbagai departemen di Bank Sumber Daya Genetik Sayuran dan lembaga penelitian lainnya.</span>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="tbl-header tbl-content col-md-12 list-table">
                 <table cellpadding="0" cellspacing="0" border="0">
                   <thead>
                     <tr>
@@ -252,7 +263,7 @@
                     </tr>
                   </tbody>
                 </table>
-            </div>
+            </div> -->
           </div>
           </div>
         </section>
