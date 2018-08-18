@@ -63,12 +63,14 @@
 </template>
 <script>
 import FrontBase from '../FrontBase';
-import CharVegetableListFilter from './CharVegetableListFilter';
-import ActiveFilters from './CharVegetableListActiveFilters';
+import CharVegetableListFilter from '../VegetableFilters';
+import ActiveFilters from '../VegetableActiveFilters';
+import { vegetableFilters } from '../../mixins/vegetableFilters.js';
 
 export default {
 
   name: 'CharVegetableList',
+  mixins: [vegetableFilters],
   props: {
     genusId: Number,
   },
@@ -79,14 +81,6 @@ export default {
       params: {
         load: 'passport',
         genus_id: this.genusId,
-      },
-      filters: {
-        plant_introduction_number: null,
-        temporary_number: null,
-        donor_number: null,
-        cultivar_name: null,
-        species_id: null,
-        accession_number: null,
       },
       genus: {},
     }
@@ -106,31 +100,15 @@ export default {
       let response = await axios.get(`/api/genera/${this.genusId}`) 
       this.genus = response.data.data
     },
-    async onUpdateFilter({index, value}) {
+    onUpdateFilter({index, value}) {
       this.filters[index] = value
     },
-  },
-  computed: {
-    allParams: function () {
-      return {...this.params, ...this.filters}
-    },
-  },
-  watch: {
-    filters: {
-      async handler(newVal, oldVal) {
-        this.loading = true
-        await this.loadVegetables()
-        this.loading = false
-      },
-      deep: true
-    }
   },
   async mounted() {
     await this.loadVegetables()
     await this.loadGenus()
     this.loading = false
   },
-
   components: {
     FrontBase,
     CharVegetableListFilter,

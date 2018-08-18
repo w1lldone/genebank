@@ -7,114 +7,19 @@
                         <h4><b>Paspor</b></h4>
                         <br>
                         <p>Mengacu pada nomor aksesi dan data dicatat ketika sampel telah dikumpulkan (yaitu aksesi tanaman no., genus, spesies, ketinggian, mengumpulkan lokasi, dll.). Data ini diterima dari donor benih bersama dengan plasma nutfah. </p><br><br>
+
+                        <vegetable-active-filters
+                        :filters="filters"
+                        @update:filters="onUpdateFilter"></vegetable-active-filters>
                         
-                        <!-- Filters -->
-                        <div id="filters_area">            
-                            <div id="filters">
-                                <b>Show:</b>
-                                <select id="perLow">
-                                    <option value="20" selected="selected">20</option>
-                                    <option value="40">40</option>
-                                    <option value="60">60</option>
-                                    <option value="80">80</option>
-                                    <option value="100">100</option>
-                                </select> 
-                                <b id="add_area"> &nbsp; Filters: &nbsp;
-                                    <a id="add" title="search" class="btn btn-success" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">SEARCH</a> &nbsp;
-                                    <a id="reset_filters" title="reset all" class="btn btn-success">RESET ALL</a></b>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="options collapse" id="collapseExample" >
-                            <table>
-                                <thead class=list-table>
-                                    <tr>
-                                        <th colspan="6">Filter Options</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td style="text-align: right">UGM Number (PINO)</td>
-                                        <td><input name="VINO" placeholder="e.g. VI000001, VI000002, ..." type="text"></td>
-                                        <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
+                        <vegetable-filters
+                        :active-filters="filters"
+                        :species="species"
+                        @update:filters="onUpdateFilter"
+                        ></vegetable-filters>
 
-                                        <td style="text-align: right">Crop Accession Number (ACCNO)</td>
-                                        <td><input name="ACCNO" placeholder="e.g. A00001, B00001, ..." type="text"></td>
-                                        <td><a name="add" class="btn btn-success" title="add">ADD</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: right">Temporary Number (TEMPNO)</td>
-                                        <td><input name="TEMPNO" placeholder="e.g. TA00001, TB00001, ..." type="text"></td>
-                                        <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-
-                                        <td style="text-align: right">Pedigree / Cultivar Name</td>
-                                        <td><input name="PEDCUL" type="text"></td>
-                                        <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: right">Donor identification number (DONO)</td>
-                                        <td><input name="DONO" type="text"></td>
-                                        <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-
-                                        <td style="text-align: right">PI number (PINO)</td>
-                                        <td><input name="PINO" type="text"></td>
-                                        <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: right">Genus</td>
-                                        <td>
-                                            <select name="GENUS">
-                                                <option value="">* Any *</option>
-                                                <option value="ABELMOSCHUS">ABELMOSCHUS</option>
-                                                <option value="ABRUS">ABRUS</option>
-                                            </select>
-                                        </td>
-                                        <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-                                        
-                                        <td style="text-align: right">Species</td><td>
-                                            <select name="SPECIES">
-                                            </select>
-                                        </td>
-                                        <td><a name="add" class="btn btn-success" title="add" style="display: none;">ADD</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: right">Subtaxa</td><td>
-                                            <select name="SUBTAXA">
-                                            </select>
-                                        </td>
-                                        <td><a name="add" class="btn btn-success" title="add" style="display: none;">ADD</a></td>
-                                        
-                                        <td style="text-align: right">Country</td>
-                                        <td>
-                                            <select name="COUNTRY">
-                                                <option value="">* Any *</option>
-                                            </select>
-                                        </td>
-                                        <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: right">Text Search</td><td><input name="TEXT" type="text"></td>
-                                        <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-                                        
-                                        <td style="text-align: right">Distribution Status</td><td>
-                                            <select name="DISSTA">
-                                                <option value="">* Any *</option>
-                                                <option value="Tersedia">Tersedia</option>
-                                                <option value="Sudah Tidak Tersedia">Sudah Tidak Tersedia</option>
-                                                <option value="Tidak Tersedia">Tidak Tersedia</option>
-                                                <option value="Distribusi Terbatas">Distribusi Terbatas</option>
-                                            </select>
-                                        </td>
-                                        <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>      
-                        <br> <br>
-                        <!-- end of filters -->
-
-                        <div class="table-responsive passport-list list-table">
+                        <spinner v-if="loading"></spinner>
+                        <div class="table-responsive passport-list list-table" v-else>
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
@@ -136,6 +41,12 @@
                                     ></passport-list-item>
                                 </tbody>
                             </table>
+                            <div class="panel panel-default" v-if="vegetables.length == 0" >
+                              <div class="panel-body text-center">
+                                Sorry. We could't find the vegetables you're looking for. <br>
+                                Please try again with different filters.
+                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,27 +60,41 @@
 import FrontBase from '../FrontBase';
 import PassportListItem from './PassportListItem';
 import PassportListDetail from './PassportListDetail';
+import VegetableFilters from '../VegetableFilters';
+import VegetableActiveFilters from '../VegetableActiveFilters';
+import { vegetableFilters } from '../../mixins/vegetableFilters.js';
 
 export default {
 
   name: 'PassportList',
-
+  mixins: [vegetableFilters],
   data () {
     return {
         vegetables: [],
         params: {
             load: 'passport',
-        }
+        },
+        species: [],
+        loading: true,
     }
   },
   methods: {
-    async fetchVegetables() {
+    async loadVegetables() {
         try {
             let response = await axios.get('/api/vegetables', {
-                params: this.params
+                params: this.allParams
             })
 
             this.vegetables = response.data.data
+        } catch(error) {
+            console.log(error.response)
+        }
+    },
+    async loadSpecies() {
+        try {
+            let response = await axios.get('/api/species')
+
+            this.species = response.data.data
         } catch(error) {
             console.log(error.response)
         }
@@ -186,13 +111,17 @@ export default {
         }
     }
   },
-  mounted() {
-    this.fetchVegetables()
+  async mounted() {
+    await this.loadVegetables()
+    await this.loadSpecies()
+    this.loading = false
   },
   components: {
     FrontBase,
     PassportListItem,
     PassportListDetail,
+    VegetableFilters,
+    VegetableActiveFilters,
   }
 }
 </script>

@@ -15,7 +15,12 @@
             </div>
             <img :src="photo.url" class="img-fluid">
         </div>
-        <div class="col-12 mt-2">
+        <div class="col-md-12" v-if="loading">
+          <button class="btn btn-info disabled" type="button">
+            <i class="fa fa-upload fa-fw"></i> Uploading...
+          </button>
+        </div>
+        <div class="col-12 mt-2" v-else>
             <label class="btn btn-info btn-file" v-if="photos.length < 2">
               <i class="fa fa-upload fa-fw"></i> Upload new photo
               <input type="file" ref="photo" name="front_cover" style="display: none;" @change="uploadPhoto">
@@ -58,6 +63,7 @@ export default {
         }
     },
     async uploadPhoto() {
+      this.loading = true
       let formData = new FormData()
       var photo = this.$refs.photo.files[0]
       formData.append('name', 'Photo')
@@ -81,6 +87,8 @@ export default {
         console.log(error.response)
         toastr.error(error.response.statusText, error.response.status)
       }
+
+      this.loading = false
     }
   },
   computed: {

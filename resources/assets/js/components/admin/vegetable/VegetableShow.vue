@@ -1,8 +1,17 @@
 <template>
     <section class="py-3">
         <div class="row">
-          <div class="col">
+          <div class="col-md-7">
             <h3>Vegetable {{ vegetable.plant_introduction_number }} details</h3>
+          </div>
+          <div class="col-md-5 text-right">
+            <button class="btn btn-info" type="button" data-toggle="modal" data-target="#createVegetableModal">
+              <i class="fa fa-plus fa-fw"></i> Add new vegetable
+            </button>
+            <button class="btn btn-danger" @click="deleteVegetable()">
+              <i class="fa fa-trash fa-fw"></i>Delete
+            </button>
+            <vegetable-create-modal></vegetable-create-modal>
           </div>
         </div>
         <div class="row py-4" v-if="loading">
@@ -59,6 +68,7 @@
 import VegetableShowGeneral from './VegetableShowGeneral';
 import VegetableShowPassport from './VegetableShowPassport';
 import VegetableShowCharacters from './VegetableShowCharacters';
+import VegetableCreateModal from './VegetableCreateModal';
 
 export default {
 
@@ -85,6 +95,18 @@ export default {
       let response = await axios.get(`/api/vegetables/${this.vegetableId}`)
       this.vegetable = response.data.data
       this.loading = false
+    },
+    deleteVegetable() {
+      let confirmed = confirm('Are you sure want to delete this vegetable? This action cannot be undone')
+      if (confirmed) {
+        axios.delete(`/api/vegetables/${this.vegetableId}`)
+            .then(response => {
+              window.location = `/admin/vegetable`
+            })
+            .catch(error => {
+              toastr.error(error.response.statusText, error.response.status)
+            })
+      }
     }
   },
   computed: {
@@ -108,6 +130,7 @@ export default {
     VegetableShowGeneral,
     VegetableShowPassport,
     VegetableShowCharacters,
+    VegetableCreateModal,
   }
 }
 </script>
