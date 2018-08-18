@@ -26,7 +26,7 @@
                     <!--End of item With Active-->
                     <div class="item">
                         <div class="slider_overlay">
-                            <img src="img/img2.jpg" alt="...">
+                            <img src="img/img2.jpeg" alt="...">
                             <div class="carousel-caption">
                                 <div class="slider_text">
                                     <h3>Menjaga Penyimpanan Tetap Aman</h3><br>
@@ -62,7 +62,7 @@
                     <div class="col-md-12">
                         <div class="wel_header">
                             <h2 class="wow bounce" data-wow-delay="0.2s">selamat datang di Bank Sumber Daya Genetik Sayuran</h2><br>
-                            <p id="trans" class="wow fadeInUp" data-wow-delay="0.2s">Bank Sumber Daya Genetik Sayuran adalah sistem informasi yang mengelola data semua plasma nutfah sayuran yang disimpan di bank plasma nutfah. Sistem ini digunakan untuk mengelola operasional bank plasma nutfah secara efisien. Bank Sumber Daya Genetik Sayuran menghubungkan semua operasi konservasi dan manajemen plasma nutfah, mulai dari pendaftaran, karakterisasi, evaluasi dan inventarisasi benih hingga distribusi benih hingga pengguna akhir.
+                            <p id="trans" class="wow fadeInUp" data-wow-delay="0.2s" style="text-align: left;">Bank Sumber Daya Genetik Sayuran adalah sistem informasi yang mengelola data semua plasma nutfah sayuran yang disimpan di bank plasma nutfah. Sistem ini digunakan untuk mengelola operasional bank plasma nutfah secara efisien. Bank Sumber Daya Genetik Sayuran menghubungkan semua operasi konservasi dan manajemen plasma nutfah, mulai dari pendaftaran, karakterisasi, evaluasi dan inventarisasi benih hingga distribusi benih hingga pengguna akhir.
                                 
                             Bank Sumber Daya Genetik Sayuran menyediakan akses langsung pengguna ke data plasma nutfah melalui internet.
 
@@ -70,59 +70,48 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <!--End of row-->
+                 <div class="media-body wow fadeIn" data-wow-delay="0.3s"><h5 class="color-2" style="font-size:18px;">3 Misi Utama Bank Sumber Daya Genetik Sayuran :</h5></div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="item">
                             <div class="single_item">
                                 <div class="item_list media-body wow fadeIn" data-wow-delay="0.3s">
                                     <div class="welcome_icon">
-                                        <i class="fa fa-user"></i>
+                                        <i class="fa fa-database"></i>
                                     </div><br>
-                                    <!-- <h4>eco system</h4> -->
-                                    <p>Membantu staf GRSU dalam kegiatan sehari-hari.</p>
+                                    <h5>Collection</h5><br>
+                                    <p>Menghimpun sumber daya genetik sayuran Indonesia melalui koleksi langsung dari lapangan (eksplorasi), koleksi dari lembaga/instansi lain, penarikan kembali SDG yang ada di bank genetik luar negeri, penambahan koleksi yang belum ada di Indonesia dari bank genetik luar negeri.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <!--End of col-md-3-->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="item">
                             <div class="single_item">
                                 <div class="item_list media-body wow fadeIn" data-wow-delay="0.5s">
                                     <div class="welcome_icon">
-                                        <i class="fa fa-database"></i>
+                                        <i class="fa fa-file-text-o"></i>
                                     </div><br>
-                                    <!-- <h4>recycling</h4> -->
-                                    <p>Memudahkan perekaman, penyimpanan dan pemeliharaan data plasma nutfah.</p>
+                                    <h5>Conservation</h5><br>
+                                    <p>Melakukan konservasi dari pengelolaan sumber daya genetik sayuran dengan cara menginventarisasi SDG, melengkapi data passport, rejuvenasi/perbanyakan, karakterisasi, uji evaluasi (ketahanan terhadap penyakit).</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--End of col-md-3-->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="item">
                             <div class="single_item">
                                 <div class="item_list media-body wow fadeIn" data-wow-delay="0.7s">
                                     <div class="welcome_icon">
-                                        <i class="fa fa-file-text-o"></i>
+                                        <i class="fa fa-user"></i>
                                     </div><br>
-                                    <!-- <h4>water refine</h4> -->
-                                    <p>Menyediakan akses langsung ke informasi yang berkaitan dengan aksesi di bank gen.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End of col-md-3-->
-                    <div class="col-md-3">
-                        <div class="item">
-                            <div class="single_item">
-                                <div class="item_list media-body wow fadeIn" data-wow-delay="0.9s">
-                                    <div class="welcome_icon">
-                                        <i class="fa fa-leaf"></i>
-                                    </div><br>
-                                    <!-- <h4>solar system</h4> -->
-                                    <p>Memungkinkan permintaan untuk benih yang diinginkan.</p>
+                                    <h5>Convey</h5><br>
+                                    <p>Memfasilitasi tukar menukar SDG antar <i>stakeholder</i> (instansi pemerintah, swasta, universitas, individu perorangan, lembaga swadaya masyarakat, maupun dengan bank genetik dan pengguna dari luar negeri).</p>
                                 </div>
                             </div>
                         </div>

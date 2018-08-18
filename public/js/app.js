@@ -32262,7 +32262,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -32275,17 +32275,6 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FrontBase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__FrontBase__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -32986,7 +32975,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "item" }, [
                 _c("div", { staticClass: "slider_overlay" }, [
-                  _c("img", { attrs: { src: "img/img2.jpg", alt: "..." } }),
+                  _c("img", { attrs: { src: "img/img2.jpeg", alt: "..." } }),
                   _vm._v(" "),
                   _c("div", { staticClass: "carousel-caption" }, [
                     _c("div", { staticClass: "slider_text" }, [
@@ -33046,6 +33035,7 @@ var render = function() {
                 "p",
                 {
                   staticClass: "wow fadeInUp",
+                  staticStyle: { "text-align": "left" },
                   attrs: { id: "trans", "data-wow-delay": "0.2s" }
                 },
                 [
@@ -33063,8 +33053,25 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "media-body wow fadeIn",
+            attrs: { "data-wow-delay": "0.3s" }
+          },
+          [
+            _c(
+              "h5",
+              { staticClass: "color-2", staticStyle: { "font-size": "18px" } },
+              [_vm._v("3 Misi Utama Bank Sumber Daya Genetik Sayuran :")]
+            )
+          ]
+        ),
+        _vm._v(" "),
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-3" }, [
+          _c("div", { staticClass: "col-md-4" }, [
             _c("div", { staticClass: "item" }, [
               _c("div", { staticClass: "single_item" }, [
                 _c(
@@ -33075,12 +33082,17 @@ var render = function() {
                   },
                   [
                     _c("div", { staticClass: "welcome_icon" }, [
-                      _c("i", { staticClass: "fa fa-user" })
+                      _c("i", { staticClass: "fa fa-database" })
                     ]),
                     _c("br"),
                     _vm._v(" "),
+                    _c("h5", [_vm._v("Collection")]),
+                    _c("br"),
+                    _vm._v(" "),
                     _c("p", [
-                      _vm._v("Membantu staf GRSU dalam kegiatan sehari-hari.")
+                      _vm._v(
+                        "Menghimpun sumber daya genetik sayuran Indonesia melalui koleksi langsung dari lapangan (eksplorasi), koleksi dari lembaga/instansi lain, penarikan kembali SDG yang ada di bank genetik luar negeri, penambahan koleksi yang belum ada di Indonesia dari bank genetik luar negeri."
+                      )
                     ])
                   ]
                 )
@@ -33088,7 +33100,7 @@ var render = function() {
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-md-3" }, [
+          _c("div", { staticClass: "col-md-4" }, [
             _c("div", { staticClass: "item" }, [
               _c("div", { staticClass: "single_item" }, [
                 _c(
@@ -33099,13 +33111,16 @@ var render = function() {
                   },
                   [
                     _c("div", { staticClass: "welcome_icon" }, [
-                      _c("i", { staticClass: "fa fa-database" })
+                      _c("i", { staticClass: "fa fa-file-text-o" })
                     ]),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("h5", [_vm._v("Conservation")]),
                     _c("br"),
                     _vm._v(" "),
                     _c("p", [
                       _vm._v(
-                        "Memudahkan perekaman, penyimpanan dan pemeliharaan data plasma nutfah."
+                        "Melakukan konservasi dari pengelolaan sumber daya genetik sayuran dengan cara menginventarisasi SDG, melengkapi data passport, rejuvenasi/perbanyakan, karakterisasi, uji evaluasi (ketahanan terhadap penyakit)."
                       )
                     ])
                   ]
@@ -33114,7 +33129,7 @@ var render = function() {
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-md-3" }, [
+          _c("div", { staticClass: "col-md-4" }, [
             _c("div", { staticClass: "item" }, [
               _c("div", { staticClass: "single_item" }, [
                 _c(
@@ -33125,39 +33140,18 @@ var render = function() {
                   },
                   [
                     _c("div", { staticClass: "welcome_icon" }, [
-                      _c("i", { staticClass: "fa fa-file-text-o" })
+                      _c("i", { staticClass: "fa fa-user" })
                     ]),
                     _c("br"),
                     _vm._v(" "),
-                    _c("p", [
-                      _vm._v(
-                        "Menyediakan akses langsung ke informasi yang berkaitan dengan aksesi di bank gen."
-                      )
-                    ])
-                  ]
-                )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-3" }, [
-            _c("div", { staticClass: "item" }, [
-              _c("div", { staticClass: "single_item" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "item_list media-body wow fadeIn",
-                    attrs: { "data-wow-delay": "0.9s" }
-                  },
-                  [
-                    _c("div", { staticClass: "welcome_icon" }, [
-                      _c("i", { staticClass: "fa fa-leaf" })
-                    ]),
+                    _c("h5", [_vm._v("Convey")]),
                     _c("br"),
                     _vm._v(" "),
                     _c("p", [
+                      _vm._v("Memfasilitasi tukar menukar SDG antar "),
+                      _c("i", [_vm._v("stakeholder")]),
                       _vm._v(
-                        "Memungkinkan permintaan untuk benih yang diinginkan."
+                        " (instansi pemerintah, swasta, universitas, individu perorangan, lembaga swadaya masyarakat, maupun dengan bank genetik dan pengguna dari luar negeri)."
                       )
                     ])
                   ]
