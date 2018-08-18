@@ -6,12 +6,20 @@
           <h4><b>Karakterisasi</b></h4>
           <br>
           <p>Mengacu pada deskripsi morfologi dan agronomi dari aksesi (yaitu warna hypocotyl, kebiasaan pertumbuhan tanaman, warna corolla, panjang buah, warna biji, dll.). Data ini diamati dan dikumpulkan di lapangan eksperimental oleh Bank Sumber Daya Genetik Sayuran.</p><br><br>
+          <!-- ACTIVE FILTERS -->
+          <active-filters
+          :filters="filters"
+          @update:filters="onUpdateFilter"
+          ></active-filters>
+
           <!-- Filters -->
           <char-vegetable-list-filter
-          :species="genera.species"
+          :species="genus.species"
+          :active-filters="filters"
           @update:filters="onUpdateFilter"
           ></char-vegetable-list-filter>
-          <h5 class="col-md-2"><b>Capsicum</b></h5><br><br><br>
+          <h5 class="col-md-2"><b>{{ genus.name }}</b></h5>
+          <br><br><br>
           <spinner v-if="loading"></spinner>
           <div class="tbl-header tbl-content list-table" v-else>
             <table cellpadding="0" cellspacing="0" border="0">
@@ -19,6 +27,7 @@
                 <tr>
                   <th>UGM Number (PINO)</th>
                   <th>Temp. no</th>
+                  <th>Acc. no</th>
                   <th>Species</th>
                   <th>Subtaxa</th>
                   <th>Country</th>
@@ -29,11 +38,12 @@
                 <tr v-for="vegetable in vegetables":key="vegetable.id">
                   <td>{{ vegetable.plant_introduction_number }}</td>
                   <td>{{ vegetable.temporary_number }}</td>
+                  <td>{{ vegetable.accession_number }}</td>
                   <td>{{ vegetable.species.name }}</td>
                   <td>{{ vegetable.subtaxa }}</td>
                   <td>{{ vegetable.passport.country }}</td>
                   <td>
-                    <a :href="url('/search/characterization/'+genus+'/'+vegetable.id)" class="btn btn-success">Details</a>
+                    <a :href="url('/search/characterization/'+genusId+'/'+vegetable.id)" class="btn btn-success">Details</a>
                   </td>
                 </tr>
               </tbody>
@@ -54,6 +64,7 @@
 <script>
 import FrontBase from '../FrontBase';
 import CharVegetableListFilter from './CharVegetableListFilter';
+import ActiveFilters from './CharVegetableListActiveFilters';
 
 export default {
 
@@ -75,8 +86,9 @@ export default {
         donor_number: null,
         cultivar_name: null,
         species_id: null,
+        accession_number: null,
       },
-      genera: {},
+      genus: {},
     }
   },
   methods: {
@@ -90,9 +102,9 @@ export default {
         console.log(error.response)
       }
     },
-    async loadGenera(){
+    async loadGenus(){
       let response = await axios.get(`/api/genera/${this.genusId}`) 
-      this.genera = response.data.data
+      this.genus = response.data.data
     },
     async onUpdateFilter({index, value}) {
       this.filters[index] = value
@@ -115,13 +127,14 @@ export default {
   },
   async mounted() {
     await this.loadVegetables()
-    await this.loadGenera()
+    await this.loadGenus()
     this.loading = false
   },
 
   components: {
     FrontBase,
     CharVegetableListFilter,
+    ActiveFilters,
   }
 }
 </script>

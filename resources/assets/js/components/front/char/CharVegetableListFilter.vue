@@ -30,18 +30,18 @@
                   <td><input name="VINO" v-model="filters.plant_introduction_number" placeholder="e.g. UGM000001, UGM000002, ..." type="text"></td>
                   <td><button type="button" class="btn btn-success" title="add" @click="updateFilter('plant_introduction_number')">ADD</button></td>
                   
-                  <td style="text-align: right">Temporary Number</td>
-                  <td><input name="ACCNO" v-model="filters.temporary_number" placeholder="e.g. GTE 332, GTE 230, ..." type="text"></td>
-                  <td><button type="button" class="btn btn-success" title="add" @click="updateFilter('temporary_number')">ADD</button></td>
+                  <td style="text-align: right">Accession nummber</td>
+                  <td><input name="ACCNO" v-model="filters.accession_number" placeholder="" type="text"></td>
+                  <td><button type="button" class="btn btn-success" title="add" @click="updateFilter('accession_number')">ADD</button></td>
                 </tr>
                 <tr>
                   <td style="text-align: right">Donor number</td>
                   <td><input name="TEMPNO" v-model="filters.donor_number" placeholder="" type="text"></td>
                   <td><button type="button" class="btn btn-success" title="add" @click="updateFilter('donor_number')">ADD</button></td>
-                  
-                  <td style="text-align: right">Cultivar Name</td>
-                  <td><input name="PEDCUL" type="text" v-model="filters.cultivar_name"></td>
-                  <td><a name="add" class="btn btn-success" title="add" @click="updateFilter('cultivar_name')">ADD</a></td>
+
+                  <td style="text-align: right">Temporary Number</td>
+                  <td><input name="ACCNO" v-model="filters.temporary_number" placeholder="e.g. GTE 332, GTE 230, ..." type="text"></td>
+                  <td><button type="button" class="btn btn-success" title="add" @click="updateFilter('temporary_number')">ADD</button></td>
                 </tr>
                 <tr>
                   <td style="text-align: right">Species</td>
@@ -58,6 +58,10 @@
                   <td><a name="add" class="btn btn-success" title="add" @click="updateFilter('subtaxa')">ADD</a></td>
                 </tr>
                 <tr>
+                  <td style="text-align: right">Cultivar Name</td>
+                  <td><input name="PEDCUL" type="text" v-model="filters.cultivar_name"></td>
+                  <td><a name="add" class="btn btn-success" title="add" @click="updateFilter('cultivar_name')">ADD</a></td>
+
                   <td style="text-align: right">Country</td>
                   <td>
                     <select name="COUNTRY">
@@ -66,8 +70,6 @@
                     </select>
                   </td>
                   <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
-                  <!-- kosong -->
-                  <td></td><td></td><td></td>
                 </tr>
               </tbody>
             </table>
@@ -84,18 +86,11 @@ export default {
   name: 'CharVegetableListFilter',
   props: {
     species: Array,
+    activeFilters: Object,
   },
   data () {
     return {
-        filters: {
-            plant_introduction_number: '',
-            temporary_number: '',
-            cultivar_name: '',
-            subtaxa: '',
-            donor_number: '',
-            species_id: '',
-            country: '',
-        },
+        filters: {...this.aciveFilters},
     }
   },
   methods: {
@@ -104,6 +99,14 @@ export default {
             index: index,
             value: this.filters[index]
         });
+    }
+  },
+  watch: {
+    activeFilters: {
+      handler: function (newVal, oldVal) {
+        this.filters = {...this.activeFilters}
+      },
+      deep: true
     }
   }
 }
