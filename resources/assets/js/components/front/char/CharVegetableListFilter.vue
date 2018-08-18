@@ -26,27 +26,27 @@
               </thead>
               <tbody>
                 <tr>
-                  <td style="text-align: right">UGM Number (PIN)</td>
+                  <td style="text-align: right">UGM Number (PINO)</td>
                   <td><input name="VINO" v-model="filters.plant_introduction_number" placeholder="e.g. UGM000001, UGM000002, ..." type="text"></td>
                   <td><button type="button" class="btn btn-success" title="add" @click="updateFilter('plant_introduction_number')">ADD</button></td>
                   
                   <td style="text-align: right">Temporary Number</td>
                   <td><input name="ACCNO" v-model="filters.temporary_number" placeholder="e.g. GTE 332, GTE 230, ..." type="text"></td>
-                  <td><button type="button" class="btn btn-success" title="add">ADD</button></td>
+                  <td><button type="button" class="btn btn-success" title="add" @click="updateFilter('temporary_number')">ADD</button></td>
                 </tr>
                 <tr>
                   <td style="text-align: right">Donor number</td>
                   <td><input name="TEMPNO" v-model="filters.donor_number" placeholder="" type="text"></td>
-                  <td><button type="button" class="btn btn-success" title="add">ADD</button></td>
+                  <td><button type="button" class="btn btn-success" title="add" @click="updateFilter('donor_number')">ADD</button></td>
                   
                   <td style="text-align: right">Cultivar Name</td>
                   <td><input name="PEDCUL" type="text" v-model="filters.cultivar_name"></td>
-                  <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
+                  <td><a name="add" class="btn btn-success" title="add" @click="updateFilter('cultivar_name')">ADD</a></td>
                 </tr>
                 <tr>
                   <td style="text-align: right">Species</td>
                   <td>
-                    <select name="SPECIES" v-model="filters.species_id">
+                    <select name="SPECIES" v-model="filters.species_id" @change="updateFilter('species_id')">
                         <option value="">SELECT SPECIES</option>
                         <option v-for="item in species" :value="item.id">{{ item.name }}</option>
                     </select>
@@ -54,11 +54,8 @@
                   <td><a name="add" class="btn btn-success" title="add">ADD</a></td>
 
                   <td style="text-align: right">Subtaxa</td>
-                  <td>
-                    <select name="SUBTAXA">
-                    </select>
-                  </td>
-                  <td><a name="add" class="btn btn-success" title="add" style="display: none;">ADD</a></td>
+                  <td><input name="PEDCUL" type="text" v-model="filters.subtaxa"></td>
+                  <td><a name="add" class="btn btn-success" title="add" @click="updateFilter('subtaxa')">ADD</a></td>
                 </tr>
                 <tr>
                   <td style="text-align: right">Country</td>

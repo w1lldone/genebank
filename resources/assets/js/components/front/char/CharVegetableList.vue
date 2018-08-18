@@ -38,6 +38,12 @@
                 </tr>
               </tbody>
             </table>
+            <div class="panel panel-default" v-if="vegetables.length == 0" >
+              <div class="panel-body text-center">
+                Sorry. We could't find the vegetables you're looking for. <br>
+                Please try again with different filters.
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -63,6 +69,13 @@ export default {
         load: 'passport',
         genus_id: this.genus,
       },
+      filters: {
+        plant_introduction_number: null,
+        temporary_number: null,
+        donor_number: null,
+        cultivar_name: null,
+        species_id: null,
+      },
       genera: {},
     }
   },
@@ -70,7 +83,7 @@ export default {
     async loadVegetables(){
       try {
         let response = await axios.get('/api/vegetables', {
-          params: this.params
+          params: this.allParams
         })
         this.vegetables = response.data.data
       } catch(error) {
@@ -82,20 +95,22 @@ export default {
       this.genera = response.data.data
     },
     async onUpdateFilter({index, value}) {
-      this.params[index] = value
-      this.loading = true
-      await this.loadVegetables()
-      this.loading = false
-    }
+      this.filters[index] = value
+    },
   },
   computed: {
+    allParams: function () {
+      return {...this.params, ...this.filters}
+    },
   },
   watch: {
-    params: {
-        handler: function(newVal, oldVal) {
-          this.loading = true
-        },
-        deep: true
+    filters: {
+      async handler(newVal, oldVal) {
+        this.loading = true
+        await this.loadVegetables()
+        this.loading = false
+      },
+      deep: true
     }
   },
   async mounted() {
