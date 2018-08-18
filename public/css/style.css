@@ -988,6 +988,17 @@ table{
     background: #000001;
     color: #fff;
 }
+#footer p {
+    margin-top: 30px;
+    margin-bottom: -20px;
+    display: inline;
+}
+#footer img{ 
+    margin-top: 10px;
+    margin-bottom: -10px;
+    height:90px;
+    width: 100px;
+}
 #footer .copyright,
 #footer .designer {
     padding-top: 45px;

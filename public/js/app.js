@@ -32465,7 +32465,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -32478,6 +32478,10 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navigations_Navbar__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navigations_Navbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__navigations_Navbar__);
+//
+//
+//
+//
 //
 //
 //
@@ -32893,24 +32897,10 @@ var staticRenderFns = [
     return _c("section", { attrs: { id: "footer" } }, [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row text-center" }, [
-          _c("div", { staticClass: "col-md-6" }, [
-            _c(
-              "div",
-              {
-                staticClass: "copyright",
-                staticStyle: { "text-align": "center" }
-              },
-              [
-                _c("p", [
-                  _vm._v("@ 2018 - Copyright "),
-                  _c("span", [
-                    _c("a", { attrs: { href: "" } }, [
-                      _vm._v(" East-West Seed Indonesia")
-                    ])
-                  ])
-                ])
-              ]
-            )
+          _c("div", { staticClass: "col-md-4 support" }, [
+            _c("p", [_vm._v("Supported By :  ")]),
+            _vm._v(" "),
+            _c("img", { attrs: { src: "img/PanahMerah.png" } })
           ])
         ])
       ])
