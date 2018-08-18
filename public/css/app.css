@@ -257,8 +257,8 @@ input: -webkit-autofill:focus {
 /*for chrome*/
 @media screen and (-webkit-min-device-pixel-ratio:0){
     #header .header_menu .custom_navbar-brand{
-        height: 60px;
-        width: 90%;
+        height: 30px;
+        width: 25%;
         display: flex;
         margin-bottom: -25px;
         padding-left: 0;
@@ -525,6 +525,8 @@ input: -webkit-autofill:focus {
     font-size: 35px;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: -10px;
+    margin-bottom: 40px;
     text-align: left;
     color: #222222;
 }
@@ -671,7 +673,7 @@ section#counter {
 }
 #news .news_content {
     padding: 15px;
-    height: 300px;
+    height: 400px;
 }
 #news .news_content h3 {
     font-size: 22px;
@@ -1336,6 +1338,8 @@ select {
 }
 
 
+
+
 /*Medium Screen*/
 
 @media (max-width: 1199px) {
@@ -1878,16 +1882,17 @@ select {
         font-size: 10px;
     }
     #header .header_menu .custom_navbar-brand {
-        padding-top: 8px;
-        height: 40px;
-        width: 125px;
+        /*padding-top: 8px;*/
+        /*height: 0px;*/
+        width: 40%;
         padding-left: 0;
-        margin-top: 0px;
+        margin-top: -10px;
         margin-left: 0px;
+        /*transform: scale(.80);*/
     }
-    #header .header_menu .custom_navbar-brand>img {
+    /*#header .header_menu .custom_navbar-brand>img {
         width: 75%;
-    }
+    }*/
     #header .header_menu {
         min-height: 60px;
     }
@@ -2410,13 +2415,14 @@ select {
     #header .navbar-header{
         /*margin-right: 70px;*/
     }
-    #header .header_menu .custom_navbar-brand {
-        padding-top: 8px;
-        height: 30px;
-        width: 100px;
+     #header .header_menu .custom_navbar-brand {
+        /*padding-top: 8px;*/
+        /*height: 0px;*/
+        width: 90%;
         padding-left: 0;
-        margin-top: 0px;
+        margin-top: -10px;
         margin-left: 0px;
+        /*transform: scale(.80);*/
     }
     #header .header_menu .custom_navbar-brand>img {
         width: 75%;
@@ -2769,11 +2775,11 @@ select {
         font-size: 7px;
     }
     #header .header_menu .custom_navbar-brand {
-        padding-top: 8px;
-        height: 20px;
-        width: 85px;
+        /*padding-top: 8px;*/
+        /*height: 60%;*/
+        width: 90%;
         padding-left: 0;
-        margin-top: 0px;
+        margin-top: -70px;
         margin-left: 0px;
         /*transform: scale(.80);*/
     }
@@ -3030,9 +3036,7 @@ select {
         margin-top: 0px;
         border: 1px solid rgba(255,255,255,0.3);
     }
-    #header img{
-        
-    }
+    
     .container{
         /*margin-left: 20px;*/
     }

@@ -5,17 +5,17 @@
               <div class="container col-md-12">                
                   <div class="msg">
                     <div class="msg_title">
-                        <h4><b>Characterization</b></h4>
+                        <h4><b>Karakterisasi</b></h4>
                         <br>
-                        <p>Refers to the morphological and agronomic descriptions of an accession (i.e. hypocotyl color, plant growth habit, corolla color, fruit length, seed color, etc.). These data were observed and gathered at AVRDC experimental fields by GRSU staff or by NARS partner. </p><br><br>
+                        <p>Mengacu pada deskripsi morfologi dan agronomi dari aksesi (yaitu warna hypocotyl, kebiasaan pertumbuhan tanaman, warna corolla, panjang buah, warna biji, dll.). Data ini diamati dan dikumpulkan di lapangan eksperimental oleh Bank Sumber Daya Genetik Sayuran.</p><br><br>
                     </div>
-                    <h5><b>{{ vegetable.species.genus.name }}</b></h5>
+                    <h5 class="col-md-2"><b>{{ vegetable.species.genus.name }}</b></h5>
                     <br><br>
                     <div class="detail">
-                        <div class="col-md-6">
-                            <img src="/img/icons/image.svg" class="img-responsive">
+                        <div class="col-md-3" v-for="photo in vegetable.photos">
+                            <img :src="photo.url" alt="..." class="img-responsive">
                         </div>
-                        <div id="list col-md-6 ">
+                        <div id="list" class="col-md-6">
                             <div class="table-responsive table-detail">
                                 <table class="table">
                                     <tbody>
