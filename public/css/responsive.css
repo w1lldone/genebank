@@ -583,6 +583,9 @@
     #slider {
         min-height: 95px;
     }
+    #slider img{
+        height: 350px;
+    }
     #slider .carousel-indicators {
         bottom: 50px;
     }
@@ -1119,7 +1122,7 @@
         min-height: 200px;
     }
     #slider img{
-        height: 230px;
+        height: 280px;
     }
     #slider .wel_header{
         margin-top: -40px;
@@ -1478,7 +1481,7 @@
         min-height: 200px;
     }
     #slider img{
-        height: 170px;
+        height: 185px;
     }
     #slider .wel_header{
         margin-top: -20px;

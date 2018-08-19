@@ -364,6 +364,10 @@ input: -webkit-autofill:focus {
     margin-top:80px;
     min-height: 490px;
 }
+#slider img{
+    height: 600px;
+    width:100%;
+}
 #slider .slider_text {
     padding-bottom: 13%;
 }
@@ -987,6 +991,17 @@ table{
     min-height: 100px;
     background: #000001;
     color: #fff;
+}
+#footer p {
+    margin-top: 30px;
+    margin-bottom: -20px;
+    display: inline;
+}
+#footer img{ 
+    margin-top: 10px;
+    margin-bottom: -10px;
+    height:90px;
+    width: 100px;
 }
 #footer .copyright,
 #footer .designer {

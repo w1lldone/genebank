@@ -6,11 +6,15 @@
         <section id="footer">
             <div class="container">
                 <div class="row text-center">
-                    <div class="col-md-6">
+                    <div class="col-md-4 support">
+                        <p>Supported By : &emsp;</p>
+                        <img src="img/PanahMerah.png">
+                    </div>
+                   <!--  <div class="col-md-6">
                         <div class="copyright" style="text-align:center">
                             <p >@ 2018 - Copyright <span><a href=""> East-West Seed Indonesia</a></span></p>
                         </div>
-                    </div>
+                    </div> -->
                     
                 </div>
                 <!--End of row-->
