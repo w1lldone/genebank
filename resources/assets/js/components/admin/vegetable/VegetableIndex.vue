@@ -21,7 +21,8 @@
                 </div>
             </div>
         </div>
-        <vegetable-create-modal></vegetable-create-modal>
+        <vegetable-create-modal
+        :speciesId="null"></vegetable-create-modal>
     </section>
 </template>
 

@@ -20,7 +20,7 @@
                           <label class="col-md-4">Species</label>
                           <div class="col-md">
                               <select required class="custom-select" v-model="inputs.species_id" :class="hasError('species_id')">
-                                  <option value="">Choose...</option>
+                                  <option :value="null">Choose...</option>
                                   <option v-for="item in species" :value="item.id">
                                       {{ item.genus.name }} {{ item.name }}
                                   </option>
@@ -73,14 +73,16 @@
 export default {
 
   name: 'VegetableCreateModal',
-
+  props: {
+    speciesId: Number,
+  },
   data () {
     return {
         loading: false,
         genera: [],
         species: [],
         inputs: {
-            species_id: '',
+            species_id: this.speciesId,
             cultivar_name: '',
             temporary_number: '',
             incoming_date: '',
