@@ -989,8 +989,8 @@ table{
 
 #footer {
     min-height: 100px;
-    background: #000001;
-    color: #fff;
+    background:#cacfd2;
+    /*color: #fff;*/
 }
 #footer p {
     margin-top: 30px;
@@ -1019,7 +1019,7 @@ table{
 #footer .designer p,
 #footer .designer a {
     font-size: 14px;
-    color: #ffffff;
+    /*color: #ffffff;*/
     /*font-family: 'Open Sans', sans-serif;*/
     padding-left: 3px;
 }
@@ -1259,7 +1259,9 @@ p { padding-bottom: 14px;}
 #slider .carousel-indicators {
     bottom: 70px;
 }
-
+#slider p{
+    font-size:17px;
+}
 ul.entry-meta {
     text-align: left;
 }
