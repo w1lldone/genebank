@@ -14,7 +14,7 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <div class="slider_overlay">
-                            <img src="img/img1.jpg" alt="...">
+                            <img src="/img/img1.jpg?v=1" alt="...">
                             <div class="carousel-caption">
                                 <div class="slider_text">
                                     <h3>Sumber Daya Genetik & Unit Benih</h3><br>
@@ -26,7 +26,7 @@
                     <!--End of item With Active-->
                     <div class="item">
                         <div class="slider_overlay">
-                            <img src="img/img2.jpeg" alt="...">
+                            <img src="/img/img2.jpeg?v=1" alt="...">
                             <div class="carousel-caption">
                                 <div class="slider_text">
                                     <h3>Menjaga Penyimpanan Tetap Aman</h3><br>
@@ -38,7 +38,7 @@
                     <!--End of Item-->
                     <div class="item">
                         <div class="slider_overlay">
-                            <img src="img/img3.jpg" alt="...">
+                            <img src="/img/img3.jpg?v=1" alt="...">
                             <div class="carousel-caption">
                                 <div class="slider_text">
                                     <h3>Karakterisasi Plasma Nutfah</h3><br>

@@ -12,6 +12,14 @@
                     <h5 class="col-md-2"><b>{{ vegetable.species.genus.name }}</b></h5>
                     <br><br>
                     <div class="detail">
+                        <div class="col-md-6" v-if="vegetable.photos.length == 0">
+                            <div class="panel panel-default">
+                                <div class="panel-body text-center text-muted">
+                                    <i class="fa fa-image fa-5x"></i> <br>
+                                    No images available
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-md-3" v-for="photo in vegetable.photos">
                             <img :src="photo.url" alt="..." class="img-responsive">
                         </div>
@@ -24,16 +32,16 @@
                                             <td>{{ vegetable.plant_introduction_number }}</td>
                                         </tr>
                                         <tr>
+                                            <td>Accession number</td>
+                                            <td>{{ vegetable.accesion_number }}</td>
+                                        </tr>
+                                        <tr>
                                             <td>Temporary Number</td>
                                             <td>{{ vegetable.temporary_number }}</td>
                                         </tr>
                                         <tr>
-                                            <td>Variant</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
                                             <td>Characterized Year and Season</td>
-                                            <td>1986SP</td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td>Species</td>
@@ -44,20 +52,12 @@
                                             <td>{{ vegetable.cultivar_name }}</td>
                                         </tr>
                                         <tr>
-                                            <td>Species</td>
-                                            <td>ANNUM</td>
-                                        </tr>
-                                        <tr>
                                             <td>Subtaxa</td>
-                                            <td>VAR. RADIATA</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Genus</td>
-                                            <td>{{ vegetable.species.genus.name }}</td>
+                                            <td>{{ vegetable.subtaxa }}</td>
                                         </tr>
                                         <tr>
                                             <td>Country</td>
-                                            <td></td>
+                                            <td>{{ vegetable.passport.country }}</td>
                                         </tr>                                
                                     </tbody>
                                 </table>
@@ -235,7 +235,9 @@ export default {
                     
                     }
                 },
-                characters: []
+                characters: [],
+                passport: {},
+                photos: [],
             },
             result:[],
             load: 'characterization',

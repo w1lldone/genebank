@@ -2,7 +2,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th>VINO</th>
+                <th>UGM number (PINO)</th>
                 <th>Temp. Number</th>
                 <th>Genus</th>
                 <th>Species</th>

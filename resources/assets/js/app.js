@@ -34,6 +34,11 @@ Vue.component(
 );
 
 Vue.component(
+    'Spinner',
+    require('./components/Spinner.vue')
+);
+
+Vue.component(
     'HomePage',
     require('./components/front/home/HomePage.vue')
 );
@@ -113,6 +118,14 @@ Vue.component(
     'passport-personal-access-tokens',
     require('./components/passport/PersonalAccessTokens.vue')
 );
+
+Vue.filter('titleCase', function (value) {
+  if (!value) return ''
+  
+  return value.toLowerCase().split('_').map(function(word) {
+    return (word.charAt(0).toUpperCase() + word.slice(1));
+  }).join(' ');
+})
 
 import store from './store/index';
 

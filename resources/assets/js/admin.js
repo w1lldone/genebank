@@ -67,6 +67,8 @@ Vue.mixin({
     }
 });
 
+Vue.component('Spinner', require('./components/Spinner'));
+
 Vue.component('VegetableIndex', require('./components/admin/vegetable/VegetableIndex'));
 Vue.component('VegetableShow', require('./components/admin/vegetable/VegetableShow'));
 

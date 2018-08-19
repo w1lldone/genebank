@@ -1,5 +1,6 @@
 <?php
 
+use App\Attribute;
 use App\Category;
 use Illuminate\Database\Seeder;
 
@@ -12,6 +13,8 @@ class AttributesTableSeeder extends Seeder
      */
     public function run()
     {
+        Attribute::truncate();
+
         Category::where('name', 'Seedling')->first()->attributes()->createMany([
             ['name' => 'Hypocotil color', 'type' => 'string'],
             ['name' => 'Cotyledon leaf color', 'type' => 'string'],
@@ -43,7 +46,6 @@ class AttributesTableSeeder extends Seeder
             ['name' => 'Petiole Color', 'type' => 'string'],
             ['name' => 'Plant Height', 'type' => 'numeric'],
             ['name' => 'Spines on Stem', 'type' => 'string'],
-            ['name' => 'Internode Length', 'type' => 'numeric'],
         ]);
 
         Category::where('name', 'Inflorescence')->first()->attributes()->createMany([
@@ -59,6 +61,7 @@ class AttributesTableSeeder extends Seeder
             ['name' => 'Ovary shape', 'type' => 'string'],
             ['name' => 'Ovary color', 'type' => 'string'],
             ['name' => 'Sex ratio (F/M)', 'type' => 'string'],
+            ['name' => 'Inflorescence type', 'type' => 'string'],
         ]);
 
         Category::where('name', 'Seed')->first()->attributes()->createMany([
@@ -75,6 +78,7 @@ class AttributesTableSeeder extends Seeder
         Category::where('name', 'Fruit')->first()->attributes()->createMany([
             ['name' => 'Days to Fruit', 'type' => 'numeric'],
             ['name' => 'No. of Fruits set per axil', 'type' => 'numeric'],
+            ['name' => 'Fruit color', 'type' => 'string'],
             ['name' => 'Immature Fruit color', 'type' => 'string'],
             ['name' => 'Mature Fruit Color', 'type' => 'string'],
             ['name' => 'Anthocyanin spot in unripe stage', 'type' => 'numeric'],
@@ -87,7 +91,7 @@ class AttributesTableSeeder extends Seeder
             ['name' => 'Fruit wall thickness', 'type' => 'string'],
             ['name' => 'Fruit weight', 'type' => 'numeric'],
             ['name' => 'Harvest Time', 'type' => 'string'],
-            ['name' => 'Fruit Firmness', 'type' => 'string'],
+            ['name' => 'Firmness', 'type' => 'string'],
             ['name' => 'Fruit pungency', 'type' => 'string'],
             ['name' => 'Number of Locules', 'type' => 'string'],
             ['name' => 'Pod Length', 'type' => 'numeric'],
@@ -99,6 +103,7 @@ class AttributesTableSeeder extends Seeder
             ['name' => 'Pod glossiness', 'type' => 'string'],
             ['name' => 'Pod weight', 'type' => 'numeric'],
             ['name' => 'Days to harvesting mature stage', 'type' => 'string'],
+            ['name' => 'Days to harvesting', 'type' => 'string'],
             ['name' => 'No.of pod per pedicle', 'type' => 'numeric'],
             ['name' => 'No. of seeds per pod', 'type' => 'string'],
             ['name' => 'Immature/Fresh pod color', 'type' => 'string'],

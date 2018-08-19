@@ -16,6 +16,6 @@ class GenusController extends Controller
 
     public function show(Genus $genus)
     {
-        return new GeneraResource($genus);
+        return new GeneraResource($genus->load('species'));
     }
 }

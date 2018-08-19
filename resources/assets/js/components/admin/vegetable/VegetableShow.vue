@@ -1,13 +1,22 @@
 <template>
     <section class="py-3">
         <div class="row">
-          <div class="col">
+          <div class="col-md-7">
             <h3>Vegetable {{ vegetable.plant_introduction_number }} details</h3>
+          </div>
+          <div class="col-md-5 text-right">
+            <button class="btn btn-info" type="button" data-toggle="modal" data-target="#createVegetableModal">
+              <i class="fa fa-plus fa-fw"></i> Add new vegetable
+            </button>
+            <button class="btn btn-danger" @click="deleteVegetable()">
+              <i class="fa fa-trash fa-fw"></i>Delete
+            </button>
+            <vegetable-create-modal></vegetable-create-modal>
           </div>
         </div>
         <div class="row py-4" v-if="loading">
           <div class="col-md-7 text-center">
-            <h3 class="text-muted">Loading...</h3>
+            <spinner></spinner>
           </div>
         </div>
         <div class="row mt-3" v-if="!loading">
@@ -25,9 +34,11 @@
                 <vegetable-show-general
                 :vegetableId="vegetableId"
                 :photos="vegetable.photos"
-                :species_id.sync="vegetable.species.id"
-                :temporary_number.sync="vegetable.temporary_number"
-                :cultivar_name.sync="vegetable.cultivar_name"></vegetable-show-general>
+                :species_id="vegetable.species.id"
+                :temporary_number="vegetable.temporary_number"
+                :cultivar_name="vegetable.cultivar_name"
+                :subtaxa="vegetable.subtaxa"
+                :accession_number="vegetable.accession_number"></vegetable-show-general>
               </div>
               <div class="tab-pane fade" id="nav-passport" role="tabpanel" aria-labelledby="nav-passport-tab">
                 <vegetable-show-passport 
@@ -57,6 +68,7 @@
 import VegetableShowGeneral from './VegetableShowGeneral';
 import VegetableShowPassport from './VegetableShowPassport';
 import VegetableShowCharacters from './VegetableShowCharacters';
+import VegetableCreateModal from './VegetableCreateModal';
 
 export default {
 
@@ -83,6 +95,18 @@ export default {
       let response = await axios.get(`/api/vegetables/${this.vegetableId}`)
       this.vegetable = response.data.data
       this.loading = false
+    },
+    deleteVegetable() {
+      let confirmed = confirm('Are you sure want to delete this vegetable? This action cannot be undone')
+      if (confirmed) {
+        axios.delete(`/api/vegetables/${this.vegetableId}`)
+            .then(response => {
+              window.location = `/admin/vegetable`
+            })
+            .catch(error => {
+              toastr.error(error.response.statusText, error.response.status)
+            })
+      }
     }
   },
   computed: {
@@ -106,6 +130,7 @@ export default {
     VegetableShowGeneral,
     VegetableShowPassport,
     VegetableShowCharacters,
+    VegetableCreateModal,
   }
 }
 </script>
