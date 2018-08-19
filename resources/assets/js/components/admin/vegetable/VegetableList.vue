@@ -23,25 +23,16 @@
 export default {
 
   name: 'VegetableList',
-
+  props: {
+    vegetables: Array,
+  },
   data () {
     return {
-        vegetables: [],
-        params: {
-
-        },
     }
   },
   methods: {
-    async loadVegetables() {
-        let response = await axios.get('/api/vegetables', {
-            params: this.params
-        })
-        this.vegetables = response.data.data
-    }
   },
   mounted() {
-    this.loadVegetables()
   }
 }
 </script>
