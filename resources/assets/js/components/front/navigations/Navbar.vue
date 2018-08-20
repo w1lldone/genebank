@@ -20,8 +20,8 @@
                         <div class="collapse navbar-collapse zero_mp menu" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right main_menu clearfix">
                                 <li><a :href="url('/')">Beranda</a></li>
-                                <li><a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Telusur</a>
-                                    <ul class="sub-menu dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a href="#" data-toggle="dropdown"  class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Telusur</a>
+                                    <ul class="sub-menu dropdown-menu"  style="justify-content:center;"aria-labelledby="dropdownMenuButton">
                                         <li><a :href="url('/search/passport')">Paspor</a></li>
                                         <li><a :href="url('/search/characterization')">Karakterisasi</a></li>
                                         <li><a :href="url('/search/evaluation')">Evaluasi</a></li>

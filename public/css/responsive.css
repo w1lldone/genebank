@@ -1404,6 +1404,9 @@
     #about .row{
         margin-left: 5px;
     }
+    .visi-misi img{
+        width:100%;
+    }
 }
 @media all and (max-width: 320px) {
     #header, .navbar-header{
@@ -1775,6 +1778,9 @@
     }
     h4{
         font-size: 17px;
+    }
+    .visi-misi img{
+        width:100%;
     }
 }
 

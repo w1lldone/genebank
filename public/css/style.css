@@ -349,10 +349,12 @@ input: -webkit-autofill:focus {
 }
 .sub-menu {
     /*width:180%;*/
+    justify-content: center;
     text-align:center;
     /*padding:5px 0px;*/
     top:100%;
-    left:0px;
+    margin-left:-40px;
+    margin-right: -40px;
     z-index:99999;
     transition:opacity linear 0.15s;
     background: #fff;
@@ -1353,6 +1355,4 @@ select {
     background: #fff;
     width: 191px;
 }
-
-
 

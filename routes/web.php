@@ -39,7 +39,7 @@ Route::get('/news', function ()
 
 Route::group(['prefix' => 'news'], function(){
     Route::get('/', 'Front\NewsController@index')->name('news.index');
-    Route::get('/{news}', 'Front\NewsController@show')->name('news.show');
+    Route::get('/{id}', 'Front\NewsController@show')->name('news.show');
 });
 
 Route::get('/gallery', function ()

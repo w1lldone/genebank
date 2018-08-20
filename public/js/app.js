@@ -33120,6 +33120,7 @@ var render = function() {
                             "ul",
                             {
                               staticClass: "sub-menu dropdown-menu",
+                              staticStyle: { "justify-content": "center" },
                               attrs: { "aria-labelledby": "dropdownMenuButton" }
                             },
                             [
@@ -33921,7 +33922,7 @@ var render = function() {
                       ])
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "box-2" }, [
+                    _c("div", { staticClass: "box-2 visi-misi" }, [
                       _c("br"),
                       _vm._v(" "),
                       _c("img", {
