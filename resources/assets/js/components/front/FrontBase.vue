@@ -14,7 +14,7 @@
                     <div class="support" style="align-content: right;">
                        <p style="text-align: center;">@ 2018 - Copyright <span><a href=""> East-West Seed Indonesia</a></span></p>
                         &emsp;&emsp;&emsp;<p>Supported By : &emsp;</p>
-                        <img src="img/PanahMerah.png">
+                        <img src="/img/PanahMerah.png">
                     </div>
                    <!--  <div class="col-md-6">
                         <div class="copyright" style="text-align:center">

@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('content')
-    <news-detail :id="{{ $id }}"></news-detail>
+    <news-detail title="{{ $data['title'] }}" image="{{ $data['image'] }}" body="{{ $data['body'] }}"></news-detail>
 @endsection

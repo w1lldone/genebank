@@ -14,6 +14,7 @@
                     class="col-md-4 item" 
                     >
                         <news-item
+                        :id="item.id"
                         :title="item.title"
                         :date="item.date"
                         :image="item.image"
@@ -39,7 +40,7 @@ export default {
     return {
         news: [
             {
-                id:1,
+                id: 'berita-1',
                 title: "Penandatanganan Perjanjian Kerjasama Pendampingan Pengelolaan Gene bank Sayuran Nasional UGM dan EWINDO",
                 image: "/img/news1.png",
                 date: "Kamis, 26 Juli 2018",
@@ -47,7 +48,7 @@ export default {
                 body: "Dalam catatan perjalanan kerjasama bersama Akademisi, UGM memiliki ikatan yang sangat erat dengan Ewindo. Salah satu wujud nyata kerjasamanya adalah pengelolaan Gene Bank atau Bank Plasma Nutfah."
             },
             {
-                id:2,
+                id: 'berita-2',
                 title: "Bank Genetik Sayuran UGM dan EWINDO",
                 image: "/img/news2.jpg",
                 date: "Kamis, 09 November 2017",
@@ -55,7 +56,7 @@ export default {
                 body: "Menjaga kekayaan plasma nutfah bukanlah perkara mudah yang bisa dikerjakan sendiri oleh satu pihak. Dibutuhkan banyak sumber daya manusia dan teknologi yang tepat untuk melestarikannya. Hal ini memang harus dilakukan mengingat kesuksesan kualitas dari hasil pertanian terletak pada plasma nutfah yang terjaga agar menghasilkan benih yang unggul.",
             },
             {
-                id:3,
+                id: 'berita-3',
                 title: "Hibah Bank Plasma EWINDO dengan UGM",
                 image: "/img/news3.JPG",
                 date: "Kamis, 02 November 2017",

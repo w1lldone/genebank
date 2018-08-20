@@ -5,7 +5,7 @@
                 <img :src="image" :alt="title">
             </div>
             <div class="news_content">
-                <a href="#"><h3>{{ title }}</h3></a>
+                <a :href="'/news/'+id"><h3>{{ title }}</h3></a>
                 <div class="expert">
                     <div class="left-side text-left">
                         <p class="left_side">
@@ -32,7 +32,7 @@ export default {
 
   name: 'NewsList',
   props: {
-    id: Number,
+    id: String,
     news: String,
     title: String,
     image: String,
