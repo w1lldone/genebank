@@ -5,9 +5,15 @@
         <!--Start of footer-->
         <section id="footer">
             <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-4 support">
-                        <p>Supported By : &emsp;</p>
+                <div class="row ">
+                    <!-- <div class="col-md-6">
+                        <div class="copyright">
+                            <p >@ 2018 - Copyright <span><a href=""> East-West Seed Indonesia</a></span></p>
+                        </div>
+                    </div> -->
+                    <div class="support" style="align-content: right;">
+                       <p style="text-align: center;">@ 2018 - Copyright <span><a href=""> East-West Seed Indonesia</a></span></p>
+                        &emsp;&emsp;&emsp;<p>Supported By : &emsp;</p>
                         <img src="img/PanahMerah.png">
                     </div>
                    <!--  <div class="col-md-6">

@@ -12,7 +12,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand custom_navbar-brand" :href="url('/')"><img :src="url('/img/logo.png?v1')" alt=""></a>
+                            <a class="navbar-brand custom_navbar-brand" :href="url('/')"><img :src="url('/img/logo1.png?v1')" alt=""></a>
                         </div>
                         <!--End of navbar-header-->
 
@@ -31,7 +31,7 @@
                                 <li><a :href="url('/gallery')">Galeri</a></li>
                                 <li><a :href="url('/download')">Unduh</a></li>
                                 <li><a :href="url('/terms')">Syarat & Ketentuan</a></li>
-                                <li><a :href="url('/about')">Tentang</a></li>
+                                <li><a :href="url('/about')">Tentang Kami</a></li>
                             </ul>
                             
                         </div>

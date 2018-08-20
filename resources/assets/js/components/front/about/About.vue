@@ -148,6 +148,6 @@ export default {
 }
 .container_11 {
     margin-left:25px;
-    margin-right:-25px;
+    margin-right:20px;
 }
 </style>

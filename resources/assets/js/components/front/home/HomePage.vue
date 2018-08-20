@@ -7,18 +7,18 @@
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
                 </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <div class="slider_overlay">
-                            <img src="/img/img1.jpg?v=1" alt="...">
+                            <img src="/img/img2.jpeg?v=1" alt="...">
                             <div class="carousel-caption">
                                 <div class="slider_text">
-                                    <h3>Sumber Daya Genetik & Unit Benih</h3><br>
-                                    <p >Awalnya, koleksi genebank AVRDC hanya membahas kebutuhan khusus pemulia tanaman. Berangsur-angsur tumbuh menjadi koleksi multi guna untuk penelitian dan pengembangan di tingkat global. Sejumlah besar spesies sayuran (438) yang sekarang termasuk dalam koleksi genebank AVRDC memungkinkan kita tidak hanya untuk melestarikan, mengeksplorasi dan memanfaatkan keanekaragaman hayati sayuran, tetapi juga berkontribusi terhadap diversifikasi sistem produksi sayuran dan pola konsumsi di negara berkembang.</p>
+                                    <h3>Sumber Daya Genetik Sayuran</h3><br>
+                                    <p >Sumber Daya Genetik (SDG) adalah kekayaan alam yang sangat berharga, karakter karakter yang tersimpan dalam SDG merupakan potensi emas yang siap di explore untuk digunakan dalam menghasilkan varietas–varietas unggul masa depan.  </p>
                                 </div>
                             </div>
                         </div>
@@ -26,17 +26,17 @@
                     <!--End of item With Active-->
                     <div class="item">
                         <div class="slider_overlay">
-                            <img src="/img/img2.jpeg?v=1" alt="...">
+                            <img src="/img/img3.jpg?v=1" alt="...">
                             <div class="carousel-caption">
                                 <div class="slider_text">
-                                    <h3>Menjaga Penyimpanan Tetap Aman</h3><br>
-                                    <p >Fasilitas penyimpanan benih baru selesai pada tahun 2010 untuk menyediakan lingkungan penyimpanan yang aman untuk koleksi plasma nutfah AVRDC yang luas. Lantai fasilitas lebih ditinggikan di atas tanah untuk melindungi dari banjir dan bencana alam lainnya. Pusat menyimpulkan pengaturan kotak hitam untuk cadangan keselamatan dari plasma nutfah yang paling berharga dengan Nordic Genetic Resource Center di Norwegia dan bank gen dari National Agrobiodiversity Center of the Rural Development Administration (RDA) di Korea Selatan.</p>
+                                    <h3>Konversi dan Menyelamatkan Potensi Genetik Indonesia</h3><br>
+                                    <p >Pembangunan Bank Sumber Daya Genetik Sayuran merupakan salah satu langkah untuk mengkonversi dan menyelamatkan potensi genetik Indonesia dari ancaman erosi genetik yang mencapai 75%. Kerjasama antar stakeholder sangat dibutuhkan untuk melestarikan dan memanfaatkana SDG yang dikelola Bank SDG sayuran ini.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--End of Item-->
-                    <div class="item">
+                    <!-- <div class="item">
                         <div class="slider_overlay">
                             <img src="/img/img3.jpg?v=1" alt="...">
                             <div class="carousel-caption">
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!--End of item-->
                 </div>
                 <!--End of Carousel Inner-->
