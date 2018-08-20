@@ -106,7 +106,7 @@ export default {
             tempNumber: vegetable.temporary_number,
             species: vegetable.species.name,
             genus: vegetable.species.genus.name,
-            cultivarName: vegetable.species.genus.name,
+            cultivarName: vegetable.cultivar_name,
             country: vegetable.passport.country,
         }
     }
