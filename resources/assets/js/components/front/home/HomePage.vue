@@ -38,8 +38,9 @@
                             <div class="carousel-caption">
                                 <div class="slider_text">
                                     <h3>Konversi dan Menyelamatkan Potensi Genetik Indonesia</h3><br>
-                                    <p >3 Misi Utama Bank Sumber Daya Genetik Sayuran :
+                                    <p >
                                         <ul style="text-align: left"class="fa-ul">
+                                            3 Misi Utama Bank Sumber Daya Genetik Sayuran :
                                             <li ><i class="fa-li fa fa-square"></i><b>Collection&emsp;</b>Menghimpun sumber daya genetik sayuran Indonesia melalui koleksi langsung dari lapangan (eksplorasi), koleksi dari lembaga/instansi lain, penarikan kembali SDG yang ada di bank genetik luar negeri, penambahan koleksi yang belum ada di Indonesia dari bank genetik luar negeri.</li>
                                             <li><i class="fa-li fa fa-square"></i><b>Conservation&emsp;</b>Melakukan konservasi dari pengelolaan sumber daya genetik sayuran dengan cara menginventarisasi SDG, melengkapi data passport, rejuvenasi/perbanyakan, karakterisasi, uji evaluasi (ketahanan terhadap penyakit).</li>
                                             <li><i class="fa-li fa fa-square"></i><b>Convey&emsp;</b>Memfasilitasi tukar menukar SDG antar <i>stakeholder</i> (instansi pemerintah, swasta, universitas, individu perorangan, lembaga swadaya masyarakat, maupun dengan bank genetik dan pengguna dari luar negeri).</li>
