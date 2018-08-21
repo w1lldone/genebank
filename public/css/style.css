@@ -349,10 +349,12 @@ input: -webkit-autofill:focus {
 }
 .sub-menu {
     /*width:180%;*/
+    justify-content: center;
     text-align:center;
     /*padding:5px 0px;*/
     top:100%;
-    left:0px;
+    margin-left:-40px;
+    margin-right: -40px;
     z-index:99999;
     transition:opacity linear 0.15s;
     background: #fff;
@@ -375,19 +377,17 @@ input: -webkit-autofill:focus {
     font-size: 52px;
     padding: 10px 0;
     font-weight: 600;
-    /*font-family: 'Lato', sans-serif;*/
     text-transform: uppercase;
 }
-#slider .slider_text h3 {
-    /*font-size: 45px;*/
-    /*font-family: 'Open Sans', sans-serif;*/
+#slider  h3 {
     color: #fff;
+    margin-top:-80px;
+    margin-bottom: -50px;
 }
 #slider .slider_text p {
-    /*font-size: 17px;*/
-    padding-bottom: 60px;
-    /*font-family: 'Lato', sans-serif;*/
     font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: -40px;
 }
 #slider .slider_text a.custom_btn {
     font-size: 14px;
@@ -1353,6 +1353,4 @@ select {
     background: #fff;
     width: 191px;
 }
-
-
 

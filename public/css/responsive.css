@@ -1120,9 +1120,23 @@
     #slider {
         margin-top: 70px;
         min-height: 200px;
+        font-size:8px;
+        margin-left: -40px;
+        margin-right: -40px;
     }
     #slider img{
-        height: 200px;
+        height: 400px;
+    }
+    #slider h3{
+        margin-top: -90px;
+        margin-bottom: 20px;
+    }
+    #slider .min h3{
+        margin-top:-300px;
+    }
+    #slider ul{
+        margin-top: -40px;
+        margin-bottom: 40px;
     }
     #slider .wel_header{
         margin-top: -40px;
@@ -1404,6 +1418,9 @@
     #about .row{
         margin-left: 5px;
     }
+    .visi-misi img{
+        width:100%;
+    }
 }
 @media all and (max-width: 320px) {
     #header, .navbar-header{
@@ -1481,13 +1498,24 @@
         min-height: 200px;
     }
     #slider img{
-        height: 150px;
+        height: 270px;
     }
     #slider .wel_header{
         margin-top: -20px;
     }
     #slider .carousel-indicators {
         bottom: 25px;
+    }
+    #slider h3{
+        margin-top: -90px;
+        margin-bottom: -20px;
+    }
+    #slider .min h3{
+        margin-top:-200px;
+    }
+    #slider ul{
+        margin-top: -40px;
+        margin-bottom: 40px;
     }
     #slider .carousel-indicators li {
         width: 5px;
@@ -1775,6 +1803,9 @@
     }
     h4{
         font-size: 17px;
+    }
+    .visi-misi img{
+        width:100%;
     }
 }
 

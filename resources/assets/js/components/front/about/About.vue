@@ -56,7 +56,7 @@
                                             Lebih dari dua dekade EWINDO selalu menyediakan benih yang sehat dengan kemurnian genetika tinggi serta daya kecambah yang baik untuk mendapatkan hasil yang tinggi sesuai dengan permintaan konsumen dan menjadi kunci sukses PETANI INDONESIA.</p>
                                         </div>
                                     </div>
-                                    <div class="box-2">
+                                    <div class="box-2 visi-misi">
                                         <br>
                                         <img src="img/vision-mission-200x200.jpg" alt="PT EAST WEST SEED INDONESIA" class="img-bord img-ind w1">
                                         <div>

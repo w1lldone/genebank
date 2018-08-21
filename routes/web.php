@@ -32,14 +32,17 @@ Route::group(['prefix' => 'search'], function(){
     Route::get('/passport', 'Front\PassportController@index')->name('passport.index');
     Route::get('/passport/{pin}', 'Front\PassportController@show')->name('passport.show');
 });
-Route::get('/news', function ()
-{
-    return view('news.index');
-})->name('news.index');
+// Route::get('/news', function ()
+// {
+//     return view('news.index');
+// })->name('news.index');
 
 Route::group(['prefix' => 'news'], function(){
     Route::get('/', 'Front\NewsController@index')->name('news.index');
-    Route::get('/{news}', 'Front\NewsController@show')->name('news.show');
+    Route::get('/berita1', 'Front\NewsController@berita1')->name('news.berita1');
+    Route::get('/berita2', 'Front\NewsController@berita2')->name('news.berita2');
+    Route::get('/berita3', 'Front\NewsController@berita3')->name('news.berita3');
+    Route::get('/{id}', 'Front\NewsController@show')->name('news.show');
 });
 
 Route::get('/gallery', function ()
