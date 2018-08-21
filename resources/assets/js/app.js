@@ -72,6 +72,18 @@ Vue.component(
     require('./components/front/news/NewsDetail.vue')
 );
 Vue.component(
+    'berita1',
+    require('./components/front/news/Berita1.vue')
+);
+Vue.component(
+    'berita2',
+    require('./components/front/news/Berita2.vue')
+);
+Vue.component(
+    'berita3',
+    require('./components/front/news/Berita3.vue')
+);
+Vue.component(
     'CharGenusBase',
     require('./components/front/char/CharGenusBase.vue')
 );

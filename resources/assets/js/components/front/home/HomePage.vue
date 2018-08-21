@@ -7,7 +7,8 @@
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
@@ -16,9 +17,16 @@
                         <div class="slider_overlay">
                             <img src="/img/img2.jpeg?v=1" alt="...">
                             <div class="carousel-caption">
-                                <div class="slider_text">
+                                <div class="slider_text" >
                                     <h3>Sumber Daya Genetik Sayuran</h3><br>
-                                    <p >Sumber Daya Genetik (SDG) adalah kekayaan alam yang sangat berharga, karakter karakter yang tersimpan dalam SDG merupakan potensi emas yang siap di explore untuk digunakan dalam menghasilkan varietas–varietas unggul masa depan.  </p>
+                                    <p>
+                                         <ul style="text-align: left"class="fa-ul">
+                                            <li ><i class="fa-li fa fa-square"></i>Sumber Daya Genetik adalah kekayaan alam yang sangat berharga, karakter karakter yang tersimpan dalam SDG merupakan potensi emas yang siap diekplore untuk digunakan dalam menghasilkan varietas –varietas unggul masa depan.</li>
+                                            <li><i class="fa-li fa fa-square"></i>Pembangunan Bank Sumber Daya Genetik Sayuran merupakan salah langkah untuk mengkonversi dan menyelamatkan potensi genetik Indonesia dari ancaman erosi genetik yang mencapai 75%.</li>
+                                            <li><i class="fa-li fa fa-square"></i>Kerjasama antar stakeholder sangat dibutuhkan untuk melestarikan dan memanfaatkana SDG yang dikelola Bank SDG sayuran ini.</li>
+                                            <li><i class="fa-li fa fa-square"></i>Kerjasama antara  PT East West Seed Indonesia  dan  UGM, sebagai inisiator berdirinya Bank SDG Sayuran diharapkan dapat mendorong berbagai pihak seperti Universitas, lembaga riset, peneliti mandiri dan perusahaan benih untuk bergabung memanfaatkan dan bersumbangsih dalam kegiatan ini.</li>
+                                        </ul>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -30,23 +38,46 @@
                             <div class="carousel-caption">
                                 <div class="slider_text">
                                     <h3>Konversi dan Menyelamatkan Potensi Genetik Indonesia</h3><br>
-                                    <p >Pembangunan Bank Sumber Daya Genetik Sayuran merupakan salah satu langkah untuk mengkonversi dan menyelamatkan potensi genetik Indonesia dari ancaman erosi genetik yang mencapai 75%. Kerjasama antar stakeholder sangat dibutuhkan untuk melestarikan dan memanfaatkana SDG yang dikelola Bank SDG sayuran ini.</p>
+                                    <p >3 Misi Utama Bank Sumber Daya Genetik Sayuran :
+                                        <ul style="text-align: left"class="fa-ul">
+                                            <li ><i class="fa-li fa fa-square"></i><b>Collection&emsp;</b>Menghimpun sumber daya genetik sayuran Indonesia melalui koleksi langsung dari lapangan (eksplorasi), koleksi dari lembaga/instansi lain, penarikan kembali SDG yang ada di bank genetik luar negeri, penambahan koleksi yang belum ada di Indonesia dari bank genetik luar negeri.</li>
+                                            <li><i class="fa-li fa fa-square"></i><b>Conservation&emsp;</b>Melakukan konservasi dari pengelolaan sumber daya genetik sayuran dengan cara menginventarisasi SDG, melengkapi data passport, rejuvenasi/perbanyakan, karakterisasi, uji evaluasi (ketahanan terhadap penyakit).</li>
+                                            <li><i class="fa-li fa fa-square"></i><b>Convey&emsp;</b>Memfasilitasi tukar menukar SDG antar <i>stakeholder</i> (instansi pemerintah, swasta, universitas, individu perorangan, lembaga swadaya masyarakat, maupun dengan bank genetik dan pengguna dari luar negeri).</li>
+                                        </ul>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--End of Item-->
-                    <!-- <div class="item">
+                    <div class="item">
                         <div class="slider_overlay">
-                            <img src="/img/img3.jpg?v=1" alt="...">
+                            <img src="/img/img4.jpg?v=1" alt="...">
                             <div class="carousel-caption">
-                                <div class="slider_text">
-                                    <h3>Karakterisasi Plasma Nutfah</h3><br>
-                                    <p >Benih dalam penyimpanan akan habis seiring waktu. Maka sangat penting dalam penyimpanan benih diisi ulang untuk memastikan kelanjutan konservasi bahan plasma nutfah dan distribusinya kepada pengguna di seluruh dunia. Program regenerasi AVRDC bertujuan untuk memaksimalkan produksi benih, meminimalkan siklus regenerasi, menjaga integritas genetik populasi dan memaksimalkan kualitas benih.</p>
+                                <div class="slider_text min">
+                                    <h3>Menjaga Penyimpanan Tetap Aman</h3><br>
+                                    <p >Koleksi Awal Bank SDG Sayuran merupakan Hibah dari PT East West Seed Indonesia, yang merupakan koleksi SDG Lokal Indonesia,  meliputi Kacang Panjang  sebanyak   30 aksesi,   Ketimun sebanyak   25 aksesi, Cabai lokal   sebanyak  62 aksesi,  Terong  sebanyak   16  aksesi,  Timun Suri  sebanyak   27 aksesi, Buncis sebanyak  21 aksesi,  dan Tomat  sebanyak  12  aksesi.
+                                    Ketersediaan Benih untuk distribusi  belum ada, sekarang sedang dilakukan perbanyakan  dan  karakterisasi.  </p>
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
+                    <!--End of item-->
+                    <div class="item">
+                        <div class="slider_overlay">
+                            <img src="/img/img5.jpg?v=1" alt="...">
+                            <div class="carousel-caption">
+                                <div class="slider_text min">
+                                    <h3>Fasilitas Sumber Daya Genetik Sayuran</h3><br>
+                                    <p >Gudang Benih  seluas  42 meter persegi, dengan kapasitas penyimpanan benih sebanyak  9,25 ton benih.  Dengan suhu  dan kelembaban udara yang terkendali, akan menjaga keberkecambahnya benih semakin lama.
+
+                                    Screen House seluas  270 m2, sebanyak 3 buah untuk proses perbanyakan dan karakterisasi, sehingga ketersediaan SDG diharapkan selalu terjaga
+
+                                    Laboratorium Benih sedang  dalam proses  pengadaan  peralatan laboratorium, diharapkan tahun 2019  sudah beroperasi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!--End of item-->
                 </div>
                 <!--End of Carousel Inner-->
@@ -71,53 +102,6 @@
                     </div>
                 </div>
                 <br>
-                <!--End of row-->
-                 <div class="media-body wow fadeIn" data-wow-delay="0.3s"><h5 class="color-2" style="font-size:18px;">3 Misi Utama Bank Sumber Daya Genetik Sayuran :</h5></div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="item">
-                            <div class="single_item">
-                                <div class="item_list media-body wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="welcome_icon">
-                                        <i class="fa fa-database"></i>
-                                    </div><br>
-                                    <h5>Collection</h5><br>
-                                    <p>Menghimpun sumber daya genetik sayuran Indonesia melalui koleksi langsung dari lapangan (eksplorasi), koleksi dari lembaga/instansi lain, penarikan kembali SDG yang ada di bank genetik luar negeri, penambahan koleksi yang belum ada di Indonesia dari bank genetik luar negeri.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--End of col-md-3-->
-                    <div class="col-md-4">
-                        <div class="item">
-                            <div class="single_item">
-                                <div class="item_list media-body wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="welcome_icon">
-                                        <i class="fa fa-file-text-o"></i>
-                                    </div><br>
-                                    <h5>Conservation</h5><br>
-                                    <p>Melakukan konservasi dari pengelolaan sumber daya genetik sayuran dengan cara menginventarisasi SDG, melengkapi data passport, rejuvenasi/perbanyakan, karakterisasi, uji evaluasi (ketahanan terhadap penyakit).</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End of col-md-3-->
-                    <div class="col-md-4">
-                        <div class="item">
-                            <div class="single_item">
-                                <div class="item_list media-body wow fadeIn" data-wow-delay="0.7s">
-                                    <div class="welcome_icon">
-                                        <i class="fa fa-user"></i>
-                                    </div><br>
-                                    <h5>Convey</h5><br>
-                                    <p>Memfasilitasi tukar menukar SDG antar <i>stakeholder</i> (instansi pemerintah, swasta, universitas, individu perorangan, lembaga swadaya masyarakat, maupun dengan bank genetik dan pengguna dari luar negeri).</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End of col-md-3-->
-                </div>
                 <!--End of row-->
             </div>
             <!--End of container-->
