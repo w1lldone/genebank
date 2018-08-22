@@ -22,7 +22,7 @@
                                     <p>
                                          <ul style="text-align: left"class="fa-ul">
                                             <li ><i class="fa-li fa fa-square"></i>Sumber Daya Genetik adalah kekayaan alam yang sangat berharga, karakter karakter yang tersimpan dalam SDG merupakan potensi emas yang siap diekplore untuk digunakan dalam menghasilkan varietas –varietas unggul masa depan.</li>
-                                            <li><i class="fa-li fa fa-square"></i>Pembangunan Bank Sumber Daya Genetik Sayuran merupakan salah langkah untuk mengkonversi dan menyelamatkan potensi genetik Indonesia dari ancaman erosi genetik yang mencapai 75%.</li>
+                                            <li><i class="fa-li fa fa-square"></i>Pembangunan Bank Sumber Daya Genetik Sayuran merupakan salah satu langkah untuk mengkonversi dan menyelamatkan potensi genetik Indonesia dari ancaman erosi genetik yang mencapai 75%.</li>
                                             <li><i class="fa-li fa fa-square"></i>Kerjasama antar stakeholder sangat dibutuhkan untuk melestarikan dan memanfaatkana SDG yang dikelola Bank SDG sayuran ini.</li>
                                             <li><i class="fa-li fa fa-square"></i>Kerjasama antara  PT East West Seed Indonesia  dan  UGM, sebagai inisiator berdirinya Bank SDG Sayuran diharapkan dapat mendorong berbagai pihak seperti Universitas, lembaga riset, peneliti mandiri dan perusahaan benih untuk bergabung memanfaatkan dan bersumbangsih dalam kegiatan ini.</li>
                                         </ul>
