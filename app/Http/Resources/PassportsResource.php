@@ -27,7 +27,7 @@ class PassportsResource extends JsonResource
             'collecting_date' => optional($this->collecting_date)->toDateString(),
             // 'collecting_institute' => $this->collecting_institute,
             'province' => $this->province,
-            'collecting_site' => $this->collecting_source,
+            'collecting_site' => $this->collecting_site,
             // 'location' => $this->location,
             'country' => $this->country,
             'collecting_source' => $this->collecting_source,

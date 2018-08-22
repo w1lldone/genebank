@@ -20,7 +20,7 @@
                           <label class="col-md-4">Species</label>
                           <div class="col-md">
                               <select required class="custom-select" v-model="inputs.species_id" :class="hasError('species_id')">
-                                  <option value="">Choose...</option>
+                                  <option :value="null">Choose...</option>
                                   <option v-for="item in species" :value="item.id">
                                       {{ item.genus.name }} {{ item.name }}
                                   </option>
@@ -42,7 +42,7 @@
                         <div class="form-group row">
                           <label class="col-md-4">Cultivar name</label>
                           <div class="col-md">
-                              <input class="form-control" type="text" placeholder="Green chili" v-model="inputs.cultivar_name" :class="hasError('cultivar_name')">
+                              <input class="form-control" type="text" placeholder="" v-model="inputs.cultivar_name" :class="hasError('cultivar_name')">
                               <div class="invalid-feedback">
                                 {{ errorMessage('cultivar_name') }}
                               </div>
@@ -73,14 +73,16 @@
 export default {
 
   name: 'VegetableCreateModal',
-
+  props: {
+    speciesId: Number,
+  },
   data () {
     return {
         loading: false,
         genera: [],
         species: [],
         inputs: {
-            species_id: '',
+            species_id: this.speciesId,
             cultivar_name: '',
             temporary_number: '',
             incoming_date: '',

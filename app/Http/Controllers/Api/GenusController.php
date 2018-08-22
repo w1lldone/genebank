@@ -11,7 +11,7 @@ class GenusController extends Controller
 {
     public function index(Request $request)
     {
-        return GeneraResource::collection(Genus::get()->load('vegetables'));
+        return GeneraResource::collection(Genus::orderBy('name')->get()->load('vegetables'));
     }
 
     public function show(Genus $genus)

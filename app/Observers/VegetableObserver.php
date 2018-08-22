@@ -38,6 +38,8 @@ class VegetableObserver
         // ADD PASSPORT TO VEGETABLE
         $vegetable->passport()->create([
             'incoming_date' => request('incoming_date'),
+            'collecting_date' => request('incoming_date'),
+            'distribution_status' => 'Not Available',
         ]);
     }
 
