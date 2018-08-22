@@ -1689,6 +1689,7 @@
     }
     #footer {
         min-height: 80px;
+        font-size:8px;
     }
     #footer .copyright p,
     #footer .copyright p span a,
