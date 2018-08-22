@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <h5>Bank Sumberdaya Genetik Sayuran</h5>
+                        <h5>Bank Sumber Daya Genetik Sayuran</h5>
                         <span>Supported by:</span>
                         <div class="">
                             <a href="http://www.panahmerah.id/"><img src="/img/PanahMerah.png" width="100"></a>
