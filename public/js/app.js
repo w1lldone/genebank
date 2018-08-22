@@ -36758,7 +36758,7 @@ var render = function() {
             "div",
             {
               staticClass: "news_news col-md-4",
-              staticStyle: { "margin-left": "-20px" },
+              staticStyle: { "margin-left": "-10px" },
               attrs: { id: "news" }
             },
             [
@@ -36832,7 +36832,7 @@ var render = function() {
             "div",
             {
               staticClass: "news_news col-md-4",
-              staticStyle: { "margin-left": "10px" },
+              staticStyle: { "margin-left": "5px" },
               attrs: { id: "news" }
             },
             [
@@ -36900,7 +36900,7 @@ var render = function() {
             "div",
             {
               staticClass: "news_news col-md-4",
-              staticStyle: { "margin-left": "10px" },
+              staticStyle: { "margin-left": "5px" },
               attrs: { id: "news" }
             },
             [

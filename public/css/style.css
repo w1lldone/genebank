@@ -456,7 +456,7 @@ input: -webkit-autofill:focus {
 
 /*Welcome Section*/
 #welcome {
-    min-height: 350px;
+    /*min-height: 350px;*/
     background: #eee;
     padding: 80px 0;
 }
@@ -521,7 +521,7 @@ input: -webkit-autofill:focus {
 #gall {
     margin-top:80px;
     background: #eeeeee;
-    min-height: 780px;
+    /*min-height: 780px;*/
     padding: 80px 0;
 }
 
@@ -739,7 +739,7 @@ section#counter {
 /*char*/
 #char {
     margin-top:80px;
-    min-height:2000px;
+    /*min-height:2000px;*/
     background: #eeeeee;
     padding: 0px 80px 0px 80px;
 }
@@ -848,7 +848,7 @@ li.fw-flash-message {
 /*passport*/
 #passport {
     margin-top:80px;
-    min-height:1500px;
+    /*min-height:1500px;*/
     background: #eeee;
     padding: 0px 80px 0px 80px;
 }
@@ -922,7 +922,7 @@ table{
 /*eval*/
 #eval {
     margin-top:80px;
-    min-height:1500px;
+    /*min-height:1500px;*/
     background: #eeeeee;
     padding: 0px 80px 0px 80px;
 }
@@ -962,7 +962,7 @@ table{
 /*Passport Detail*/
 #passportDetail {
     margin-top:80px;
-    min-height:1500px;
+    /*min-height:1500px;*/
     background: #eeeeee;
     padding: 0px 60px 0px 60px;
 }
@@ -988,7 +988,7 @@ table{
 /*Footer*/
 
 #footer {
-    min-height: 100px;
+    /*min-height: 100px;*/
     background:#cacfd2;
     /*color: #fff;*/
 }

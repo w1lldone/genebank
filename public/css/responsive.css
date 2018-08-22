@@ -1708,12 +1708,18 @@
         bottom: 5px;
         right: 5px;
     }
+    #passport table{
+        
+        overflow: scroll;
+        display:block;
+    }
     #passport, #char, #eval{
         margin-top: 80px;
         z-index: 99;
         transform: scale(1);
         transform-origin: left;
         overflow: scroll;
+
         width:130%;
         margin-left: -60px;
     }

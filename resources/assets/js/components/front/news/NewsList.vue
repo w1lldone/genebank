@@ -6,7 +6,7 @@
                     <div class="col-md-12">
                         <h4><b>Berita</b></h4>
                     </div>
-                    <div style="margin-left:-20px;"class="news_news col-md-4" id="news">
+                    <div style="margin-left:-10px;"class="news_news col-md-4" id="news">
                         <div class="single_news_item">
                             <div class="news_img">
                                 <img src="img/news1.png" alt="">
@@ -34,7 +34,7 @@
                     </div>
                     <br>
                     <!-- konten 2 -->
-                    <div style="margin-left:10px;"class="news_news col-md-4" id="news">
+                    <div style="margin-left:5px;"class="news_news col-md-4" id="news">
                         <div class="single_news_item">
                             <div class="news_img">
                                 <img src="img/news2.jpg" alt="">
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <!-- konten 3 -->
-                    <div style="margin-left:10px;"class="news_news col-md-4" id="news">
+                    <div style="margin-left:5px;"class="news_news col-md-4" id="news">
                         <div class="single_news_item">
                             <div class="news_img">
                                 <img src="img/news3.JPG" alt="">
