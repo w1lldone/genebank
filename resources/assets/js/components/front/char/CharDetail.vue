@@ -10,9 +10,9 @@
                         <p>Mengacu pada deskripsi morfologi dan agronomi dari aksesi (yaitu warna hypocotyl, kebiasaan pertumbuhan tanaman, warna corolla, panjang buah, warna biji, dll.). Data ini diamati dan dikumpulkan di lapangan eksperimental oleh Bank Sumber Daya Genetik Sayuran.</p><br><br>
                     </div>
                     <h5 class="col-md-2"><b>{{ vegetable.species.genus.name }}</b></h5>
-                    <br><br>
-                    <div class="detail">
-                        <div class="col-md-6" v-if="vegetable.photos.length == 0">
+                    <br><br><br><br>
+                    <div  class="detail">
+                        <div class="col-md-6" style="display:inline" v-if="vegetable.photos.length == 0">
                             <div class="panel panel-default">
                                 <div class="panel-body text-center text-muted">
                                     <i class="fa fa-image fa-5x"></i> <br>
@@ -20,7 +20,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3" v-for="photo in vegetable.photos">
+                        <div class="col-md-3"  v-for="photo in vegetable.photos">
                             <img :src="photo.url" alt="..." class="img-responsive">
                         </div>
                         <div id="list" class="col-md-6">
