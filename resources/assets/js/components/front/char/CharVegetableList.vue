@@ -55,6 +55,19 @@
               </div>
             </div>
           </div>
+          <div class="text-center">
+            <paginate
+            v-model="page"
+            :page-count="20"
+            :page-range="3"
+            :margin-pages="2"
+            :click-handler="clickCallback"
+            :prev-text="'<'"
+            :next-text="'>'"
+            :container-class="'pagination'"
+            :page-class="'page-item'">
+            </paginate>
+          </div>
         </div>
       </div>
     </section>
@@ -66,7 +79,16 @@ import FrontBase from '../FrontBase';
 import CharVegetableListFilter from '../VegetableFilters';
 import ActiveFilters from '../VegetableActiveFilters';
 import { vegetableFilters } from '../../mixins/vegetableFilters.js';
-
+Vue.component('paginate', VuejsPaginate)
+ 
+new Vue({
+  el: '#app',
+  methods: {
+    clickCallback: function(pageNum) {
+      console.log(pageNum)
+    }
+  }
+})
 export default {
 
   name: 'CharVegetableList',
@@ -76,6 +98,7 @@ export default {
   },
   data () {
     return {
+      page: 10,
       loading: true,
       vegetables: [],
       params: {
@@ -118,4 +141,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.pagination {
+}
+.page-item {
+}
+
 </style>

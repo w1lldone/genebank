@@ -11,7 +11,10 @@
             <button class="btn btn-danger" @click="deleteVegetable()">
               <i class="fa fa-trash fa-fw"></i>Delete
             </button>
-            <vegetable-create-modal></vegetable-create-modal>
+            <vegetable-create-modal
+            v-if="!loading"
+            :speciesId="vegetable.species.id"
+            ></vegetable-create-modal>
           </div>
         </div>
         <div class="row py-4" v-if="loading">

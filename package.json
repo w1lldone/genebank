@@ -23,8 +23,10 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.2.0",
+        "ajv": "^6.5.3",
         "toastr": "^2.1.4",
         "vue-router": "^3.0.1",
+        "vuejs-paginator": "^2.0.2",
         "vuex": "^3.0.1"
     }
 }

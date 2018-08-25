@@ -988,8 +988,13 @@ table{
 /*Footer*/
 
 #footer {
+<<<<<<< HEAD
+    min-height: 100px;
+    background: #cacfd2;
+=======
     /*min-height: 100px;*/
     background:#cacfd2;
+>>>>>>> origin/develop-priska
     /*color: #fff;*/
 }
 #footer p {
