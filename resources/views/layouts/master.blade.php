@@ -39,6 +39,10 @@
 
     <!-- Styles -->
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+
+    {{-- pagination --}}
+    <script src="https://unpkg.com/vuejs-paginate@0.9.0"></script>
+    <script src="https://cdn.jsdelivr.net/vuejs-paginator/2.0.0/vuejs-paginator.min.js"></script>
 </head>
 <body data-spy="scroll" data-target="#header">
     <div id="app">
