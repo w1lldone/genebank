@@ -174,8 +174,8 @@
                       </table>
                   </div>
                   <div data-toggle="collapse" href="#collapseAbiotic" role="button" aria-expanded="false" aria-controls="collapseAbiotic"><h5>For Abiotic Stress Tolerance</h5></div>
-                    <div class="collapse" id="collapseAbiotic">
-                      <table style="display: none;">
+                    <div class="collapse abiotic" id="collapseAbiotic">
+                      <table>
                         <tbody>
                           <tr>
                             <td>Heat tolerance</td>
@@ -333,5 +333,7 @@ h5{
     background: #fff;
     width: 65px;
 }
-
+.abiotic select{
+    width: 100%;
+}
 </style>
