@@ -20,6 +20,7 @@
 
                         <spinner v-if="loading"></spinner>
                         <div class="table-responsive passport-list list-table" v-else>
+                            
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
@@ -35,11 +36,12 @@
                                 </thead>
                                 <tbody v-if="vegetables.length != 0">
                                     <passport-list-item 
-                                    v-for="vegetable in vegetables"
+                                    v-for="vegetable in vegetables "
                                     :key="vegetable.id"
                                     v-bind="getPassportObject(vegetable)"
                                     ></passport-list-item>
                                 </tbody>
+                                
                             </table>
                             <div class="panel panel-default" v-if="vegetables.length == 0" >
                               <div class="panel-body text-center">
@@ -71,15 +73,17 @@
 </template>
 
 <script>
+
 import FrontBase from '../FrontBase';
 import PassportListItem from './PassportListItem';
 import PassportListDetail from './PassportListDetail';
 import VegetableFilters from '../VegetableFilters';
 import VegetableActiveFilters from '../VegetableActiveFilters';
 import { vegetableFilters } from '../../mixins/vegetableFilters.js';
+
 Vue.component('paginate', VuejsPaginate)
  
-new Vue({
+var vm = new Vue({
   el: '#app',
   methods: {
     clickCallback: function(pageNum) {
@@ -87,21 +91,23 @@ new Vue({
     }
   }
 })
+
 export default {
 
   name: 'PassportList',
   mixins: [vegetableFilters],
   data () {
     return {
-        page: 10,
+        page: 1,
         vegetables: [],
         params: {
             load: 'passport',
         },
-        species: [],
-        loading: true,
     }
+    
   },
+  
+  
   methods: {
     async loadVegetables() {
         try {
@@ -133,7 +139,7 @@ export default {
             cultivarName: vegetable.cultivar_name,
             country: vegetable.passport.country,
         }
-    }
+    },
   },
   async mounted() {
     await this.loadVegetables()
@@ -148,6 +154,7 @@ export default {
     VegetableActiveFilters,
   }
 }
+
 </script>
 
 <style lang="css" scoped>
@@ -155,5 +162,6 @@ export default {
 }
 .page-item {
 }
+
 
 </style>

@@ -81,7 +81,7 @@ import ActiveFilters from '../VegetableActiveFilters';
 import { vegetableFilters } from '../../mixins/vegetableFilters.js';
 Vue.component('paginate', VuejsPaginate)
  
-new Vue({
+var vm = new Vue({
   el: '#app',
   methods: {
     clickCallback: function(pageNum) {

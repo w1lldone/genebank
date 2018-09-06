@@ -41,8 +41,26 @@
     {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
 
     {{-- pagination --}}
-    <script src="https://unpkg.com/vuejs-paginate@0.9.0"></script>
+    {{-- method 1 --}}
+    
+    s<script src="https://unpkg.com/vuejs-paginate@latest"></script>
     <script src="https://cdn.jsdelivr.net/vuejs-paginator/2.0.0/vuejs-paginator.min.js"></script>
+
+    {{-- nethod 2 --}}
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap DataTables CSS -->
+    <!-- Jquery -->
+    <script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- Jquery DataTables -->
+    <script type="text/javascript" language="javascript" src="http:////cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+    <!-- Bootstrap dataTables Javascript -->
+    <script type="text/javascript" language="javascript" src="http://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        $('.table-paginate').dataTable();
+        } );
+    </script>
+
 </head>
 <body data-spy="scroll" data-target="#header">
     <div id="app">

@@ -9,7 +9,7 @@ class PassportController extends Controller
 {
     public function index(Request $request)
     {
-        return view('passport.index');
+    	return view('passport.index');
     }
     
     public function show(Request $request, $pin)

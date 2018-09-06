@@ -27,6 +27,8 @@ Vue.mixin({
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+import Paginate from 'vuejs-paginate';
+Vue.component('paginate', Paginate);
 
 Vue.component(
     'sidebar',
